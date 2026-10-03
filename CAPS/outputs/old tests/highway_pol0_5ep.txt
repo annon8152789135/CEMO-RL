@@ -1,0 +1,180 @@
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/gymnasium/spaces/box.py:235: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/stable_baselines3/common/save_util.py:437: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  th_object = th.load(file_content, map_location=device)
+running MO_highway
+Starting Test
+reward_dim_indices = [0, 1, 2], reward_shape = 3
+reward_shape in get_utility_function:  3
+DPMORL/utility-model-selected/dim-3
+initializing linear utility function
+reward_shape in Utility_Function_Linear 3
+num_total_policies = 6
+initializing linear utility function
+reward_shape in Utility_Function_Linear 3
+Environment created: mo-highway-fast-v0
+Num episodes:  5
+num_actions: 5
+5
+Running AutoPred
+Starting graph generation...
+Height:  1
+Height:  2
+Height:  3
+Height:  4
+Height:  5
+Height:  6
+Height:  7
+Height:  8
+Height:  9
+Height:  10
+***********************************************
+Clusters at height 6
+Group 1 to Group 3 with p=1.0 and action 2
+Group 2 to Group 3 with p=0.5 and action 2
+Group 2 to Group 8 with p=0.5 and action 2
+Group 3 to Group 3 with p=0.8442622950819679 and action 2
+Group 3 to Group 4 with p=0.00819672131147541 and action 2
+Group 3 to Group 6 with p=0.08196721311475409 and action 2
+Group 3 to Group 7 with p=0.00819672131147541 and action 2
+Group 3 to Group 8 with p=0.01639344262295082 and action 2
+Group 3 to Group 9 with p=0.04098360655737705 and action 2
+Group 4 to Group 2 with p=1.0 and action 4
+Group 5 to Group 3 with p=1.0 and action 4
+Group 6 to Group 3 with p=0.631578947368421 and action 4
+Group 6 to Group 6 with p=0.3684210526315789 and action 3
+Group 7 to Group 2 with p=1.0 and action 4
+Group 8 to Group 1 with p=0.3333333333333333 and action 4
+Group 8 to Group 6 with p=0.6666666666666666 and action 3
+----------------------------------------
+
+ Initializing SHAP explainer on 15 sample states...
+ shape: (15, 25)
+
+ Computing SHAP values for clusters...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 19.51it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 173.95it/s]
+  0%|          | 0/24 [00:00<?, ?it/s] 71%|███████   | 17/24 [00:00<00:00, 167.85it/s]100%|██████████| 24/24 [00:00<00:00, 166.76it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 181.63it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 216.30it/s]
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 201.05it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 150.36it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 182.08it/s]
+Group 1: yC1 between 0.33333 and -0.66667 and vxC2 between 0.01934 and -0.17215 and xC3 between 0.45144 and 0.17229 and yC3 between 0.33333 and -0.66667
+Critical value: 0.0. Entropy: 1.30
+Group 2: yEgo between 0.66526 and 0.33193 and yC1 between 0.33333 and -0.66667 and yC2 between 0.33333 and -0.66667 and vxC3 between 0.01642 and -0.13868
+Critical value: 0.0. Entropy: 0.83
+Group 3: vxEgo between 0.37392 and 0.25 and xC1 between 0.17727 and -0.04809 and yC1 between 0.33333 and -0.66667 and yC3 between 0.33333 and -0.66667
+Critical value: 0.0. Entropy: 1.20
+Group 4: xEgo equal to 0.87799 and vxEgo between 0.37392 and 0.25 and yC2 between 0.33333 and -0.66667 and vxC2 between 0.01934 and -0.17215
+Critical value: 0.0. Entropy: 1.06
+Group 5: xEgo between 1 and 0.75459 and yEgo equal to 0.33333 and vxEgo between 0.37392 and 0.25 and yC1 between 0.33333 and -0.66667
+Critical value: 1.0. Entropy: 0.58
+Group 6: vxEgo between 0.37392 and 0.25 and yC1 between 0.33333 and -0.66667 and vxC2 between 0.01934 and -0.17215 and vxC4 between 0.01588 and -0.12254
+Critical value: 0.0. Entropy: 1.24
+Group 7: yEgo between 0.66667 and 0 and vxEgo between 0.37392 and 0.25 and yC1 between 0.33333 and -0.66667 and yC2 between 0.33333 and -0.66667
+Critical value: 1.0. Entropy: 0.74
+Group 8: vyEgo between 0.01451 and 0.0135 and yC1 between 0.33333 and -0.66667 and vxC3 between 0.01642 and -0.13868 and vyC3 between 0.02638 and -0.0553
+Critical value: 0.0. Entropy: 1.17
+----------------------------------------
+***********************************************
+Clusters at height 7
+Group 1 to Group 3 with p=1.0 and action 2
+Group 2 to Group 3 with p=0.5 and action 2
+Group 2 to Group 8 with p=0.5 and action 2
+Group 3 to Group 3 with p=0.8442622950819679 and action 2
+Group 3 to Group 4 with p=0.00819672131147541 and action 2
+Group 3 to Group 6 with p=0.08196721311475409 and action 2
+Group 3 to Group 7 with p=0.00819672131147541 and action 2
+Group 3 to Group 8 with p=0.01639344262295082 and action 2
+Group 3 to Group 9 with p=0.04098360655737705 and action 2
+Group 4 to Group 2 with p=1.0 and action 4
+Group 5 to Group 3 with p=1.0 and action 4
+Group 6 to Group 3 with p=0.631578947368421 and action 4
+Group 6 to Group 6 with p=0.3684210526315789 and action 3
+Group 7 to Group 2 with p=1.0 and action 4
+Group 8 to Group 1 with p=0.3333333333333333 and action 4
+Group 8 to Group 6 with p=0.6666666666666666 and action 3
+----------------------------------------
+
+ Initializing SHAP explainer on 15 sample states...
+ shape: (15, 25)
+
+ Computing SHAP values for clusters...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 180.78it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 194.22it/s]
+  0%|          | 0/24 [00:00<?, ?it/s] 75%|███████▌  | 18/24 [00:00<00:00, 171.46it/s]100%|██████████| 24/24 [00:00<00:00, 173.14it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 195.26it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 213.15it/s]
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 191.54it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 188.69it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 146.65it/s]
+Group 1: yC1 between 0.33333 and -0.66667 and vxC2 between 0.01934 and -0.17215 and xC3 between 0.45144 and 0.17229 and yC3 between 0.33333 and -0.66667
+Critical value: 0.0. Entropy: 1.30
+Group 2: yC1 between 0.33333 and -0.66667 and vxC2 between 0.01934 and -0.17215 and yC3 between 0.33333 and -0.66667 and vxC4 between 0.01588 and -0.12254
+Critical value: 0.0. Entropy: 0.83
+Group 3: vxEgo between 0.37392 and 0.25 and xC1 between 0.17727 and -0.04809 and yC1 between 0.33333 and -0.66667 and yC3 between 0.33333 and -0.66667
+Critical value: 0.0. Entropy: 1.20
+Group 4: xEgo equal to 0.87799 and vxEgo equal to 0.31221 and vyEgo between 0.0135 and 0 and yC2 between 0.33333 and -0.66667
+Critical value: 0.0. Entropy: 1.06
+Group 5: xEgo equal to 0.7729 and yEgo equal to 0.33333 and vxEgo between 0.37392 and 0.25 and yC1 between 0.33333 and -0.66667
+Critical value: 1.0. Entropy: 0.58
+Group 6: vxEgo between 0.37392 and 0.25 and yC1 between 0.00208 and -0.66665 and vxC1 between 0.02074 and -0.21694 and vxC2 between 0.01934 and -0.17215
+Critical value: 0.0. Entropy: 1.24
+Group 7: yEgo equal to 0.305 and vxEgo between 0.37392 and 0.25 and yC1 between 0.33333 and -0.66667 and yC2 between 0.33333 and -0.66667
+Critical value: 1.0. Entropy: 0.74
+Group 8: vyEgo between 0.01451 and 0.0135 and yC1 between 0.33333 and -0.66667 and vxC2 between 0.01934 and -0.17215 and vxC3 between 0.01642 and -0.13868
+Critical value: 0.0. Entropy: 1.17
+----------------------------------------
+***********************************************
+Clusters at height 8
+Group 1 to Group 3 with p=1.0 and action 2
+Group 2 to Group 3 with p=0.5 and action 2
+Group 2 to Group 8 with p=0.5 and action 2
+Group 3 to Group 3 with p=0.8442622950819679 and action 2
+Group 3 to Group 4 with p=0.00819672131147541 and action 2
+Group 3 to Group 6 with p=0.08196721311475409 and action 2
+Group 3 to Group 7 with p=0.00819672131147541 and action 2
+Group 3 to Group 8 with p=0.01639344262295082 and action 2
+Group 3 to Group 9 with p=0.04098360655737705 and action 2
+Group 4 to Group 2 with p=1.0 and action 4
+Group 5 to Group 3 with p=1.0 and action 4
+Group 6 to Group 3 with p=0.631578947368421 and action 4
+Group 6 to Group 6 with p=0.3684210526315789 and action 3
+Group 7 to Group 2 with p=1.0 and action 4
+Group 8 to Group 1 with p=0.3333333333333333 and action 4
+Group 8 to Group 6 with p=0.6666666666666666 and action 3
+----------------------------------------
+
+ Initializing SHAP explainer on 15 sample states...
+ shape: (15, 25)
+
+ Computing SHAP values for clusters...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 120.01it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 160.55it/s]
+  0%|          | 0/24 [00:00<?, ?it/s] 71%|███████   | 17/24 [00:00<00:00, 166.74it/s]100%|██████████| 24/24 [00:00<00:00, 170.45it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 164.20it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 216.09it/s]
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 209.80it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 145.55it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 190.86it/s]
+Group 1: yC1 between 0.33333 and -0.66667 and vxC2 between 0.01934 and -0.17215 and xC3 between 0.45144 and 0.17229 and yC3 between 0.33333 and -0.66667
+Critical value: 0.0. Entropy: 1.30
+Group 2: yC1 between 0.33333 and -0.66667 and vxC2 between 0.01934 and -0.17215 and yC3 between 0.33333 and -0.66667 and vxC3 between 0.01642 and -0.13868
+Critical value: 0.0. Entropy: 0.83
+Group 3: vxEgo between 0.37392 and 0.25 and xC1 between 0.17727 and -0.04809 and yC1 between 0.33333 and -0.66667 and yC3 between 0.33333 and -0.66667
+Critical value: 0.0. Entropy: 1.20
+Group 4: xEgo equal to 0.87799 and vxEgo equal to 0.31221 and yC2 between 0.33333 and -0.66667 and vxC2 between 0.01934 and -0.17215
+Critical value: 0.0. Entropy: 1.06
+Group 5: xEgo equal to 0.7729 and yEgo equal to 0.33333 and vxEgo equal to 0.3125 and yC1 between 0.33333 and -0.66667
+Critical value: 1.0. Entropy: 0.58
+Group 6: vxEgo between 0.37392 and 0.25 and yC1 between 0.00208 and -0.66665 and yC2 between -0.33333 and -0.66667 and vxC3 between 0.01642 and -0.13868
+Critical value: 0.0. Entropy: 1.24
+Group 7: xEgo equal to 0.90466 and yEgo equal to 0.305 and vxEgo equal to 0.31221 and yC1 between 0.33333 and -0.66667
+Critical value: 1.0. Entropy: 0.74
+Group 8: xEgo between 1 and 0.75459 and vxEgo between 0.31221 and 0.25066 and vyEgo between 0.01451 and 0.0135 and vxC2 between 0.01934 and -0.17215
+Critical value: 0.0. Entropy: 1.17
+----------------------------------------
+Time taken for AutoPred: 6.503492832183838 seconds

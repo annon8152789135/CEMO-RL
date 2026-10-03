@@ -1,0 +1,332 @@
+Found 4 policies in CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/.
+
+Plotting return distributions for 4 policies...
+Detected 2 objectives.
+Policy return plot saved to: outputs/plots/DeepSeaTreasure_test/MO_deepSea_25_0.1_combined/MO_deepSea_policy_returns.png
+Directory MO_deepSea_25_0.1_combined already exists.
+Re-running the policies to collect new graphs as --use_existing flag is set to False.
+
+Running policy 0: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-0
+Running CAPS_main with model path: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-0 and environment: MO_deepSea
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/CAPS/DPMORL/test_deepSea.py:92: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(path))
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/stable_baselines3/common/save_util.py:437: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  th_object = th.load(file_content, map_location=device)
+running MO_deepSea
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-0.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-1.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-2.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-3.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-4.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-5.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-6.pt
+initializing linear utility function
+reward_shape in Utility_Function_Linear 2
+num_total_policies = 3
+initializing linear utility function
+reward_shape in Utility_Function_Linear 2
+Deep Sea horizon: (not exposed by env)
+CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-0.zip is being loaded for testing.
+Observation space shape: (1, 2), Action space: 4. initial state [[0 0]]
+obs x : 0, obs y: 0
+Dataset collected for model CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-0. Starting explanation generation...
+Running AutoPred
+Explanations with SHAP feature selection
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7fa4922e4a90>
+generating graph for model: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-0
+Starting graph generation...
+
+Using all features for predicate generation...
+Time taken for AutoPred: 13.189893007278442 seconds
+Policy 0 explanation graph generated. 16 nodes and 24 edges.
+sample label for policy 0: {'group': 1, 'translation': 'x equal to 0 and y equal to 0 and State Value equal to 0.52 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.5037539601325989, 'num_instances': 1, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (0.0, 0.0), 'y': (0.0, 0.0), 'State Value': (0.5223337035096347, 0.5223337035096347), 'Action': (3.0, 1.0)}}  
+
+Running policy 1: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-1
+Running CAPS_main with model path: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-1 and environment: MO_deepSea
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/CAPS/DPMORL/test_deepSea.py:92: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(path))
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/stable_baselines3/common/save_util.py:437: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  th_object = th.load(file_content, map_location=device)
+running MO_deepSea
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-0.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-1.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-2.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-3.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-4.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-5.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-6.pt
+initializing linear utility function
+reward_shape in Utility_Function_Linear 2
+num_total_policies = 3
+initializing linear utility function
+reward_shape in Utility_Function_Linear 2
+Deep Sea horizon: (not exposed by env)
+CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-1.zip is being loaded for testing.
+Observation space shape: (1, 2), Action space: 4. initial state [[0 0]]
+obs x : 0, obs y: 0
+Dataset collected for model CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-1. Starting explanation generation...
+Running AutoPred
+Explanations with SHAP feature selection
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7fa42552b400>
+generating graph for model: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-1
+Starting graph generation...
+
+Using all features for predicate generation...
+Time taken for AutoPred: 1.4953839778900146 seconds
+Policy 1 explanation graph generated. 15 nodes and 16 edges.
+sample label for policy 1: {'group': 1, 'translation': 'x equal to 0 and y between 1 and 0 and State Value between 0.23 and 0 and Action equal to 1', 'critical_value': 1.0, 'entropy': 5.753542609454598e-06, 'num_instances': 1, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (0.0, 0.0), 'y': (1.0, 0.0), 'State Value': (0.23408340806908343, 0.0), 'Action': (1.0, 1.0)}}  
+
+Running policy 2: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-2
+Running CAPS_main with model path: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-2 and environment: MO_deepSea
+running MO_deepSea
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-0.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-1.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-2.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-3.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-4.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-5.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-6.pt
+initializing linear utility function
+reward_shape in Utility_Function_Linear 2
+num_total_policies = 3
+initializing linear utility function
+reward_shape in Utility_Function_Linear 2
+Deep Sea horizon: (not exposed by env)
+CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-2.zip is being loaded for testing.
+Observation space shape: (1, 2), Action space: 4. initial state [[0 0]]
+obs x : 0, obs y: 0
+Dataset collected for model CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-2. Starting explanation generation...
+Running AutoPred
+Explanations with SHAP feature selection
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7fa4254538e0>
+generating graph for model: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-2
+Starting graph generation...
+
+Using all features for predicate generation...
+Time taken for AutoPred: 4.096193313598633 seconds
+Policy 2 explanation graph generated. 19 nodes and 24 edges.
+sample label for policy 2: {'group': 1, 'translation': 'x equal to 0 and y between 1 and 0 and State Value between 0.12 and 0 and Action equal to 1', 'critical_value': 1.0, 'entropy': 0.000864837144035846, 'num_instances': 1, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (0.0, 0.0), 'y': (1.0, 0.0), 'State Value': (0.12299260882156662, 0.0), 'Action': (1.0, 1.0)}}  
+
+Running policy 3: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-3
+Running CAPS_main with model path: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-3 and environment: MO_deepSea
+running MO_deepSea
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-0.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-1.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-2.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-3.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-4.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-5.pt
+loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-6.pt
+initializing linear utility function
+reward_shape in Utility_Function_Linear 2
+num_total_policies = 3
+initializing linear utility function
+reward_shape in Utility_Function_Linear 2
+Deep Sea horizon: (not exposed by env)
+CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-3.zip is being loaded for testing.
+Observation space shape: (1, 2), Action space: 4. initial state [[0 0]]
+obs x : 0, obs y: 0
+Dataset collected for model CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-3. Starting explanation generation...
+Running AutoPred
+Explanations with SHAP feature selection
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7fa425458040>
+generating graph for model: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-3
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/grakel/graph.py:314: UserWarning: changing format from "adjacency" to "all"
+  warnings.warn('changing format from "adjacency" to "all"')
+Starting graph generation...
+
+Using all features for predicate generation...
+Time taken for AutoPred: 4.043084144592285 seconds
+Policy 3 explanation graph generated. 10 nodes and 15 edges.
+sample label for policy 3: {'group': 1, 'translation': 'x between 1 and 0 and y between 2 and 0 and State Value between 0.27 and 0 and Action between 3 and 1', 'critical_value': 1.0, 'entropy': 0.12319296146267368, 'num_instances': 54, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (1.0, 0.0), 'y': (2.0, 0.0), 'State Value': (0.27302153799240875, 0.0), 'Action': (3.0, 1.0)}}  
+All policies have been tested and graphs collected. 4 graphs in total.
+All graphs collected:
+Weisfeiler-Lehman Kernel Matrix:
+        0      1      2      3
+  0  1.00   0.04   0.04   0.07
+  1  0.04   1.00   0.03   0.05
+  2  0.04   0.03   1.00   0.06
+  3  0.07   0.05   0.06   1.00
+Subgraph Matching Kernel Matrix:
+        0      1      2      3
+  0  1.00   0.03   0.04   0.05
+  1  0.03   1.00   0.03   0.04
+  2  0.04   0.03   1.00   0.04
+  3  0.05   0.04   0.04   1.00
+Avg. simillarity Matrix:
+        0      1      2      3
+  0  1.00   0.04   0.04   0.06
+  1  0.04   1.00   0.03   0.04
+  2  0.04   0.03   1.00   0.05
+  3  0.06   0.04   0.05   1.00
+policies selected for explanation based on combined average similarity: 
+ {'tree': <CAPS.CLTree.CLTree object at 0x7fa494718b20>, 'height': 6, 'fidelity': None, 'state_features': ['x', 'y', 'State Value', 'Action'], 'groups': [{'group': 1, 'translation': 'x equal to 0 and y equal to 0 and State Value equal to 0.52 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.5037539601325989, 'num_instances': 1, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (0.0, 0.0), 'y': (0.0, 0.0), 'State Value': (0.5223337035096347, 0.5223337035096347), 'Action': (3.0, 1.0)}}, {'group': 2, 'translation': 'x equal to 0 and y between 6 and 0 and State Value between 0.69 and 0.52 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.48647360771130294, 'num_instances': 78, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (0.0, 0.0), 'y': (6.0, 0.0), 'State Value': (0.6853721658527467, 0.5223337035096347), 'Action': (3.0, 1.0)}}, {'group': 3, 'translation': 'x between 1 and 0 and y equal to 3 and State Value between 0.96 and 0.69 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.27241992950439453, 'num_instances': 2, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (1.0, 0.0), 'y': (3.0, 3.0), 'State Value': (0.9620249627793545, 0.6853721658527467), 'Action': (3.0, 1.0)}}, {'group': 4, 'translation': 'x between 1 and 0 and y between 6 and 3 and State Value between 0.96 and 0.69 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.48722392963428124, 'num_instances': 102, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (1.0, 0.0), 'y': (6.0, 3.0), 'State Value': (0.9620249627793545, 0.6853721658527467), 'Action': (3.0, 1.0)}}, {'group': 5, 'translation': 'x equal to 1 and y equal to 6 and State Value equal to 0.96 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.3139905333518982, 'num_instances': 1, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (1.0, 1.0), 'y': (6.0, 6.0), 'State Value': (0.9620249627793545, 0.9620249627793545), 'Action': (3.0, 1.0)}}, {'group': 6, 'translation': 'x between 4 and 1 and y equal to 6 and State Value equal to 0.96 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.3139905333518982, 'num_instances': 1, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (4.0, 1.0), 'y': (6.0, 6.0), 'State Value': (0.9620249627793545, 0.9620249627793545), 'Action': (3.0, 1.0)}}, {'group': 7, 'translation': 'x between 4 and 1 and y equal to 6 and State Value between 1 and 0.96 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.40645892392186556, 'num_instances': 34, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (4.0, 1.0), 'y': (6.0, 6.0), 'State Value': (1.0, 0.9620249627793545), 'Action': (3.0, 1.0)}}, {'group': 8, 'translation': 'x equal to 4 and y equal to 6 and State Value equal to 0.98 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.5365840196609497, 'num_instances': 1, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (4.0, 4.0), 'y': (6.0, 6.0), 'State Value': (0.9827103787139612, 0.9827103787139612), 'Action': (3.0, 1.0)}}, {'group': 9, 'translation': 'x equal to 4 and y equal to 6 and State Value equal to 0.98 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.5365840196609497, 'num_instances': 12, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (4.0, 4.0), 'y': (6.0, 6.0), 'State Value': (0.9827103787139612, 0.9827103787139612), 'Action': (3.0, 1.0)}}, {'group': 10, 'translation': 'x equal to 4 and y between 7 and 6 and State Value between 0.58 and 0 and Action equal to 1', 'critical_value': 0.0, 'entropy': 0.5013986825942993, 'num_instances': 2, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (4.0, 4.0), 'y': (7.0, 6.0), 'State Value': (0.5786928561410521, 0.0), 'Action': (1.0, 1.0)}}, {'group': 11, 'translation': 'x between 6 and 4 and y between 7 and 6 and State Value between 0.58 and 0 and Action equal to 1', 'critical_value': 1.0, 'entropy': 0.09062619691914213, 'num_instances': 28, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (6.0, 4.0), 'y': (7.0, 6.0), 'State Value': (0.5786928561410521, 0.0), 'Action': (1.0, 1.0)}}, {'group': 12, 'translation': 'x equal to 3 and y between 7 and 6 and State Value between 1 and 0.58 and Action equal to 1', 'critical_value': 1.0, 'entropy': 0.17358437180519104, 'num_instances': 1, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (3.0, 3.0), 'y': (7.0, 6.0), 'State Value': (1.0, 0.5786928561410521), 'Action': (1.0, 1.0)}}, {'group': 13, 'translation': 'x between 6 and 1 and y between 7 and 6 and State Value between 0.58 and 0 and Action equal to 1', 'critical_value': 0.0, 'entropy': 0.636547337638066, 'num_instances': 22, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (6.0, 1.0), 'y': (7.0, 6.0), 'State Value': (0.5786928561410521, 0.0), 'Action': (1.0, 1.0)}}, {'group': 14, 'translation': 'x between 6 and 1 and y between 7 and 6 and State Value between 1 and 0.58 and Action equal to 1', 'critical_value': 1.0, 'entropy': 0.17358437180519104, 'num_instances': 1, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (6.0, 1.0), 'y': (7.0, 6.0), 'State Value': (1.0, 0.5786928561410521), 'Action': (1.0, 1.0)}}, {'group': 15, 'translation': 'x between 6 and 1 and y between 7 and 6 and State Value between 0.58 and 0.3 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.5231125503778458, 'num_instances': 16, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (6.0, 1.0), 'y': (7.0, 6.0), 'State Value': (0.5786928561410521, 0.30252976516136565), 'Action': (3.0, 1.0)}}, {'group': 16, 'translation': 'x between 6 and 1 and y between 7 and 6 and State Value between 1 and 0.58 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.43919765825072926, 'num_instances': 48, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (6.0, 1.0), 'y': (7.0, 6.0), 'State Value': (1.0, 0.5786928561410521), 'Action': (3.0, 1.0)}}], 'edges': [{'from_group': 1, 'to_group': 2, 'probability': 1.0, 'action': 3}, {'from_group': 2, 'to_group': 2, 'probability': 0.628205128205128, 'action': 3}, {'from_group': 2, 'to_group': 4, 'probability': 0.371794871794872, 'action': 3}, {'from_group': 3, 'to_group': 4, 'probability': 1.0, 'action': 3}, {'from_group': 4, 'to_group': 4, 'probability': 0.6764705882352938, 'action': 3}, {'from_group': 4, 'to_group': 16, 'probability': 0.3235294117647059, 'action': 1}, {'from_group': 5, 'to_group': 16, 'probability': 1.0, 'action': 1}, {'from_group': 6, 'to_group': 16, 'probability': 1.0, 'action': 1}, {'from_group': 7, 'to_group': 16, 'probability': 1.0, 'action': 1}, {'from_group': 8, 'to_group': 16, 'probability': 1.0, 'action': 3}, {'from_group': 9, 'to_group': 16, 'probability': 1.0, 'action': 3}, {'from_group': 10, 'to_group': 15, 'probability': 1.0, 'action': 1}, {'from_group': 11, 'to_group': 13, 'probability': 0.10714285714285714, 'action': 1}, {'from_group': 11, 'to_group': 15, 'probability': 0.03571428571428571, 'action': 1}, {'from_group': 11, 'to_group': 17, 'probability': 0.8571428571428569, 'action': 1}, {'from_group': 12, 'to_group': 16, 'probability': 1.0, 'action': 1}, {'from_group': 13, 'to_group': 13, 'probability': 0.9090909090909088, 'action': 1}, {'from_group': 13, 'to_group': 15, 'probability': 0.045454545454545456, 'action': 1}, {'from_group': 13, 'to_group': 17, 'probability': 0.045454545454545456, 'action': 1}, {'from_group': 14, 'to_group': 16, 'probability': 1.0, 'action': 1}, {'from_group': 15, 'to_group': 13, 'probability': 0.125, 'action': 1}, {'from_group': 15, 'to_group': 15, 'probability': 0.875, 'action': 1}, {'from_group': 16, 'to_group': 15, 'probability': 0.14583333333333331, 'action': 1}, {'from_group': 16, 'to_group': 16, 'probability': 0.8541666666666671, 'action': 1}], 'feature_selection': {'method': 'shap', 'important_features': [['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action']]}} 
+ {'tree': <CAPS.CLTree.CLTree object at 0x7fa4254538e0>, 'height': 5, 'fidelity': None, 'state_features': ['x', 'y', 'State Value', 'Action'], 'groups': [{'group': 1, 'translation': 'x between 1 and 0 and y between 2 and 0 and State Value between 0.27 and 0 and Action between 3 and 1', 'critical_value': 1.0, 'entropy': 0.12319296146267368, 'num_instances': 54, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (1.0, 0.0), 'y': (2.0, 0.0), 'State Value': (0.27302153799240875, 0.0), 'Action': (3.0, 1.0)}}, {'group': 2, 'translation': 'x between 1 and 0 and y between 2 and 0 and State Value between 0.42 and 0.27 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.6443658272425333, 'num_instances': 3, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (1.0, 0.0), 'y': (2.0, 0.0), 'State Value': (0.4170128813145015, 0.27302153799240875), 'Action': (3.0, 1.0)}}, {'group': 3, 'translation': 'x between 1 and 0 and y between 3 and 2 and State Value between 0.56 and 0.42 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.668762390430157, 'num_instances': 13, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (1.0, 0.0), 'y': (3.0, 2.0), 'State Value': (0.56274687179981, 0.4170128813145015), 'Action': (3.0, 1.0)}}, {'group': 4, 'translation': 'x equal to 1 and y between 4 and 0 and State Value equal to 0.27 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.6317548751831055, 'num_instances': 20, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (1.0, 1.0), 'y': (4.0, 0.0), 'State Value': (0.27302153799240875, 0.27302153799240875), 'Action': (3.0, 1.0)}}, {'group': 5, 'translation': 'x between 2 and 1 and y equal to 2 and State Value between 0.86 and 0.27 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.6506713032722473, 'num_instances': 15, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (2.0, 1.0), 'y': (2.0, 2.0), 'State Value': (0.8602286637025076, 0.27302153799240875), 'Action': (3.0, 1.0)}}, {'group': 6, 'translation': 'x between 2 and 1 and y between 4 and 2 and State Value between 0.86 and 0.27 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.652153417468071, 'num_instances': 60, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (2.0, 1.0), 'y': (4.0, 2.0), 'State Value': (0.8602286637025076, 0.27302153799240875), 'Action': (3.0, 1.0)}}, {'group': 7, 'translation': 'x equal to 2 and y equal to 3 and State Value equal to 0.7 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.5904150009155273, 'num_instances': 1, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (2.0, 2.0), 'y': (3.0, 3.0), 'State Value': (0.6993912424592027, 0.6993912424592027), 'Action': (3.0, 1.0)}}, {'group': 8, 'translation': 'x equal to 2 and y between 4 and 3 and State Value equal to 0.7 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.5904150009155273, 'num_instances': 1, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (2.0, 2.0), 'y': (4.0, 3.0), 'State Value': (0.6993912424592027, 0.6993912424592027), 'Action': (3.0, 1.0)}}, {'group': 9, 'translation': 'x between 3 and 2 and y between 4 and 3 and State Value between 1 and 0.7 and Action equal to 1', 'critical_value': 1.0, 'entropy': 4.193411587039009e-05, 'num_instances': 2, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (3.0, 2.0), 'y': (4.0, 3.0), 'State Value': (1.0, 0.6993912424592027), 'Action': (1.0, 1.0)}}, {'group': 10, 'translation': 'x between 3 and 2 and y between 4 and 3 and State Value between 1 and 0.7 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.1523962739351367, 'num_instances': 31, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (3.0, 2.0), 'y': (4.0, 3.0), 'State Value': (1.0, 0.6993912424592027), 'Action': (3.0, 1.0)}}], 'edges': [{'from_group': 1, 'to_group': 1, 'probability': 0.4629629629629627, 'action': 3}, {'from_group': 1, 'to_group': 4, 'probability': 0.4629629629629627, 'action': 1}, {'from_group': 1, 'to_group': 6, 'probability': 0.07407407407407407, 'action': 3}, {'from_group': 2, 'to_group': 6, 'probability': 1.0, 'action': 3}, {'from_group': 3, 'to_group': 6, 'probability': 0.3076923076923077, 'action': 3}, {'from_group': 3, 'to_group': 10, 'probability': 0.6923076923076923, 'action': 1}, {'from_group': 4, 'to_group': 6, 'probability': 1.0000000000000002, 'action': 3}, {'from_group': 5, 'to_group': 6, 'probability': 0.9999999999999999, 'action': 3}, {'from_group': 6, 'to_group': 6, 'probability': 0.31666666666666665, 'action': 3}, {'from_group': 6, 'to_group': 10, 'probability': 0.6833333333333338, 'action': 1}, {'from_group': 7, 'to_group': 6, 'probability': 1.0, 'action': 3}, {'from_group': 8, 'to_group': 6, 'probability': 1.0, 'action': 3}, {'from_group': 9, 'to_group': 11, 'probability': 1.0, 'action': 1}, {'from_group': 10, 'to_group': 6, 'probability': 0.25806451612903225, 'action': 3}, {'from_group': 10, 'to_group': 11, 'probability': 0.7419354838709673, 'action': 1}], 'feature_selection': {'method': 'shap', 'important_features': [['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action']]}}
+
+ Generating contrastive explanations for the selected graph pair...
+
+
+--- Contrastive explanation for test state 0: {'x': 0, 'y': 0} ---
+state analysis test for policy_0: 1
+state analysis test for policy_3: 1
+Next probable action for policy_0: 3
+Next probable action for policy_3: 3
+
+
+--- Contrastive explanation for test state 1: {'x': 1, 'y': 1} ---
+state analysis test for policy_0: None
+state analysis test for policy_3: 1
+Next probable action for policy_0: None
+Next probable action for policy_3: 3
+
+
+--- Contrastive explanation for test state 2: {'x': 2, 'y': 2} ---
+state analysis test for policy_0: None
+state analysis test for policy_3: 5
+Next probable action for policy_0: None
+Next probable action for policy_3: 3
+
+
+--- Contrastive explanation for test state 3: {'x': 3, 'y': 3} ---
+state analysis test for policy_0: None
+state analysis test for policy_3: 9
+Next probable action for policy_0: None
+Next probable action for policy_3: 1
+
+
+--- Contrastive explanation for test state 4: {'x': 4, 'y': 4} ---
+state analysis test for policy_0: None
+state analysis test for policy_3: None
+Next probable action for policy_0: None
+Next probable action for policy_3: None
+
+
+--- Contrastive explanation for test state 5: {'x': 5, 'y': 5} ---
+state analysis test for policy_0: None
+state analysis test for policy_3: None
+Next probable action for policy_0: None
+Next probable action for policy_3: None
+
+
+--- Contrastive explanation for test state 6: {'x': 6, 'y': 7} ---
+state analysis test for policy_0: 11
+state analysis test for policy_3: None
+Next probable action for policy_0: 1
+Next probable action for policy_3: None
+
+
+--- Contrastive explanation for test state 7: {'x': 10, 'y': 10} ---
+state analysis test for policy_0: None
+state analysis test for policy_3: None
+Next probable action for policy_0: None
+Next probable action for policy_3: None
+MCS mapping: {17: 11}
+Common nodes: [(17, {})]
+Common edges: []
+
+
+--- Shared subgraph percentage for all nodes and edges between all graphs ---
+Best graphs selected based on combined kernel similarity: policy_0 and policy_3
+Weisfeiler-Lehman Kernel Matrix:
+        0      1      2      3
+  0  1.00   0.04   0.04   0.07
+  1  0.04   1.00   0.03   0.05
+  2  0.04   0.03   1.00   0.06
+  3  0.07   0.05   0.06   1.00
+Subgraph Matching Kernel Matrix:
+        0      1      2      3
+  0  1.00   0.03   0.04   0.05
+  1  0.03   1.00   0.03   0.04
+  2  0.04   0.03   1.00   0.04
+  3  0.05   0.04   0.04   1.00
+Avg. simillarity Matrix:
+        0      1      2      3
+  0  1.00   0.04   0.04   0.06
+  1  0.04   1.00   0.03   0.04
+  2  0.04   0.03   1.00   0.05
+  3  0.06   0.04   0.05   1.00
+Shared subgraph percentage for all nodes and edges between all graphs:
+nodes:
+           0         1         2         3
+  0  100.00%     6.06%     5.41%     7.14%
+  1    6.06%   100.00%     5.56%     7.41%
+  2    5.41%     5.56%   100.00%     6.45%
+  3    7.14%     7.41%     6.45%   100.00%
+edges:
+           0         1         2         3
+  0  100.00%     0.00%     0.00%     0.00%
+  1    0.00%   100.00%     0.00%     0.00%
+  2    0.00%     0.00%   100.00%     0.00%
+  3    0.00%     0.00%     0.00%   100.00%
+Shared percentage from g1 to g2 in nodes and edges between all graphs:
+nodes:
+           0         1         2         3
+  0  100.00%     5.88%     5.88%     5.88%
+  1    6.25%   100.00%     6.25%     6.25%
+  2    5.00%     5.00%   100.00%     5.00%
+  3    9.09%     9.09%     9.09%   100.00%
+edges:
+           0         1         2         3
+  0  100.00%     0.00%     0.00%     0.00%
+  1    0.00%   100.00%     0.00%     0.00%
+  2    0.00%     0.00%   100.00%     0.00%
+  3    0.00%     0.00%     0.00%   100.00%
+Graph 1: 
+
+{'tree': <CAPS.CLTree.CLTree object at 0x7fa494718b20>, 'height': 6, 'fidelity': None, 'state_features': ['x', 'y', 'State Value', 'Action'], 'groups': [{'group': 1, 'translation': 'x equal to 0 and y equal to 0 and State Value equal to 0.52 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.5037539601325989, 'num_instances': 1, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (0.0, 0.0), 'y': (0.0, 0.0), 'State Value': (0.5223337035096347, 0.5223337035096347), 'Action': (3.0, 1.0)}}, {'group': 2, 'translation': 'x equal to 0 and y between 6 and 0 and State Value between 0.69 and 0.52 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.48647360771130294, 'num_instances': 78, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (0.0, 0.0), 'y': (6.0, 0.0), 'State Value': (0.6853721658527467, 0.5223337035096347), 'Action': (3.0, 1.0)}}, {'group': 3, 'translation': 'x between 1 and 0 and y equal to 3 and State Value between 0.96 and 0.69 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.27241992950439453, 'num_instances': 2, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (1.0, 0.0), 'y': (3.0, 3.0), 'State Value': (0.9620249627793545, 0.6853721658527467), 'Action': (3.0, 1.0)}}, {'group': 4, 'translation': 'x between 1 and 0 and y between 6 and 3 and State Value between 0.96 and 0.69 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.48722392963428124, 'num_instances': 102, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (1.0, 0.0), 'y': (6.0, 3.0), 'State Value': (0.9620249627793545, 0.6853721658527467), 'Action': (3.0, 1.0)}}, {'group': 5, 'translation': 'x equal to 1 and y equal to 6 and State Value equal to 0.96 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.3139905333518982, 'num_instances': 1, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (1.0, 1.0), 'y': (6.0, 6.0), 'State Value': (0.9620249627793545, 0.9620249627793545), 'Action': (3.0, 1.0)}}, {'group': 6, 'translation': 'x between 4 and 1 and y equal to 6 and State Value equal to 0.96 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.3139905333518982, 'num_instances': 1, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (4.0, 1.0), 'y': (6.0, 6.0), 'State Value': (0.9620249627793545, 0.9620249627793545), 'Action': (3.0, 1.0)}}, {'group': 7, 'translation': 'x between 4 and 1 and y equal to 6 and State Value between 1 and 0.96 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.40645892392186556, 'num_instances': 34, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (4.0, 1.0), 'y': (6.0, 6.0), 'State Value': (1.0, 0.9620249627793545), 'Action': (3.0, 1.0)}}, {'group': 8, 'translation': 'x equal to 4 and y equal to 6 and State Value equal to 0.98 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.5365840196609497, 'num_instances': 1, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (4.0, 4.0), 'y': (6.0, 6.0), 'State Value': (0.9827103787139612, 0.9827103787139612), 'Action': (3.0, 1.0)}}, {'group': 9, 'translation': 'x equal to 4 and y equal to 6 and State Value equal to 0.98 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.5365840196609497, 'num_instances': 12, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (4.0, 4.0), 'y': (6.0, 6.0), 'State Value': (0.9827103787139612, 0.9827103787139612), 'Action': (3.0, 1.0)}}, {'group': 10, 'translation': 'x equal to 4 and y between 7 and 6 and State Value between 0.58 and 0 and Action equal to 1', 'critical_value': 0.0, 'entropy': 0.5013986825942993, 'num_instances': 2, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (4.0, 4.0), 'y': (7.0, 6.0), 'State Value': (0.5786928561410521, 0.0), 'Action': (1.0, 1.0)}}, {'group': 11, 'translation': 'x between 6 and 4 and y between 7 and 6 and State Value between 0.58 and 0 and Action equal to 1', 'critical_value': 1.0, 'entropy': 0.09062619691914213, 'num_instances': 28, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (6.0, 4.0), 'y': (7.0, 6.0), 'State Value': (0.5786928561410521, 0.0), 'Action': (1.0, 1.0)}}, {'group': 12, 'translation': 'x equal to 3 and y between 7 and 6 and State Value between 1 and 0.58 and Action equal to 1', 'critical_value': 1.0, 'entropy': 0.17358437180519104, 'num_instances': 1, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (3.0, 3.0), 'y': (7.0, 6.0), 'State Value': (1.0, 0.5786928561410521), 'Action': (1.0, 1.0)}}, {'group': 13, 'translation': 'x between 6 and 1 and y between 7 and 6 and State Value between 0.58 and 0 and Action equal to 1', 'critical_value': 0.0, 'entropy': 0.636547337638066, 'num_instances': 22, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (6.0, 1.0), 'y': (7.0, 6.0), 'State Value': (0.5786928561410521, 0.0), 'Action': (1.0, 1.0)}}, {'group': 14, 'translation': 'x between 6 and 1 and y between 7 and 6 and State Value between 1 and 0.58 and Action equal to 1', 'critical_value': 1.0, 'entropy': 0.17358437180519104, 'num_instances': 1, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (6.0, 1.0), 'y': (7.0, 6.0), 'State Value': (1.0, 0.5786928561410521), 'Action': (1.0, 1.0)}}, {'group': 15, 'translation': 'x between 6 and 1 and y between 7 and 6 and State Value between 0.58 and 0.3 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.5231125503778458, 'num_instances': 16, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (6.0, 1.0), 'y': (7.0, 6.0), 'State Value': (0.5786928561410521, 0.30252976516136565), 'Action': (3.0, 1.0)}}, {'group': 16, 'translation': 'x between 6 and 1 and y between 7 and 6 and State Value between 1 and 0.58 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.43919765825072926, 'num_instances': 48, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (6.0, 1.0), 'y': (7.0, 6.0), 'State Value': (1.0, 0.5786928561410521), 'Action': (3.0, 1.0)}}], 'edges': [{'from_group': 1, 'to_group': 2, 'probability': 1.0, 'action': 3}, {'from_group': 2, 'to_group': 2, 'probability': 0.628205128205128, 'action': 3}, {'from_group': 2, 'to_group': 4, 'probability': 0.371794871794872, 'action': 3}, {'from_group': 3, 'to_group': 4, 'probability': 1.0, 'action': 3}, {'from_group': 4, 'to_group': 4, 'probability': 0.6764705882352938, 'action': 3}, {'from_group': 4, 'to_group': 16, 'probability': 0.3235294117647059, 'action': 1}, {'from_group': 5, 'to_group': 16, 'probability': 1.0, 'action': 1}, {'from_group': 6, 'to_group': 16, 'probability': 1.0, 'action': 1}, {'from_group': 7, 'to_group': 16, 'probability': 1.0, 'action': 1}, {'from_group': 8, 'to_group': 16, 'probability': 1.0, 'action': 3}, {'from_group': 9, 'to_group': 16, 'probability': 1.0, 'action': 3}, {'from_group': 10, 'to_group': 15, 'probability': 1.0, 'action': 1}, {'from_group': 11, 'to_group': 13, 'probability': 0.10714285714285714, 'action': 1}, {'from_group': 11, 'to_group': 15, 'probability': 0.03571428571428571, 'action': 1}, {'from_group': 11, 'to_group': 17, 'probability': 0.8571428571428569, 'action': 1}, {'from_group': 12, 'to_group': 16, 'probability': 1.0, 'action': 1}, {'from_group': 13, 'to_group': 13, 'probability': 0.9090909090909088, 'action': 1}, {'from_group': 13, 'to_group': 15, 'probability': 0.045454545454545456, 'action': 1}, {'from_group': 13, 'to_group': 17, 'probability': 0.045454545454545456, 'action': 1}, {'from_group': 14, 'to_group': 16, 'probability': 1.0, 'action': 1}, {'from_group': 15, 'to_group': 13, 'probability': 0.125, 'action': 1}, {'from_group': 15, 'to_group': 15, 'probability': 0.875, 'action': 1}, {'from_group': 16, 'to_group': 15, 'probability': 0.14583333333333331, 'action': 1}, {'from_group': 16, 'to_group': 16, 'probability': 0.8541666666666671, 'action': 1}], 'feature_selection': {'method': 'shap', 'important_features': [['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action']]}}
+[(1, {'label': 'x equal to 0 and y equal to 0 and State Value equal to 0.52 and Action between 3 and 1', 'node_type': 'group'}), (2, {'label': 'x equal to 0 and y between 6 and 0 and State Value between 0.69 and 0.52 and Action between 3 and 1', 'node_type': 'group'}), (3, {'label': 'x between 1 and 0 and y equal to 3 and State Value between 0.96 and 0.69 and Action between 3 and 1', 'node_type': 'group'}), (4, {'label': 'x between 1 and 0 and y between 6 and 3 and State Value between 0.96 and 0.69 and Action between 3 and 1', 'node_type': 'group'}), (5, {'label': 'x equal to 1 and y equal to 6 and State Value equal to 0.96 and Action between 3 and 1', 'node_type': 'group'}), (6, {'label': 'x between 4 and 1 and y equal to 6 and State Value equal to 0.96 and Action between 3 and 1', 'node_type': 'group'}), (7, {'label': 'x between 4 and 1 and y equal to 6 and State Value between 1 and 0.96 and Action between 3 and 1', 'node_type': 'group'}), (8, {'label': 'x equal to 4 and y equal to 6 and State Value equal to 0.98 and Action between 3 and 1', 'node_type': 'group'}), (9, {'label': 'x equal to 4 and y equal to 6 and State Value equal to 0.98 and Action between 3 and 1', 'node_type': 'group'}), (10, {'label': 'x equal to 4 and y between 7 and 6 and State Value between 0.58 and 0 and Action equal to 1', 'node_type': 'group'}), (11, {'label': 'x between 6 and 4 and y between 7 and 6 and State Value between 0.58 and 0 and Action equal to 1', 'node_type': 'group'}), (12, {'label': 'x equal to 3 and y between 7 and 6 and State Value between 1 and 0.58 and Action equal to 1', 'node_type': 'group'}), (13, {'label': 'x between 6 and 1 and y between 7 and 6 and State Value between 0.58 and 0 and Action equal to 1', 'node_type': 'group'}), (14, {'label': 'x between 6 and 1 and y between 7 and 6 and State Value between 1 and 0.58 and Action equal to 1', 'node_type': 'group'}), (15, {'label': 'x between 6 and 1 and y between 7 and 6 and State Value between 0.58 and 0.3 and Action between 3 and 1', 'node_type': 'group'}), (16, {'label': 'x between 6 and 1 and y between 7 and 6 and State Value between 1 and 0.58 and Action between 3 and 1', 'node_type': 'group'}), (17, {})]
+[(1, 2, {'action': 3, 'probability': 1.0}), (2, 2, {'action': 3, 'probability': 0.628205128205128}), (2, 4, {'action': 3, 'probability': 0.371794871794872}), (3, 4, {'action': 3, 'probability': 1.0}), (4, 4, {'action': 3, 'probability': 0.6764705882352938}), (4, 16, {'action': 1, 'probability': 0.3235294117647059}), (5, 16, {'action': 1, 'probability': 1.0}), (6, 16, {'action': 1, 'probability': 1.0}), (7, 16, {'action': 1, 'probability': 1.0}), (8, 16, {'action': 3, 'probability': 1.0}), (9, 16, {'action': 3, 'probability': 1.0}), (10, 15, {'action': 1, 'probability': 1.0}), (11, 13, {'action': 1, 'probability': 0.10714285714285714}), (11, 15, {'action': 1, 'probability': 0.03571428571428571}), (11, 17, {'action': 1, 'probability': 0.8571428571428569}), (12, 16, {'action': 1, 'probability': 1.0}), (13, 13, {'action': 1, 'probability': 0.9090909090909088}), (13, 15, {'action': 1, 'probability': 0.045454545454545456}), (13, 17, {'action': 1, 'probability': 0.045454545454545456}), (14, 16, {'action': 1, 'probability': 1.0}), (15, 13, {'action': 1, 'probability': 0.125}), (15, 15, {'action': 1, 'probability': 0.875}), (16, 15, {'action': 1, 'probability': 0.14583333333333331}), (16, 16, {'action': 1, 'probability': 0.8541666666666671})]
+Graph 2: 
+
+{'tree': <CAPS.CLTree.CLTree object at 0x7fa4254538e0>, 'height': 5, 'fidelity': None, 'state_features': ['x', 'y', 'State Value', 'Action'], 'groups': [{'group': 1, 'translation': 'x between 1 and 0 and y between 2 and 0 and State Value between 0.27 and 0 and Action between 3 and 1', 'critical_value': 1.0, 'entropy': 0.12319296146267368, 'num_instances': 54, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (1.0, 0.0), 'y': (2.0, 0.0), 'State Value': (0.27302153799240875, 0.0), 'Action': (3.0, 1.0)}}, {'group': 2, 'translation': 'x between 1 and 0 and y between 2 and 0 and State Value between 0.42 and 0.27 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.6443658272425333, 'num_instances': 3, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (1.0, 0.0), 'y': (2.0, 0.0), 'State Value': (0.4170128813145015, 0.27302153799240875), 'Action': (3.0, 1.0)}}, {'group': 3, 'translation': 'x between 1 and 0 and y between 3 and 2 and State Value between 0.56 and 0.42 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.668762390430157, 'num_instances': 13, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (1.0, 0.0), 'y': (3.0, 2.0), 'State Value': (0.56274687179981, 0.4170128813145015), 'Action': (3.0, 1.0)}}, {'group': 4, 'translation': 'x equal to 1 and y between 4 and 0 and State Value equal to 0.27 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.6317548751831055, 'num_instances': 20, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (1.0, 1.0), 'y': (4.0, 0.0), 'State Value': (0.27302153799240875, 0.27302153799240875), 'Action': (3.0, 1.0)}}, {'group': 5, 'translation': 'x between 2 and 1 and y equal to 2 and State Value between 0.86 and 0.27 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.6506713032722473, 'num_instances': 15, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (2.0, 1.0), 'y': (2.0, 2.0), 'State Value': (0.8602286637025076, 0.27302153799240875), 'Action': (3.0, 1.0)}}, {'group': 6, 'translation': 'x between 2 and 1 and y between 4 and 2 and State Value between 0.86 and 0.27 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.652153417468071, 'num_instances': 60, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (2.0, 1.0), 'y': (4.0, 2.0), 'State Value': (0.8602286637025076, 0.27302153799240875), 'Action': (3.0, 1.0)}}, {'group': 7, 'translation': 'x equal to 2 and y equal to 3 and State Value equal to 0.7 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.5904150009155273, 'num_instances': 1, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (2.0, 2.0), 'y': (3.0, 3.0), 'State Value': (0.6993912424592027, 0.6993912424592027), 'Action': (3.0, 1.0)}}, {'group': 8, 'translation': 'x equal to 2 and y between 4 and 3 and State Value equal to 0.7 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.5904150009155273, 'num_instances': 1, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (2.0, 2.0), 'y': (4.0, 3.0), 'State Value': (0.6993912424592027, 0.6993912424592027), 'Action': (3.0, 1.0)}}, {'group': 9, 'translation': 'x between 3 and 2 and y between 4 and 3 and State Value between 1 and 0.7 and Action equal to 1', 'critical_value': 1.0, 'entropy': 4.193411587039009e-05, 'num_instances': 2, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (3.0, 2.0), 'y': (4.0, 3.0), 'State Value': (1.0, 0.6993912424592027), 'Action': (1.0, 1.0)}}, {'group': 10, 'translation': 'x between 3 and 2 and y between 4 and 3 and State Value between 1 and 0.7 and Action between 3 and 1', 'critical_value': 0.0, 'entropy': 0.1523962739351367, 'num_instances': 31, 'important_features': ['x', 'y', 'State Value', 'Action'], 'boundaries': {'x': (3.0, 2.0), 'y': (4.0, 3.0), 'State Value': (1.0, 0.6993912424592027), 'Action': (3.0, 1.0)}}], 'edges': [{'from_group': 1, 'to_group': 1, 'probability': 0.4629629629629627, 'action': 3}, {'from_group': 1, 'to_group': 4, 'probability': 0.4629629629629627, 'action': 1}, {'from_group': 1, 'to_group': 6, 'probability': 0.07407407407407407, 'action': 3}, {'from_group': 2, 'to_group': 6, 'probability': 1.0, 'action': 3}, {'from_group': 3, 'to_group': 6, 'probability': 0.3076923076923077, 'action': 3}, {'from_group': 3, 'to_group': 10, 'probability': 0.6923076923076923, 'action': 1}, {'from_group': 4, 'to_group': 6, 'probability': 1.0000000000000002, 'action': 3}, {'from_group': 5, 'to_group': 6, 'probability': 0.9999999999999999, 'action': 3}, {'from_group': 6, 'to_group': 6, 'probability': 0.31666666666666665, 'action': 3}, {'from_group': 6, 'to_group': 10, 'probability': 0.6833333333333338, 'action': 1}, {'from_group': 7, 'to_group': 6, 'probability': 1.0, 'action': 3}, {'from_group': 8, 'to_group': 6, 'probability': 1.0, 'action': 3}, {'from_group': 9, 'to_group': 11, 'probability': 1.0, 'action': 1}, {'from_group': 10, 'to_group': 6, 'probability': 0.25806451612903225, 'action': 3}, {'from_group': 10, 'to_group': 11, 'probability': 0.7419354838709673, 'action': 1}], 'feature_selection': {'method': 'shap', 'important_features': [['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action'], ['x', 'y', 'State Value', 'Action']]}}
+[(1, {'label': 'x between 1 and 0 and y between 2 and 0 and State Value between 0.27 and 0 and Action between 3 and 1', 'node_type': 'group'}), (2, {'label': 'x between 1 and 0 and y between 2 and 0 and State Value between 0.42 and 0.27 and Action between 3 and 1', 'node_type': 'group'}), (3, {'label': 'x between 1 and 0 and y between 3 and 2 and State Value between 0.56 and 0.42 and Action between 3 and 1', 'node_type': 'group'}), (4, {'label': 'x equal to 1 and y between 4 and 0 and State Value equal to 0.27 and Action between 3 and 1', 'node_type': 'group'}), (5, {'label': 'x between 2 and 1 and y equal to 2 and State Value between 0.86 and 0.27 and Action between 3 and 1', 'node_type': 'group'}), (6, {'label': 'x between 2 and 1 and y between 4 and 2 and State Value between 0.86 and 0.27 and Action between 3 and 1', 'node_type': 'group'}), (7, {'label': 'x equal to 2 and y equal to 3 and State Value equal to 0.7 and Action between 3 and 1', 'node_type': 'group'}), (8, {'label': 'x equal to 2 and y between 4 and 3 and State Value equal to 0.7 and Action between 3 and 1', 'node_type': 'group'}), (9, {'label': 'x between 3 and 2 and y between 4 and 3 and State Value between 1 and 0.7 and Action equal to 1', 'node_type': 'group'}), (10, {'label': 'x between 3 and 2 and y between 4 and 3 and State Value between 1 and 0.7 and Action between 3 and 1', 'node_type': 'group'}), (11, {})]
+[(1, 1, {'action': 3, 'probability': 0.4629629629629627}), (1, 4, {'action': 1, 'probability': 0.4629629629629627}), (1, 6, {'action': 3, 'probability': 0.07407407407407407}), (2, 6, {'action': 3, 'probability': 1.0}), (3, 6, {'action': 3, 'probability': 0.3076923076923077}), (3, 10, {'action': 1, 'probability': 0.6923076923076923}), (4, 6, {'action': 3, 'probability': 1.0000000000000002}), (5, 6, {'action': 3, 'probability': 0.9999999999999999}), (6, 6, {'action': 3, 'probability': 0.31666666666666665}), (6, 10, {'action': 1, 'probability': 0.6833333333333338}), (7, 6, {'action': 3, 'probability': 1.0}), (8, 6, {'action': 3, 'probability': 1.0}), (9, 11, {'action': 1, 'probability': 1.0}), (10, 6, {'action': 3, 'probability': 0.25806451612903225}), (10, 11, {'action': 1, 'probability': 0.7419354838709673})]
+
+
+--- Action differences at common nodes between policy_0 and policy_3 ---
+[] 
+
+
+No action differences found at common nodes. 
+The selected policies may be behaviorally identical 
+under the current graph representation.
+
+
+--- Summary of execution --- 
+
+
+        -- args used --  
+
+        Environment: MO_deepSea 
+
+        Number of episodes: 25 
+
+        Lambda value: 0.1 
+
+        Graph comparison criterion: combined 
+
+        used stored graphs: False 
+
+        -- times for each phase --  
+
+        Graph generation phase: 40.68 seconds 
+
+        Graph comparison phase: 0.03 seconds 
+
+        Action explanation generation phase: 0.00 seconds 
+
+        Edge explanation generation phase: 0.00 seconds 
+
+        Subgraph explanation generation phase: 0.01 seconds 
+
+        Subgraph percentage explanation generation phase: 154.40 seconds 
+
+        Total explanation generation phase: 154.41 seconds
+        
+
+--- End of execution ---
+    

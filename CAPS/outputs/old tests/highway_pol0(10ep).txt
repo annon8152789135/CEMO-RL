@@ -1,0 +1,535 @@
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/gymnasium/spaces/box.py:235: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/stable_baselines3/common/save_util.py:437: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  th_object = th.load(file_content, map_location=device)
+running MO_highway
+Starting Test
+reward_dim_indices = [0, 1, 2], reward_shape = 3
+reward_shape in get_utility_function:  3
+DPMORL/utility-model-selected/dim-3
+initializing linear utility function
+reward_shape in Utility_Function_Linear 3
+num_total_policies = 6
+initializing linear utility function
+reward_shape in Utility_Function_Linear 3
+Environment created: mo-highway-fast-v0
+Num episodes:  10
+episode length (steps):  30
+Reward:  9.347626509786497
+episode length (steps):  30
+Reward:  9.85748283309059
+episode length (steps):  14
+Reward:  4.523659794599546
+episode length (steps):  30
+Reward:  10.191932935384491
+episode length (steps):  30
+Reward:  11.191153547587467
+episode length (steps):  30
+Reward:  9.856697718806867
+episode length (steps):  30
+Reward:  10.691154572378434
+episode length (steps):  30
+Reward:  8.691934433097988
+episode length (steps):  5
+Reward:  0.6919348340294924
+episode length (steps):  23
+Reward:  8.524489539762516
+num_actions: 5
+10
+Running AutoPred
+
+
+ Tree built, starting pruning... 
+
+Tree info:  Nr of clusters:  0 
+ 
+
+
+Starting graph generation...
+Height:  1
+
+
+ Tree info:  Nr of clusters:  1 
+
+--------------------------------------------- 
+
+
+Height:  2
+
+
+ Tree info:  Nr of clusters:  2 
+
+--------------------------------------------- 
+
+
+Height:  3
+
+
+ Tree info:  Nr of clusters:  3 
+
+--------------------------------------------- 
+
+
+Height:  4
+
+
+ Tree info:  Nr of clusters:  4 
+
+--------------------------------------------- 
+
+
+Height:  5
+
+
+ Tree info:  Nr of clusters:  6 
+
+--------------------------------------------- 
+
+
+Height:  6
+
+
+ Tree info:  Nr of clusters:  7 
+
+--------------------------------------------- 
+
+
+Height:  7
+
+
+ Tree info:  Nr of clusters:  9 
+
+--------------------------------------------- 
+
+
+Height:  8
+
+
+ Tree info:  Nr of clusters:  12 
+
+--------------------------------------------- 
+
+
+Height:  9
+
+
+ Tree info:  Nr of clusters:  14 
+
+--------------------------------------------- 
+
+
+Height:  10
+
+
+ Tree info:  Nr of clusters:  15 
+
+--------------------------------------------- 
+
+
+***********************************************
+Clusters at height 8
+Group 1 to Group 1 with p=0.7288135593220335 and action 2
+Group 1 to Group 2 with p=0.16949152542372883 and action 2
+Group 1 to Group 8 with p=0.05084745762711865 and action 2
+Group 1 to Group 13 with p=0.05084745762711865 and action 2
+Group 2 to Group 1 with p=0.09259259259259259 and action 2
+Group 2 to Group 2 with p=0.7592592592592599 and action 2
+Group 2 to Group 3 with p=0.009259259259259259 and action 3
+Group 2 to Group 4 with p=0.009259259259259259 and action 2
+Group 2 to Group 8 with p=0.037037037037037035 and action 2
+Group 2 to Group 10 with p=0.027777777777777776 and action 2
+Group 2 to Group 12 with p=0.009259259259259259 and action 2
+Group 2 to Group 13 with p=0.05555555555555555 and action 2
+Group 3 to Group 4 with p=0.25 and action 2
+Group 3 to Group 8 with p=0.25 and action 3
+Group 3 to Group 10 with p=0.25 and action 2
+Group 3 to Group 11 with p=0.25 and action 2
+Group 4 to Group 2 with p=0.5 and action 2
+Group 4 to Group 10 with p=0.5 and action 2
+Group 5 to Group 8 with p=1.0 and action 2
+Group 6 to Group 2 with p=0.3333333333333333 and action 4
+Group 6 to Group 6 with p=0.16666666666666666 and action 4
+Group 6 to Group 7 with p=0.16666666666666666 and action 4
+Group 6 to Group 8 with p=0.3333333333333333 and action 4
+Group 7 to Group 8 with p=1.0 and action 4
+Group 8 to Group 1 with p=0.09523809523809523 and action 4
+Group 8 to Group 2 with p=0.12698412698412698 and action 4
+Group 8 to Group 6 with p=0.047619047619047616 and action 4
+Group 8 to Group 8 with p=0.7142857142857135 and action 3
+Group 8 to Group 13 with p=0.015873015873015872 and action 4
+Group 9 to Group 8 with p=1.0 and action 4
+Group 10 to Group 2 with p=0.2 and action 4
+Group 10 to Group 5 with p=0.2 and action 2
+Group 10 to Group 8 with p=0.6000000000000001 and action 4
+Group 11 to Group 9 with p=1.0 and action 3
+Group 12 to Group 2 with p=1.0 and action 4
+----------------------------------------
+
+ Initializing SHAP explainer on 25 sample states...
+ shape: (25, 25)
+
+ Computing SHAP values for clusters...
+Cluster 1: cluster_states_array shape: (11, 25)
+  0%|          | 0/11 [00:00<?, ?it/s] 82%|████████▏ | 9/11 [00:00<00:00, 86.26it/s]100%|██████████| 11/11 [00:00<00:00, 95.14it/s]
+Cluster 1: shap_values shape: (11, 25)
+Cluster 1: top features = ['yC2', 'xC2', 'xC1', 'xC4']
+Cluster 2: cluster_states_array shape: (21, 25)
+  0%|          | 0/21 [00:00<?, ?it/s] 81%|████████  | 17/21 [00:00<00:00, 167.73it/s]100%|██████████| 21/21 [00:00<00:00, 170.45it/s]
+Cluster 2: shap_values shape: (21, 25)
+Cluster 2: top features = ['yC2', 'xEgo', 'yC1', 'vxC3']
+Cluster 3: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 167.76it/s]
+Cluster 3: shap_values shape: (1, 25)
+Cluster 3: top features = ['xEgo', 'vxEgo', 'yEgo', 'vxC3']
+Cluster 4: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 130.17it/s]
+Cluster 4: shap_values shape: (1, 25)
+Cluster 4: top features = ['vxEgo', 'yEgo', 'xEgo', 'yC2']
+Cluster 5: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 145.53it/s]
+Cluster 5: shap_values shape: (1, 25)
+Cluster 5: top features = ['vxEgo', 'vxC2', 'vxC4', 'yC2']
+Cluster 6: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 152.68it/s]
+Cluster 6: shap_values shape: (1, 25)
+Cluster 6: top features = ['yEgo', 'xEgo', 'yC1', 'vxEgo']
+Cluster 7: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 157.94it/s]
+Cluster 7: shap_values shape: (1, 25)
+Cluster 7: top features = ['yEgo', 'yC1', 'xEgo', 'yC3']
+Cluster 8: cluster_states_array shape: (12, 25)
+  0%|          | 0/12 [00:00<?, ?it/s]100%|██████████| 12/12 [00:00<00:00, 164.53it/s]
+Cluster 8: shap_values shape: (12, 25)
+Cluster 8: top features = ['vxC3', 'yC2', 'vxEgo', 'yC1']
+Cluster 9: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 193.78it/s]
+Cluster 9: shap_values shape: (1, 25)
+Cluster 9: top features = ['vxEgo', 'vxC3', 'vxC2', 'yC2']
+Cluster 10: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 167.91it/s]
+Cluster 10: shap_values shape: (1, 25)
+Cluster 10: top features = ['yC1', 'yC2', 'vyEgo', 'yEgo']
+Cluster 11: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 122.30it/s]
+Cluster 11: shap_values shape: (1, 25)
+Cluster 11: top features = ['vxEgo', 'xEgo', 'yC2', 'vxC1']
+Cluster 12: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 182.42it/s]
+Cluster 12: shap_values shape: (1, 25)
+Cluster 12: top features = ['yEgo', 'yC1', 'vxEgo', 'xEgo']
+Group 1: xC1 between 0.20248 and -0.04863 and xC2 between 0.41812 and 0.03219 and yC2 between 0.66667 and -0.66667 and xC4 between 0.55169 and 0.26968
+Critical value: 0.0. Entropy: 1.05
+Group 2: xEgo between 1 and 0.74579 and yC1 between 0.66667 and -0.66667 and yC2 between 0.66667 and -0.66667 and vxC3 between 0.03607 and -0.14251
+Critical value: 0.0. Entropy: 1.09
+Group 3: xEgo between 1 and 0.74579 and yEgo between 0.66667 and 0 and vxEgo between 0.36677 and 0.3125 and vxC3 between 0.03607 and -0.14251
+Critical value: 0.0. Entropy: 1.32
+Group 4: xEgo between 0.90427 and 0.8692 and yEgo between 0.63833 and 0.305 and vxEgo between 0.37392 and 0.24959 and yC2 between 0.66667 and -0.66667
+Critical value: 0.0. Entropy: 0.97
+Group 5: vxEgo equal to 0.3125 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.03623 and -0.12866 and vxC4 between 0.03758 and -0.15356
+Critical value: 0.0. Entropy: 1.14
+Group 6: xEgo between 1 and 0.74579 and yEgo equal to 0.33333 and vxEgo between 0.37392 and 0.24959 and yC1 between 0.66667 and -0.66667
+Critical value: 0.0. Entropy: 0.71
+Group 7: xEgo between 1 and 0.74579 and yEgo equal to 0.33333 and yC1 between 0.66667 and -0.66667 and yC3 between 0.66667 and -0.66667
+Critical value: 0.0. Entropy: 0.74
+Group 8: vxEgo between 0.37392 and 0.24959 and yC1 between 0.66667 and -0.66667 and yC2 between 0.66667 and -0.66667 and vxC3 between 0.03607 and -0.14251
+Critical value: 0.0. Entropy: 0.98
+Group 9: vxEgo equal to 0.36677 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.03623 and -0.12866 and vxC3 between 0.03607 and -0.14251
+Critical value: 0.0. Entropy: 1.18
+Group 10: yEgo between 0.66667 and 0 and vyEgo between 0.01451 and 0.0135 and yC1 between 0.0335 and -0.63833 and yC2 between 0.03341 and -0.63833
+Critical value: 0.0. Entropy: 1.05
+Group 11: xEgo between 0.878 and 0.87657 and vxEgo equal to 0.31221 and vxC1 between 0.01722 and -0.09849 and yC2 between 0.66667 and -0.66667
+Critical value: 1.0. Entropy: 0.52
+Group 12: xEgo between 0.878 and 0.87657 and yEgo between 0.63833 and 0.305 and vxEgo equal to 0.31221 and yC1 between 0.66667 and -0.66667
+Critical value: 1.0. Entropy: 0.47
+----------------------------------------
+***********************************************
+Clusters at height 9
+Group 1 to Group 1 with p=0.7288135593220335 and action 2
+Group 1 to Group 2 with p=0.13559322033898305 and action 2
+Group 1 to Group 3 with p=0.03389830508474576 and action 2
+Group 1 to Group 10 with p=0.05084745762711865 and action 2
+Group 1 to Group 15 with p=0.05084745762711865 and action 2
+Group 2 to Group 1 with p=0.2758620689655173 and action 2
+Group 2 to Group 2 with p=0.4827586206896553 and action 2
+Group 2 to Group 3 with p=0.10344827586206896 and action 2
+Group 2 to Group 10 with p=0.034482758620689655 and action 2
+Group 2 to Group 15 with p=0.10344827586206896 and action 2
+Group 3 to Group 1 with p=0.02531645569620253 and action 2
+Group 3 to Group 2 with p=0.05063291139240506 and action 2
+Group 3 to Group 3 with p=0.7721518987341767 and action 2
+Group 3 to Group 4 with p=0.012658227848101266 and action 3
+Group 3 to Group 5 with p=0.012658227848101266 and action 2
+Group 3 to Group 10 with p=0.0379746835443038 and action 2
+Group 3 to Group 12 with p=0.0379746835443038 and action 2
+Group 3 to Group 14 with p=0.012658227848101266 and action 2
+Group 3 to Group 15 with p=0.0379746835443038 and action 2
+Group 4 to Group 5 with p=0.25 and action 2
+Group 4 to Group 10 with p=0.25 and action 3
+Group 4 to Group 12 with p=0.25 and action 2
+Group 4 to Group 13 with p=0.25 and action 2
+Group 5 to Group 3 with p=0.5 and action 2
+Group 5 to Group 12 with p=0.5 and action 2
+Group 6 to Group 10 with p=1.0 and action 2
+Group 7 to Group 2 with p=0.16666666666666666 and action 4
+Group 7 to Group 3 with p=0.16666666666666666 and action 4
+Group 7 to Group 7 with p=0.16666666666666666 and action 4
+Group 7 to Group 8 with p=0.16666666666666666 and action 4
+Group 7 to Group 9 with p=0.16666666666666666 and action 4
+Group 7 to Group 10 with p=0.16666666666666666 and action 4
+Group 8 to Group 10 with p=1.0 and action 4
+Group 9 to Group 7 with p=0.5 and action 4
+Group 9 to Group 10 with p=0.5 and action 4
+Group 10 to Group 1 with p=0.09836065573770493 and action 4
+Group 10 to Group 2 with p=0.03278688524590164 and action 4
+Group 10 to Group 3 with p=0.09836065573770493 and action 4
+Group 10 to Group 7 with p=0.03278688524590164 and action 4
+Group 10 to Group 9 with p=0.01639344262295082 and action 4
+Group 10 to Group 10 with p=0.7049180327868857 and action 3
+Group 10 to Group 15 with p=0.01639344262295082 and action 4
+Group 11 to Group 10 with p=1.0 and action 4
+Group 12 to Group 3 with p=0.2 and action 4
+Group 12 to Group 6 with p=0.2 and action 2
+Group 12 to Group 10 with p=0.6000000000000001 and action 4
+Group 13 to Group 11 with p=1.0 and action 3
+Group 14 to Group 3 with p=1.0 and action 4
+----------------------------------------
+
+ Initializing SHAP explainer on 25 sample states...
+ shape: (25, 25)
+
+ Computing SHAP values for clusters...
+Cluster 1: cluster_states_array shape: (11, 25)
+  0%|          | 0/11 [00:00<?, ?it/s]100%|██████████| 11/11 [00:00<00:00, 184.15it/s]
+Cluster 1: shap_values shape: (11, 25)
+Cluster 1: top features = ['xC3', 'yC2', 'xC2', 'vxC2']
+Cluster 2: cluster_states_array shape: (5, 25)
+  0%|          | 0/5 [00:00<?, ?it/s]100%|██████████| 5/5 [00:00<00:00, 174.12it/s]
+Cluster 2: shap_values shape: (5, 25)
+Cluster 2: top features = ['xC1', 'xC2', 'vxC2', 'yC2']
+Cluster 3: cluster_states_array shape: (15, 25)
+  0%|          | 0/15 [00:00<?, ?it/s] 93%|█████████▎| 14/15 [00:00<00:00, 139.38it/s]100%|██████████| 15/15 [00:00<00:00, 139.79it/s]
+Cluster 3: shap_values shape: (15, 25)
+Cluster 3: top features = ['yC2', 'vxC3', 'vxC2', 'yC1']
+Cluster 4: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 111.52it/s]
+Cluster 4: shap_values shape: (1, 25)
+Cluster 4: top features = ['xEgo', 'vxEgo', 'yEgo', 'yC3']
+Cluster 5: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 144.59it/s]
+Cluster 5: shap_values shape: (1, 25)
+Cluster 5: top features = ['vxEgo', 'vxC3', 'xEgo', 'yC2']
+Cluster 6: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 152.91it/s]
+Cluster 6: shap_values shape: (1, 25)
+Cluster 6: top features = ['vxEgo', 'yC2', 'vxC3', 'vxC1']
+Cluster 7: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 174.20it/s]
+Cluster 7: shap_values shape: (1, 25)
+Cluster 7: top features = ['yC1', 'yEgo', 'xC1', 'xC2']
+Cluster 8: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 172.36it/s]
+Cluster 8: shap_values shape: (1, 25)
+Cluster 8: top features = ['yEgo', 'yC1', 'xEgo', 'yC3']
+Cluster 9: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 180.15it/s]
+Cluster 9: shap_values shape: (1, 25)
+Cluster 9: top features = ['yC1', 'yEgo', 'xC1', 'yC3']
+Cluster 10: cluster_states_array shape: (12, 25)
+  0%|          | 0/12 [00:00<?, ?it/s]100%|██████████| 12/12 [00:00<00:00, 188.70it/s]
+Cluster 10: shap_values shape: (12, 25)
+Cluster 10: top features = ['yC1', 'vxEgo', 'yC2', 'vxC3']
+Cluster 11: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 144.99it/s]
+Cluster 11: shap_values shape: (1, 25)
+Cluster 11: top features = ['vxEgo', 'vxC3', 'vxC2', 'yC2']
+Cluster 12: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 111.15it/s]
+Cluster 12: shap_values shape: (1, 25)
+Cluster 12: top features = ['vxC4', 'vyEgo', 'xC2', 'vxC2']
+Cluster 13: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 181.00it/s]
+Cluster 13: shap_values shape: (1, 25)
+Cluster 13: top features = ['vxEgo', 'xEgo', 'yC2', 'vxC3']
+Cluster 14: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 160.87it/s]
+Cluster 14: shap_values shape: (1, 25)
+Cluster 14: top features = ['yC1', 'yEgo', 'vxEgo', 'xEgo']
+Group 1: xC2 between 0.41812 and 0.03219 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.03623 and -0.12866 and xC3 between 0.51104 and 0.10062
+Critical value: 0.0. Entropy: 1.05
+Group 2: xC1 between 0.20248 and -0.04863 and xC2 between 0.41812 and 0.03219 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.03623 and -0.12866
+Critical value: 0.0. Entropy: 1.05
+Group 3: yC1 between 0.66667 and -0.66667 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.03623 and -0.12866 and vxC3 between 0.03607 and -0.14251
+Critical value: 0.0. Entropy: 1.11
+Group 4: xEgo between 1 and 0.74579 and yEgo between 0.66665 and 0.33333 and vxEgo between 0.36677 and 0.3125 and yC3 between 0.66667 and -0.66667
+Critical value: 0.0. Entropy: 1.32
+Group 5: xEgo between 0.90427 and 0.8692 and vxEgo equal to 0.31221 and yC2 between 0.66667 and -0.66667 and vxC3 between 0.03607 and -0.14251
+Critical value: 0.0. Entropy: 0.97
+Group 6: vxEgo equal to 0.3125 and vxC1 between 0.03623 and -0.15953 and yC2 between 0.66667 and -0.66667 and vxC3 between 0.03607 and -0.14251
+Critical value: 0.0. Entropy: 1.14
+Group 7: yEgo equal to 0.33333 and xC1 between 0.11451 and -0.04067 and yC1 between 0.66667 and -0.66667 and xC2 between 0.41812 and 0.03219
+Critical value: 1.0. Entropy: 0.71
+Group 8: xEgo equal to 0.89269 and yEgo equal to 0.33333 and yC1 between 0.66667 and -0.66667 and yC3 between 0.66667 and -0.66667
+Critical value: 0.0. Entropy: 0.74
+Group 9: yEgo equal to 0.33333 and xC1 between 0.1744 and -0.04067 and yC1 between 0.66667 and -0.66667 and yC3 between 0.66667 and -0.66667
+Critical value: 0.0. Entropy: 0.74
+Group 10: vxEgo between 0.37392 and 0.24959 and yC1 between 0.66667 and -0.66667 and yC2 between 0.66667 and -0.66667 and vxC3 between 0.03607 and -0.14251
+Critical value: 0.0. Entropy: 0.99
+Group 11: vxEgo equal to 0.36677 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.03623 and -0.12866 and vxC3 between 0.03607 and -0.14251
+Critical value: 0.0. Entropy: 1.18
+Group 12: vyEgo between 0.01451 and 0.0135 and xC2 between 0.41812 and 0.03219 and vxC2 between 0.01571 and -0.12866 and vxC4 between 0.03758 and -0.15356
+Critical value: 0.0. Entropy: 1.05
+Group 13: xEgo between 0.878 and 0.87657 and vxEgo equal to 0.31221 and yC2 between 0.66667 and -0.66667 and vxC3 between 0.03607 and -0.14251
+Critical value: 1.0. Entropy: 0.52
+Group 14: xEgo equal to 0.87657 and yEgo between 0.63833 and 0.305 and vxEgo equal to 0.31221 and yC1 between 0.66667 and -0.66667
+Critical value: 1.0. Entropy: 0.47
+----------------------------------------
+***********************************************
+Clusters at height 10
+Group 1 to Group 1 with p=0.7288135593220335 and action 2
+Group 1 to Group 2 with p=0.13559322033898305 and action 2
+Group 1 to Group 3 with p=0.03389830508474576 and action 2
+Group 1 to Group 11 with p=0.05084745762711865 and action 2
+Group 1 to Group 16 with p=0.05084745762711865 and action 2
+Group 2 to Group 1 with p=0.2758620689655173 and action 2
+Group 2 to Group 2 with p=0.4827586206896553 and action 2
+Group 2 to Group 3 with p=0.10344827586206896 and action 2
+Group 2 to Group 11 with p=0.034482758620689655 and action 2
+Group 2 to Group 16 with p=0.10344827586206896 and action 2
+Group 3 to Group 1 with p=0.02531645569620253 and action 2
+Group 3 to Group 2 with p=0.05063291139240506 and action 2
+Group 3 to Group 3 with p=0.7721518987341767 and action 2
+Group 3 to Group 4 with p=0.012658227848101266 and action 3
+Group 3 to Group 5 with p=0.012658227848101266 and action 2
+Group 3 to Group 11 with p=0.0379746835443038 and action 2
+Group 3 to Group 13 with p=0.0379746835443038 and action 2
+Group 3 to Group 15 with p=0.012658227848101266 and action 2
+Group 3 to Group 16 with p=0.0379746835443038 and action 2
+Group 4 to Group 5 with p=0.25 and action 2
+Group 4 to Group 11 with p=0.25 and action 3
+Group 4 to Group 13 with p=0.25 and action 2
+Group 4 to Group 14 with p=0.25 and action 2
+Group 5 to Group 3 with p=0.5 and action 2
+Group 5 to Group 13 with p=0.5 and action 2
+Group 6 to Group 11 with p=1.0 and action 2
+Group 7 to Group 2 with p=0.16666666666666666 and action 4
+Group 7 to Group 3 with p=0.16666666666666666 and action 4
+Group 7 to Group 7 with p=0.16666666666666666 and action 4
+Group 7 to Group 8 with p=0.16666666666666666 and action 4
+Group 7 to Group 9 with p=0.16666666666666666 and action 4
+Group 7 to Group 10 with p=0.16666666666666666 and action 4
+Group 8 to Group 10 with p=1.0 and action 4
+Group 9 to Group 7 with p=0.5 and action 4
+Group 9 to Group 10 with p=0.5 and action 4
+Group 10 to Group 3 with p=0.25 and action 4
+Group 10 to Group 7 with p=0.5 and action 4
+Group 10 to Group 9 with p=0.25 and action 4
+Group 11 to Group 1 with p=0.10526315789473684 and action 4
+Group 11 to Group 2 with p=0.03508771929824561 and action 4
+Group 11 to Group 3 with p=0.08771929824561403 and action 4
+Group 11 to Group 11 with p=0.7543859649122815 and action 3
+Group 11 to Group 16 with p=0.017543859649122806 and action 4
+Group 12 to Group 11 with p=1.0 and action 4
+Group 13 to Group 3 with p=0.2 and action 4
+Group 13 to Group 6 with p=0.2 and action 2
+Group 13 to Group 11 with p=0.6000000000000001 and action 4
+Group 14 to Group 12 with p=1.0 and action 3
+Group 15 to Group 3 with p=1.0 and action 4
+----------------------------------------
+
+ Initializing SHAP explainer on 25 sample states...
+ shape: (25, 25)
+
+ Computing SHAP values for clusters...
+Cluster 1: cluster_states_array shape: (11, 25)
+  0%|          | 0/11 [00:00<?, ?it/s]100%|██████████| 11/11 [00:00<00:00, 164.85it/s]
+Cluster 1: shap_values shape: (11, 25)
+Cluster 1: top features = ['yC2', 'xC2', 'xC1', 'xC4']
+Cluster 2: cluster_states_array shape: (5, 25)
+  0%|          | 0/5 [00:00<?, ?it/s]100%|██████████| 5/5 [00:00<00:00, 185.94it/s]
+Cluster 2: shap_values shape: (5, 25)
+Cluster 2: top features = ['yC1', 'yEgo', 'yC2', 'xC1']
+Cluster 3: cluster_states_array shape: (15, 25)
+  0%|          | 0/15 [00:00<?, ?it/s]100%|██████████| 15/15 [00:00<00:00, 173.51it/s]
+Cluster 3: shap_values shape: (15, 25)
+Cluster 3: top features = ['yC2', 'vxC3', 'vxC2', 'vxC4']
+Cluster 4: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 177.29it/s]
+Cluster 4: shap_values shape: (1, 25)
+Cluster 4: top features = ['xEgo', 'vxEgo', 'yEgo', 'vxC3']
+Cluster 5: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 159.16it/s]
+Cluster 5: shap_values shape: (1, 25)
+Cluster 5: top features = ['vxEgo', 'yC2', 'vxC3', 'xEgo']
+Cluster 6: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 114.90it/s]
+Cluster 6: shap_values shape: (1, 25)
+Cluster 6: top features = ['vxEgo', 'yC2', 'vxC3', 'vxC4']
+Cluster 7: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 185.37it/s]
+Cluster 7: shap_values shape: (1, 25)
+Cluster 7: top features = ['yC1', 'yEgo', 'yC3', 'yC2']
+Cluster 8: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 189.42it/s]
+Cluster 8: shap_values shape: (1, 25)
+Cluster 8: top features = ['yEgo', 'yC1', 'xEgo', 'yC2']
+Cluster 9: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 152.12it/s]
+Cluster 9: shap_values shape: (1, 25)
+Cluster 9: top features = ['yC1', 'yEgo', 'yC2', 'yC3']
+Cluster 10: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 210.45it/s]
+Cluster 10: shap_values shape: (1, 25)
+Cluster 10: top features = ['yC1', 'yEgo', 'yC2', 'yC3']
+Cluster 11: cluster_states_array shape: (11, 25)
+  0%|          | 0/11 [00:00<?, ?it/s]100%|██████████| 11/11 [00:00<00:00, 161.65it/s]
+Cluster 11: shap_values shape: (11, 25)
+Cluster 11: top features = ['yC2', 'yC1', 'vxEgo', 'vxC3']
+Cluster 12: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 154.14it/s]
+Cluster 12: shap_values shape: (1, 25)
+Cluster 12: top features = ['vxEgo', 'vxC2', 'yC3', 'vxC3']
+Cluster 13: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 116.62it/s]
+Cluster 13: shap_values shape: (1, 25)
+Cluster 13: top features = ['vxEgo', 'vxC3', 'vxC2', 'xC3']
+Cluster 14: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 164.95it/s]
+Cluster 14: shap_values shape: (1, 25)
+Cluster 14: top features = ['vxEgo', 'yC2', 'xEgo', 'vxC3']
+Cluster 15: cluster_states_array shape: (1, 25)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 165.17it/s]
+Cluster 15: shap_values shape: (1, 25)
+Cluster 15: top features = ['yC1', 'yEgo', 'vxEgo', 'xEgo']
+Group 1: xC1 between 0.20248 and -0.04863 and xC2 between 0.29805 and 0.03219 and yC2 between 0.66667 and -0.66667 and xC4 between 0.55169 and 0.26968
+Critical value: 0.0. Entropy: 1.05
+Group 2: yEgo between 0.66667 and 0 and xC1 between 0.20248 and -0.04863 and yC1 between 0.66667 and -0.66667 and yC2 between 0.66667 and -0.66667
+Critical value: 0.0. Entropy: 1.05
+Group 3: yC2 between 0.66667 and -0.66667 and vxC2 between 0.03623 and -0.12866 and vxC3 between 0.03607 and -0.14251 and vxC4 between 0.03758 and -0.15356
+Critical value: 0.0. Entropy: 1.11
+Group 4: xEgo between 1 and 0.74579 and yEgo between 0.66665 and 0.33333 and vxEgo between 0.36677 and 0.3125 and vxC3 between 0.03607 and -0.14251
+Critical value: 0.0. Entropy: 1.32
+Group 5: xEgo between 0.90427 and 0.8692 and vxEgo equal to 0.31221 and yC2 between 0.66667 and -0.66667 and vxC3 between 0.03607 and -0.14251
+Critical value: 0.0. Entropy: 0.97
+Group 6: vxEgo equal to 0.3125 and yC2 between 0.66667 and -0.66667 and vxC3 between 0.03607 and -0.14251 and vxC4 between 0.03758 and -0.15356
+Critical value: 0.0. Entropy: 1.14
+Group 7: yEgo equal to 0.33333 and yC1 between 0.66667 and -0.66667 and yC2 between 0.66667 and -0.66667 and yC3 between 0.66667 and -0.66667
+Critical value: 1.0. Entropy: 0.71
+Group 8: xEgo equal to 0.89269 and yEgo equal to 0.33333 and yC1 between 0.66667 and -0.66667 and yC2 between 0.66667 and -0.66667
+Critical value: 0.0. Entropy: 0.74
+Group 9: yEgo equal to 0.33333 and yC1 between 0.66667 and -0.66667 and yC2 between 0.66667 and -0.66667 and yC3 between 0.66667 and -0.66667
+Critical value: 0.0. Entropy: 0.74
+Group 10: yEgo equal to 0.33333 and yC1 between 0.66667 and -0.66667 and yC2 between 0.66667 and -0.66667 and yC3 between 0.66667 and -0.66667
+Critical value: 0.0. Entropy: 0.73
+Group 11: vxEgo between 0.37392 and 0.24959 and yC1 between 0.66667 and -0.66667 and yC2 between 0.66667 and -0.66667 and vxC3 between 0.03607 and -0.14251
+Critical value: 0.0. Entropy: 1.00
+Group 12: vxEgo equal to 0.36677 and vxC2 between 0.03623 and -0.12866 and yC3 between 0.66667 and -0.66667 and vxC3 between 0.03607 and -0.14251
+Critical value: 0.0. Entropy: 1.18
+Group 13: vxEgo between 0.31221 and 0.24959 and vxC2 between 0.01571 and -0.12866 and xC3 between 0.51104 and 0.10062 and vxC3 between 0.03607 and -0.14251
+Critical value: 0.0. Entropy: 1.05
+Group 14: xEgo between 0.878 and 0.87657 and vxEgo equal to 0.31221 and yC2 between 0.66667 and -0.66667 and vxC3 between 0.03607 and -0.14251
+Critical value: 1.0. Entropy: 0.52
+Group 15: xEgo equal to 0.87657 and yEgo equal to 0.305 and vxEgo equal to 0.31221 and yC1 between 0.66667 and -0.66667
+Critical value: 1.0. Entropy: 0.47
+----------------------------------------

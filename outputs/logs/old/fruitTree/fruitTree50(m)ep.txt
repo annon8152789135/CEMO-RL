@@ -1,0 +1,456 @@
+
+Plotting return distributions for 7 policies...
+Policy return plot saved to: outputs/plots/MO_fruitTree_50_1_combined/MO_fruitTree_policy_returns.png
+Directory MO_fruitTree_50_1_combined already exists.
+Re-running the policies to collect new graphs as --use_existing flag is set to False.
+
+Running policy 0: CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-0
+Running CAPS_main with model path: CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-0 and environment: MO_fruitTree
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/stable_baselines3/common/save_util.py:437: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  th_object = th.load(file_content, map_location=device)
+running MO_fruitTree
+initializing linear utility function
+reward_shape in Utility_Function_Linear 6
+initializing linear utility function
+reward_shape in Utility_Function_Linear 6
+CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-0.zip is being loaded for testing.
+Dataset collected for model CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-0. Starting explanation generation...
+Running AutoPred
+Explanations with SHAP feature selection
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f566cd404c0>
+generating graph for model: CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-0
+Starting graph generation...
+
+ Computing SHAP values for clusters...
+  0%|          | 0/60 [00:00<?, ?it/s]  7%|▋         | 4/60 [00:00<00:01, 36.49it/s] 15%|█▌        | 9/60 [00:00<00:01, 43.32it/s] 23%|██▎       | 14/60 [00:00<00:01, 45.08it/s] 32%|███▏      | 19/60 [00:00<00:00, 45.57it/s] 42%|████▏     | 25/60 [00:00<00:00, 47.71it/s] 52%|█████▏    | 31/60 [00:00<00:00, 48.97it/s] 62%|██████▏   | 37/60 [00:00<00:00, 49.69it/s] 72%|███████▏  | 43/60 [00:00<00:00, 51.00it/s] 82%|████████▏ | 49/60 [00:01<00:00, 51.81it/s] 92%|█████████▏| 55/60 [00:01<00:00, 52.35it/s]100%|██████████| 60/60 [00:01<00:00, 48.83it/s]
+  0%|          | 0/27 [00:00<?, ?it/s] 22%|██▏       | 6/27 [00:00<00:00, 52.28it/s] 44%|████▍     | 12/27 [00:00<00:00, 51.93it/s] 67%|██████▋   | 18/27 [00:00<00:00, 52.82it/s] 89%|████████▉ | 24/27 [00:00<00:00, 53.27it/s]100%|██████████| 27/27 [00:00<00:00, 52.98it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 81.05it/s]
+  0%|          | 0/35 [00:00<?, ?it/s] 17%|█▋        | 6/35 [00:00<00:00, 54.65it/s] 34%|███▍      | 12/35 [00:00<00:00, 54.63it/s] 51%|█████▏    | 18/35 [00:00<00:00, 52.67it/s] 69%|██████▊   | 24/35 [00:00<00:00, 51.65it/s] 86%|████████▌ | 30/35 [00:00<00:00, 47.96it/s]100%|██████████| 35/35 [00:00<00:00, 50.47it/s]
+  0%|          | 0/37 [00:00<?, ?it/s] 16%|█▌        | 6/37 [00:00<00:00, 52.26it/s] 32%|███▏      | 12/37 [00:00<00:00, 51.69it/s] 49%|████▊     | 18/37 [00:00<00:00, 52.64it/s] 65%|██████▍   | 24/37 [00:00<00:00, 52.53it/s] 81%|████████  | 30/37 [00:00<00:00, 52.66it/s] 97%|█████████▋| 36/37 [00:00<00:00, 52.93it/s]100%|██████████| 37/37 [00:00<00:00, 52.77it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]100%|██████████| 4/4 [00:00<00:00, 57.80it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]100%|██████████| 4/4 [00:00<00:00, 51.33it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 49.05it/s]
+  0%|          | 0/16 [00:00<?, ?it/s] 38%|███▊      | 6/16 [00:00<00:00, 53.96it/s] 75%|███████▌  | 12/16 [00:00<00:00, 54.28it/s]100%|██████████| 16/16 [00:00<00:00, 54.08it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 99.85it/s]
+  0%|          | 0/37 [00:00<?, ?it/s] 16%|█▌        | 6/37 [00:00<00:00, 52.61it/s] 32%|███▏      | 12/37 [00:00<00:00, 51.93it/s] 49%|████▊     | 18/37 [00:00<00:00, 50.50it/s] 65%|██████▍   | 24/37 [00:00<00:00, 51.76it/s] 81%|████████  | 30/37 [00:00<00:00, 51.77it/s] 97%|█████████▋| 36/37 [00:00<00:00, 52.92it/s]100%|██████████| 37/37 [00:00<00:00, 52.01it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 96.87it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 93.99it/s]
+  0%|          | 0/60 [00:00<?, ?it/s] 10%|█         | 6/60 [00:00<00:01, 53.61it/s] 20%|██        | 12/60 [00:00<00:00, 51.10it/s] 30%|███       | 18/60 [00:00<00:00, 51.29it/s] 40%|████      | 24/60 [00:00<00:00, 51.18it/s] 50%|█████     | 30/60 [00:00<00:00, 52.25it/s] 60%|██████    | 36/60 [00:00<00:00, 51.96it/s] 70%|███████   | 42/60 [00:00<00:00, 52.93it/s] 80%|████████  | 48/60 [00:00<00:00, 52.49it/s] 90%|█████████ | 54/60 [00:01<00:00, 52.21it/s]100%|██████████| 60/60 [00:01<00:00, 52.40it/s]100%|██████████| 60/60 [00:01<00:00, 52.17it/s]
+Time taken for AutoPred: 14.254808187484741 seconds
+
+Running policy 1: CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-1
+Running CAPS_main with model path: CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-1 and environment: MO_fruitTree
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/stable_baselines3/common/save_util.py:437: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  th_object = th.load(file_content, map_location=device)
+running MO_fruitTree
+initializing linear utility function
+reward_shape in Utility_Function_Linear 6
+initializing linear utility function
+reward_shape in Utility_Function_Linear 6
+CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-1.zip is being loaded for testing.
+Dataset collected for model CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-1. Starting explanation generation...
+Running AutoPred
+Explanations with SHAP feature selection
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f56537f9df0>
+generating graph for model: CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-1
+Starting graph generation...
+
+ Computing SHAP values for clusters...
+  0%|          | 0/60 [00:00<?, ?it/s]  8%|▊         | 5/60 [00:00<00:01, 43.81it/s] 17%|█▋        | 10/60 [00:00<00:01, 43.74it/s] 27%|██▋       | 16/60 [00:00<00:00, 47.04it/s] 35%|███▌      | 21/60 [00:00<00:00, 47.85it/s] 45%|████▌     | 27/60 [00:00<00:00, 49.14it/s] 55%|█████▌    | 33/60 [00:00<00:00, 51.66it/s] 65%|██████▌   | 39/60 [00:00<00:00, 52.39it/s] 75%|███████▌  | 45/60 [00:00<00:00, 53.71it/s] 85%|████████▌ | 51/60 [00:00<00:00, 53.67it/s] 95%|█████████▌| 57/60 [00:01<00:00, 54.18it/s]100%|██████████| 60/60 [00:01<00:00, 51.70it/s]
+  0%|          | 0/30 [00:00<?, ?it/s] 20%|██        | 6/30 [00:00<00:00, 58.68it/s] 40%|████      | 12/30 [00:00<00:00, 56.96it/s] 60%|██████    | 18/30 [00:00<00:00, 57.32it/s] 80%|████████  | 24/30 [00:00<00:00, 56.58it/s]100%|██████████| 30/30 [00:00<00:00, 55.55it/s]100%|██████████| 30/30 [00:00<00:00, 56.21it/s]
+  0%|          | 0/37 [00:00<?, ?it/s] 16%|█▌        | 6/37 [00:00<00:00, 56.75it/s] 32%|███▏      | 12/37 [00:00<00:00, 55.88it/s] 49%|████▊     | 18/37 [00:00<00:00, 56.04it/s] 65%|██████▍   | 24/37 [00:00<00:00, 56.52it/s] 81%|████████  | 30/37 [00:00<00:00, 56.08it/s] 97%|█████████▋| 36/37 [00:00<00:00, 55.46it/s]100%|██████████| 37/37 [00:00<00:00, 55.82it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 96.35it/s]
+  0%|          | 0/60 [00:00<?, ?it/s] 10%|█         | 6/60 [00:00<00:01, 52.86it/s] 20%|██        | 12/60 [00:00<00:00, 53.76it/s] 30%|███       | 18/60 [00:00<00:00, 49.38it/s] 40%|████      | 24/60 [00:00<00:00, 50.42it/s] 50%|█████     | 30/60 [00:00<00:00, 52.16it/s] 60%|██████    | 36/60 [00:00<00:00, 51.70it/s] 70%|███████   | 42/60 [00:00<00:00, 52.10it/s] 80%|████████  | 48/60 [00:00<00:00, 52.62it/s] 90%|█████████ | 54/60 [00:01<00:00, 52.52it/s]100%|██████████| 60/60 [00:01<00:00, 52.74it/s]100%|██████████| 60/60 [00:01<00:00, 52.13it/s]
+Time taken for AutoPred: 12.695566415786743 seconds
+
+Running policy 2: CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-2
+Running CAPS_main with model path: CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-2 and environment: MO_fruitTree
+running MO_fruitTree
+initializing linear utility function
+reward_shape in Utility_Function_Linear 6
+initializing linear utility function
+reward_shape in Utility_Function_Linear 6
+CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-2.zip is being loaded for testing.
+Dataset collected for model CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-2. Starting explanation generation...
+Running AutoPred
+Explanations with SHAP feature selection
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f5653791c10>
+generating graph for model: CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-2
+Starting graph generation...
+
+ Computing SHAP values for clusters...
+  0%|          | 0/60 [00:00<?, ?it/s]  8%|▊         | 5/60 [00:00<00:01, 49.39it/s] 18%|█▊        | 11/60 [00:00<00:00, 51.44it/s] 28%|██▊       | 17/60 [00:00<00:00, 51.84it/s] 38%|███▊      | 23/60 [00:00<00:00, 51.53it/s] 48%|████▊     | 29/60 [00:00<00:00, 52.75it/s] 58%|█████▊    | 35/60 [00:00<00:00, 53.19it/s] 68%|██████▊   | 41/60 [00:00<00:00, 53.43it/s] 78%|███████▊  | 47/60 [00:00<00:00, 53.45it/s] 88%|████████▊ | 53/60 [00:01<00:00, 53.23it/s] 98%|█████████▊| 59/60 [00:01<00:00, 53.32it/s]100%|██████████| 60/60 [00:01<00:00, 52.83it/s]
+  0%|          | 0/27 [00:00<?, ?it/s] 22%|██▏       | 6/27 [00:00<00:00, 54.69it/s] 44%|████▍     | 12/27 [00:00<00:00, 54.46it/s] 67%|██████▋   | 18/27 [00:00<00:00, 55.57it/s] 89%|████████▉ | 24/27 [00:00<00:00, 54.49it/s]100%|██████████| 27/27 [00:00<00:00, 54.85it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 103.98it/s]
+  0%|          | 0/35 [00:00<?, ?it/s] 17%|█▋        | 6/35 [00:00<00:00, 54.78it/s] 34%|███▍      | 12/35 [00:00<00:00, 53.06it/s] 51%|█████▏    | 18/35 [00:00<00:00, 53.36it/s] 69%|██████▊   | 24/35 [00:00<00:00, 53.31it/s] 86%|████████▌ | 30/35 [00:00<00:00, 53.40it/s]100%|██████████| 35/35 [00:00<00:00, 53.39it/s]
+  0%|          | 0/37 [00:00<?, ?it/s] 16%|█▌        | 6/37 [00:00<00:00, 52.29it/s] 32%|███▏      | 12/37 [00:00<00:00, 53.34it/s] 49%|████▊     | 18/37 [00:00<00:00, 53.59it/s] 65%|██████▍   | 24/37 [00:00<00:00, 53.77it/s] 81%|████████  | 30/37 [00:00<00:00, 54.23it/s] 97%|█████████▋| 36/37 [00:00<00:00, 53.63it/s]100%|██████████| 37/37 [00:00<00:00, 53.49it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]100%|██████████| 4/4 [00:00<00:00, 51.54it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]100%|██████████| 4/4 [00:00<00:00, 55.57it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 55.50it/s]
+  0%|          | 0/16 [00:00<?, ?it/s] 38%|███▊      | 6/16 [00:00<00:00, 56.75it/s] 75%|███████▌  | 12/16 [00:00<00:00, 56.19it/s]100%|██████████| 16/16 [00:00<00:00, 55.28it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 108.41it/s]
+  0%|          | 0/37 [00:00<?, ?it/s] 16%|█▌        | 6/37 [00:00<00:00, 55.78it/s] 32%|███▏      | 12/37 [00:00<00:00, 54.30it/s] 49%|████▊     | 18/37 [00:00<00:00, 52.56it/s] 65%|██████▍   | 24/37 [00:00<00:00, 52.65it/s] 81%|████████  | 30/37 [00:00<00:00, 50.62it/s] 97%|█████████▋| 36/37 [00:00<00:00, 51.48it/s]100%|██████████| 37/37 [00:00<00:00, 52.00it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 94.73it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 94.78it/s]
+  0%|          | 0/60 [00:00<?, ?it/s] 10%|█         | 6/60 [00:00<00:00, 55.12it/s] 20%|██        | 12/60 [00:00<00:00, 54.03it/s] 30%|███       | 18/60 [00:00<00:00, 52.03it/s] 40%|████      | 24/60 [00:00<00:00, 51.90it/s] 50%|█████     | 30/60 [00:00<00:00, 52.28it/s] 60%|██████    | 36/60 [00:00<00:00, 52.82it/s] 70%|███████   | 42/60 [00:00<00:00, 53.08it/s] 80%|████████  | 48/60 [00:00<00:00, 53.72it/s] 90%|█████████ | 54/60 [00:01<00:00, 53.22it/s]100%|██████████| 60/60 [00:01<00:00, 53.08it/s]100%|██████████| 60/60 [00:01<00:00, 52.98it/s]
+Time taken for AutoPred: 14.386159658432007 seconds
+
+Running policy 3: CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-3
+Running CAPS_main with model path: CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-3 and environment: MO_fruitTree
+running MO_fruitTree
+initializing linear utility function
+reward_shape in Utility_Function_Linear 6
+initializing linear utility function
+reward_shape in Utility_Function_Linear 6
+CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-3.zip is being loaded for testing.
+Dataset collected for model CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-3. Starting explanation generation...
+Running AutoPred
+Explanations with SHAP feature selection
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f56537f9fa0>
+generating graph for model: CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-3
+Starting graph generation...
+
+ Computing SHAP values for clusters...
+  0%|          | 0/14 [00:00<?, ?it/s] 36%|███▌      | 5/14 [00:00<00:00, 47.75it/s] 79%|███████▊  | 11/14 [00:00<00:00, 49.46it/s]100%|██████████| 14/14 [00:00<00:00, 49.52it/s]
+  0%|          | 0/15 [00:00<?, ?it/s] 33%|███▎      | 5/15 [00:00<00:00, 48.98it/s] 73%|███████▎  | 11/15 [00:00<00:00, 51.59it/s]100%|██████████| 15/15 [00:00<00:00, 53.03it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 94.12it/s]
+  0%|          | 0/60 [00:00<?, ?it/s] 10%|█         | 6/60 [00:00<00:01, 53.54it/s] 20%|██        | 12/60 [00:00<00:00, 54.03it/s] 30%|███       | 18/60 [00:00<00:00, 53.21it/s] 40%|████      | 24/60 [00:00<00:00, 52.74it/s] 50%|█████     | 30/60 [00:00<00:00, 52.37it/s] 60%|██████    | 36/60 [00:00<00:00, 52.24it/s] 70%|███████   | 42/60 [00:00<00:00, 53.44it/s] 80%|████████  | 48/60 [00:00<00:00, 53.04it/s] 90%|█████████ | 54/60 [00:01<00:00, 51.87it/s]100%|██████████| 60/60 [00:01<00:00, 52.93it/s]100%|██████████| 60/60 [00:01<00:00, 52.83it/s]
+  0%|          | 0/21 [00:00<?, ?it/s] 29%|██▊       | 6/21 [00:00<00:00, 55.42it/s] 57%|█████▋    | 12/21 [00:00<00:00, 53.03it/s] 86%|████████▌ | 18/21 [00:00<00:00, 52.91it/s]100%|██████████| 21/21 [00:00<00:00, 52.59it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 97.49it/s]
+  0%|          | 0/24 [00:00<?, ?it/s] 25%|██▌       | 6/24 [00:00<00:00, 50.57it/s] 50%|█████     | 12/24 [00:00<00:00, 52.87it/s] 75%|███████▌  | 18/24 [00:00<00:00, 54.62it/s]100%|██████████| 24/24 [00:00<00:00, 51.95it/s]100%|██████████| 24/24 [00:00<00:00, 52.33it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 94.79it/s]
+  0%|          | 0/26 [00:00<?, ?it/s] 23%|██▎       | 6/26 [00:00<00:00, 54.34it/s] 46%|████▌     | 12/26 [00:00<00:00, 54.15it/s] 69%|██████▉   | 18/26 [00:00<00:00, 52.59it/s] 92%|█████████▏| 24/26 [00:00<00:00, 53.44it/s]100%|██████████| 26/26 [00:00<00:00, 53.53it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 105.77it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 50.98it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 99.50it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 93.40it/s]
+  0%|          | 0/25 [00:00<?, ?it/s] 24%|██▍       | 6/25 [00:00<00:00, 56.58it/s] 48%|████▊     | 12/25 [00:00<00:00, 53.75it/s] 72%|███████▏  | 18/25 [00:00<00:00, 52.59it/s] 96%|█████████▌| 24/25 [00:00<00:00, 51.98it/s]100%|██████████| 25/25 [00:00<00:00, 52.30it/s]
+  0%|          | 0/19 [00:00<?, ?it/s] 26%|██▋       | 5/19 [00:00<00:00, 47.66it/s] 53%|█████▎    | 10/19 [00:00<00:00, 47.62it/s] 79%|███████▉  | 15/19 [00:00<00:00, 47.52it/s]100%|██████████| 19/19 [00:00<00:00, 47.99it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 52.71it/s]
+  0%|          | 0/50 [00:00<?, ?it/s] 12%|█▏        | 6/50 [00:00<00:00, 52.91it/s] 24%|██▍       | 12/50 [00:00<00:00, 50.91it/s] 36%|███▌      | 18/50 [00:00<00:00, 52.10it/s] 48%|████▊     | 24/50 [00:00<00:00, 52.22it/s] 60%|██████    | 30/50 [00:00<00:00, 50.61it/s] 72%|███████▏  | 36/50 [00:00<00:00, 50.42it/s] 84%|████████▍ | 42/50 [00:00<00:00, 51.23it/s] 96%|█████████▌| 48/50 [00:00<00:00, 52.11it/s]100%|██████████| 50/50 [00:00<00:00, 51.69it/s]
+Time taken for AutoPred: 13.938610792160034 seconds
+
+Running policy 4: CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-4
+Running CAPS_main with model path: CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-4 and environment: MO_fruitTree
+running MO_fruitTree
+initializing linear utility function
+reward_shape in Utility_Function_Linear 6
+initializing linear utility function
+reward_shape in Utility_Function_Linear 6
+CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-4.zip is being loaded for testing.
+Dataset collected for model CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-4. Starting explanation generation...
+Running AutoPred
+Explanations with SHAP feature selection
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f566c8a6a30>
+generating graph for model: CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-4
+Starting graph generation...
+
+ Computing SHAP values for clusters...
+  0%|          | 0/52 [00:00<?, ?it/s] 12%|█▏        | 6/52 [00:00<00:00, 50.88it/s] 23%|██▎       | 12/52 [00:00<00:00, 52.43it/s] 35%|███▍      | 18/52 [00:00<00:00, 52.82it/s] 46%|████▌     | 24/52 [00:00<00:00, 52.77it/s] 58%|█████▊    | 30/52 [00:00<00:00, 52.94it/s] 69%|██████▉   | 36/52 [00:00<00:00, 53.38it/s] 81%|████████  | 42/52 [00:00<00:00, 54.28it/s] 92%|█████████▏| 48/52 [00:00<00:00, 54.81it/s]100%|██████████| 52/52 [00:00<00:00, 53.33it/s]
+  0%|          | 0/60 [00:00<?, ?it/s] 10%|█         | 6/60 [00:00<00:00, 55.30it/s] 20%|██        | 12/60 [00:00<00:00, 55.74it/s] 30%|███       | 18/60 [00:00<00:00, 54.34it/s] 40%|████      | 24/60 [00:00<00:00, 54.71it/s] 50%|█████     | 30/60 [00:00<00:00, 54.22it/s] 60%|██████    | 36/60 [00:00<00:00, 54.78it/s] 70%|███████   | 42/60 [00:00<00:00, 54.45it/s] 80%|████████  | 48/60 [00:00<00:00, 54.34it/s] 90%|█████████ | 54/60 [00:00<00:00, 54.10it/s]100%|██████████| 60/60 [00:01<00:00, 53.95it/s]100%|██████████| 60/60 [00:01<00:00, 54.33it/s]
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 56.27it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 95.74it/s]
+  0%|          | 0/32 [00:00<?, ?it/s] 19%|█▉        | 6/32 [00:00<00:00, 52.57it/s] 38%|███▊      | 12/32 [00:00<00:00, 52.69it/s] 56%|█████▋    | 18/32 [00:00<00:00, 51.87it/s] 75%|███████▌  | 24/32 [00:00<00:00, 52.14it/s] 94%|█████████▍| 30/32 [00:00<00:00, 53.26it/s]100%|██████████| 32/32 [00:00<00:00, 52.87it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 88.80it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 100.53it/s]
+  0%|          | 0/14 [00:00<?, ?it/s] 43%|████▎     | 6/14 [00:00<00:00, 54.77it/s] 86%|████████▌ | 12/14 [00:00<00:00, 56.18it/s]100%|██████████| 14/14 [00:00<00:00, 56.17it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 50.88it/s]
+  0%|          | 0/50 [00:00<?, ?it/s] 12%|█▏        | 6/50 [00:00<00:00, 53.76it/s] 24%|██▍       | 12/50 [00:00<00:00, 55.20it/s] 36%|███▌      | 18/50 [00:00<00:00, 55.56it/s] 48%|████▊     | 24/50 [00:00<00:00, 54.91it/s] 60%|██████    | 30/50 [00:00<00:00, 53.95it/s] 72%|███████▏  | 36/50 [00:00<00:00, 53.64it/s] 84%|████████▍ | 42/50 [00:00<00:00, 52.38it/s] 96%|█████████▌| 48/50 [00:00<00:00, 53.69it/s]100%|██████████| 50/50 [00:00<00:00, 54.04it/s]
+Time taken for AutoPred: 12.746325731277466 seconds
+
+Running policy 5: CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-5
+Running CAPS_main with model path: CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-5 and environment: MO_fruitTree
+running MO_fruitTree
+initializing linear utility function
+reward_shape in Utility_Function_Linear 6
+initializing linear utility function
+reward_shape in Utility_Function_Linear 6
+CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-5.zip is being loaded for testing.
+Dataset collected for model CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-5. Starting explanation generation...
+Running AutoPred
+Explanations with SHAP feature selection
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f566c8a5d30>
+generating graph for model: CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-5
+Starting graph generation...
+
+ Computing SHAP values for clusters...
+  0%|          | 0/50 [00:00<?, ?it/s] 10%|█         | 5/50 [00:00<00:01, 41.22it/s] 20%|██        | 10/50 [00:00<00:00, 45.80it/s] 32%|███▏      | 16/50 [00:00<00:00, 48.65it/s] 44%|████▍     | 22/50 [00:00<00:00, 50.32it/s] 56%|█████▌    | 28/50 [00:00<00:00, 50.72it/s] 68%|██████▊   | 34/50 [00:00<00:00, 50.43it/s] 80%|████████  | 40/50 [00:00<00:00, 51.89it/s] 92%|█████████▏| 46/50 [00:00<00:00, 52.29it/s]100%|██████████| 50/50 [00:00<00:00, 50.65it/s]
+  0%|          | 0/45 [00:00<?, ?it/s] 13%|█▎        | 6/45 [00:00<00:00, 54.65it/s] 27%|██▋       | 12/45 [00:00<00:00, 54.95it/s] 40%|████      | 18/45 [00:00<00:00, 53.68it/s] 53%|█████▎    | 24/45 [00:00<00:00, 54.76it/s] 67%|██████▋   | 30/45 [00:00<00:00, 54.07it/s] 80%|████████  | 36/45 [00:00<00:00, 55.25it/s] 93%|█████████▎| 42/45 [00:00<00:00, 55.31it/s]100%|██████████| 45/45 [00:00<00:00, 54.33it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 54.04it/s]
+  0%|          | 0/60 [00:00<?, ?it/s] 10%|█         | 6/60 [00:00<00:00, 55.21it/s] 20%|██        | 12/60 [00:00<00:00, 55.38it/s] 30%|███       | 18/60 [00:00<00:00, 54.36it/s] 40%|████      | 24/60 [00:00<00:00, 54.56it/s] 50%|█████     | 30/60 [00:00<00:00, 55.00it/s] 60%|██████    | 36/60 [00:00<00:00, 54.09it/s] 70%|███████   | 42/60 [00:00<00:00, 54.38it/s] 80%|████████  | 48/60 [00:00<00:00, 54.32it/s] 90%|█████████ | 54/60 [00:00<00:00, 54.95it/s]100%|██████████| 60/60 [00:01<00:00, 54.25it/s]100%|██████████| 60/60 [00:01<00:00, 54.46it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 110.39it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 59.14it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 52.07it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 101.29it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 106.35it/s]
+  0%|          | 0/23 [00:00<?, ?it/s] 26%|██▌       | 6/23 [00:00<00:00, 56.90it/s] 52%|█████▏    | 12/23 [00:00<00:00, 53.70it/s] 78%|███████▊  | 18/23 [00:00<00:00, 54.27it/s]100%|██████████| 23/23 [00:00<00:00, 54.30it/s]
+  0%|          | 0/44 [00:00<?, ?it/s] 11%|█▏        | 5/44 [00:00<00:00, 46.63it/s] 25%|██▌       | 11/44 [00:00<00:00, 49.49it/s] 39%|███▊      | 17/44 [00:00<00:00, 51.02it/s] 52%|█████▏    | 23/44 [00:00<00:00, 52.31it/s] 66%|██████▌   | 29/44 [00:00<00:00, 52.85it/s] 80%|███████▉  | 35/44 [00:00<00:00, 53.73it/s] 93%|█████████▎| 41/44 [00:00<00:00, 53.95it/s]100%|██████████| 44/44 [00:00<00:00, 52.95it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 48.92it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 51.33it/s]
+  0%|          | 0/25 [00:00<?, ?it/s] 24%|██▍       | 6/25 [00:00<00:00, 55.89it/s] 48%|████▊     | 12/25 [00:00<00:00, 54.93it/s] 72%|███████▏  | 18/25 [00:00<00:00, 54.60it/s] 96%|█████████▌| 24/25 [00:00<00:00, 55.04it/s]100%|██████████| 25/25 [00:00<00:00, 54.90it/s]
+Time taken for AutoPred: 13.816313743591309 seconds
+
+Running policy 6: CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-6
+Running CAPS_main with model path: CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-6 and environment: MO_fruitTree
+running MO_fruitTree
+initializing linear utility function
+reward_shape in Utility_Function_Linear 6
+initializing linear utility function
+reward_shape in Utility_Function_Linear 6
+CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-6.zip is being loaded for testing.
+Dataset collected for model CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-6. Starting explanation generation...
+Running AutoPred
+Explanations with SHAP feature selection
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f56537e1d00>
+generating graph for model: CAPS/DPMORL/experiments/FruitTree_test/DPMORL.FruitTree.LossNormLamda_0.1/policy-program-6
+Starting graph generation...
+
+ Computing SHAP values for clusters...
+  0%|          | 0/27 [00:00<?, ?it/s] 11%|█         | 3/27 [00:00<00:00, 28.82it/s] 26%|██▌       | 7/27 [00:00<00:00, 29.48it/s] 41%|████      | 11/27 [00:00<00:00, 32.45it/s] 56%|█████▌    | 15/27 [00:00<00:00, 33.33it/s] 74%|███████▍  | 20/27 [00:00<00:00, 38.38it/s] 93%|█████████▎| 25/27 [00:00<00:00, 41.78it/s]100%|██████████| 27/27 [00:00<00:00, 37.51it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 93.85it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 102.57it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 48.88it/s]
+  0%|          | 0/50 [00:00<?, ?it/s] 10%|█         | 5/50 [00:00<00:01, 43.83it/s] 22%|██▏       | 11/50 [00:00<00:00, 52.56it/s] 34%|███▍      | 17/50 [00:00<00:00, 47.55it/s] 44%|████▍     | 22/50 [00:00<00:00, 47.93it/s] 54%|█████▍    | 27/50 [00:00<00:00, 48.52it/s] 64%|██████▍   | 32/50 [00:00<00:00, 44.62it/s] 74%|███████▍  | 37/50 [00:00<00:00, 45.85it/s] 86%|████████▌ | 43/50 [00:00<00:00, 47.55it/s] 98%|█████████▊| 49/50 [00:01<00:00, 47.26it/s]100%|██████████| 50/50 [00:01<00:00, 47.07it/s]
+  0%|          | 0/23 [00:00<?, ?it/s] 26%|██▌       | 6/23 [00:00<00:00, 53.18it/s] 52%|█████▏    | 12/23 [00:00<00:00, 48.73it/s] 74%|███████▍  | 17/23 [00:00<00:00, 44.27it/s] 96%|█████████▌| 22/23 [00:00<00:00, 45.41it/s]100%|██████████| 23/23 [00:00<00:00, 46.32it/s]
+  0%|          | 0/20 [00:00<?, ?it/s] 25%|██▌       | 5/20 [00:00<00:00, 46.55it/s] 55%|█████▌    | 11/20 [00:00<00:00, 49.55it/s] 85%|████████▌ | 17/20 [00:00<00:00, 49.66it/s]100%|██████████| 20/20 [00:00<00:00, 47.88it/s]
+  0%|          | 0/13 [00:00<?, ?it/s] 46%|████▌     | 6/13 [00:00<00:00, 54.76it/s] 92%|█████████▏| 12/13 [00:00<00:00, 48.24it/s]100%|██████████| 13/13 [00:00<00:00, 49.53it/s]
+  0%|          | 0/13 [00:00<?, ?it/s] 46%|████▌     | 6/13 [00:00<00:00, 46.55it/s] 85%|████████▍ | 11/13 [00:00<00:00, 45.09it/s]100%|██████████| 13/13 [00:00<00:00, 46.76it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 96.74it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 76.58it/s]
+  0%|          | 0/45 [00:00<?, ?it/s] 11%|█         | 5/45 [00:00<00:00, 43.52it/s] 22%|██▏       | 10/45 [00:00<00:00, 45.30it/s] 36%|███▌      | 16/45 [00:00<00:00, 47.15it/s] 47%|████▋     | 21/45 [00:00<00:00, 47.40it/s] 60%|██████    | 27/45 [00:00<00:00, 49.56it/s] 71%|███████   | 32/45 [00:00<00:00, 49.49it/s] 82%|████████▏ | 37/45 [00:00<00:00, 45.40it/s] 93%|█████████▎| 42/45 [00:00<00:00, 44.92it/s]100%|██████████| 45/45 [00:00<00:00, 45.73it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 55.27it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 50.36it/s]
+  0%|          | 0/23 [00:00<?, ?it/s] 26%|██▌       | 6/23 [00:00<00:00, 51.90it/s] 52%|█████▏    | 12/23 [00:00<00:00, 43.81it/s] 78%|███████▊  | 18/23 [00:00<00:00, 44.80it/s]100%|██████████| 23/23 [00:00<00:00, 42.28it/s]100%|██████████| 23/23 [00:00<00:00, 43.50it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 92.96it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 82.10it/s]
+  0%|          | 0/11 [00:00<?, ?it/s] 45%|████▌     | 5/11 [00:00<00:00, 46.39it/s]100%|██████████| 11/11 [00:00<00:00, 50.34it/s]100%|██████████| 11/11 [00:00<00:00, 49.64it/s]
+  0%|          | 0/12 [00:00<?, ?it/s] 50%|█████     | 6/12 [00:00<00:00, 49.24it/s] 92%|█████████▏| 11/12 [00:00<00:00, 42.47it/s]100%|██████████| 12/12 [00:00<00:00, 43.34it/s]
+  0%|          | 0/51 [00:00<?, ?it/s] 10%|▉         | 5/51 [00:00<00:01, 44.85it/s] 20%|█▉        | 10/51 [00:00<00:00, 46.37it/s] 31%|███▏      | 16/51 [00:00<00:00, 50.49it/s] 43%|████▎     | 22/51 [00:00<00:00, 48.84it/s] 55%|█████▍    | 28/51 [00:00<00:00, 49.90it/s] 67%|██████▋   | 34/51 [00:00<00:00, 44.36it/s] 76%|███████▋  | 39/51 [00:00<00:00, 43.97it/s] 88%|████████▊ | 45/51 [00:00<00:00, 46.82it/s] 98%|█████████▊| 50/51 [00:01<00:00, 44.14it/s]100%|██████████| 51/51 [00:01<00:00, 45.88it/s]
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/grakel/graph.py:314: UserWarning: changing format from "adjacency" to "all"
+  warnings.warn('changing format from "adjacency" to "all"')
+Time taken for AutoPred: 15.259994983673096 seconds
+All policies have been tested and graphs collected. 7 graphs in total.
+All graphs collected:
+Weisfeiler-Lehman Kernel Matrix:
+        0      1      2      3      4      5      6
+  0  1.00   0.08   0.14   0.10   0.07   0.08   0.12
+  1  0.08   1.00   0.08   0.06   0.08   0.08   0.05
+  2  0.14   0.08   1.00   0.19   0.20   0.48   0.05
+  3  0.10   0.06   0.19   1.00   0.69   0.29   0.03
+  4  0.07   0.08   0.20   0.69   1.00   0.33   0.03
+  5  0.08   0.08   0.48   0.29   0.33   1.00   0.03
+  6  0.12   0.05   0.05   0.03   0.03   0.03   1.00
+Subgraph Matching Kernel Matrix:
+        0      1      2      3      4      5      6
+  0  1.00   0.06   0.44   0.35   0.20   0.24   0.26
+  1  0.06   1.00   0.07   0.05   0.07   0.06   0.02
+  2  0.44   0.07   1.00   0.63   0.62   0.66   0.09
+  3  0.35   0.05   0.63   1.00   0.69   0.62   0.05
+  4  0.20   0.07   0.62   0.69   1.00   0.67   0.02
+  5  0.24   0.06   0.66   0.62   0.67   1.00   0.02
+  6  0.26   0.02   0.09   0.05   0.02   0.02   1.00
+Avg. simillarity Matrix:
+        0      1      2      3      4      5      6
+  0  1.00   0.07   0.29   0.23   0.13   0.16   0.19
+  1  0.07   1.00   0.08   0.06   0.07   0.07   0.04
+  2  0.29   0.08   1.00   0.41   0.41   0.57   0.07
+  3  0.23   0.06   0.41   1.00   0.69   0.46   0.04
+  4  0.13   0.07   0.41   0.69   1.00   0.50   0.03
+  5  0.16   0.07   0.57   0.46   0.50   1.00   0.03
+  6  0.19   0.04   0.07   0.04   0.03   0.03   1.00
+policies selected for explanation based on combined average similarity: 
+ {'tree': <CAPS.CLTree.CLTree object at 0x7f56537f9190>, 'height': 9, 'fidelity': None, 'state_features': ['lvl', 'pos', 'State Value', 'Action'], 'groups': [{'group': 1, 'translation': 'lvl equal to 0', 'critical_value': 0.0, 'entropy': 0.0005197025602683425, 'num_instances': 14, 'important_features': ['lvl'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (0.0, 0.0), 'State Value': (0.0, 0.0), 'Action': (0.0, 0.0)}}, {'group': 2, 'translation': 'lvl equal to 0', 'critical_value': 0.0, 'entropy': 0.0005197025602683425, 'num_instances': 15, 'important_features': ['lvl'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (0.0, 0.0), 'State Value': (0.0, 0.0), 'Action': (1.0, 0.0)}}, {'group': 3, 'translation': 'lvl equal to 0', 'critical_value': 0.0, 'entropy': 0.0005197025602683425, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (0.0, 0.0), 'State Value': (0.2825542001568877, 0.0), 'Action': (1.0, 0.0)}}, {'group': 4, 'translation': 'lvl between 2 and 0', 'critical_value': 0.0, 'entropy': 0.6483031511306763, 'num_instances': 96, 'important_features': ['lvl'], 'boundaries': {'lvl': (2.0, 0.0), 'pos': (0.0, 0.0), 'State Value': (0.2825542001568877, 0.0), 'Action': (1.0, 0.0)}}, {'group': 5, 'translation': 'lvl between 3 and 0', 'critical_value': 0.0, 'entropy': 0.0322832386896369, 'num_instances': 21, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 0.0), 'pos': (0.0, 0.0), 'State Value': (0.11154943668216596, 0.0), 'Action': (0.0, 0.0)}}, {'group': 6, 'translation': 'lvl equal to 1', 'critical_value': 0.0, 'entropy': 0.6675539612770081, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (1.0, 1.0), 'pos': (1.0, 0.0), 'State Value': (0.2734777344504951, 0.11154943668216596), 'Action': (0.0, 0.0)}}, {'group': 7, 'translation': 'pos between 1 and 0', 'critical_value': 0.0, 'entropy': 0.5845910956462225, 'num_instances': 24, 'important_features': ['pos'], 'boundaries': {'lvl': (3.0, 1.0), 'pos': (1.0, 0.0), 'State Value': (0.2734777344504951, 0.11154943668216596), 'Action': (0.0, 0.0)}}, {'group': 8, 'translation': 'lvl equal to 3', 'critical_value': 0.0, 'entropy': 0.5770490169525146, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 3.0), 'pos': (1.0, 1.0), 'State Value': (0.2734777344504951, 0.2734777344504951), 'Action': (0.0, 0.0)}}, {'group': 9, 'translation': 'pos equal to 1', 'critical_value': 0.0, 'entropy': 0.5770490169525146, 'num_instances': 26, 'important_features': ['pos'], 'boundaries': {'lvl': (3.0, 3.0), 'pos': (1.0, 1.0), 'State Value': (0.2734777344504951, 0.2734777344504951), 'Action': (0.0, 0.0)}}, {'group': 10, 'translation': 'lvl equal to 3', 'critical_value': 0.0, 'entropy': 0.5770490169525146, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 3.0), 'pos': (1.0, 1.0), 'State Value': (0.2734777344504951, 0.2734777344504951), 'Action': (0.0, 0.0)}}, {'group': 11, 'translation': 'lvl between 4 and 3', 'critical_value': 0.0, 'entropy': 0.0003387225733604282, 'num_instances': 2, 'important_features': ['lvl'], 'boundaries': {'lvl': (4.0, 3.0), 'pos': (2.0, 1.0), 'State Value': (0.9469040256477302, 0.0), 'Action': (0.0, 0.0)}}, {'group': 12, 'translation': 'pos equal to 2', 'critical_value': 0.0, 'entropy': 0.0003387225733604282, 'num_instances': 1, 'important_features': ['pos'], 'boundaries': {'lvl': (4.0, 4.0), 'pos': (2.0, 2.0), 'State Value': (0.9469040256477302, 0.9469040256477302), 'Action': (0.0, 0.0)}}, {'group': 13, 'translation': 'lvl equal to 4', 'critical_value': 0.0, 'entropy': 0.0003387225733604282, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (4.0, 4.0), 'pos': (2.0, 2.0), 'State Value': (0.9469040256477302, 0.9469040256477302), 'Action': (0.0, 0.0)}}, {'group': 14, 'translation': 'lvl equal to 4', 'critical_value': 1.0, 'entropy': 0.0003387225733604282, 'num_instances': 25, 'important_features': ['lvl'], 'boundaries': {'lvl': (4.0, 4.0), 'pos': (2.0, 2.0), 'State Value': (0.9469040256477302, 0.9469040256477302), 'Action': (0.0, 0.0)}}, {'group': 15, 'translation': 'lvl equal to 4', 'critical_value': 1.0, 'entropy': 0.0003387225733604282, 'num_instances': 19, 'important_features': ['lvl'], 'boundaries': {'lvl': (4.0, 4.0), 'pos': (2.0, 2.0), 'State Value': (0.9469040256477302, 0.9469040256477302), 'Action': (0.0, 0.0)}}, {'group': 16, 'translation': 'lvl equal to 4', 'critical_value': 0.0, 'entropy': 0.0003387225733604282, 'num_instances': 2, 'important_features': ['lvl'], 'boundaries': {'lvl': (4.0, 4.0), 'pos': (2.0, 2.0), 'State Value': (0.9469040256477302, 0.9469040256477302), 'Action': (1.0, 0.0)}}, {'group': 17, 'translation': 'lvl between 5 and 4', 'critical_value': 1.0, 'entropy': 5.890669854125008e-07, 'num_instances': 50, 'important_features': ['lvl'], 'boundaries': {'lvl': (5.0, 4.0), 'pos': (4.0, 2.0), 'State Value': (1.0, 0.9469040256477302), 'Action': (1.0, 0.0)}}], 'edges': [{'from_group': 1, 'to_group': 7, 'probability': 0.9999999999999997, 'action': 0}, {'from_group': 2, 'to_group': 7, 'probability': 0.9999999999999999, 'action': 0}, {'from_group': 3, 'to_group': 7, 'probability': 1.0, 'action': 0}, {'from_group': 4, 'to_group': 4, 'probability': 0.47916666666666696, 'action': 0}, {'from_group': 4, 'to_group': 10, 'probability': 0.5208333333333336, 'action': 1}, {'from_group': 5, 'to_group': 4, 'probability': 0.047619047619047616, 'action': 0}, {'from_group': 5, 'to_group': 7, 'probability': 0.9523809523809528, 'action': 0}, {'from_group': 6, 'to_group': 4, 'probability': 1.0, 'action': 0}, {'from_group': 7, 'to_group': 4, 'probability': 0.08333333333333333, 'action': 0}, {'from_group': 7, 'to_group': 16, 'probability': 0.9166666666666663, 'action': 0}, {'from_group': 8, 'to_group': 16, 'probability': 1.0, 'action': 0}, {'from_group': 9, 'to_group': 16, 'probability': 0.9999999999999996, 'action': 0}, {'from_group': 10, 'to_group': 16, 'probability': 1.0, 'action': 0}, {'from_group': 11, 'to_group': 17, 'probability': 1.0, 'action': 0}, {'from_group': 12, 'to_group': 17, 'probability': 1.0, 'action': 0}, {'from_group': 13, 'to_group': 17, 'probability': 1.0, 'action': 0}, {'from_group': 14, 'to_group': 17, 'probability': 1.0000000000000002, 'action': 0}, {'from_group': 15, 'to_group': 17, 'probability': 0.9999999999999996, 'action': 0}, {'from_group': 16, 'to_group': 17, 'probability': 1.0, 'action': 0}, {'from_group': 17, 'to_group': 18, 'probability': 1.0000000000000004, 'action': 1}], 'feature_selection': {'method': 'shap', 'important_features': [['lvl'], ['lvl'], ['lvl'], ['lvl'], ['lvl'], ['lvl'], ['pos'], ['lvl'], ['pos'], ['lvl'], ['lvl'], ['pos'], ['lvl'], ['lvl'], ['lvl'], ['lvl'], ['lvl']]}} 
+ {'tree': <CAPS.CLTree.CLTree object at 0x7f56537f4ca0>, 'height': 7, 'fidelity': None, 'state_features': ['lvl', 'pos', 'State Value', 'Action'], 'groups': [{'group': 1, 'translation': 'lvl between 3 and 0', 'critical_value': 0.0, 'entropy': 0.002326014935253904, 'num_instances': 52, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 0.0), 'pos': (4.0, 0.0), 'State Value': (0.5244084858177713, 0.0), 'Action': (0.0, 0.0)}}, {'group': 2, 'translation': 'lvl between 3 and 0', 'critical_value': 1.0, 'entropy': 0.0012325296736687757, 'num_instances': 144, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 0.0), 'pos': (4.0, 0.0), 'State Value': (0.5244084858177713, 0.0), 'Action': (1.0, 0.0)}}, {'group': 3, 'translation': 'lvl equal to 3', 'critical_value': 0.0, 'entropy': 0.005198302678763866, 'num_instances': 3, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 3.0), 'pos': (4.0, 4.0), 'State Value': (0.703536384590056, 0.0), 'Action': (0.0, 0.0)}}, {'group': 4, 'translation': 'lvl between 4 and 3', 'critical_value': 0.0, 'entropy': 0.005198302678763866, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (4.0, 3.0), 'pos': (8.0, 4.0), 'State Value': (0.5244084858177713, 0.5244084858177713), 'Action': (0.0, 0.0)}}, {'group': 5, 'translation': 'lvl between 4 and 3', 'critical_value': 0.0, 'entropy': 0.18341484665870667, 'num_instances': 32, 'important_features': ['lvl'], 'boundaries': {'lvl': (4.0, 3.0), 'pos': (8.0, 4.0), 'State Value': (0.703536384590056, 0.5244084858177713), 'Action': (0.0, 0.0)}}, {'group': 6, 'translation': 'lvl equal to 4', 'critical_value': 0.0, 'entropy': 0.18341484665870667, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (4.0, 4.0), 'pos': (8.0, 8.0), 'State Value': (0.703536384590056, 0.703536384590056), 'Action': (0.0, 0.0)}}, {'group': 7, 'translation': 'lvl equal to 4', 'critical_value': 0.0, 'entropy': 0.18341484665870667, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (4.0, 4.0), 'pos': (8.0, 8.0), 'State Value': (0.703536384590056, 0.703536384590056), 'Action': (0.0, 0.0)}}, {'group': 8, 'translation': 'lvl equal to 4', 'critical_value': 0.0, 'entropy': 0.18341484665870667, 'num_instances': 14, 'important_features': ['lvl'], 'boundaries': {'lvl': (4.0, 4.0), 'pos': (8.0, 8.0), 'State Value': (0.703536384590056, 0.703536384590056), 'Action': (1.0, 0.0)}}, {'group': 9, 'translation': 'lvl equal to 4', 'critical_value': 0.0, 'entropy': 0.18341484665870667, 'num_instances': 2, 'important_features': ['lvl'], 'boundaries': {'lvl': (4.0, 4.0), 'pos': (8.0, 8.0), 'State Value': (1.0, 0.703536384590056), 'Action': (1.0, 0.0)}}, {'group': 10, 'translation': 'lvl between 5 and 4', 'critical_value': 1.0, 'entropy': 3.273537913628388e-06, 'num_instances': 50, 'important_features': ['lvl'], 'boundaries': {'lvl': (5.0, 4.0), 'pos': (16.0, 8.0), 'State Value': (1.0, 0.703536384590056), 'Action': (1.0, 0.0)}}], 'edges': [{'from_group': 1, 'to_group': 2, 'probability': 0.5769230769230769, 'action': 0}, {'from_group': 1, 'to_group': 4, 'probability': 0.038461538461538464, 'action': 0}, {'from_group': 1, 'to_group': 9, 'probability': 0.38461538461538447, 'action': 0}, {'from_group': 2, 'to_group': 2, 'probability': 0.48611111111111033, 'action': 0}, {'from_group': 2, 'to_group': 4, 'probability': 0.3333333333333331, 'action': 0}, {'from_group': 2, 'to_group': 9, 'probability': 0.1805555555555556, 'action': 0}, {'from_group': 3, 'to_group': 9, 'probability': 1.0, 'action': 0}, {'from_group': 4, 'to_group': 9, 'probability': 1.0, 'action': 0}, {'from_group': 5, 'to_group': 10, 'probability': 1.0, 'action': 0}, {'from_group': 6, 'to_group': 10, 'probability': 1.0, 'action': 0}, {'from_group': 7, 'to_group': 10, 'probability': 1.0, 'action': 0}, {'from_group': 8, 'to_group': 10, 'probability': 0.9999999999999997, 'action': 0}, {'from_group': 9, 'to_group': 10, 'probability': 1.0, 'action': 0}, {'from_group': 10, 'to_group': 11, 'probability': 1.0000000000000004, 'action': 1}], 'feature_selection': {'method': 'shap', 'important_features': [['lvl'], ['lvl'], ['lvl'], ['lvl'], ['lvl'], ['lvl'], ['lvl'], ['lvl'], ['lvl'], ['lvl']]}}
+
+ Generating contrastive explanations for the selected graph pair...
+
+
+--- Contrastive explanation for test state 0: {'lvl': 0, 'pos': 0} ---
+state analysis test for policy_3: 1
+state analysis test for policy_4: 1
+Next probable action for policy_3: 0
+Next probable action for policy_4: 0
+
+
+--- Contrastive explanation for test state 1: {'lvl': 1, 'pos': 0} ---
+state analysis test for policy_3: 4
+state analysis test for policy_4: 1
+Next probable action for policy_3: 1
+Next probable action for policy_4: 0
+
+
+--- Contrastive explanation for test state 2: {'lvl': 1, 'pos': 1} ---
+state analysis test for policy_3: 6
+state analysis test for policy_4: 1
+Next probable action for policy_3: 0
+Next probable action for policy_4: 0
+
+
+--- Contrastive explanation for test state 3: {'lvl': 2, 'pos': 1} ---
+state analysis test for policy_3: 7
+state analysis test for policy_4: 1
+Next probable action for policy_3: 0
+Next probable action for policy_4: 0
+
+
+--- Contrastive explanation for test state 4: {'lvl': 2, 'pos': 2} ---
+state analysis test for policy_3: None
+state analysis test for policy_4: 1
+Next probable action for policy_3: None
+Next probable action for policy_4: 0
+
+
+--- Contrastive explanation for test state 5: {'lvl': 3, 'pos': 1} ---
+state analysis test for policy_3: 7
+state analysis test for policy_4: 1
+Next probable action for policy_3: 0
+Next probable action for policy_4: 0
+
+
+--- Contrastive explanation for test state 6: {'lvl': 3, 'pos': 2} ---
+state analysis test for policy_3: 11
+state analysis test for policy_4: 1
+Next probable action for policy_3: 0
+Next probable action for policy_4: 0
+
+
+--- Contrastive explanation for test state 7: {'lvl': 3, 'pos': 3} ---
+state analysis test for policy_3: None
+state analysis test for policy_4: 1
+Next probable action for policy_3: None
+Next probable action for policy_4: 0
+MCS mapping: {5: 1, 8: 3, 11: 5, 13: 6, 15: 8, 17: 10, 18: 11, 14: 7}
+Common nodes: [(5, {'label': 'lvl between 3 and 0', 'node_type': 'group'}), (8, {'label': 'lvl equal to 3', 'node_type': 'group'}), (11, {'label': 'lvl between 4 and 3', 'node_type': 'group'}), (13, {'label': 'lvl equal to 4', 'node_type': 'group'}), (14, {'label': 'lvl equal to 4', 'node_type': 'group'}), (15, {'label': 'lvl equal to 4', 'node_type': 'group'}), (17, {'label': 'lvl between 5 and 4', 'node_type': 'group'}), (18, {})]
+Common edges: [(11, 17, {'action': 0, 'probability': 1.0}), (13, 17, {'action': 0, 'probability': 1.0}), (14, 17, {'action': 0, 'probability': 1.0000000000000002}), (15, 17, {'action': 0, 'probability': 0.9999999999999996}), (17, 18, {'action': 1, 'probability': 1.0000000000000004})]
+
+
+--- Shared subgraph percentage for all nodes and edges between all graphs ---
+Best graphs selected based on combined kernel similarity: policy_3 and policy_4
+Weisfeiler-Lehman Kernel Matrix:
+        0      1      2      3      4      5      6
+  0  1.00   0.08   0.14   0.10   0.07   0.08   0.12
+  1  0.08   1.00   0.08   0.06   0.08   0.08   0.05
+  2  0.14   0.08   1.00   0.19   0.20   0.48   0.05
+  3  0.10   0.06   0.19   1.00   0.69   0.29   0.03
+  4  0.07   0.08   0.20   0.69   1.00   0.33   0.03
+  5  0.08   0.08   0.48   0.29   0.33   1.00   0.03
+  6  0.12   0.05   0.05   0.03   0.03   0.03   1.00
+Subgraph Matching Kernel Matrix:
+        0      1      2      3      4      5      6
+  0  1.00   0.06   0.44   0.35   0.20   0.24   0.26
+  1  0.06   1.00   0.07   0.05   0.07   0.06   0.02
+  2  0.44   0.07   1.00   0.63   0.62   0.66   0.09
+  3  0.35   0.05   0.63   1.00   0.69   0.62   0.05
+  4  0.20   0.07   0.62   0.69   1.00   0.67   0.02
+  5  0.24   0.06   0.66   0.62   0.67   1.00   0.02
+  6  0.26   0.02   0.09   0.05   0.02   0.02   1.00
+Avg. simillarity Matrix:
+        0      1      2      3      4      5      6
+  0  1.00   0.07   0.29   0.23   0.13   0.16   0.19
+  1  0.07   1.00   0.08   0.06   0.07   0.07   0.04
+  2  0.29   0.08   1.00   0.41   0.41   0.57   0.07
+  3  0.23   0.06   0.41   1.00   0.69   0.46   0.04
+  4  0.13   0.07   0.41   0.69   1.00   0.50   0.03
+  5  0.16   0.07   0.57   0.46   0.50   1.00   0.03
+  6  0.19   0.04   0.07   0.04   0.03   0.03   1.00
+Shared subgraph percentage for all nodes and edges between all graphs:
+nodes:
+           0         1         2         3         4         5         6
+  0  100.00%     9.52%    40.00%    30.30%    15.38%    13.33%    27.78%
+  1    9.52%   100.00%     9.52%     8.33%    11.76%     9.52%     7.41%
+  2   40.00%     9.52%   100.00%    48.48%    38.46%    40.00%    22.22%
+  3   30.30%     8.33%    48.48%   100.00%    55.17%    48.48%    20.51%
+  4   15.38%    11.76%    38.46%    55.17%   100.00%    46.15%    12.50%
+  5   13.33%     9.52%    40.00%    48.48%    46.15%   100.00%    11.11%
+  6   27.78%     7.41%    27.78%    20.51%    12.50%    11.11%   100.00%
+edges:
+           0         1         2         3         4         5         6
+  0  100.00%     0.00%    11.76%     0.00%     0.00%     0.00%     5.26%
+  1    0.00%   100.00%     0.00%     0.00%     0.00%     0.00%     0.00%
+  2   11.76%     0.00%   100.00%     0.00%     0.00%    29.41%     5.26%
+  3    0.00%     0.00%     5.41%   100.00%    29.41%     0.00%     0.00%
+  4    0.00%     0.00%     0.00%    29.41%   100.00%     0.00%     0.00%
+  5    0.00%     0.00%    29.41%     0.00%     0.00%   100.00%     0.00%
+  6    5.26%     0.00%     0.00%     0.00%     0.00%     0.00%   100.00%
+Shared percentage from g1 to g2 in nodes and edges between all graphs:
+nodes:
+           0         1         2         3         4         5         6
+  0  100.00%     6.67%    40.00%    33.33%    13.33%    13.33%    33.33%
+  1   16.67%   100.00%    16.67%    16.67%    16.67%    16.67%    16.67%
+  2   40.00%     6.67%   100.00%    53.33%    33.33%    40.00%    26.67%
+  3   27.78%     5.56%    44.44%   100.00%    44.44%    44.44%    22.22%
+  4   18.18%     9.09%    45.45%    72.73%   100.00%    54.55%    18.18%
+  5   13.33%     6.67%    40.00%    53.33%    40.00%   100.00%    13.33%
+  6   23.81%     4.76%    23.81%    19.05%     9.52%     9.52%   100.00%
+edges:
+           0         1         2         3         4         5         6
+  0  100.00%     0.00%    11.76%     0.00%     0.00%     0.00%     5.88%
+  1    0.00%   100.00%     0.00%     0.00%     0.00%     0.00%     0.00%
+  2   11.76%     0.00%   100.00%     0.00%     0.00%    29.41%     5.88%
+  3    0.00%     0.00%     5.00%   100.00%    25.00%     0.00%     0.00%
+  4    0.00%     0.00%     0.00%    35.71%   100.00%     0.00%     0.00%
+  5    0.00%     0.00%    29.41%     0.00%     0.00%   100.00%     0.00%
+  6    4.76%     0.00%     0.00%     0.00%     0.00%     0.00%   100.00%
+
+
+--- Action differences at common nodes between policy_3 and policy_4 ---
+[{'node_g1': 5, 'node_g2': 1, 'label': 'lvl between 3 and 0', 'only_g1': [{'from': 5, 'to': 4, 'action': 0, 'probability': 0.047619047619047616, 'mapped_destination': None}, {'from': 5, 'to': 7, 'action': 0, 'probability': 0.9523809523809528, 'mapped_destination': None}], 'only_g2': [{'from': 1, 'to': 2, 'action': 0, 'probability': 0.5769230769230769, 'mapped_destination': None}, {'from': 1, 'to': 4, 'action': 0, 'probability': 0.038461538461538464, 'mapped_destination': None}, {'from': 1, 'to': 9, 'action': 0, 'probability': 0.38461538461538447, 'mapped_destination': None}]}, {'node_g1': 8, 'node_g2': 3, 'label': 'lvl equal to 3', 'only_g1': [{'from': 8, 'to': 16, 'action': 0, 'probability': 1.0, 'mapped_destination': None}], 'only_g2': [{'from': 3, 'to': 9, 'action': 0, 'probability': 1.0, 'mapped_destination': None}]}] 
+
+
+ differnces: 2 
+        g1: 17 
+        g2: 10
+        List : 
+        
+Node id in Graph 1: 5
+Node in Graph 1: {'group': 6, 'translation': 'lvl equal to 1', 'critical_value': 0.0, 'entropy': 0.6675539612770081, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (1.0, 1.0), 'pos': (1.0, 0.0), 'State Value': (0.2734777344504951, 0.11154943668216596), 'Action': (0.0, 0.0)}}
+Node id in Graph 2: 1
+Node in Graph 2: {'group': 2, 'translation': 'lvl between 3 and 0', 'critical_value': 1.0, 'entropy': 0.0012325296736687757, 'num_instances': 144, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 0.0), 'pos': (4.0, 0.0), 'State Value': (0.5244084858177713, 0.0), 'Action': (1.0, 0.0)}}
+State: lvl between 3 and 0
+Only in Graph 1: [{'from': 5, 'to': 4, 'action': 0, 'probability': 0.047619047619047616, 'mapped_destination': None}, {'from': 5, 'to': 7, 'action': 0, 'probability': 0.9523809523809528, 'mapped_destination': None}]
+Only in Graph 2: [{'from': 1, 'to': 2, 'action': 0, 'probability': 0.5769230769230769, 'mapped_destination': None}, {'from': 1, 'to': 4, 'action': 0, 'probability': 0.038461538461538464, 'mapped_destination': None}, {'from': 1, 'to': 9, 'action': 0, 'probability': 0.38461538461538447, 'mapped_destination': None}]
+
+Node id in Graph 1: 8
+Node in Graph 1: {'group': 9, 'translation': 'pos equal to 1', 'critical_value': 0.0, 'entropy': 0.5770490169525146, 'num_instances': 26, 'important_features': ['pos'], 'boundaries': {'lvl': (3.0, 3.0), 'pos': (1.0, 1.0), 'State Value': (0.2734777344504951, 0.2734777344504951), 'Action': (0.0, 0.0)}}
+Node id in Graph 2: 3
+Node in Graph 2: {'group': 4, 'translation': 'lvl between 4 and 3', 'critical_value': 0.0, 'entropy': 0.005198302678763866, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (4.0, 3.0), 'pos': (8.0, 4.0), 'State Value': (0.5244084858177713, 0.5244084858177713), 'Action': (0.0, 0.0)}}
+State: lvl equal to 3
+Only in Graph 1: [{'from': 8, 'to': 16, 'action': 0, 'probability': 1.0, 'mapped_destination': None}]
+Only in Graph 2: [{'from': 3, 'to': 9, 'action': 0, 'probability': 1.0, 'mapped_destination': None}]
+
+
+
+--- Summary of execution --- 
+
+
+        -- args used --  
+
+        Environment: MO_fruitTree 
+
+        Number of episodes: 50 
+
+        Lambda value: 1 
+
+        Graph comparison criterion: combined 
+
+        used stored graphs: False 
+
+        -- times for each phase --  
+
+        Graph generation phase: 114.88 seconds 
+
+        Graph comparison phase: 0.05 seconds 
+
+        Action explanation generation phase: 0.00 seconds 
+
+        Edge explanation generation phase: 0.00 seconds 
+
+        Subgraph explanation generation phase: 0.01 seconds 
+
+        Subgraph percentage explanation generation phase: 82.57 seconds 
+
+        Total explanation generation phase: 82.57 seconds
+        
+
+--- End of execution ---
+    

@@ -1,0 +1,7 @@
+[
+ egoExists, xEgo, yEgo, vxEgo, vyEgo,
+ CloseCar1Exists, xC1, yC1, vxC1, vyC1, 
+ CloseCar2Exists, xC2, yC2, vxC2, vyC2, 
+ CloseCar3Exists, xC3, yC3, vxC3, vyC3, 
+ CloseCar4Exists, xC4, yC4, vxC4, vyC4 
+]

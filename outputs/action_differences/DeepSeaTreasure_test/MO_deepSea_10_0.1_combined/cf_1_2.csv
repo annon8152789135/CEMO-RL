@@ -1,0 +1,9 @@
+test_state,abstract_state_policy_1,next_action_policy_1,abstract_state_policy_2,next_action_policy_2
+"{'x': 0, 'y': 0}",1,1,1,1
+"{'x': 1, 'y': 1}",4,3,4,3
+"{'x': 2, 'y': 2}",11,1,12,1
+"{'x': 3, 'y': 3}",,,17,3
+"{'x': 4, 'y': 4}",,,,
+"{'x': 5, 'y': 5}",,,,
+"{'x': 6, 'y': 7}",,,,
+"{'x': 10, 'y': 10}",,,,

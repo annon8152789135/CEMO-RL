@@ -1,0 +1,199 @@
+Policy 0
+
+Clusters at height 9
+Group 1 to Group 2 with p=0.9999999999999999 and action 0
+Group 2 to Group 9 with p=0.9999999999999999 and action 0
+Group 3 to Group 12 with p=1.0 and action 1
+Group 4 to Group 1 with p=0.9999999999999999 and action 1
+Group 5 to Group 12 with p=1.0 and action 1
+Group 6 to Group 12 with p=1.0000000000000002 and action 1
+Group 7 to Group 12 with p=1.0 and action 1
+Group 8 to Group 13 with p=0.9999999999999999 and action 0
+Group 9 to Group 12 with p=1.0 and action 1
+Group 10 to Group 13 with p=1.0 and action 0
+Group 11 to Group 13 with p=1.0 and action 0
+Group 12 to Group 13 with p=1.0 and action 0
+Group 13 to Group 14 with p=0.9999999999999999 and action 1
+----------------------------------------
+[0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1. 0. 1.]
+[0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0.]
+[0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1.]
+[1. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+[0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1.]
+[0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1.]
+[0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1.]
+[0. 0. 1. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 1. 0.]
+[0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1.]
+[0. 0. 1. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 1. 0.]
+[0. 0. 1. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 1. 0.]
+[0. 0. 1. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 1. 0.]
+[0. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1.]
+Group 1: (In vertical band 2) and (On right edge) and (On horizontal band 6) and (At odd level)
+Critical value: 0.0. Entropy: 0.55
+Group 2: (In vertical band 3) and (On horizontal band 5) and (At even level)
+Critical value: 1.0. Entropy: 0.00
+Group 3: (In vertical band 4) and (On horizontal band 4) and (At odd level)
+Critical value: 0.0. Entropy: 0.00
+Group 4: (At root) and (In vertical band 1) and (At even level)
+Critical value: 0.0. Entropy: 0.67
+Group 5: (In vertical band 4) and (On horizontal band 4) and (At odd level)
+Critical value: 0.0. Entropy: 0.00
+Group 6: (In vertical band 4) and (On horizontal band 4) and (At odd level)
+Critical value: 0.0. Entropy: 0.00
+Group 7: (In vertical band 4) and (On horizontal band 4) and (At odd level)
+Critical value: 0.0. Entropy: 0.00
+Group 8: (Near leaf) and (In vertical band 5) and (On horizontal band 4) and (At even level)
+Critical value: 0.0. Entropy: 0.00
+Group 9: (In vertical band 4) and (On horizontal band 4) and (At odd level)
+Critical value: 0.0. Entropy: 0.00
+Group 10: (Near leaf) and (In vertical band 5) and (On horizontal band 4) and (At even level)
+Critical value: 0.0. Entropy: 0.00
+Group 11: (Near leaf) and (In vertical band 5) and (On horizontal band 4) and (At even level)
+Critical value: 0.0. Entropy: 0.00
+Group 12: (Near leaf) and (In vertical band 5) and (On horizontal band 4) and (At even level)
+Critical value: 0.0. Entropy: 0.00
+Group 13: (At leaf) and (In vertical band 6) and (On horizontal band 4) and (At odd level)
+Critical value: 1.0. Entropy: 0.00
+----------------------------------------
+
+Policy 1
+
+***********************************************
+Clusters at height 5
+Group 1 to Group 1 with p=0.49999999999999994 and action 1
+Group 1 to Group 3 with p=0.49999999999999994 and action 1
+Group 2 to Group 4 with p=0.9999999999999997 and action 1
+Group 3 to Group 4 with p=1.0 and action 1
+Group 4 to Group 8 with p=1.0 and action 0
+Group 5 to Group 8 with p=1.0 and action 1
+Group 6 to Group 8 with p=1.0 and action 1
+Group 7 to Group 9 with p=1.0 and action 0
+Group 8 to Group 8 with p=0.45833333333333337 and action 1
+Group 8 to Group 9 with p=0.5416666666666666 and action 0
+----------------------------------------
+[0.5 0.  0.  0.5 0.5 0.  0.  0.  0.  0.  0.5 0.  0.  0.  0.  0.  0.5 0.5
+ 0.5]
+[0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1. 1. 0.]
+[0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1. 1. 0.]
+[0.         0.         0.11764706 0.         0.         0.
+ 0.88235294 0.11764706 0.         0.         0.88235294 0.
+ 0.         0.         0.         0.         1.         0.11764706
+ 0.88235294]
+[0. 0. 1. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 0.]
+[0. 0. 1. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 0.]
+[0. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1.]
+[0.         0.54166667 0.45833333 0.         0.         0.
+ 0.         0.45833333 0.54166667 0.         0.         0.
+ 0.         0.         0.         0.         1.         0.45833333
+ 0.54166667]
+Group 1: ((In vertical band 2 and On right edge and On horizontal band 6 and At odd level) or (At root and In vertical band 1 and At even level)) and
+Critical value: 0.0. Entropy: 0.36
+Group 2: (In vertical band 3) and (On right edge) and (On horizontal band 6) and (At even level)
+Critical value: 0.0. Entropy: 0.08
+Group 3: (In vertical band 3) and (On right edge) and (On horizontal band 6) and (At even level)
+Critical value: 0.0. Entropy: 0.08
+Group 4: ((In vertical band 4 and On right edge and At odd level)) and (On horizontal band 6)
+Critical value: 1.0. Entropy: 0.01
+Group 5: (Near leaf) and (In vertical band 5) and (On horizontal band 6) and (At even level)
+Critical value: 1.0. Entropy: 0.04
+Group 6: (Near leaf) and (In vertical band 5) and (On horizontal band 6) and (At even level)
+Critical value: 0.0. Entropy: 0.04
+Group 7: (At leaf) and (In vertical band 6) and (On horizontal band 6) and (At odd level)
+Critical value: 0.0. Entropy: 0.33
+Group 8: ((Near leaf and In vertical band 5 and At even level) or (Near leaf and In vertical band 5 and At even level) or (At leaf and In vertical band 6 and At odd level)) and (On horizontal band 6)
+Critical value: 0.0. Entropy: 0.19
+----------------------------------------
+
+Policy 2
+
+***********************************************
+Clusters at height 8
+Group 1 to Group 3 with p=0.9999999999999999 and action 0
+Group 2 to Group 4 with p=0.9999999999999997 and action 1
+Group 3 to Group 4 with p=1.0 and action 1
+Group 4 to Group 7 with p=0.9999999999999999 and action 0
+Group 5 to Group 9 with p=1.0 and action 1
+Group 6 to Group 9 with p=1.0000000000000002 and action 1
+Group 7 to Group 9 with p=0.4545454545454546 and action 1
+Group 7 to Group 10 with p=0.5454545454545455 and action 0
+Group 8 to Group 10 with p=0.9999999999999999 and action 0
+Group 9 to Group 10 with p=1.0 and action 0
+Group 10 to Group 11 with p=0.9999999999999999 and action 0
+----------------------------------------
+[1. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+[0. 0. 0. 0. 1. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0. 0. 0. 0. 1.]
+[0. 0. 0. 0. 1. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0. 0. 0. 0. 1.]
+[0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]
+[0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 1.]
+[0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 1.]
+[0.         0.         0.54545455 0.         0.         0.
+ 0.45454545 0.54545455 0.         0.         0.         0.
+ 0.         1.         0.         0.         0.         0.54545455
+ 0.45454545]
+[0. 0. 1. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]
+[0. 0. 1. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]
+[0. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 1. 0. 0. 0. 0. 1.]
+Group 1: (At root) and (In vertical band 1) and (At even level)
+Critical value: 0.0. Entropy: 0.00
+Group 2: (In vertical band 2) and (On left edge) and (On horizontal band 3) and (At odd level)
+Critical value: 0.0. Entropy: 0.01
+Group 3: (In vertical band 2) and (On left edge) and (On horizontal band 3) and (At odd level)
+Critical value: 0.0. Entropy: 0.01
+Group 4: (In vertical band 3) and (On horizontal band 3) and (At even level)
+Critical value: 0.0. Entropy: 0.41
+Group 5: (In vertical band 4) and (On horizontal band 3) and (At odd level)
+Critical value: 1.0. Entropy: 0.00
+Group 6: (In vertical band 4) and (On horizontal band 3) and (At odd level)
+Critical value: 0.0. Entropy: 0.00
+Group 7: ((In vertical band 4 and At odd level) or (Near leaf and In vertical band 5 and At even level)) and (On horizontal band 3)
+Critical value: 0.0. Entropy: 0.00
+Group 8: (Near leaf) and (In vertical band 5) and (On horizontal band 3) and (At even level)
+Critical value: 0.0. Entropy: 0.01
+Group 9: (Near leaf) and (In vertical band 5) and (On horizontal band 3) and (At even level)
+Critical value: 0.0. Entropy: 0.01
+Group 10: (At leaf) and (In vertical band 6) and (On horizontal band 3) and (At odd level)
+Critical value: 1.0. Entropy: 0.00
+----------------------------------------
+
+Policy 3
+
+***********************************************
+Clusters at height 8
+Group 1 to Group 1 with p=0.6666666666666666 and action 0
+Group 1 to Group 5 with p=0.3333333333333333 and action 1
+Group 2 to Group 8 with p=1.0 and action 0
+Group 3 to Group 8 with p=1.0 and action 0
+Group 4 to Group 8 with p=1.0 and action 0
+Group 5 to Group 8 with p=1.0 and action 0
+Group 6 to Group 7 with p=1.0 and action 1
+Group 7 to Group 9 with p=1.0 and action 0
+Group 8 to Group 7 with p=1.0 and action 1
+----------------------------------------
+[0.33333333 0.         0.         0.33333333 0.33333333 0.33333333
+ 0.         0.         0.         0.66666667 0.         0.
+ 0.33333333 0.33333333 0.         0.         0.         0.66666667
+ 0.33333333]
+[0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1.]
+[0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1.]
+[0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1.]
+[0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1.]
+[0. 0. 1. 0. 0. 0. 0. 1. 0. 0. 0. 0. 1. 0. 0. 0. 0. 1. 0.]
+[0. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1.]
+[0. 0. 1. 0. 0. 0. 0. 1. 0. 0. 0. 0. 1. 0. 0. 0. 0. 1. 0.]
+Group 1: ((At root and In vertical band 1) or (In vertical band 3 and On horizontal band 2) or (In vertical band 2 and On horizontal band 3 and At odd level)) and (On left edge) and (At even level)
+Critical value: 1.0. Entropy: 0.10
+Group 2: (In vertical band 4) and (On horizontal band 2) and (At odd level)
+Critical value: 0.0. Entropy: 0.56
+Group 3: (In vertical band 4) and (On horizontal band 2) and (At odd level)
+Critical value: 0.0. Entropy: 0.56
+Group 4: (In vertical band 4) and (On horizontal band 2) and (At odd level)
+Critical value: 0.0. Entropy: 0.56
+Group 5: (In vertical band 4) and (On horizontal band 2) and (At odd level)
+Critical value: 0.0. Entropy: 0.56
+Group 6: (Near leaf) and (In vertical band 5) and (On horizontal band 2) and (At even level)
+Critical value: 0.0. Entropy: 0.60
+Group 7: (At leaf) and (In vertical band 6) and (On horizontal band 2) and (At odd level)
+Critical value: 1.0. Entropy: 0.00
+Group 8: (Near leaf) and (In vertical band 5) and (On horizontal band 2) and (At even level)
+Critical value: 0.0. Entropy: 0.60
+----------------------------------------

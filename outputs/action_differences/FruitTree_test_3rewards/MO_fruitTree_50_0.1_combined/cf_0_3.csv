@@ -1,0 +1,9 @@
+test_state,abstract_state_policy_0,next_action_policy_0,abstract_state_policy_3,next_action_policy_3
+"{'lvl': 0, 'pos': 0}",1,1,1,0
+"{'lvl': 1, 'pos': 0}",1,1,1,0
+"{'lvl': 1, 'pos': 1}",1,1,,
+"{'lvl': 2, 'pos': 1}",1,1,,
+"{'lvl': 2, 'pos': 2}",1,1,,
+"{'lvl': 3, 'pos': 1}",1,1,,
+"{'lvl': 3, 'pos': 2}",1,1,,
+"{'lvl': 3, 'pos': 3}",1,1,,

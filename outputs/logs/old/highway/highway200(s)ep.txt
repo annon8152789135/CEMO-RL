@@ -1,0 +1,6 @@
+Directory MO_highway_200_1_combined already exists.
+Using existing graphs from MO_highway_200_1_combined as --use_existing flag is set to True. Checking for existing graphs...
+Traceback (most recent call last):
+  File "/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/run.py", line 76, in <module>
+    raise ValueError(f"The directory {test_name} is empty or contains "+
+ValueError: The directory MO_highway_200_1_combined is empty or contains fewer files than expected but the --use_existing flag is  set to True. Please check if the directory contains the expected graph files.

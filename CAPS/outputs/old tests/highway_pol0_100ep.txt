@@ -1,0 +1,141 @@
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/gymnasium/spaces/box.py:235: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/stable_baselines3/common/save_util.py:437: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  th_object = th.load(file_content, map_location=device)
+Using 282 background data samples could cause slower run times. Consider using shap.sample(data, K) or shap.kmeans(data, K) to summarize the background as K samples.
+running MO_highway
+Starting Test
+reward_dim_indices = [0, 1, 2], reward_shape = 3
+reward_shape in get_utility_function:  3
+DPMORL/utility-model-selected/dim-3
+initializing linear utility function
+reward_shape in Utility_Function_Linear 3
+num_total_policies = 6
+initializing linear utility function
+reward_shape in Utility_Function_Linear 3
+Environment created: mo-highway-fast-v0
+Num episodes:  100
+num_actions: 5
+100
+Running AutoPred
+Starting graph generation...
+Height:  1
+Height:  2
+Height:  3
+Height:  4
+Height:  5
+Height:  6
+Height:  7
+Height:  8
+Height:  9
+Height:  10
+***********************************************
+Clusters at height 2
+Group 1 to Group 1 with p=0.8862583633556659 and action 2
+Group 1 to Group 2 with p=0.07771487390633049 and action 2
+Group 1 to Group 3 with p=0.03602676273803393 and action 2
+Group 2 to Group 1 with p=0.17840909090909027 and action 3
+Group 2 to Group 2 with p=0.7874999999999949 and action 3
+Group 2 to Group 3 with p=0.034090909090909095 and action 3
+----------------------------------------
+
+ Initializing SHAP explainer on 282 sample states...
+ shape: (282, 25)
+
+ Computing SHAP values for clusters...
+  0%|          | 0/388 [00:00<?, ?it/s]  2%|▏         | 8/388 [00:00<00:04, 78.77it/s]  5%|▍         | 19/388 [00:00<00:03, 95.74it/s]  8%|▊         | 30/388 [00:00<00:03, 101.34it/s] 11%|█         | 41/388 [00:00<00:03, 104.44it/s] 13%|█▎        | 52/388 [00:00<00:03, 106.20it/s] 17%|█▋        | 65/388 [00:00<00:02, 111.57it/s] 20%|██        | 78/388 [00:00<00:02, 115.62it/s] 23%|██▎       | 91/388 [00:00<00:02, 119.60it/s] 27%|██▋       | 104/388 [00:00<00:02, 119.63it/s] 30%|███       | 117/388 [00:01<00:02, 122.50it/s] 34%|███▎      | 130/388 [00:01<00:02, 118.86it/s] 37%|███▋      | 142/388 [00:01<00:02, 115.48it/s] 40%|███▉      | 154/388 [00:01<00:02, 115.52it/s] 43%|████▎     | 167/388 [00:01<00:01, 118.21it/s] 46%|████▌     | 179/388 [00:01<00:01, 118.50it/s] 49%|████▉     | 191/388 [00:01<00:01, 117.61it/s] 53%|█████▎    | 204/388 [00:01<00:01, 120.81it/s] 56%|█████▌    | 218/388 [00:01<00:01, 123.87it/s] 60%|█████▉    | 231/388 [00:01<00:01, 122.74it/s] 63%|██████▎   | 244/388 [00:02<00:01, 123.09it/s] 66%|██████▌   | 257/388 [00:02<00:01, 122.18it/s] 70%|██████▉   | 271/388 [00:02<00:00, 125.02it/s] 73%|███████▎  | 284/388 [00:02<00:00, 125.65it/s] 77%|███████▋  | 297/388 [00:02<00:00, 126.67it/s] 80%|████████  | 311/388 [00:02<00:00, 128.30it/s] 84%|████████▎ | 324/388 [00:02<00:00, 128.35it/s] 87%|████████▋ | 339/388 [00:02<00:00, 132.72it/s] 92%|█████████▏| 356/388 [00:02<00:00, 140.76it/s] 96%|█████████▌| 373/388 [00:03<00:00, 146.66it/s]100%|██████████| 388/388 [00:03<00:00, 145.30it/s]100%|██████████| 388/388 [00:03<00:00, 123.56it/s]
+  0%|          | 0/176 [00:00<?, ?it/s]  9%|▉         | 16/176 [00:00<00:01, 156.29it/s] 19%|█▉        | 33/176 [00:00<00:00, 161.37it/s] 29%|██▉       | 51/176 [00:00<00:00, 166.00it/s] 39%|███▉      | 69/176 [00:00<00:00, 169.31it/s] 50%|█████     | 88/176 [00:00<00:00, 173.17it/s] 60%|██████    | 106/176 [00:00<00:00, 170.94it/s] 71%|███████   | 125/176 [00:00<00:00, 175.46it/s] 82%|████████▏ | 144/176 [00:00<00:00, 177.55it/s] 93%|█████████▎| 163/176 [00:00<00:00, 180.96it/s]100%|██████████| 176/176 [00:01<00:00, 174.96it/s]
+Using 282 background data samples could cause slower run times. Consider using shap.sample(data, K) or shap.kmeans(data, K) to summarize the background as K samples.
+Group 1: vxEgo between 0.37392 and 0.24954 and yC1 between 0.66667 and -0.66667 and yC2 between 0.66667 and -0.66667 and yC3 between 0.66667 and -0.66667
+Critical value: 0.0. Entropy: 1.14
+Group 2: vxEgo between 0.37392 and 0.24954 and yC1 between 0.66667 and -0.66667 and yC2 between 0.66667 and -0.66667 and yC3 between 0.66667 and -0.66667
+Critical value: 1.0. Entropy: 0.95
+----------------------------------------
+***********************************************
+Clusters at height 3
+Group 1 to Group 1 with p=0.8786610878661002 and action 2
+Group 1 to Group 2 with p=0.013075313807531375 and action 2
+Group 1 to Group 3 with p=0.07112970711297073 and action 2
+Group 1 to Group 4 with p=0.0010460251046025104 and action 2
+Group 1 to Group 5 with p=0.036087866108786656 and action 2
+Group 2 to Group 1 with p=0.35483870967741926 and action 2
+Group 2 to Group 2 with p=0.1935483870967742 and action 2
+Group 2 to Group 3 with p=0.41935483870967727 and action 2
+Group 2 to Group 5 with p=0.03225806451612903 and action 2
+Group 3 to Group 1 with p=0.1738122827346464 and action 3
+Group 3 to Group 3 with p=0.7914252607184222 and action 3
+Group 3 to Group 5 with p=0.0347624565469293 and action 3
+Group 4 to Group 1 with p=0.411764705882353 and action 4
+Group 4 to Group 4 with p=0.5882352941176471 and action 4
+----------------------------------------
+
+ Initializing SHAP explainer on 282 sample states...
+ shape: (282, 25)
+
+ Computing SHAP values for clusters...
+  0%|          | 0/382 [00:00<?, ?it/s]  3%|▎         | 11/382 [00:00<00:03, 102.28it/s]  6%|▌         | 22/382 [00:00<00:03, 95.24it/s]   9%|▊         | 33/382 [00:00<00:03, 99.19it/s] 12%|█▏        | 44/382 [00:00<00:03, 102.58it/s] 15%|█▍        | 56/382 [00:00<00:03, 106.22it/s] 18%|█▊        | 67/382 [00:00<00:03, 104.76it/s] 21%|██        | 79/382 [00:00<00:02, 108.49it/s] 24%|██▎       | 90/382 [00:00<00:02, 106.75it/s] 26%|██▋       | 101/382 [00:00<00:02, 105.83it/s] 30%|██▉       | 113/382 [00:01<00:02, 107.76it/s] 32%|███▏      | 124/382 [00:01<00:02, 106.66it/s] 35%|███▌      | 135/382 [00:01<00:02, 107.41it/s] 38%|███▊      | 146/382 [00:01<00:02, 107.93it/s] 41%|████▏     | 158/382 [00:01<00:02, 110.10it/s] 45%|████▍     | 170/382 [00:01<00:01, 111.55it/s] 48%|████▊     | 182/382 [00:01<00:01, 110.77it/s] 51%|█████     | 194/382 [00:01<00:01, 111.71it/s] 54%|█████▍    | 206/382 [00:01<00:01, 112.66it/s] 57%|█████▋    | 218/382 [00:02<00:01, 113.21it/s] 60%|██████    | 230/382 [00:02<00:01, 114.14it/s] 63%|██████▎   | 242/382 [00:02<00:01, 110.58it/s] 66%|██████▋   | 254/382 [00:02<00:01, 107.77it/s] 70%|██████▉   | 266/382 [00:02<00:01, 109.55it/s] 73%|███████▎  | 278/382 [00:02<00:00, 109.88it/s] 76%|███████▌  | 290/382 [00:02<00:00, 109.75it/s] 79%|███████▉  | 302/382 [00:02<00:00, 111.38it/s] 82%|████████▏ | 314/382 [00:02<00:00, 112.01it/s] 85%|████████▌ | 326/382 [00:02<00:00, 110.68it/s] 88%|████████▊ | 338/382 [00:03<00:00, 107.00it/s] 91%|█████████▏| 349/382 [00:03<00:00, 106.71it/s] 94%|█████████▍| 360/382 [00:03<00:00, 106.44it/s] 97%|█████████▋| 372/382 [00:03<00:00, 109.10it/s]100%|██████████| 382/382 [00:03<00:00, 108.56it/s]
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 106.70it/s]
+  0%|          | 0/172 [00:00<?, ?it/s]  7%|▋         | 12/172 [00:00<00:01, 112.90it/s] 14%|█▍        | 24/172 [00:00<00:01, 111.04it/s] 21%|██        | 36/172 [00:00<00:01, 110.36it/s] 28%|██▊       | 48/172 [00:00<00:01, 108.58it/s] 35%|███▍      | 60/172 [00:00<00:01, 111.94it/s] 42%|████▏     | 72/172 [00:00<00:00, 108.98it/s] 49%|████▉     | 84/172 [00:00<00:00, 110.12it/s] 56%|█████▌    | 96/172 [00:00<00:00, 110.33it/s] 63%|██████▎   | 108/172 [00:00<00:00, 112.42it/s] 70%|██████▉   | 120/172 [00:01<00:00, 113.09it/s] 77%|███████▋  | 132/172 [00:01<00:00, 113.71it/s] 84%|████████▎ | 144/172 [00:01<00:00, 113.01it/s] 91%|█████████ | 156/172 [00:01<00:00, 112.14it/s] 98%|█████████▊| 168/172 [00:01<00:00, 112.06it/s]100%|██████████| 172/172 [00:01<00:00, 111.58it/s]
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 98.46it/s]
+Using 282 background data samples could cause slower run times. Consider using shap.sample(data, K) or shap.kmeans(data, K) to summarize the background as K samples.
+Group 1: vxEgo between 0.37392 and 0.24954 and yC1 between 0.66667 and -0.66667 and yC2 between 0.66667 and -0.66667 and yC3 between 0.66667 and -0.66667
+Critical value: 0.0. Entropy: 1.14
+Group 2: yEgo between 0.66667 and 0 and vxEgo between 0.37392 and 0.24954 and vyEgo between 0.01524 and 0.0135 and yC1 between 0.66667 and -0.66667
+Critical value: 0.0. Entropy: 0.97
+Group 3: vxEgo between 0.37392 and 0.24954 and yC1 between 0.66667 and -0.66667 and yC2 between 0.66667 and -0.66667 and yC3 between 0.66667 and -0.66667
+Critical value: 0.0. Entropy: 0.95
+Group 4: yEgo between 0.66667 and 0 and yC1 between 0.66667 and -0.66667 and yC2 between 0.66667 and -0.66667 and yC3 between 0.66667 and -0.66667
+Critical value: 1.0. Entropy: 0.71
+----------------------------------------
+***********************************************
+Clusters at height 4
+Group 1 to Group 1 with p=0.8791208791208633 and action 2
+Group 1 to Group 3 with p=0.013082155939298793 and action 2
+Group 1 to Group 4 with p=0.06384092098377821 and action 2
+Group 1 to Group 5 with p=0.0068027210884353765 and action 3
+Group 1 to Group 6 with p=0.0010465724751439038 and action 2
+Group 1 to Group 7 with p=0.03610675039246471 and action 2
+Group 2 to Group 5 with p=1.0 and action 3
+Group 3 to Group 1 with p=0.35483870967741926 and action 2
+Group 3 to Group 3 with p=0.1935483870967742 and action 2
+Group 3 to Group 4 with p=0.38709677419354827 and action 2
+Group 3 to Group 5 with p=0.03225806451612903 and action 3
+Group 3 to Group 7 with p=0.03225806451612903 and action 2
+Group 4 to Group 1 with p=0.16805721096543494 and action 3
+Group 4 to Group 2 with p=0.0011918951132300357 and action 3
+Group 4 to Group 4 with p=0.7854588796185931 and action 3
+Group 4 to Group 5 with p=0.009535160905840286 and action 3
+Group 4 to Group 7 with p=0.03575685339690105 and action 3
+Group 5 to Group 1 with p=0.3333333333333333 and action 4
+Group 5 to Group 4 with p=0.6249999999999999 and action 4
+Group 5 to Group 5 with p=0.041666666666666664 and action 3
+Group 6 to Group 1 with p=0.411764705882353 and action 4
+Group 6 to Group 6 with p=0.5882352941176471 and action 4
+----------------------------------------
+
+ Initializing SHAP explainer on 282 sample states...
+ shape: (282, 25)
+
+ Computing SHAP values for clusters...
+  0%|          | 0/382 [00:00<?, ?it/s]  3%|▎         | 11/382 [00:00<00:03, 107.18it/s]  6%|▌         | 23/382 [00:00<00:03, 112.90it/s]  9%|▉         | 35/382 [00:00<00:03, 114.99it/s] 12%|█▏        | 47/382 [00:00<00:02, 115.65it/s] 16%|█▌        | 60/382 [00:00<00:02, 119.02it/s] 19%|█▉        | 73/382 [00:00<00:02, 120.47it/s] 23%|██▎       | 86/382 [00:00<00:02, 122.76it/s] 26%|██▌       | 99/382 [00:00<00:02, 123.50it/s] 29%|██▉       | 112/382 [00:00<00:02, 124.15it/s] 33%|███▎      | 126/382 [00:01<00:02, 126.10it/s] 37%|███▋      | 140/382 [00:01<00:01, 126.79it/s] 40%|████      | 153/382 [00:01<00:01, 122.05it/s] 43%|████▎     | 166/382 [00:01<00:01, 121.20it/s] 47%|████▋     | 179/382 [00:01<00:01, 119.06it/s] 50%|█████     | 191/382 [00:01<00:01, 118.02it/s] 53%|█████▎    | 204/382 [00:01<00:01, 121.34it/s] 57%|█████▋    | 217/382 [00:01<00:01, 122.74it/s] 60%|██████    | 231/382 [00:01<00:01, 126.29it/s] 64%|██████▍   | 244/382 [00:02<00:01, 125.55it/s] 68%|██████▊   | 258/382 [00:02<00:00, 128.01it/s] 71%|███████   | 271/382 [00:02<00:00, 128.32it/s] 75%|███████▌  | 287/382 [00:02<00:00, 135.59it/s] 79%|███████▉  | 301/382 [00:02<00:00, 135.18it/s] 82%|████████▏ | 315/382 [00:02<00:00, 136.03it/s] 86%|████████▌ | 329/382 [00:02<00:00, 137.02it/s] 90%|█████████ | 345/382 [00:02<00:00, 141.23it/s] 95%|█████████▍| 361/382 [00:02<00:00, 144.69it/s] 99%|█████████▊| 377/382 [00:02<00:00, 147.54it/s]100%|██████████| 382/382 [00:02<00:00, 128.86it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 111.58it/s]
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 162.02it/s]
+  0%|          | 0/167 [00:00<?, ?it/s] 11%|█▏        | 19/167 [00:00<00:00, 181.82it/s] 23%|██▎       | 38/167 [00:00<00:00, 179.90it/s] 34%|███▎      | 56/167 [00:00<00:00, 173.56it/s] 44%|████▍     | 74/167 [00:00<00:00, 166.55it/s] 56%|█████▌    | 93/167 [00:00<00:00, 171.35it/s] 66%|██████▋   | 111/167 [00:00<00:00, 170.41it/s] 77%|███████▋  | 129/167 [00:00<00:00, 168.21it/s] 88%|████████▊ | 147/167 [00:00<00:00, 169.65it/s] 99%|█████████▉| 165/167 [00:00<00:00, 170.28it/s]100%|██████████| 167/167 [00:00<00:00, 170.69it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]100%|██████████| 4/4 [00:00<00:00, 169.98it/s]
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 156.38it/s]
+Group 1: vxEgo between 0.32059 and 0.25 and yC1 between 0.66667 and -0.66667 and yC2 between 0.66667 and -0.66667 and yC3 between 0.66667 and -0.66667
+Critical value: 0.0. Entropy: 1.14
+Group 2: xEgo between 1 and 0.74422 and vxEgo between 0.36677 and 0.32059 and vxC2 between 0.03973 and -0.21385 and vxC3 between 0.03443 and -0.17516
+Critical value: 0.0. Entropy: 0.86
+Group 3: yEgo between 0.66667 and 0 and vxEgo between 0.37392 and 0.24954 and xC1 between 0.15093 and 0.01755 and yC1 between 0.66667 and -0.66667
+Critical value: 0.0. Entropy: 0.97
+Group 4: vxEgo between 0.36569 and 0.24959 and yC1 between 0.66667 and -0.66667 and yC2 between 0.66667 and -0.66667 and yC3 between 0.66667 and -0.66667
+Critical value: 0.0. Entropy: 0.94
+Group 5: vxEgo between 0.37392 and 0.36569 and vxC2 between 0.03973 and -0.21385 and vxC3 between 0.03443 and -0.17516 and vxC4 between 0.0361 and -0.19793
+Critical value: 0.0. Entropy: 1.25
+Group 6: xEgo between 1 and 0.74422 and yEgo between 0.66667 and 0 and yC1 between 0.66667 and -0.66667 and yC3 between 0.66667 and -0.66667
+Critical value: 1.0. Entropy: 0.71
+----------------------------------------
+Time taken for AutoPred: 1451.299456357956 seconds

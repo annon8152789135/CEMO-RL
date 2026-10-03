@@ -1,0 +1,227 @@
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/grakel/graph.py:314: UserWarning: changing format from "adjacency" to "all"
+  warnings.warn('changing format from "adjacency" to "all"')
+Directory MO_fruitTree_200_1_combined already exists.
+Using existing graphs from MO_fruitTree_200_1_combined as --use_existing flag is set to True. Checking for existing graphs...
+length of files in MO_fruitTree_200_1_combined: 14, 
+                expected: 7.
+                Re-running the policies to collect new graphs
+Loaded graph for policy 0 from outputs/graphs/MO_fruitTree_200_1_combined/policy_0_graph.pkl.
+Loaded graph for policy 1 from outputs/graphs/MO_fruitTree_200_1_combined/policy_1_graph.pkl.
+Loaded graph for policy 2 from outputs/graphs/MO_fruitTree_200_1_combined/policy_2_graph.pkl.
+Loaded graph for policy 3 from outputs/graphs/MO_fruitTree_200_1_combined/policy_3_graph.pkl.
+Loaded graph for policy 4 from outputs/graphs/MO_fruitTree_200_1_combined/policy_4_graph.pkl.
+Loaded graph for policy 5 from outputs/graphs/MO_fruitTree_200_1_combined/policy_5_graph.pkl.
+Loaded graph for policy 6 from outputs/graphs/MO_fruitTree_200_1_combined/policy_6_graph.pkl.
+Loaded existing graphs from MO_fruitTree_200_1_combined . 7 graphs in total.
+All graphs collected:
+Weisfeiler-Lehman Kernel Matrix:
+        0      1      2      3      4      5      6
+  0  1.00   0.12   0.10   0.12   0.06   0.06   0.04
+  1  0.12   1.00   0.12   0.09   0.08   0.07   0.05
+  2  0.10   0.12   1.00   0.08   0.11   0.06   0.08
+  3  0.12   0.09   0.08   1.00   0.80   0.32   0.04
+  4  0.06   0.08   0.11   0.80   1.00   0.31   0.09
+  5  0.06   0.07   0.06   0.32   0.31   1.00   0.04
+  6  0.04   0.05   0.08   0.04   0.09   0.04   1.00
+Subgraph Matching Kernel Matrix:
+        0      1      2      3      4      5      6
+  0  1.00   0.08   0.07   0.30   0.05   0.04   0.01
+  1  0.08   1.00   0.08   0.07   0.06   0.05   0.01
+  2  0.07   0.08   1.00   0.07   0.28   0.05   0.08
+  3  0.30   0.07   0.07   1.00   0.80   0.64   0.04
+  4  0.05   0.06   0.28   0.80   1.00   0.64   0.09
+  5  0.04   0.05   0.05   0.64   0.64   1.00   0.04
+  6  0.01   0.01   0.08   0.04   0.09   0.04   1.00
+Avg. simillarity Matrix:
+        0      1      2      3      4      5      6
+  0  1.00   0.10   0.09   0.21   0.06   0.05   0.03
+  1  0.10   1.00   0.10   0.08   0.07   0.06   0.03
+  2  0.09   0.10   1.00   0.07   0.19   0.05   0.08
+  3  0.21   0.08   0.07   1.00   0.80   0.48   0.04
+  4  0.06   0.07   0.19   0.80   1.00   0.48   0.09
+  5  0.05   0.06   0.05   0.48   0.48   1.00   0.04
+  6  0.03   0.03   0.08   0.04   0.09   0.04   1.00
+Best graphs selected based on combined average similarity: policy_3 and policy_4
+policies selected for explanation: 
+ {'tree': <CAPS.CLTree.CLTree object at 0x7f993e0b9970>, 'height': 6, 'fidelity': None, 'state_features': ['lvl', 'pos', 'State Value', 'Action'], 'groups': [{'group': 1, 'translation': 'lvl between 1 and 0', 'critical_value': 0.0, 'entropy': 0.2645121131097937, 'num_instances': 331, 'important_features': ['lvl'], 'boundaries': {'lvl': (1.0, 0.0), 'pos': (1.0, 0.0), 'State Value': (0.11154943668216596, 0.0), 'Action': (1.0, 0.0)}}, {'group': 2, 'translation': 'lvl between 3 and 1', 'critical_value': 0.0, 'entropy': 0.6393781306550783, 'num_instances': 272, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 1.0), 'pos': (1.0, 0.0), 'State Value': (0.2825542001568877, 0.11154943668216596), 'Action': (1.0, 0.0)}}, {'group': 3, 'translation': 'pos between 1 and 0', 'critical_value': 0.0, 'entropy': 0.5770490169525146, 'num_instances': 57, 'important_features': ['pos'], 'boundaries': {'lvl': (3.0, 3.0), 'pos': (1.0, 0.0), 'State Value': (0.2825542001568877, 0.11154943668216596), 'Action': (1.0, 0.0)}}, {'group': 4, 'translation': 'pos equal to 1', 'critical_value': 0.0, 'entropy': 0.5770490169525146, 'num_instances': 1, 'important_features': ['pos'], 'boundaries': {'lvl': (3.0, 3.0), 'pos': (1.0, 1.0), 'State Value': (0.9469040256477302, 0.0), 'Action': (0.0, 0.0)}}, {'group': 5, 'translation': 'pos between 2 and 1', 'critical_value': 0.0, 'entropy': 0.5770490169525146, 'num_instances': 135, 'important_features': ['pos'], 'boundaries': {'lvl': (3.0, 3.0), 'pos': (2.0, 1.0), 'State Value': (0.9469040256477302, 0.0), 'Action': (0.0, 0.0)}}, {'group': 6, 'translation': 'lvl between 4 and 3', 'critical_value': 0.0, 'entropy': 0.38481225215946324, 'num_instances': 6, 'important_features': ['lvl'], 'boundaries': {'lvl': (4.0, 3.0), 'pos': (2.0, 1.0), 'State Value': (0.9469040256477302, 0.0), 'Action': (0.0, 0.0)}}, {'group': 7, 'translation': 'pos equal to 2', 'critical_value': 1.0, 'entropy': 0.0003387225733604282, 'num_instances': 1, 'important_features': ['pos'], 'boundaries': {'lvl': (4.0, 4.0), 'pos': (2.0, 2.0), 'State Value': (0.9469040256477302, 0.9469040256477302), 'Action': (0.0, 0.0)}}, {'group': 8, 'translation': 'lvl equal to 4', 'critical_value': 0.0, 'entropy': 0.0003387225733604282, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (4.0, 4.0), 'pos': (2.0, 2.0), 'State Value': (0.9469040256477302, 0.9469040256477302), 'Action': (1.0, 0.0)}}, {'group': 9, 'translation': 'lvl equal to 4', 'critical_value': 0.0, 'entropy': 0.0003387225733604282, 'num_instances': 194, 'important_features': ['lvl'], 'boundaries': {'lvl': (4.0, 4.0), 'pos': (2.0, 2.0), 'State Value': (1.0, 0.9469040256477302), 'Action': (1.0, 0.0)}}, {'group': 10, 'translation': 'lvl equal to 4', 'critical_value': 0.0, 'entropy': 0.0003387225733604282, 'num_instances': 2, 'important_features': ['lvl'], 'boundaries': {'lvl': (4.0, 4.0), 'pos': (4.0, 2.0), 'State Value': (1.0, 0.9469040256477302), 'Action': (1.0, 0.0)}}, {'group': 11, 'translation': 'lvl between 5 and 4', 'critical_value': 1.0, 'entropy': 5.890669854125008e-07, 'num_instances': 200, 'important_features': ['lvl'], 'boundaries': {'lvl': (5.0, 4.0), 'pos': (4.0, 2.0), 'State Value': (1.0, 0.9469040256477302), 'Action': (1.0, 0.0)}}], 'edges': [{'from_group': 1, 'to_group': 2, 'probability': 0.9999999999999939, 'action': 0}, {'from_group': 2, 'to_group': 2, 'probability': 0.25367647058823484, 'action': 0}, {'from_group': 2, 'to_group': 6, 'probability': 0.7352941176470567, 'action': 1}, {'from_group': 2, 'to_group': 10, 'probability': 0.011029411764705881, 'action': 0}, {'from_group': 3, 'to_group': 10, 'probability': 1.0000000000000016, 'action': 0}, {'from_group': 4, 'to_group': 10, 'probability': 1.0, 'action': 0}, {'from_group': 5, 'to_group': 10, 'probability': 1.000000000000001, 'action': 0}, {'from_group': 6, 'to_group': 10, 'probability': 0.6666666666666666, 'action': 0}, {'from_group': 6, 'to_group': 11, 'probability': 0.3333333333333333, 'action': 0}, {'from_group': 7, 'to_group': 11, 'probability': 1.0, 'action': 0}, {'from_group': 8, 'to_group': 11, 'probability': 1.0, 'action': 0}, {'from_group': 9, 'to_group': 11, 'probability': 0.9999999999999976, 'action': 0}, {'from_group': 10, 'to_group': 11, 'probability': 1.0, 'action': 0}, {'from_group': 11, 'to_group': 12, 'probability': 1.0000000000000007, 'action': 1}], 'feature_selection': {'method': 'shap', 'important_features': [['lvl'], ['lvl'], ['pos'], ['pos'], ['pos'], ['lvl'], ['pos'], ['lvl'], ['lvl'], ['lvl'], ['lvl']]}} 
+ {'tree': <CAPS.CLTree.CLTree object at 0x7f993e077d30>, 'height': 7, 'fidelity': None, 'state_features': ['lvl', 'pos', 'State Value', 'Action'], 'groups': [{'group': 1, 'translation': 'lvl between 1 and 0', 'critical_value': 1.0, 'entropy': 0.00019312296796167072, 'num_instances': 273, 'important_features': ['lvl'], 'boundaries': {'lvl': (1.0, 0.0), 'pos': (1.0, 0.0), 'State Value': (0.703536384590056, 0.0), 'Action': (1.0, 0.0)}}, {'group': 2, 'translation': 'lvl between 3 and 1', 'critical_value': 0.0, 'entropy': 0.0017777450251840812, 'num_instances': 443, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 1.0), 'pos': (4.0, 0.0), 'State Value': (0.5244084858177713, 0.17061385766028506), 'Action': (1.0, 0.0)}}, {'group': 3, 'translation': 'lvl equal to 3', 'critical_value': 0.0, 'entropy': 0.005198302678763866, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 3.0), 'pos': (8.0, 4.0), 'State Value': (0.5244084858177713, 0.5244084858177713), 'Action': (0.0, 0.0)}}, {'group': 4, 'translation': 'lvl equal to 3', 'critical_value': 0.0, 'entropy': 0.005198302678763866, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 3.0), 'pos': (8.0, 4.0), 'State Value': (0.703536384590056, 0.5244084858177713), 'Action': (0.0, 0.0)}}, {'group': 5, 'translation': 'lvl between 4 and 3', 'critical_value': 0.0, 'entropy': 0.11382552948558615, 'num_instances': 210, 'important_features': ['lvl'], 'boundaries': {'lvl': (4.0, 3.0), 'pos': (8.0, 4.0), 'State Value': (0.703536384590056, 0.5244084858177713), 'Action': (0.0, 0.0)}}, {'group': 6, 'translation': 'lvl equal to 4', 'critical_value': 0.0, 'entropy': 0.18341484665870667, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (4.0, 4.0), 'pos': (8.0, 8.0), 'State Value': (0.703536384590056, 0.703536384590056), 'Action': (0.0, 0.0)}}, {'group': 7, 'translation': 'lvl equal to 4', 'critical_value': 0.0, 'entropy': 0.18341484665870667, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (4.0, 4.0), 'pos': (8.0, 8.0), 'State Value': (0.703536384590056, 0.703536384590056), 'Action': (0.0, 0.0)}}, {'group': 8, 'translation': 'lvl equal to 4', 'critical_value': 0.0, 'entropy': 0.18341484665870667, 'num_instances': 65, 'important_features': ['lvl'], 'boundaries': {'lvl': (4.0, 4.0), 'pos': (8.0, 8.0), 'State Value': (0.703536384590056, 0.703536384590056), 'Action': (1.0, 0.0)}}, {'group': 9, 'translation': 'lvl equal to 4', 'critical_value': 0.0, 'entropy': 0.18341484665870667, 'num_instances': 5, 'important_features': ['lvl'], 'boundaries': {'lvl': (4.0, 4.0), 'pos': (8.0, 8.0), 'State Value': (1.0, 0.703536384590056), 'Action': (1.0, 0.0)}}, {'group': 10, 'translation': 'lvl between 5 and 4', 'critical_value': 1.0, 'entropy': 3.273537913628388e-06, 'num_instances': 200, 'important_features': ['lvl'], 'boundaries': {'lvl': (5.0, 4.0), 'pos': (16.0, 8.0), 'State Value': (1.0, 0.703536384590056), 'Action': (1.0, 0.0)}}], 'edges': [{'from_group': 1, 'to_group': 2, 'probability': 0.999999999999997, 'action': 0}, {'from_group': 2, 'to_group': 2, 'probability': 0.28668171557562067, 'action': 0}, {'from_group': 2, 'to_group': 5, 'probability': 0.45146726862302633, 'action': 0}, {'from_group': 2, 'to_group': 9, 'probability': 0.26185101580135406, 'action': 0}, {'from_group': 3, 'to_group': 9, 'probability': 1.0, 'action': 0}, {'from_group': 4, 'to_group': 9, 'probability': 1.0, 'action': 0}, {'from_group': 5, 'to_group': 9, 'probability': 0.3904761904761902, 'action': 0}, {'from_group': 5, 'to_group': 10, 'probability': 0.6095238095238085, 'action': 0}, {'from_group': 6, 'to_group': 10, 'probability': 1.0, 'action': 0}, {'from_group': 7, 'to_group': 10, 'probability': 1.0, 'action': 0}, {'from_group': 8, 'to_group': 10, 'probability': 0.9999999999999982, 'action': 0}, {'from_group': 9, 'to_group': 10, 'probability': 1.0, 'action': 0}, {'from_group': 10, 'to_group': 11, 'probability': 1.0000000000000007, 'action': 1}], 'feature_selection': {'method': 'shap', 'important_features': [['lvl'], ['lvl'], ['lvl'], ['lvl'], ['lvl'], ['lvl'], ['lvl'], ['lvl'], ['lvl'], ['lvl']]}}
+
+ Generating contrastive explanations for the selected graph pair...
+
+
+--- Contrastive explanation for test state 0: {'lvl': 0, 'pos': 0} ---
+state analysis test for policy_3: 1
+state analysis test for policy_4: 1
+Next probable action for policy_3: 0
+Next probable action for policy_4: 0
+
+
+--- Contrastive explanation for test state 1: {'lvl': 1, 'pos': 0} ---
+state analysis test for policy_3: 1
+state analysis test for policy_4: 1
+Next probable action for policy_3: 0
+Next probable action for policy_4: 0
+
+
+--- Contrastive explanation for test state 2: {'lvl': 1, 'pos': 1} ---
+state analysis test for policy_3: 1
+state analysis test for policy_4: 1
+Next probable action for policy_3: 0
+Next probable action for policy_4: 0
+
+
+--- Contrastive explanation for test state 3: {'lvl': 2, 'pos': 1} ---
+state analysis test for policy_3: 2
+state analysis test for policy_4: 2
+Next probable action for policy_3: 1
+Next probable action for policy_4: 0
+
+
+--- Contrastive explanation for test state 4: {'lvl': 2, 'pos': 2} ---
+state analysis test for policy_3: None
+state analysis test for policy_4: 2
+Next probable action for policy_3: None
+Next probable action for policy_4: 0
+
+
+--- Contrastive explanation for test state 5: {'lvl': 3, 'pos': 1} ---
+state analysis test for policy_3: 2
+state analysis test for policy_4: 2
+Next probable action for policy_3: 1
+Next probable action for policy_4: 0
+
+
+--- Contrastive explanation for test state 6: {'lvl': 3, 'pos': 2} ---
+state analysis test for policy_3: 5
+state analysis test for policy_4: 2
+Next probable action for policy_3: 0
+Next probable action for policy_4: 0
+
+
+--- Contrastive explanation for test state 7: {'lvl': 3, 'pos': 3} ---
+state analysis test for policy_3: None
+state analysis test for policy_4: 2
+Next probable action for policy_3: None
+Next probable action for policy_4: 0
+MCS mapping: {1: 1, 2: 2, 8: 6, 10: 9, 11: 10, 12: 11, 9: 7}
+Common nodes: [(1, {'label': 'lvl between 1 and 0', 'node_type': 'group'}), (2, {'label': 'lvl between 3 and 1', 'node_type': 'group'}), (8, {'label': 'lvl equal to 4', 'node_type': 'group'}), (9, {'label': 'lvl equal to 4', 'node_type': 'group'}), (10, {'label': 'lvl equal to 4', 'node_type': 'group'}), (11, {'label': 'lvl between 5 and 4', 'node_type': 'group'}), (12, {})]
+Common edges: [(1, 2, {'action': 0, 'probability': 0.9999999999999939}), (2, 2, {'action': 0, 'probability': 0.25367647058823484}), (2, 10, {'action': 0, 'probability': 0.011029411764705881}), (8, 11, {'action': 0, 'probability': 1.0}), (9, 11, {'action': 0, 'probability': 0.9999999999999976}), (10, 11, {'action': 0, 'probability': 1.0}), (11, 12, {'action': 1, 'probability': 1.0000000000000007})]
+
+
+--- Shared subgraph percentage for all nodes and edges between all graphs ---
+Best graphs selected based on combined kernel similarity: policy_3 and policy_4
+Weisfeiler-Lehman Kernel Matrix:
+        0      1      2      3      4      5      6
+  0  1.00   0.12   0.10   0.12   0.06   0.06   0.04
+  1  0.12   1.00   0.12   0.09   0.08   0.07   0.05
+  2  0.10   0.12   1.00   0.08   0.11   0.06   0.08
+  3  0.12   0.09   0.08   1.00   0.80   0.32   0.04
+  4  0.06   0.08   0.11   0.80   1.00   0.31   0.09
+  5  0.06   0.07   0.06   0.32   0.31   1.00   0.04
+  6  0.04   0.05   0.08   0.04   0.09   0.04   1.00
+Subgraph Matching Kernel Matrix:
+        0      1      2      3      4      5      6
+  0  1.00   0.08   0.07   0.30   0.05   0.04   0.01
+  1  0.08   1.00   0.08   0.07   0.06   0.05   0.01
+  2  0.07   0.08   1.00   0.07   0.28   0.05   0.08
+  3  0.30   0.07   0.07   1.00   0.80   0.64   0.04
+  4  0.05   0.06   0.28   0.80   1.00   0.64   0.09
+  5  0.04   0.05   0.05   0.64   0.64   1.00   0.04
+  6  0.01   0.01   0.08   0.04   0.09   0.04   1.00
+Avg. simillarity Matrix:
+        0      1      2      3      4      5      6
+  0  1.00   0.10   0.09   0.21   0.06   0.05   0.03
+  1  0.10   1.00   0.10   0.08   0.07   0.06   0.03
+  2  0.09   0.10   1.00   0.07   0.19   0.05   0.08
+  3  0.21   0.08   0.07   1.00   0.80   0.48   0.04
+  4  0.06   0.07   0.19   0.80   1.00   0.48   0.09
+  5  0.05   0.06   0.05   0.48   0.48   1.00   0.04
+  6  0.03   0.03   0.08   0.04   0.09   0.04   1.00
+Shared subgraph percentage for all nodes and edges between all graphs:
+nodes:
+           0         1         2         3         4         5         6
+  0  100.00%    15.38%    14.29%    31.58%    11.11%     9.09%     6.90%
+  1   15.38%   100.00%    15.38%    11.11%    11.76%     9.52%     7.14%
+  2   14.29%    15.38%   100.00%    10.53%    33.33%     9.09%    20.69%
+  3   31.58%    11.11%    10.53%   100.00%    60.87%    29.63%    11.76%
+  4   11.11%    11.76%    33.33%    60.87%   100.00%    38.46%    18.18%
+  5    9.09%     9.52%     9.09%    29.63%    38.46%   100.00%    16.22%
+  6    6.90%     7.14%    20.69%    11.76%    24.24%    16.22%   100.00%
+edges:
+           0         1         2         3         4         5         6
+  0  100.00%     0.00%     0.00%     9.09%     0.00%     0.00%     0.00%
+  1    0.00%   100.00%     0.00%     0.00%     0.00%     0.00%     0.00%
+  2    0.00%     0.00%   100.00%     0.00%     0.00%     0.00%     0.00%
+  3    0.00%     0.00%     0.00%   100.00%    51.85%    12.90%     0.00%
+  4    0.00%     0.00%     0.00%    51.85%   100.00%     6.67%     0.00%
+  5    0.00%     0.00%     0.00%     0.00%     0.00%   100.00%     0.00%
+  6    0.00%     0.00%     0.00%     0.00%    11.11%     0.00%   100.00%
+Shared percentage from g1 to g2 in nodes and edges between all graphs:
+nodes:
+           0         1         2         3         4         5         6
+  0  100.00%    14.29%    14.29%    42.86%    14.29%    14.29%    14.29%
+  1   16.67%   100.00%    16.67%    16.67%    16.67%    16.67%    16.67%
+  2   14.29%    14.29%   100.00%    14.29%    42.86%    14.29%    42.86%
+  3   25.00%     8.33%     8.33%   100.00%    58.33%    33.33%    16.67%
+  4    9.09%     9.09%    27.27%    63.64%   100.00%    45.45%    27.27%
+  5    6.67%     6.67%     6.67%    26.67%    33.33%   100.00%    20.00%
+  6    4.55%     4.55%    13.64%     9.09%    18.18%    13.64%   100.00%
+edges:
+           0         1         2         3         4         5         6
+  0  100.00%     0.00%     0.00%    12.50%     0.00%     0.00%     0.00%
+  1    0.00%   100.00%     0.00%     0.00%     0.00%     0.00%     0.00%
+  2    0.00%     0.00%   100.00%     0.00%     0.00%     0.00%     0.00%
+  3    0.00%     0.00%     0.00%   100.00%    50.00%    14.29%     0.00%
+  4    0.00%     0.00%     0.00%    53.85%   100.00%     7.69%     0.00%
+  5    0.00%     0.00%     0.00%     0.00%     0.00%   100.00%     0.00%
+  6    0.00%     0.00%     0.00%     0.00%     8.70%     0.00%   100.00%
+
+
+--- Action differences at common nodes between policy_3 and policy_4 ---
+[{'node_g1': 2, 'node_g2': 2, 'label': 'lvl between 3 and 1', 'only_g1': [{'from': 2, 'to': 6, 'action': 1, 'probability': 0.7352941176470567, 'mapped_destination': None}], 'only_g2': [{'from': 2, 'to': 5, 'action': 0, 'probability': 0.45146726862302633, 'mapped_destination': None}]}] 
+
+
+Node id in Graph 1: 2
+Node in Graph 1: {'group': 3, 'translation': 'pos between 1 and 0', 'critical_value': 0.0, 'entropy': 0.5770490169525146, 'num_instances': 57, 'important_features': ['pos'], 'boundaries': {'lvl': (3.0, 3.0), 'pos': (1.0, 0.0), 'State Value': (0.2825542001568877, 0.11154943668216596), 'Action': (1.0, 0.0)}}
+Node id in Graph 2: 2
+Node in Graph 2: {'group': 3, 'translation': 'lvl equal to 3', 'critical_value': 0.0, 'entropy': 0.005198302678763866, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 3.0), 'pos': (8.0, 4.0), 'State Value': (0.5244084858177713, 0.5244084858177713), 'Action': (0.0, 0.0)}}
+State: lvl between 3 and 1
+Only in Graph 1: [{'from': 2, 'to': 6, 'action': 1, 'probability': 0.7352941176470567, 'mapped_destination': None}]
+Only in Graph 2: [{'from': 2, 'to': 5, 'action': 0, 'probability': 0.45146726862302633, 'mapped_destination': None}]
+
+
+
+--- Summary of execution --- 
+
+
+        -- args used --  
+
+        Environment: MO_fruitTree 
+
+        Number of episodes: 200 
+
+        Lambda value: 1 
+
+        Graph comparison criterion: combined 
+
+        used stored graphs: True 
+
+        -- times for each phase --  
+
+        Graph generation phase: 4.58 seconds 
+
+        Graph comparison phase: 0.03 seconds 
+
+        Action explanation generation phase: 0.00 seconds 
+
+        Edge explanation generation phase: 0.00 seconds 
+
+        Subgraph explanation generation phase: 0.00 seconds 
+
+        Subgraph percentage explanation generation phase: 73.32 seconds 
+
+        Total explanation generation phase: 73.32 seconds
+        
+
+--- End of execution ---
+    

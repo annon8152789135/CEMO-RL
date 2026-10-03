@@ -1,0 +1,19 @@
+Found 0 policies in CAPS/DPMORL/experiments/DeepSeaTreasure_test2/DPMORL.DeepSeaTreasure.LossNormLamda_0.2/.
+No MORL .npz files found in:
+CAPS/DPMORL/experiments/DeepSeaTreasure_test2/DPMORL.DeepSeaTreasure.LossNormLamda_0.2/
+Directory MO_deepSea_25_0.2_combined already exists.
+Re-running the policies to collect new graphs as --use_existing flag is set to False.
+All policies have been tested and graphs collected. 0 graphs in total.
+All graphs collected:
+Traceback (most recent call last):
+  File "/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/run.py", line 154, in <module>
+    K_wl, K_sm = compare_explanation_graphs(graph_dicts)
+  File "/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/graphs/compare_kernels.py", line 50, in compare_explanation_graphs
+    K_wl = WLkernel.fit_transform(graphs)
+  File "/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/utils/_set_output.py", line 157, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/grakel/kernels/weisfeiler_lehman.py", line 298, in fit_transform
+    km, self.X = self.parse_input(X)
+  File "/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/grakel/kernels/weisfeiler_lehman.py", line 184, in parse_input
+    raise ValueError('parsed input is empty')
+ValueError: parsed input is empty

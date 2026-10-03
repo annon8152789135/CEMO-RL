@@ -1,0 +1,303 @@
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/grakel/graph.py:314: UserWarning: changing format from "adjacency" to "all"
+  warnings.warn('changing format from "adjacency" to "all"')
+Directory MO_highway_50_1_combined already exists.
+Using existing graphs from MO_highway_50_1_combined as --use_existing flag is set to True. Checking for existing graphs...
+length of files in MO_highway_50_1_combined: 16, 
+                expected: 8.
+                Re-running the policies to collect new graphs
+Loaded graph for policy 0 from outputs/graphs/MO_highway_50_1_combined/policy_0_graph.pkl.
+Loaded graph for policy 1 from outputs/graphs/MO_highway_50_1_combined/policy_1_graph.pkl.
+Loaded graph for policy 2 from outputs/graphs/MO_highway_50_1_combined/policy_2_graph.pkl.
+Loaded graph for policy 3 from outputs/graphs/MO_highway_50_1_combined/policy_3_graph.pkl.
+Loaded graph for policy 4 from outputs/graphs/MO_highway_50_1_combined/policy_4_graph.pkl.
+Loaded graph for policy 5 from outputs/graphs/MO_highway_50_1_combined/policy_5_graph.pkl.
+Loaded graph for policy 6 from outputs/graphs/MO_highway_50_1_combined/policy_6_graph.pkl.
+Loaded graph for policy 7 from outputs/graphs/MO_highway_50_1_combined/policy_7_graph.pkl.
+Loaded existing graphs from MO_highway_50_1_combined . 8 graphs in total.
+All graphs collected:
+Weisfeiler-Lehman Kernel Matrix:
+        0      1      2      3      4      5      6      7
+  0  1.00   0.06   0.09   0.10   0.07   0.08   0.16   0.08
+  1  0.06   1.00   0.07   0.07   0.05   0.06   0.12   0.06
+  2  0.09   0.07   1.00   0.12   0.08   0.09   0.19   0.09
+  3  0.10   0.07   0.12   1.00   0.09   0.10   0.20   0.10
+  4  0.07   0.05   0.08   0.09   1.00   0.07   0.14   0.07
+  5  0.08   0.06   0.09   0.10   0.07   1.00   0.16   0.08
+  6  0.16   0.12   0.19   0.20   0.14   0.16   1.00   0.16
+  7  0.08   0.06   0.09   0.10   0.07   0.08   0.16   1.00
+Subgraph Matching Kernel Matrix:
+        0      1      2      3      4      5      6      7
+  0  1.00   0.00   0.01   0.02   0.00   0.01   0.04   0.01
+  1  0.00   1.00   0.00   0.00   0.00   0.00   0.01   0.00
+  2  0.01   0.00   1.00   0.02   0.00   0.01   0.06   0.01
+  3  0.02   0.00   0.02   1.00   0.01   0.03   0.13   0.02
+  4  0.00   0.00   0.00   0.01   1.00   0.01   0.03   0.00
+  5  0.01   0.00   0.01   0.03   0.01   1.00   0.08   0.01
+  6  0.04   0.01   0.06   0.13   0.03   0.08   1.00   0.05
+  7  0.01   0.00   0.01   0.02   0.00   0.01   0.05   1.00
+Avg. simillarity Matrix:
+        0      1      2      3      4      5      6      7
+  0  1.00   0.03   0.05   0.06   0.04   0.04   0.10   0.04
+  1  0.03   1.00   0.03   0.04   0.03   0.03   0.06   0.03
+  2  0.05   0.03   1.00   0.07   0.04   0.05   0.12   0.05
+  3  0.06   0.04   0.07   1.00   0.05   0.06   0.17   0.06
+  4  0.04   0.03   0.04   0.05   1.00   0.04   0.09   0.04
+  5  0.04   0.03   0.05   0.06   0.04   1.00   0.12   0.04
+  6  0.10   0.06   0.12   0.17   0.09   0.12   1.00   0.10
+  7  0.04   0.03   0.05   0.06   0.04   0.04   0.10   1.00
+Best graphs selected based on combined average similarity: policy_3 and policy_6
+policies selected for explanation: 
+ {'tree': <CAPS.CLTree.CLTree object at 0x7fd98a08e610>, 'height': 4, 'fidelity': None, 'state_features': ['egoExists', 'xEgo', 'yEgo', 'vxEgo', 'vyEgo', '1stClosestCarExists', 'xC1', 'yC1', 'vxC1', 'vyC1', '2ndClosestCarExists', 'xC2', 'yC2', 'vxC2', 'vyC2', '3rdClosestCarExists', 'xC3', 'yC3', 'vxC3', 'vyC3', '4thClosestCarExists', 'xC4', 'yC4', 'vxC4', 'vyC4', 'State Value', 'Action'], 'groups': [{'group': 1, 'translation': 'yEgo between 0.66667 and 0 and vxEgo between 0.3125 and 0.24959', 'critical_value': 1.0, 'entropy': 0.6008127331733704, 'num_instances': 1, 'important_features': ['yEgo', 'vxEgo'], 'boundaries': {'egoExists': (1.0, 1.0), 'xEgo': (0.8862408399581909, 0.8862408399581909), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3125, 0.24958935379981995), 'vyEgo': (0.013495422899723053, 0.0), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.27401426434516907, -0.049702804535627365), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.032419394701719284, -0.11147674173116684), 'vyC1': (0.08341578394174576, -0.09800724685192108), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3442802131175995, 0.027229217812418938), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03156717121601105, -0.17099128663539886), 'vyC2': (0.08339668065309525, -0.09402894228696823), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5415454506874084, 0.11610894650220871), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.030613653361797333, -0.12174104899168015), 'vyC3': (-0.09227579087018967, -0.09227579087018967), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.6614259481430054, 0.23865747451782227), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.03194110095500946, -0.11109866201877594), 'vyC4': (0.08129097521305084, -0.055034685879945755), 'State Value': (1.0, 0.0), 'Action': (4.0, 2.0)}}, {'group': 2, 'translation': 'yEgo between 0.66667 and 0 and vxEgo between 0.3125 and 0.24959', 'critical_value': 0.0, 'entropy': 0.9153206944465637, 'num_instances': 1, 'important_features': ['yEgo', 'vxEgo'], 'boundaries': {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.745010256767273), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3125, 0.24958935379981995), 'vyEgo': (0.013495422899723053, 0.0), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.27401426434516907, -0.049702804535627365), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.032419394701719284, -0.11147674173116684), 'vyC1': (0.08341578394174576, -0.09800724685192108), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3442802131175995, 0.027229217812418938), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03156717121601105, -0.17099128663539886), 'vyC2': (0.08339668065309525, -0.09402894228696823), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5415454506874084, 0.11610894650220871), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.030613653361797333, -0.12174104899168015), 'vyC3': (-0.08426293730735779, -0.08426293730735779), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.6614259481430054, 0.23865747451782227), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.03194110095500946, -0.11109866201877594), 'vyC4': (0.08129097521305084, -0.055034685879945755), 'State Value': (1.0, 0.0), 'Action': (4.0, 2.0)}}, {'group': 3, 'translation': 'yEgo between 0.66667 and 0 and xC1 between 0.27401 and -0.0497 and yC1 between 0.66667 and -0.66667 and xC2 between 0.34428 and 0.02723 and yC2 between 0.66667 and -0.66667 and xC3 between 0.54155 and 0.11611', 'critical_value': 0.0, 'entropy': 0.8615959794280837, 'num_instances': 1378, 'important_features': ['yEgo', 'xC1', 'yC1', 'xC2', 'yC2', 'xC3'], 'boundaries': {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.745010256767273), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3125, 0.24958935379981995), 'vyEgo': (0.013495422899723053, 0.0), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.27401426434516907, -0.049702804535627365), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.032419394701719284, -0.11147674173116684), 'vyC1': (0.08341578394174576, -0.09800724685192108), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3442802131175995, 0.027229217812418938), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03156717121601105, -0.17099128663539886), 'vyC2': (0.08339668065309525, -0.09402894228696823), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5415454506874084, 0.11610894650220871), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.030613653361797333, -0.12174104899168015), 'vyC3': (0.08299848437309265, -0.08426293730735779), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.6614259481430054, 0.23865747451782227), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.03194110095500946, -0.11109866201877594), 'vyC4': (0.08129097521305084, -0.055034685879945755), 'State Value': (1.0, 0.0), 'Action': (4.0, 2.0)}}, {'group': 4, 'translation': 'yEgo between 0.66667 and 0 and xC1 between 0.12207 and 0.03653 and yC1 between 0.66667 and -0.66667 and vxC1 between 0.03242 and -0.11148 and vyC1 between 0.08342 and -0.09801 and yC3 between 0.66667 and -0.66667 and vxC3 between 0.03061 and -0.12174', 'critical_value': 0.0, 'entropy': 0.7895726987293789, 'num_instances': 28, 'important_features': ['yEgo', 'xC1', 'yC1', 'vxC1', 'vyC1', 'yC3', 'vxC3'], 'boundaries': {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.745010256767273), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3121877610683441, 0.24958935379981995), 'vyEgo': (0.015242739580571651, 0.013495422899723053), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.12206827849149704, 0.03653046861290932), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.032419394701719284, -0.11147674173116684), 'vyC1': (0.08341578394174576, -0.09800724685192108), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3442802131175995, 0.027229217812418938), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03156717121601105, -0.17099128663539886), 'vyC2': (0.08339668065309525, -0.09402894228696823), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5415454506874084, 0.11610894650220871), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.030613653361797333, -0.12174104899168015), 'vyC3': (0.08299848437309265, -0.09227579087018967), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.6614259481430054, 0.23865747451782227), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.03194110095500946, -0.11109866201877594), 'vyC4': (0.08129097521305084, -0.055034685879945755), 'State Value': (1.0, 0.0), 'Action': (4.0, 2.0)}}, {'group': 5, 'translation': 'yEgo between 0.66667 and 0 and vxEgo between 0.31221 and 0.31219 and xC1 between 0.12207 and 0.03653 and yC1 between 0.66667 and -0.66667', 'critical_value': 0.0, 'entropy': 0.7934679016470909, 'num_instances': 8, 'important_features': ['yEgo', 'vxEgo', 'xC1', 'yC1'], 'boundaries': {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.745010256767273), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.31220847368240356, 0.3121877610683441), 'vyEgo': (0.015242739580571651, 0.013495422899723053), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.12206827849149704, 0.03653046861290932), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.032419394701719284, -0.11147674173116684), 'vyC1': (0.08341578394174576, -0.09800724685192108), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3442802131175995, 0.027229217812418938), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03156717121601105, -0.17099128663539886), 'vyC2': (0.08339668065309525, -0.09402894228696823), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5415454506874084, 0.11610894650220871), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.030613653361797333, -0.12174104899168015), 'vyC3': (0.08299848437309265, -0.09227579087018967), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.6614259481430054, 0.23865747451782227), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.03194110095500946, -0.11109866201877594), 'vyC4': (0.08129097521305084, -0.055034685879945755), 'State Value': (1.0, 0.0), 'Action': (4.0, 2.0)}}], 'edges': [{'from_group': 1, 'to_group': 3, 'probability': 1.0, 'action': 4}, {'from_group': 2, 'to_group': 3, 'probability': 1.0, 'action': 4}, {'from_group': 3, 'to_group': 1, 'probability': 0.000725689404934688, 'action': 2}, {'from_group': 3, 'to_group': 3, 'probability': 0.9390420899854712, 'action': 3}, {'from_group': 3, 'to_group': 4, 'probability': 0.018867924528301886, 'action': 2}, {'from_group': 3, 'to_group': 5, 'probability': 0.0050798258345428155, 'action': 2}, {'from_group': 3, 'to_group': 6, 'probability': 0.036284470246734375, 'action': 3}, {'from_group': 4, 'to_group': 2, 'probability': 0.03571428571428571, 'action': 4}, {'from_group': 4, 'to_group': 3, 'probability': 0.8928571428571426, 'action': 3}, {'from_group': 4, 'to_group': 4, 'probability': 0.07142857142857142, 'action': 2}, {'from_group': 5, 'to_group': 3, 'probability': 0.875, 'action': 4}, {'from_group': 5, 'to_group': 5, 'probability': 0.125, 'action': 2}], 'feature_selection': {'method': 'shap', 'important_features': [['yEgo', 'vxEgo'], ['yEgo', 'vxEgo'], ['yEgo', 'xC1', 'yC1', 'xC2', 'yC2', 'xC3'], ['yEgo', 'xC1', 'yC1', 'vxC1', 'vyC1', 'yC3', 'vxC3'], ['yEgo', 'vxEgo', 'xC1', 'yC1']]}} 
+ {'tree': <CAPS.CLTree.CLTree object at 0x7fd94b7800a0>, 'height': 2, 'fidelity': None, 'state_features': ['egoExists', 'xEgo', 'yEgo', 'vxEgo', 'vyEgo', '1stClosestCarExists', 'xC1', 'yC1', 'vxC1', 'vyC1', '2ndClosestCarExists', 'xC2', 'yC2', 'vxC2', 'vyC2', '3rdClosestCarExists', 'xC3', 'yC3', 'vxC3', 'vyC3', '4thClosestCarExists', 'xC4', 'yC4', 'vxC4', 'vyC4', 'State Value', 'Action'], 'groups': [{'group': 1, 'translation': 'yEgo between 0.66667 and 0 and xC1 between 0.22459 and -0.04829 and yC1 between 0.66667 and -0.66667 and xC2 between 0.43115 and 0.04718 and yC2 between 0.66667 and -0.66667 and yC3 between 0.66667 and -0.66667', 'critical_value': 1.0, 'entropy': 0.39079809585595116, 'num_instances': 1461, 'important_features': ['yEgo', 'xC1', 'yC1', 'xC2', 'yC2', 'yC3'], 'boundaries': {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7453434467315674), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3125, 0.24953661859035492), 'vyEgo': (0.015242739580571651, 0.0), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.22459056973457336, -0.04828963056206703), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.03519986569881439, -0.11054273694753647), 'vyC1': (0.08347595483064651, -0.0839625895023346), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.4311501085758209, 0.04718395322561264), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.034230876713991165, -0.11041323095560074), 'vyC2': (0.07003329694271088, -0.09849458187818527), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5319417715072632, 0.1850227266550064), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.03254013508558273, -0.105669304728508), 'vyC3': (0.08251352608203888, -0.09367593377828598), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.7644743919372559, 0.30826321244239807), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.04300970956683159, -0.11453118175268173), 'vyC4': (0.08268756419420242, -0.09443086385726929), 'State Value': (1.0, 0.0), 'Action': (4.0, 2.0)}}, {'group': 2, 'translation': 'yEgo between 0.66667 and 0 and vxEgo between 0.3125 and 0.24954 and xC1 between 0.22459 and -0.04829 and yC1 between 0.66667 and -0.66667 and vxC1 between 0.0352 and -0.11054 and xC3 between 0.54981 and 0.53194', 'critical_value': 0.0, 'entropy': 0.5465960843222482, 'num_instances': 7, 'important_features': ['yEgo', 'vxEgo', 'xC1', 'yC1', 'vxC1', 'xC3'], 'boundaries': {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7453434467315674), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3125, 0.24953661859035492), 'vyEgo': (0.015242739580571651, 0.0), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.22459056973457336, -0.04828963056206703), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.03519986569881439, -0.11054273694753647), 'vyC1': (0.08347595483064651, -0.0839625895023346), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.4311501085758209, 0.04718395322561264), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.034230876713991165, -0.11041323095560074), 'vyC2': (0.07003329694271088, -0.09849458187818527), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5498108863830566, 0.5319417715072632), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.03254013508558273, -0.105669304728508), 'vyC3': (0.08251352608203888, -0.09367593377828598), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.7644743919372559, 0.30826321244239807), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.04300970956683159, -0.11453118175268173), 'vyC4': (0.08268756419420242, -0.09443086385726929), 'State Value': (1.0, 0.0), 'Action': (4.0, 2.0)}}], 'edges': [{'from_group': 1, 'to_group': 1, 'probability': 0.9657768651608389, 'action': 3}, {'from_group': 1, 'to_group': 2, 'probability': 0.0006844626967830253, 'action': 4}, {'from_group': 1, 'to_group': 3, 'probability': 0.03353867214236821, 'action': 4}, {'from_group': 2, 'to_group': 2, 'probability': 0.857142857142857, 'action': 4}, {'from_group': 2, 'to_group': 3, 'probability': 0.14285714285714285, 'action': 4}], 'feature_selection': {'method': 'shap', 'important_features': [['yEgo', 'xC1', 'yC1', 'xC2', 'yC2', 'yC3'], ['yEgo', 'vxEgo', 'xC1', 'yC1', 'vxC1', 'xC3']]}}
+
+ Generating contrastive explanations for the selected graph pair...
+
+
+--- Contrastive explanation for test state 0: {'xEgo': 0.85, 'yEgo': 0.33, 'vxEgo': 0.3, 'vyEgo': 0.0, 'xC1': 0.1, 'yC1': 0.33} ---
+state analysis test for policy_3: 2
+state analysis test for policy_6: 1
+Next probable action for policy_3: 4
+Next probable action for policy_6: 3
+
+
+--- Contrastive explanation for test state 1: {'xEgo': 0.9, 'yEgo': 0.66, 'vxEgo': 0.36, 'vyEgo': 0.0, 'xC1': 0.05, 'yC1': 0.66} ---
+state analysis test for policy_3: None
+state analysis test for policy_6: None
+Next probable action for policy_3: None
+Next probable action for policy_6: None
+
+
+--- Contrastive explanation for test state 2: {'xEgo': 0.88, 'yEgo': 0.0, 'vxEgo': 0.28, 'vyEgo': 0.0, 'xC1': 0.12, 'yC1': 0.0} ---
+state analysis test for policy_3: 2
+state analysis test for policy_6: 1
+Next probable action for policy_3: 4
+Next probable action for policy_6: 3
+
+
+--- Contrastive explanation for test state 3: {'xEgo': 0.95, 'yEgo': 0.33, 'vxEgo': 0.375, 'vyEgo': 0.0, 'xC1': 0.2, 'yC1': 0.33} ---
+state analysis test for policy_3: None
+state analysis test for policy_6: None
+Next probable action for policy_3: None
+Next probable action for policy_6: None
+
+
+--- Contrastive explanation for test state 4: {'xEgo': 0.8, 'yEgo': 0.33, 'vxEgo': 0.25, 'vyEgo': 0.0, 'xC1': -0.02, 'yC1': 0.33} ---
+state analysis test for policy_3: 2
+state analysis test for policy_6: 1
+Next probable action for policy_3: 4
+Next probable action for policy_6: 3
+
+
+--- Contrastive explanation for test state 5: {'xEgo': 0.87, 'yEgo': 0.5, 'vxEgo': 0.31, 'vyEgo': 0.01, 'xC1': 0.08, 'yC1': 0.66} ---
+state analysis test for policy_3: 2
+state analysis test for policy_6: 1
+Next probable action for policy_3: 4
+Next probable action for policy_6: 3
+
+
+--- Contrastive explanation for test state 6: {'xEgo': 0.84, 'yEgo': 0.33, 'vxEgo': 0.29, 'vyEgo': 0.0, 'xC1': 0.05, 'yC1': 0.33, 'xC2': 0.15, 'yC2': 0.66} ---
+state analysis test for policy_3: 2
+state analysis test for policy_6: 1
+Next probable action for policy_3: 4
+Next probable action for policy_6: 3
+
+
+--- Contrastive explanation for test state 7: {'xEgo': 0.92, 'yEgo': 0.33, 'vxEgo': 0.37, 'vyEgo': 0.0, 'xC1': 0.25, 'yC1': 0.66} ---
+state analysis test for policy_3: None
+state analysis test for policy_6: None
+Next probable action for policy_3: None
+Next probable action for policy_6: None
+
+
+--- Contrastive explanation for test state 8: {'xEgo': 0.86, 'yEgo': 0.33, 'vxEgo': 0.31, 'vyEgo': 0.0, 'xC1': 0.1, 'yC1': 0.33, 'vxC1': -0.05, 'xC2': 0.22, 'yC2': 0.66, 'vxC2': -0.03, 'xC3': 0.35, 'yC3': 0.0, 'vxC3': 0.01} ---
+state analysis test for policy_3: 2
+state analysis test for policy_6: 1
+Next probable action for policy_3: 4
+Next probable action for policy_6: 3
+
+
+--- Contrastive explanation for test state 9: {'xEgo': 0.84, 'yEgo': 0.33, 'vxEgo': 0.28, 'vyEgo': 0.0, 'xC1': 0.05, 'yC1': 0.33, 'vxC1': -0.1, 'xC2': 0.08, 'yC2': 0.66, 'vxC2': -0.07, 'xC3': 0.06, 'yC3': 0.0, 'vxC3': -0.08, 'xC4': 0.18, 'yC4': 0.66, 'vxC4': 0.0} ---
+state analysis test for policy_3: None
+state analysis test for policy_6: None
+Next probable action for policy_3: None
+Next probable action for policy_6: None
+
+
+--- Contrastive explanation for test state 10: {'xEgo': 0.91, 'yEgo': 0.66, 'vxEgo': 0.37, 'vyEgo': 0.0, 'xC1': 0.18, 'yC1': 0.66, 'vxC1': -0.02, 'xC2': 0.32, 'yC2': 0.33, 'vxC2': 0.01, 'xC3': 0.48, 'yC3': 0.0, 'vxC3': 0.02} ---
+state analysis test for policy_3: None
+state analysis test for policy_6: None
+Next probable action for policy_3: None
+Next probable action for policy_6: None
+
+
+--- Contrastive explanation for test state 11: {'xEgo': 0.82, 'yEgo': 0.0, 'vxEgo': 0.26, 'vyEgo': 0.0, 'xC1': 0.02, 'yC1': 0.0, 'vxC1': -0.15, 'xC2': 0.11, 'yC2': 0.33, 'vxC2': -0.08, 'xC3': 0.2, 'yC3': 0.66, 'vxC3': -0.04, 'xC4': 0.28, 'yC4': 0.0, 'vxC4': -0.01} ---
+state analysis test for policy_3: None
+state analysis test for policy_6: None
+Next probable action for policy_3: None
+Next probable action for policy_6: None
+
+
+--- Contrastive explanation for test state 12: {'xEgo': 0.95, 'yEgo': 0.33, 'vxEgo': 0.375, 'vyEgo': 0.0, 'xC1': 0.07, 'yC1': 0.33, 'vxC1': -0.18, 'xC2': 0.14, 'yC2': 0.66, 'vxC2': -0.16, 'xC3': 0.26, 'yC3': 0.0, 'vxC3': -0.14, 'xC4': 0.41, 'yC4': 0.66, 'vxC4': -0.1} ---
+state analysis test for policy_3: None
+state analysis test for policy_6: None
+Next probable action for policy_3: None
+Next probable action for policy_6: None
+
+
+--- Contrastive explanation for test state 13: {'xEgo': 0.93, 'yEgo': 0.33, 'vxEgo': 0.36, 'vyEgo': 0.0, 'xC1': 0.4, 'yC1': 0.66, 'vxC1': 0.01, 'xC2': 0.55, 'yC2': 0.0, 'vxC2': 0.02} ---
+state analysis test for policy_3: None
+state analysis test for policy_6: None
+Next probable action for policy_3: None
+Next probable action for policy_6: None
+
+
+--- Contrastive explanation for test state 14: {'xEgo': 0.88, 'yEgo': 0.5, 'vxEgo': 0.32, 'vyEgo': 0.014, 'xC1': 0.09, 'yC1': 0.66, 'vxC1': -0.04, 'xC2': 0.16, 'yC2': 0.33, 'vxC2': -0.02, 'xC3': 0.31, 'yC3': 0.0, 'vxC3': 0.01} ---
+state analysis test for policy_3: None
+state analysis test for policy_6: None
+Next probable action for policy_3: None
+Next probable action for policy_6: None
+
+
+--- Contrastive explanation for test state 15: {'xEgo': 0.87, 'yEgo': 0.18, 'vxEgo': 0.31, 'vyEgo': -0.014, 'xC1': 0.05, 'yC1': 0.0, 'vxC1': -0.07, 'xC2': 0.12, 'yC2': 0.33, 'vxC2': -0.05, 'xC3': 0.24, 'yC3': 0.66, 'vxC3': -0.01} ---
+state analysis test for policy_3: None
+state analysis test for policy_6: None
+Next probable action for policy_3: None
+Next probable action for policy_6: None
+
+
+--- Contrastive explanation for test state 16: {'xEgo': 0.94, 'yEgo': 0.33, 'vxEgo': 0.37, 'vyEgo': 0.0, 'xC1': 0.03, 'yC1': 0.33, 'vxC1': -0.2, 'xC2': 0.06, 'yC2': 0.66, 'vxC2': -0.18, 'xC3': 0.08, 'yC3': 0.0, 'vxC3': -0.17, 'xC4': 0.15, 'yC4': 0.66, 'vxC4': -0.11} ---
+state analysis test for policy_3: None
+state analysis test for policy_6: None
+Next probable action for policy_3: None
+Next probable action for policy_6: None
+
+
+--- Contrastive explanation for test state 17: {'xEgo': 0.85, 'yEgo': 0.33, 'vxEgo': 0.29, 'vyEgo': 0.0, 'xC1': -0.01, 'yC1': 0.33, 'vxC1': -0.21, 'xC2': 0.19, 'yC2': 0.66, 'vxC2': 0.02, 'xC3': 0.27, 'yC3': 0.0, 'vxC3': -0.12, 'xC4': 0.38, 'yC4': 0.66, 'vxC4': 0.01} ---
+state analysis test for policy_3: None
+state analysis test for policy_6: None
+Next probable action for policy_3: None
+Next probable action for policy_6: None
+MCS mapping: {6: 3}
+Common nodes: [(6, {})]
+Common edges: []
+
+
+--- Shared subgraph percentage for all nodes and edges between all graphs ---
+Best graphs selected based on combined kernel similarity: policy_3 and policy_6
+Weisfeiler-Lehman Kernel Matrix:
+        0      1      2      3      4      5      6      7
+  0  1.00   0.06   0.09   0.10   0.07   0.08   0.16   0.08
+  1  0.06   1.00   0.07   0.07   0.05   0.06   0.12   0.06
+  2  0.09   0.07   1.00   0.12   0.08   0.09   0.19   0.09
+  3  0.10   0.07   0.12   1.00   0.09   0.10   0.20   0.10
+  4  0.07   0.05   0.08   0.09   1.00   0.07   0.14   0.07
+  5  0.08   0.06   0.09   0.10   0.07   1.00   0.16   0.08
+  6  0.16   0.12   0.19   0.20   0.14   0.16   1.00   0.16
+  7  0.08   0.06   0.09   0.10   0.07   0.08   0.16   1.00
+Subgraph Matching Kernel Matrix:
+        0      1      2      3      4      5      6      7
+  0  1.00   0.00   0.01   0.02   0.00   0.01   0.04   0.01
+  1  0.00   1.00   0.00   0.00   0.00   0.00   0.01   0.00
+  2  0.01   0.00   1.00   0.02   0.00   0.01   0.06   0.01
+  3  0.02   0.00   0.02   1.00   0.01   0.03   0.13   0.02
+  4  0.00   0.00   0.00   0.01   1.00   0.01   0.03   0.00
+  5  0.01   0.00   0.01   0.03   0.01   1.00   0.08   0.01
+  6  0.04   0.01   0.06   0.13   0.03   0.08   1.00   0.05
+  7  0.01   0.00   0.01   0.02   0.00   0.01   0.05   1.00
+Avg. simillarity Matrix:
+        0      1      2      3      4      5      6      7
+  0  1.00   0.03   0.05   0.06   0.04   0.04   0.10   0.04
+  1  0.03   1.00   0.03   0.04   0.03   0.03   0.06   0.03
+  2  0.05   0.03   1.00   0.07   0.04   0.05   0.12   0.05
+  3  0.06   0.04   0.07   1.00   0.05   0.06   0.17   0.06
+  4  0.04   0.03   0.04   0.05   1.00   0.04   0.09   0.04
+  5  0.04   0.03   0.05   0.06   0.04   1.00   0.12   0.04
+  6  0.10   0.06   0.12   0.17   0.09   0.12   1.00   0.10
+  7  0.04   0.03   0.05   0.06   0.04   0.04   0.10   1.00
+Shared subgraph percentage for all nodes and edges between all graphs:
+nodes:
+           0         1         2         3         4         5         6         7
+  0  100.00%     5.88%     9.09%    10.53%     6.90%     8.00%    12.50%     7.69%
+  1    5.88%   100.00%     6.67%     7.41%     5.41%     6.06%     8.33%     5.88%
+  2    9.09%     6.67%   100.00%    13.33%     8.00%     9.52%    16.67%     9.09%
+  3   10.53%     7.41%    13.33%   100.00%     9.09%    11.11%    22.22%    10.53%
+  4    6.90%     5.41%     8.00%     9.09%   100.00%     7.14%    10.53%     6.90%
+  5    8.00%     6.06%     9.52%    11.11%     7.14%   100.00%    13.33%     8.00%
+  6   12.50%     8.33%    16.67%    22.22%    10.53%    13.33%   100.00%    12.50%
+  7    7.69%     5.88%     9.09%    10.53%     6.90%     8.00%    12.50%   100.00%
+edges:
+           0         1         2         3         4         5         6         7
+  0  100.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%
+  1    0.00%   100.00%     0.00%     0.00%     0.00%     0.00%     0.00%     2.20%
+  2    0.00%     0.00%   100.00%     0.00%     0.00%     0.00%     0.00%     0.00%
+  3    0.00%     0.00%     0.00%   100.00%     0.00%     0.00%     0.00%     0.00%
+  4    0.00%     0.00%     0.00%     0.00%   100.00%     0.00%     0.00%     0.00%
+  5    0.00%     0.00%     0.00%     0.00%     0.00%   100.00%     0.00%     0.00%
+  6    0.00%     0.00%     0.00%     0.00%     0.00%     0.00%   100.00%     0.00%
+  7    0.00%     2.20%     0.00%     0.00%     0.00%     0.00%     0.00%   100.00%
+Shared percentage from g1 to g2 in nodes and edges between all graphs:
+nodes:
+           0         1         2         3         4         5         6         7
+  0  100.00%     7.69%     7.69%     7.69%     7.69%     7.69%     7.69%     7.69%
+  1    4.76%   100.00%     4.76%     4.76%     4.76%     4.76%     4.76%     4.76%
+  2   11.11%    11.11%   100.00%    11.11%    11.11%    11.11%    11.11%    11.11%
+  3   16.67%    16.67%    16.67%   100.00%    16.67%    16.67%    16.67%    16.67%
+  4    6.25%     6.25%     6.25%     6.25%   100.00%     6.25%     6.25%     6.25%
+  5    8.33%     8.33%     8.33%     8.33%     8.33%   100.00%     8.33%     8.33%
+  6   33.33%    33.33%    33.33%    33.33%    33.33%    33.33%   100.00%    33.33%
+  7    7.69%     7.69%     7.69%     7.69%     7.69%     7.69%     7.69%   100.00%
+edges:
+           0         1         2         3         4         5         6         7
+  0  100.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%
+  1    0.00%   100.00%     0.00%     0.00%     0.00%     0.00%     0.00%     1.69%
+  2    0.00%     0.00%   100.00%     0.00%     0.00%     0.00%     0.00%     0.00%
+  3    0.00%     0.00%     0.00%   100.00%     0.00%     0.00%     0.00%     0.00%
+  4    0.00%     0.00%     0.00%     0.00%   100.00%     0.00%     0.00%     0.00%
+  5    0.00%     0.00%     0.00%     0.00%     0.00%   100.00%     0.00%     0.00%
+  6    0.00%     0.00%     0.00%     0.00%     0.00%     0.00%   100.00%     0.00%
+  7    0.00%     3.12%     0.00%     0.00%     0.00%     0.00%     0.00%   100.00%
+
+
+--- Action differences at common nodes between policy_3 and policy_6 ---
+[] 
+
+
+No action differences found at common nodes. 
+The selected policies may be behaviorally identical 
+under the current graph representation.
+
+
+--- Summary of execution --- 
+
+
+        -- args used --  
+
+        Environment: MO_highway 
+
+        Number of episodes: 50 
+
+        Lambda value: 1 
+
+        Graph comparison criterion: combined 
+
+        used stored graphs: True 
+
+        -- times for each phase --  
+
+        Graph generation phase: 20.45 seconds 
+
+        Graph comparison phase: 0.04 seconds 
+
+        Action explanation generation phase: 0.00 seconds 
+
+        Edge explanation generation phase: 0.00 seconds 
+
+        Subgraph explanation generation phase: 0.00 seconds 
+
+        Subgraph percentage explanation generation phase: 998.82 seconds 
+
+        Total explanation generation phase: 998.82 seconds
+        
+
+--- End of execution ---
+    

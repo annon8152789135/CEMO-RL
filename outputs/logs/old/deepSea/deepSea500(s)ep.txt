@@ -1,0 +1,31 @@
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/grakel/graph.py:314: UserWarning: changing format from "adjacency" to "all"
+  warnings.warn('changing format from "adjacency" to "all"')
+Directory MO_deepSea_500_1_combined already exists.
+Using existing graphs from MO_deepSea_500_1_combined as --use_existing flag is set to True. Checking for existing graphs...
+length of files in MO_deepSea_500_1_combined: 6, 
+                expected: 3.
+                Re-running the policies to collect new graphs
+Loaded graph for policy 0 from outputs/graphs/MO_deepSea_500_1_combined/policy_0_graph.pkl.
+Loaded graph for policy 1 from outputs/graphs/MO_deepSea_500_1_combined/policy_1_graph.pkl.
+Loaded graph for policy 2 from outputs/graphs/MO_deepSea_500_1_combined/policy_2_graph.pkl.
+Loaded existing graphs from MO_deepSea_500_1_combined . 3 graphs in total.
+All graphs collected:
+Weisfeiler-Lehman Kernel Matrix:
+        0      1      2
+  0  1.00   1.00   1.00
+  1  1.00   1.00   1.00
+  2  1.00   1.00   1.00
+Subgraph Matching Kernel Matrix:
+        0      1      2
+  0  1.00   1.00   1.00
+  1  1.00   1.00   1.00
+  2  1.00   1.00   1.00
+Avg. simillarity Matrix:
+        0      1      2
+  0  1.00   1.00   1.00
+  1  1.00   1.00   1.00
+  2  1.00   1.00   1.00
+Traceback (most recent call last):
+  File "/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/run.py", line 138, in <module>
+    print(f"Best graphs selected based on combined average similarity: {pol_names[id_graph1]} and {pol_names[id_graph2]}")
+TypeError: list indices must be integers or slices, not NoneType

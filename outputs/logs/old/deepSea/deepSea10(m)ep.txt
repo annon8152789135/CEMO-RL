@@ -1,0 +1,8 @@
+
+Plotting return distributions for 3 policies...
+Traceback (most recent call last):
+  File "/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/morl-apg/run.py", line 77, in <module>
+    plot_policy_returns(
+  File "/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/morl-apg/plot_policies.py", line 109, in plot_policy_returns
+    episode_batches[:, 2],
+IndexError: index 2 is out of bounds for axis 1 with size 2

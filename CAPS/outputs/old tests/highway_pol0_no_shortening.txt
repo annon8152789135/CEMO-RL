@@ -1,0 +1,175 @@
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/gymnasium/spaces/box.py:235: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/stable_baselines3/common/save_util.py:437: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  th_object = th.load(file_content, map_location=device)
+running MO_highway
+Starting Test
+reward_dim_indices = [0, 1, 2], reward_shape = 3
+reward_shape in get_utility_function:  3
+DPMORL/utility-model-selected/dim-3
+initializing linear utility function
+reward_shape in Utility_Function_Linear 3
+num_total_policies = 6
+initializing linear utility function
+reward_shape in Utility_Function_Linear 3
+Environment created: mo-highway-fast-v0
+Num episodes:  3
+episode length (steps):  30
+Reward:  9.77404326087002
+episode length (steps):  30
+Reward:  10.025266435384324
+episode length (steps):  30
+Reward:  10.356988311029825
+num_actions: 5
+3
+Running AutoPred
+
+
+ Tree built, starting pruning... 
+
+Tree info:  Nr of clusters:  0 
+ 
+
+
+Starting graph generation...
+Height:  1
+
+
+ Tree info:  Nr of clusters:  1 
+
+--------------------------------------------- 
+
+
+Height:  2
+
+
+ Tree info:  Nr of clusters:  2 
+
+--------------------------------------------- 
+
+
+Height:  3
+
+
+ Tree info:  Nr of clusters:  3 
+
+--------------------------------------------- 
+
+
+Height:  4
+
+
+ Tree info:  Nr of clusters:  3 
+
+--------------------------------------------- 
+
+
+Height:  5
+
+
+ Tree info:  Nr of clusters:  4 
+
+--------------------------------------------- 
+
+
+Height:  6
+
+
+ Tree info:  Nr of clusters:  4 
+
+--------------------------------------------- 
+
+
+Height:  7
+
+
+ Tree info:  Nr of clusters:  5 
+
+--------------------------------------------- 
+
+
+Height:  8
+
+
+ Tree info:  Nr of clusters:  5 
+
+--------------------------------------------- 
+
+
+Height:  9
+
+
+ Tree info:  Nr of clusters:  7 
+
+--------------------------------------------- 
+
+
+Height:  10
+
+
+ Tree info:  Nr of clusters:  8 
+
+--------------------------------------------- 
+
+
+***********************************************
+Clusters at height 2
+Group 1 to Group 2 with p=1.0 and action 2
+Group 2 to Group 1 with p=0.011235955056179775 and action 2
+Group 2 to Group 2 with p=0.9550561797752826 and action 2
+Group 2 to Group 3 with p=0.033707865168539325 and action 2
+----------------------------------------
+sample_train_states_array shape: (9, 25)
+Group 1: egoExists equal to 1 and xEgo between 1 and 0.76312 and yEgo between 0.66667 and 0 and vxEgo between 0.3125 and 0.25 and vyEgo between 0.01397 and 0 and CloseCar1Exists equal to 1 and xC1 between 0.12823 and -0.00284 and yC1 between 0 and -0.66667 and vxC1 between 0.0216 and -0.10518 and vyC1 equal to -0.08333 and CloseCar2Exists equal to 1 and xC2 between 0.38393 and 0.12054 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.02741 and -0.12431 and vyC2 between 0 and -0.03056 and CloseCar3Exists equal to 1 and xC3 between 0.40715 and 0.24008 and yC3 between 0.66667 and -0.66667 and vxC3 between 0.02779 and -0.09698 and vyC3 between 0 and -0.02572 and CloseCar4Exists equal to 1 and xC4 between 0.52729 and 0.35693 and yC4 between 0.66667 and -0.66667 and vxC4 between 0.02021 and -0.09655 and vyC4 between 0.013 and -0.08192 and State Value between 1 and 0 and Action between 4 and 2
+Critical value: 0.0. Entropy: 1.21
+Group 2: egoExists equal to 1 and xEgo between 1 and 0.76312 and yEgo between 0.66667 and 0 and vxEgo between 0.3125 and 0.25 and vyEgo between 0.01397 and 0 and CloseCar1Exists equal to 1 and xC1 between 0.12823 and -0.00284 and yC1 between 0 and -0.66667 and vxC1 between 0.0216 and -0.10518 and vyC1 between 0.02452 and -0.08333 and CloseCar2Exists equal to 1 and xC2 between 0.38393 and 0.12054 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.02741 and -0.12431 and vyC2 between 0 and -0.03056 and CloseCar3Exists equal to 1 and xC3 between 0.40715 and 0.24008 and yC3 between 0.66667 and -0.66667 and vxC3 between 0.02779 and -0.09698 and vyC3 between 0 and -0.02572 and CloseCar4Exists equal to 1 and xC4 between 0.52729 and 0.35693 and yC4 between 0.66667 and -0.66667 and vxC4 between 0.02021 and -0.09655 and vyC4 between 0.013 and -0.08192 and State Value between 1 and 0 and Action between 4 and 2
+Critical value: 1.0. Entropy: 1.17
+----------------------------------------
+***********************************************
+Clusters at height 7
+Group 1 to Group 5 with p=1.0 and action 2
+Group 2 to Group 2 with p=0.5 and action 2
+Group 2 to Group 5 with p=0.5 and action 3
+Group 3 to Group 2 with p=1.0 and action 2
+Group 4 to Group 2 with p=1.0 and action 2
+Group 5 to Group 1 with p=0.012048192771084338 and action 2
+Group 5 to Group 5 with p=0.9518072289156638 and action 2
+Group 5 to Group 6 with p=0.03614457831325302 and action 2
+----------------------------------------
+sample_train_states_array shape: (9, 25)
+Group 1: egoExists equal to 1 and xEgo between 1 and 0.76312 and yEgo between 0.66667 and 0 and vxEgo equal to 0.25 and vyEgo equal to 0 and CloseCar1Exists equal to 1 and xC1 equal to 0.08341 and yC1 equal to -0.40814 and vxC1 equal to -0.02798 and vyC1 equal to -0.08333 and CloseCar2Exists equal to 1 and xC2 between 0.38393 and 0.12054 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.02741 and -0.12431 and vyC2 between 0 and -0.03056 and CloseCar3Exists equal to 1 and xC3 between 0.40715 and 0.24008 and yC3 between 0.66667 and -0.66667 and vxC3 between 0.02779 and -0.09698 and vyC3 between 0 and -0.02572 and CloseCar4Exists equal to 1 and xC4 between 0.52729 and 0.35693 and yC4 between 0.66667 and -0.66667 and vxC4 between 0.02021 and -0.09655 and vyC4 between 0.013 and -0.08192 and State Value between 1 and 0 and Action between 4 and 2
+Critical value: 0.0. Entropy: 1.21
+Group 2: egoExists equal to 1 and xEgo between 1 and 0.76312 and yEgo between 0.66667 and 0 and vxEgo between 0.3125 and 0.25 and vyEgo between 0.01397 and 0 and CloseCar1Exists equal to 1 and xC1 between 0.12823 and -0.00284 and yC1 between 0 and -0.66667 and vxC1 between 0.0216 and -0.10518 and vyC1 between -0.0135 and -0.01397 and CloseCar2Exists equal to 1 and xC2 between 0.23681 and 0.18442 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.02741 and -0.12431 and vyC2 between 0 and -0.03056 and CloseCar3Exists equal to 1 and xC3 between 0.35646 and 0.31975 and yC3 between 0.36167 and 0.02928 and vxC3 between 0.02779 and -0.09698 and vyC3 between -0.0135 and -0.01397 and CloseCar4Exists equal to 1 and xC4 between 0.52729 and 0.35693 and yC4 between 0.66667 and -0.66667 and vxC4 between 0.02021 and -0.09655 and vyC4 between 0.013 and -0.08192 and State Value between 1 and 0 and Action between 4 and 2
+Critical value: 0.0. Entropy: 1.11
+Group 3: egoExists equal to 1 and xEgo between 0.77568 and 0.76312 and yEgo equal to 0 and vxEgo between 0.3125 and 0.25 and vyEgo equal to 0 and CloseCar1Exists equal to 1 and xC1 between 0.12823 and -0.00284 and yC1 between 0 and -0.66667 and vxC1 between 0.0216 and -0.10518 and vyC1 between 0.02452 and -0.0135 and CloseCar2Exists equal to 1 and xC2 between 0.38393 and 0.12054 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.02741 and -0.12431 and vyC2 between 0 and -0.03056 and CloseCar3Exists equal to 1 and xC3 between 0.40715 and 0.24008 and yC3 between 0.66667 and -0.66667 and vxC3 between 0.02779 and -0.09698 and vyC3 between 0 and -0.02572 and CloseCar4Exists equal to 1 and xC4 between 0.52729 and 0.35693 and yC4 between 0.66667 and -0.66667 and vxC4 between 0.02021 and -0.09655 and vyC4 between 0.013 and -0.08192 and State Value between 1 and 0 and Action between 4 and 2
+Critical value: 0.0. Entropy: 0.51
+Group 4: egoExists equal to 1 and xEgo between 0.77568 and 0.76312 and yEgo equal to 0 and vxEgo between 0.3125 and 0.25 and vyEgo equal to 0 and CloseCar1Exists equal to 1 and xC1 between 0.12823 and -0.00284 and yC1 between 0 and -0.66667 and vxC1 between 0.0216 and -0.10518 and vyC1 between 0.02452 and -0.0135 and CloseCar2Exists equal to 1 and xC2 between 0.38393 and 0.12054 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.02741 and -0.12431 and vyC2 between 0 and -0.03056 and CloseCar3Exists equal to 1 and xC3 between 0.40715 and 0.24008 and yC3 between 0.66667 and -0.66667 and vxC3 between 0.02779 and -0.09698 and vyC3 between 0 and -0.02572 and CloseCar4Exists equal to 1 and xC4 between 0.52729 and 0.35693 and yC4 between 0.66667 and -0.66667 and vxC4 between 0.02021 and -0.09655 and vyC4 between 0.013 and -0.08192 and State Value between 1 and 0 and Action between 4 and 2
+Critical value: 1.0. Entropy: 0.44
+Group 5: egoExists equal to 1 and xEgo between 1 and 0.76312 and yEgo between 0.66667 and 0 and vxEgo between 0.3125 and 0.25 and vyEgo between 0.00063 and 0 and CloseCar1Exists equal to 1 and xC1 between 0.12823 and -0.00284 and yC1 between -0.32906 and -0.66667 and vxC1 between 0.0216 and -0.10518 and vyC1 between 0.02452 and -0.0135 and CloseCar2Exists equal to 1 and xC2 between 0.38393 and 0.12054 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.02741 and -0.12431 and vyC2 between 0 and -0.03056 and CloseCar3Exists equal to 1 and xC3 between 0.40715 and 0.24008 and yC3 between 0.00099 and -0.66667 and vxC3 between 0.02779 and -0.09698 and vyC3 between 0 and -0.02572 and CloseCar4Exists equal to 1 and xC4 between 0.52729 and 0.35693 and yC4 between 0.66667 and -0.66667 and vxC4 between 0.02021 and -0.09655 and vyC4 between 0.013 and -0.08192 and State Value between 1 and 0 and Action between 4 and 2
+Critical value: 0.0. Entropy: 1.19
+----------------------------------------
+***********************************************
+Clusters at height 8
+Group 1 to Group 5 with p=1.0 and action 2
+Group 2 to Group 2 with p=0.5 and action 2
+Group 2 to Group 5 with p=0.5 and action 3
+Group 3 to Group 2 with p=1.0 and action 2
+Group 4 to Group 2 with p=1.0 and action 2
+Group 5 to Group 1 with p=0.012048192771084338 and action 2
+Group 5 to Group 5 with p=0.9518072289156638 and action 2
+Group 5 to Group 6 with p=0.03614457831325302 and action 2
+----------------------------------------
+sample_train_states_array shape: (9, 25)
+Group 1: egoExists equal to 1 and xEgo between 1 and 0.76312 and yEgo between 0.66667 and 0 and vxEgo equal to 0.25 and vyEgo equal to 0 and CloseCar1Exists equal to 1 and xC1 equal to 0.08341 and yC1 equal to -0.40814 and vxC1 equal to -0.02798 and vyC1 equal to -0.08333 and CloseCar2Exists equal to 1 and xC2 equal to 0.21381 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.02741 and -0.12431 and vyC2 between 0 and -0.03056 and CloseCar3Exists equal to 1 and xC3 between 0.40715 and 0.24008 and yC3 between 0.66667 and -0.66667 and vxC3 between 0.02779 and -0.09698 and vyC3 between 0 and -0.02572 and CloseCar4Exists equal to 1 and xC4 between 0.52729 and 0.35693 and yC4 between 0.66667 and -0.66667 and vxC4 between 0.02021 and -0.09655 and vyC4 between 0.013 and -0.08192 and State Value between 1 and 0 and Action between 4 and 2
+Critical value: 0.0. Entropy: 1.21
+Group 2: egoExists equal to 1 and xEgo between 1 and 0.76312 and yEgo between 0.63739 and 0.305 and vxEgo between 0.3125 and 0.25 and vyEgo between 0.01397 and 0 and CloseCar1Exists equal to 1 and xC1 between 0.12823 and -0.00284 and yC1 between 0 and -0.66667 and vxC1 between 0.0216 and -0.10518 and vyC1 between -0.0135 and -0.01397 and CloseCar2Exists equal to 1 and xC2 between 0.23681 and 0.18442 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.02741 and -0.12431 and vyC2 between 0 and -0.03056 and CloseCar3Exists equal to 1 and xC3 between 0.35646 and 0.31975 and yC3 between 0.36167 and 0.02928 and vxC3 between 0.02779 and -0.09698 and vyC3 between -0.0135 and -0.01397 and CloseCar4Exists equal to 1 and xC4 between 0.52729 and 0.35693 and yC4 between 0.66667 and -0.66667 and vxC4 between 0.02021 and -0.09655 and vyC4 between 0.013 and -0.08192 and State Value between 1 and 0 and Action between 4 and 2
+Critical value: 0.0. Entropy: 1.11
+Group 3: egoExists equal to 1 and xEgo between 0.77568 and 0.76312 and yEgo equal to 0 and vxEgo between 0.3125 and 0.25 and vyEgo equal to 0 and CloseCar1Exists equal to 1 and xC1 between 0.12823 and -0.00284 and yC1 between 0 and -0.66667 and vxC1 equal to -0.02047 and vyC1 between 0.02452 and -0.0135 and CloseCar2Exists equal to 1 and xC2 between 0.38393 and 0.12054 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.02741 and -0.12431 and vyC2 between 0 and -0.03056 and CloseCar3Exists equal to 1 and xC3 between 0.40715 and 0.24008 and yC3 between 0.66667 and -0.66667 and vxC3 between 0.02779 and -0.09698 and vyC3 between 0 and -0.02572 and CloseCar4Exists equal to 1 and xC4 between 0.52729 and 0.35693 and yC4 between 0.66667 and -0.66667 and vxC4 between 0.02021 and -0.09655 and vyC4 between 0.013 and -0.08192 and State Value between 1 and 0 and Action between 4 and 2
+Critical value: 0.0. Entropy: 0.51
+Group 4: egoExists equal to 1 and xEgo equal to 0.76312 and yEgo equal to 0 and vxEgo between 0.3125 and 0.25 and vyEgo equal to 0 and CloseCar1Exists equal to 1 and xC1 between 0.12823 and -0.00284 and yC1 between 0 and -0.66667 and vxC1 between 0.0216 and -0.10518 and vyC1 between 0.02452 and -0.0135 and CloseCar2Exists equal to 1 and xC2 between 0.38393 and 0.12054 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.02741 and -0.12431 and vyC2 between 0 and -0.03056 and CloseCar3Exists equal to 1 and xC3 between 0.40715 and 0.24008 and yC3 between 0.66667 and -0.66667 and vxC3 between 0.02779 and -0.09698 and vyC3 between 0 and -0.02572 and CloseCar4Exists equal to 1 and xC4 between 0.52729 and 0.35693 and yC4 between 0.66667 and -0.66667 and vxC4 between 0.02021 and -0.09655 and vyC4 between 0.013 and -0.08192 and State Value between 1 and 0 and Action between 4 and 2
+Critical value: 1.0. Entropy: 0.44
+Group 5: egoExists equal to 1 and xEgo between 1 and 0.76312 and yEgo between 0.66667 and 0 and vxEgo between 0.3125 and 0.25 and vyEgo between 0.00063 and 0 and CloseCar1Exists equal to 1 and xC1 between 0.12823 and -0.00284 and yC1 between -0.32906 and -0.66667 and vxC1 between 0.0216 and -0.10518 and vyC1 between 0.02452 and -0.0135 and CloseCar2Exists equal to 1 and xC2 between 0.38393 and 0.12054 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.02741 and -0.12431 and vyC2 between 0 and -0.03056 and CloseCar3Exists equal to 1 and xC3 between 0.40715 and 0.24008 and yC3 between 0.00099 and -0.66667 and vxC3 between 0.02779 and -0.09698 and vyC3 between 0 and -0.02572 and CloseCar4Exists equal to 1 and xC4 between 0.52729 and 0.35693 and yC4 between 0.00145 and -0.66667 and vxC4 between 0.02021 and -0.09655 and vyC4 between 0.013 and -0.08192 and State Value between 1 and 0 and Action between 4 and 2
+Critical value: 0.0. Entropy: 1.19
+----------------------------------------

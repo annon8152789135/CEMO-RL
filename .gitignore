@@ -1,0 +1,9 @@
+.venvs/
+__pycache__/
+outputs/graphs/**/*.pkl
+*.pyc
+*.pyo
+*.pyd
+
+
+

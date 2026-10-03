@@ -1,0 +1,259 @@
+
+Running policy 0: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-0
+Running CAPS_main with model path: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-0 and environment: MO_deepSea
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/stable_baselines3/common/save_util.py:437: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  th_object = th.load(file_content, map_location=device)
+running MO_deepSea
+initializing linear utility function
+reward_shape in Utility_Function_Linear 2
+num_total_policies = 3
+initializing linear utility function
+reward_shape in Utility_Function_Linear 2
+Deep Sea horizon: (not exposed by env)
+Dataset collected for model CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-0. Starting explanation generation...
+Running AutoPred
+Explanations with SHAP feature selection
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f497852c1c0>
+generating graph for model: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-0
+Starting graph generation...
+
+ Computing SHAP values for clusters...
+  0%|          | 0/36 [00:00<?, ?it/s] 11%|█         | 4/36 [00:00<00:00, 33.78it/s] 25%|██▌       | 9/36 [00:00<00:00, 38.40it/s] 39%|███▉      | 14/36 [00:00<00:00, 40.71it/s] 53%|█████▎    | 19/36 [00:00<00:00, 43.05it/s] 67%|██████▋   | 24/36 [00:00<00:00, 43.88it/s] 81%|████████  | 29/36 [00:00<00:00, 45.12it/s] 94%|█████████▍| 34/36 [00:00<00:00, 44.26it/s]100%|██████████| 36/36 [00:00<00:00, 43.14it/s]
+  0%|          | 0/13 [00:00<?, ?it/s] 31%|███       | 4/13 [00:00<00:00, 38.44it/s] 62%|██████▏   | 8/13 [00:00<00:00, 39.33it/s]100%|██████████| 13/13 [00:00<00:00, 44.07it/s]100%|██████████| 13/13 [00:00<00:00, 42.63it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 68.25it/s]
+  0%|          | 0/29 [00:00<?, ?it/s] 17%|█▋        | 5/29 [00:00<00:00, 48.19it/s] 34%|███▍      | 10/29 [00:00<00:00, 46.21it/s] 52%|█████▏    | 15/29 [00:00<00:00, 43.09it/s] 69%|██████▉   | 20/29 [00:00<00:00, 41.96it/s] 86%|████████▌ | 25/29 [00:00<00:00, 42.41it/s]100%|██████████| 29/29 [00:00<00:00, 43.13it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 45.17it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 34.39it/s]
+  0%|          | 0/70 [00:00<?, ?it/s]  6%|▌         | 4/70 [00:00<00:01, 34.94it/s] 11%|█▏        | 8/70 [00:00<00:01, 37.71it/s] 17%|█▋        | 12/70 [00:00<00:01, 35.69it/s] 23%|██▎       | 16/70 [00:00<00:01, 36.01it/s] 29%|██▊       | 20/70 [00:00<00:01, 37.31it/s] 34%|███▍      | 24/70 [00:00<00:01, 37.46it/s] 40%|████      | 28/70 [00:00<00:01, 38.15it/s] 47%|████▋     | 33/70 [00:00<00:00, 40.24it/s] 54%|█████▍    | 38/70 [00:01<00:00, 38.06it/s] 61%|██████▏   | 43/70 [00:01<00:00, 40.44it/s] 69%|██████▊   | 48/70 [00:01<00:00, 38.39it/s] 76%|███████▌  | 53/70 [00:01<00:00, 38.11it/s] 83%|████████▎ | 58/70 [00:01<00:00, 39.25it/s] 89%|████████▊ | 62/70 [00:01<00:00, 38.95it/s] 94%|█████████▍| 66/70 [00:01<00:00, 37.99it/s]100%|██████████| 70/70 [00:01<00:00, 37.39it/s]100%|██████████| 70/70 [00:01<00:00, 38.01it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 94.81it/s]
+  0%|          | 0/39 [00:00<?, ?it/s] 10%|█         | 4/39 [00:00<00:01, 33.26it/s] 21%|██        | 8/39 [00:00<00:00, 33.17it/s] 33%|███▎      | 13/39 [00:00<00:00, 38.95it/s] 44%|████▎     | 17/39 [00:00<00:00, 35.55it/s] 54%|█████▍    | 21/39 [00:00<00:00, 35.85it/s] 67%|██████▋   | 26/39 [00:00<00:00, 37.58it/s] 77%|███████▋  | 30/39 [00:00<00:00, 37.76it/s] 87%|████████▋ | 34/39 [00:00<00:00, 38.29it/s] 97%|█████████▋| 38/39 [00:01<00:00, 37.94it/s]100%|██████████| 39/39 [00:01<00:00, 37.37it/s]
+  0%|          | 0/13 [00:00<?, ?it/s] 31%|███       | 4/13 [00:00<00:00, 39.86it/s] 69%|██████▉   | 9/13 [00:00<00:00, 41.65it/s]100%|██████████| 13/13 [00:00<00:00, 41.50it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 93.73it/s]
+  0%|          | 0/70 [00:00<?, ?it/s]  7%|▋         | 5/70 [00:00<00:01, 48.14it/s] 14%|█▍        | 10/70 [00:00<00:01, 42.84it/s] 21%|██▏       | 15/70 [00:00<00:01, 37.72it/s] 29%|██▊       | 20/70 [00:00<00:01, 38.52it/s] 34%|███▍      | 24/70 [00:00<00:01, 37.41it/s] 40%|████      | 28/70 [00:00<00:01, 36.99it/s] 46%|████▌     | 32/70 [00:00<00:01, 35.35it/s] 51%|█████▏    | 36/70 [00:00<00:00, 35.37it/s] 59%|█████▊    | 41/70 [00:01<00:00, 36.67it/s] 67%|██████▋   | 47/70 [00:01<00:00, 41.33it/s] 74%|███████▍  | 52/70 [00:01<00:00, 42.99it/s] 81%|████████▏ | 57/70 [00:01<00:00, 42.03it/s] 89%|████████▊ | 62/70 [00:01<00:00, 41.57it/s] 96%|█████████▌| 67/70 [00:01<00:00, 41.49it/s]100%|██████████| 70/70 [00:01<00:00, 40.07it/s]
+Time taken for AutoPred: 20.495164394378662 seconds
+
+Running policy 1: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-1
+Running CAPS_main with model path: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-1 and environment: MO_deepSea
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/stable_baselines3/common/save_util.py:437: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  th_object = th.load(file_content, map_location=device)
+running MO_deepSea
+initializing linear utility function
+reward_shape in Utility_Function_Linear 2
+num_total_policies = 3
+initializing linear utility function
+reward_shape in Utility_Function_Linear 2
+Deep Sea horizon: (not exposed by env)
+Dataset collected for model CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-1. Starting explanation generation...
+Running AutoPred
+Explanations with SHAP feature selection
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f4977c65c40>
+generating graph for model: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-1
+Starting graph generation...
+
+ Computing SHAP values for clusters...
+  0%|          | 0/36 [00:00<?, ?it/s]  8%|▊         | 3/36 [00:00<00:01, 28.79it/s] 17%|█▋        | 6/36 [00:00<00:01, 27.97it/s] 28%|██▊       | 10/36 [00:00<00:00, 29.69it/s] 39%|███▉      | 14/36 [00:00<00:00, 31.59it/s] 50%|█████     | 18/36 [00:00<00:00, 31.36it/s] 64%|██████▍   | 23/36 [00:00<00:00, 35.65it/s] 78%|███████▊  | 28/36 [00:00<00:00, 38.95it/s] 92%|█████████▏| 33/36 [00:00<00:00, 40.59it/s]100%|██████████| 36/36 [00:00<00:00, 36.56it/s]
+  0%|          | 0/13 [00:00<?, ?it/s] 38%|███▊      | 5/13 [00:00<00:00, 46.19it/s] 77%|███████▋  | 10/13 [00:00<00:00, 48.03it/s]100%|██████████| 13/13 [00:00<00:00, 48.28it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 90.64it/s]
+  0%|          | 0/29 [00:00<?, ?it/s] 17%|█▋        | 5/29 [00:00<00:00, 46.63it/s] 34%|███▍      | 10/29 [00:00<00:00, 46.22it/s] 52%|█████▏    | 15/29 [00:00<00:00, 46.53it/s] 69%|██████▉   | 20/29 [00:00<00:00, 47.39it/s] 86%|████████▌ | 25/29 [00:00<00:00, 47.24it/s]100%|██████████| 29/29 [00:00<00:00, 46.98it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 42.11it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 43.77it/s]
+  0%|          | 0/70 [00:00<?, ?it/s]  7%|▋         | 5/70 [00:00<00:01, 48.73it/s] 16%|█▌        | 11/70 [00:00<00:01, 49.51it/s] 24%|██▍       | 17/70 [00:00<00:01, 50.25it/s] 33%|███▎      | 23/70 [00:00<00:00, 49.28it/s] 40%|████      | 28/70 [00:00<00:00, 49.34it/s] 47%|████▋     | 33/70 [00:00<00:00, 49.26it/s] 54%|█████▍    | 38/70 [00:00<00:00, 49.41it/s] 63%|██████▎   | 44/70 [00:00<00:00, 49.87it/s] 70%|███████   | 49/70 [00:00<00:00, 49.89it/s] 79%|███████▊  | 55/70 [00:01<00:00, 49.57it/s] 87%|████████▋ | 61/70 [00:01<00:00, 49.90it/s] 96%|█████████▌| 67/70 [00:01<00:00, 49.96it/s]100%|██████████| 70/70 [00:01<00:00, 49.66it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 81.64it/s]
+  0%|          | 0/39 [00:00<?, ?it/s] 13%|█▎        | 5/39 [00:00<00:00, 48.60it/s] 26%|██▌       | 10/39 [00:00<00:00, 48.41it/s] 38%|███▊      | 15/39 [00:00<00:00, 47.89it/s] 54%|█████▍    | 21/39 [00:00<00:00, 48.96it/s] 69%|██████▉   | 27/39 [00:00<00:00, 49.04it/s] 82%|████████▏ | 32/39 [00:00<00:00, 48.91it/s] 95%|█████████▍| 37/39 [00:00<00:00, 48.89it/s]100%|██████████| 39/39 [00:00<00:00, 48.78it/s]
+  0%|          | 0/13 [00:00<?, ?it/s] 46%|████▌     | 6/13 [00:00<00:00, 49.79it/s] 85%|████████▍ | 11/13 [00:00<00:00, 49.79it/s]100%|██████████| 13/13 [00:00<00:00, 49.22it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 86.24it/s]
+  0%|          | 0/70 [00:00<?, ?it/s]  9%|▊         | 6/70 [00:00<00:01, 51.48it/s] 17%|█▋        | 12/70 [00:00<00:01, 50.09it/s] 26%|██▌       | 18/70 [00:00<00:01, 49.59it/s] 34%|███▍      | 24/70 [00:00<00:00, 49.82it/s] 43%|████▎     | 30/70 [00:00<00:00, 49.87it/s] 51%|█████▏    | 36/70 [00:00<00:00, 50.03it/s] 60%|██████    | 42/70 [00:00<00:00, 49.77it/s] 69%|██████▊   | 48/70 [00:00<00:00, 50.30it/s] 77%|███████▋  | 54/70 [00:01<00:00, 49.70it/s] 84%|████████▍ | 59/70 [00:01<00:00, 49.40it/s] 91%|█████████▏| 64/70 [00:01<00:00, 48.83it/s] 99%|█████████▊| 69/70 [00:01<00:00, 48.65it/s]100%|██████████| 70/70 [00:01<00:00, 49.46it/s]
+Time taken for AutoPred: 19.35033392906189 seconds
+
+Running policy 2: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-2
+Running CAPS_main with model path: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-2 and environment: MO_deepSea
+running MO_deepSea
+initializing linear utility function
+reward_shape in Utility_Function_Linear 2
+num_total_policies = 3
+initializing linear utility function
+reward_shape in Utility_Function_Linear 2
+Deep Sea horizon: (not exposed by env)
+Dataset collected for model CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-2. Starting explanation generation...
+Running AutoPred
+Explanations with SHAP feature selection
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f4977c65c10>
+generating graph for model: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-2
+Starting graph generation...
+
+ Computing SHAP values for clusters...
+  0%|          | 0/36 [00:00<?, ?it/s] 14%|█▍        | 5/36 [00:00<00:00, 45.55it/s] 28%|██▊       | 10/36 [00:00<00:00, 42.23it/s] 42%|████▏     | 15/36 [00:00<00:00, 42.13it/s] 56%|█████▌    | 20/36 [00:00<00:00, 44.79it/s] 69%|██████▉   | 25/36 [00:00<00:00, 46.32it/s] 83%|████████▎ | 30/36 [00:00<00:00, 47.33it/s]100%|██████████| 36/36 [00:00<00:00, 48.47it/s]100%|██████████| 36/36 [00:00<00:00, 46.41it/s]
+  0%|          | 0/13 [00:00<?, ?it/s] 38%|███▊      | 5/13 [00:00<00:00, 44.69it/s] 77%|███████▋  | 10/13 [00:00<00:00, 46.71it/s]100%|██████████| 13/13 [00:00<00:00, 47.49it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 98.72it/s]
+  0%|          | 0/29 [00:00<?, ?it/s] 17%|█▋        | 5/29 [00:00<00:00, 48.03it/s] 34%|███▍      | 10/29 [00:00<00:00, 47.17it/s] 52%|█████▏    | 15/29 [00:00<00:00, 44.98it/s] 72%|███████▏  | 21/29 [00:00<00:00, 46.76it/s] 90%|████████▉ | 26/29 [00:00<00:00, 47.75it/s]100%|██████████| 29/29 [00:00<00:00, 47.50it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 48.27it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 49.06it/s]
+  0%|          | 0/70 [00:00<?, ?it/s]  7%|▋         | 5/70 [00:00<00:01, 49.77it/s] 16%|█▌        | 11/70 [00:00<00:01, 50.25it/s] 24%|██▍       | 17/70 [00:00<00:01, 49.94it/s] 31%|███▏      | 22/70 [00:00<00:00, 49.62it/s] 39%|███▊      | 27/70 [00:00<00:00, 48.77it/s] 46%|████▌     | 32/70 [00:00<00:00, 47.74it/s] 53%|█████▎    | 37/70 [00:00<00:00, 46.81it/s] 60%|██████    | 42/70 [00:00<00:00, 46.62it/s] 67%|██████▋   | 47/70 [00:00<00:00, 47.37it/s] 74%|███████▍  | 52/70 [00:01<00:00, 47.39it/s] 81%|████████▏ | 57/70 [00:01<00:00, 47.63it/s] 89%|████████▊ | 62/70 [00:01<00:00, 47.77it/s] 96%|█████████▌| 67/70 [00:01<00:00, 47.61it/s]100%|██████████| 70/70 [00:01<00:00, 48.04it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 95.89it/s]
+  0%|          | 0/39 [00:00<?, ?it/s] 13%|█▎        | 5/39 [00:00<00:00, 48.66it/s] 26%|██▌       | 10/39 [00:00<00:00, 47.49it/s] 38%|███▊      | 15/39 [00:00<00:00, 48.04it/s] 51%|█████▏    | 20/39 [00:00<00:00, 47.78it/s] 64%|██████▍   | 25/39 [00:00<00:00, 48.54it/s] 77%|███████▋  | 30/39 [00:00<00:00, 48.65it/s] 90%|████████▉ | 35/39 [00:00<00:00, 48.48it/s]100%|██████████| 39/39 [00:00<00:00, 48.27it/s]
+  0%|          | 0/13 [00:00<?, ?it/s] 46%|████▌     | 6/13 [00:00<00:00, 50.44it/s] 92%|█████████▏| 12/13 [00:00<00:00, 50.59it/s]100%|██████████| 13/13 [00:00<00:00, 49.83it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 90.65it/s]
+  0%|          | 0/70 [00:00<?, ?it/s]  7%|▋         | 5/70 [00:00<00:01, 48.59it/s] 14%|█▍        | 10/70 [00:00<00:01, 48.74it/s] 21%|██▏       | 15/70 [00:00<00:01, 47.93it/s] 30%|███       | 21/70 [00:00<00:00, 49.08it/s] 39%|███▊      | 27/70 [00:00<00:00, 49.35it/s] 47%|████▋     | 33/70 [00:00<00:00, 49.74it/s] 54%|█████▍    | 38/70 [00:00<00:00, 48.95it/s] 61%|██████▏   | 43/70 [00:00<00:00, 48.12it/s] 69%|██████▊   | 48/70 [00:00<00:00, 47.94it/s] 76%|███████▌  | 53/70 [00:01<00:00, 48.37it/s] 83%|████████▎ | 58/70 [00:01<00:00, 47.65it/s] 90%|█████████ | 63/70 [00:01<00:00, 48.12it/s] 97%|█████████▋| 68/70 [00:01<00:00, 48.35it/s]100%|██████████| 70/70 [00:01<00:00, 48.43it/s]
+Time taken for AutoPred: 19.313684940338135 seconds
+{'policy_0': {'tree': <CAPS.CLTree.CLTree object at 0x7f4977caff40>, 'height': 6, 'fidelity': None, 'state_features': ['lvl', 'pos', 'State Value', 'Action'], 'groups': [{'group': 1, 'translation': 'pos equal to 0', 'critical_value': 0.0, 'entropy': 0.02962404675781727, 'num_instances': 36, 'important_features': ['pos'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (0.0, 0.0), 'State Value': (0.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 2, 'translation': 'pos equal to 0', 'critical_value': 0.0, 'entropy': 0.02962404675781727, 'num_instances': 13, 'important_features': ['pos'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (0.0, 0.0), 'State Value': (0.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 3, 'translation': 'lvl equal to 0', 'critical_value': 1.0, 'entropy': 0.0007674766820855439, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (2.0, 0.0), 'State Value': (0.2632635564629849, 0.2632635564629849), 'Action': (3.0, 1.0)}}, {'group': 4, 'translation': 'pos between 1 and 0', 'critical_value': 0.0, 'entropy': 0.008199945798721808, 'num_instances': 29, 'important_features': ['pos'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (1.0, 0.0), 'State Value': (0.1409754587607753, 0.0), 'Action': (3.0, 1.0)}}, {'group': 5, 'translation': 'pos equal to 1', 'critical_value': 0.0, 'entropy': 0.007434799335896969, 'num_instances': 2, 'important_features': ['pos'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (1.0, 1.0), 'State Value': (1.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 6, 'translation': 'pos equal to 1', 'critical_value': 0.0, 'entropy': 0.007434799335896969, 'num_instances': 2, 'important_features': ['pos'], 'boundaries': {'lvl': (1.0, 0.0), 'pos': (1.0, 1.0), 'State Value': (1.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 7, 'translation': 'lvl between 1 and 0', 'critical_value': 1.0, 'entropy': 0.0040490383114555745, 'num_instances': 127, 'important_features': ['lvl'], 'boundaries': {'lvl': (1.0, 0.0), 'pos': (3.0, 1.0), 'State Value': (1.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 8, 'translation': 'pos between 3 and 0', 'critical_value': 0.0, 'entropy': 0.029852010309696198, 'num_instances': 1, 'important_features': ['pos'], 'boundaries': {'lvl': (1.0, 1.0), 'pos': (3.0, 0.0), 'State Value': (0.607164328438009, 0.607164328438009), 'Action': (1.0, 1.0)}}, {'group': 9, 'translation': 'pos between 3 and 0', 'critical_value': 0.0, 'entropy': 0.029852010309696198, 'num_instances': 39, 'important_features': ['pos'], 'boundaries': {'lvl': (1.0, 1.0), 'pos': (3.0, 0.0), 'State Value': (1.0, 0.607164328438009), 'Action': (1.0, 1.0)}}, {'group': 10, 'translation': 'pos between 3 and 0', 'critical_value': 0.0, 'entropy': 0.19449543952941895, 'num_instances': 13, 'important_features': ['pos'], 'boundaries': {'lvl': (2.0, 1.0), 'pos': (3.0, 0.0), 'State Value': (1.0, 0.607164328438009), 'Action': (1.0, 1.0)}}, {'group': 11, 'translation': 'lvl between 3 and 2', 'critical_value': 0.0, 'entropy': 0.19449543952941895, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 2.0), 'pos': (3.0, 0.0), 'State Value': (0.7869463994822233, 0.7869463994822233), 'Action': (1.0, 1.0)}}, {'group': 12, 'translation': 'lvl between 3 and 2', 'critical_value': 0.0, 'entropy': 0.08145412423432707, 'num_instances': 86, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 2.0), 'pos': (3.0, 0.0), 'State Value': (1.0, 0.7869463994822233), 'Action': (1.0, 1.0)}}], 'edges': [{'from_group': 1, 'to_group': 7, 'probability': 1.0000000000000002, 'action': 3}, {'from_group': 2, 'to_group': 7, 'probability': 0.9999999999999998, 'action': 3}, {'from_group': 3, 'to_group': 7, 'probability': 1.0, 'action': 3}, {'from_group': 4, 'to_group': 7, 'probability': 0.9999999999999996, 'action': 3}, {'from_group': 5, 'to_group': 7, 'probability': 1.0, 'action': 3}, {'from_group': 6, 'to_group': 7, 'probability': 1.0, 'action': 3}, {'from_group': 7, 'to_group': 7, 'probability': 0.5275590551181095, 'action': 3}, {'from_group': 7, 'to_group': 9, 'probability': 0.3937007874015743, 'action': 1}, {'from_group': 7, 'to_group': 12, 'probability': 0.07874015748031496, 'action': 1}, {'from_group': 8, 'to_group': 12, 'probability': 1.0, 'action': 1}, {'from_group': 9, 'to_group': 12, 'probability': 1.0000000000000004, 'action': 1}, {'from_group': 10, 'to_group': 12, 'probability': 0.9999999999999998, 'action': 1}, {'from_group': 11, 'to_group': 12, 'probability': 1.0, 'action': 1}, {'from_group': 12, 'to_group': 12, 'probability': 0.4186046511627909, 'action': 1}, {'from_group': 12, 'to_group': 13, 'probability': 0.5813953488372098, 'action': 1}], 'feature_selection': {'method': 'shap', 'important_features': [['pos'], ['pos'], ['lvl'], ['pos'], ['pos'], ['pos'], ['lvl'], ['pos'], ['pos'], ['pos'], ['lvl'], ['lvl']]}}, 'policy_1': {'tree': <CAPS.CLTree.CLTree object at 0x7f497790a160>, 'height': 6, 'fidelity': None, 'state_features': ['lvl', 'pos', 'State Value', 'Action'], 'groups': [{'group': 1, 'translation': 'pos equal to 0', 'critical_value': 0.0, 'entropy': 0.02962404675781727, 'num_instances': 36, 'important_features': ['pos'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (0.0, 0.0), 'State Value': (0.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 2, 'translation': 'pos equal to 0', 'critical_value': 0.0, 'entropy': 0.02962404675781727, 'num_instances': 13, 'important_features': ['pos'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (0.0, 0.0), 'State Value': (0.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 3, 'translation': 'lvl equal to 0', 'critical_value': 1.0, 'entropy': 0.0007674766820855439, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (2.0, 0.0), 'State Value': (0.2632635564629849, 0.2632635564629849), 'Action': (3.0, 1.0)}}, {'group': 4, 'translation': 'pos between 1 and 0', 'critical_value': 0.0, 'entropy': 0.008199945798721808, 'num_instances': 29, 'important_features': ['pos'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (1.0, 0.0), 'State Value': (0.1409754587607753, 0.0), 'Action': (3.0, 1.0)}}, {'group': 5, 'translation': 'pos equal to 1', 'critical_value': 0.0, 'entropy': 0.007434799335896969, 'num_instances': 2, 'important_features': ['pos'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (1.0, 1.0), 'State Value': (1.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 6, 'translation': 'pos equal to 1', 'critical_value': 0.0, 'entropy': 0.007434799335896969, 'num_instances': 2, 'important_features': ['pos'], 'boundaries': {'lvl': (1.0, 0.0), 'pos': (1.0, 1.0), 'State Value': (1.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 7, 'translation': 'lvl between 1 and 0', 'critical_value': 1.0, 'entropy': 0.0040490383114555745, 'num_instances': 127, 'important_features': ['lvl'], 'boundaries': {'lvl': (1.0, 0.0), 'pos': (3.0, 1.0), 'State Value': (1.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 8, 'translation': 'pos between 3 and 0', 'critical_value': 0.0, 'entropy': 0.029852010309696198, 'num_instances': 1, 'important_features': ['pos'], 'boundaries': {'lvl': (1.0, 1.0), 'pos': (3.0, 0.0), 'State Value': (0.607164328438009, 0.607164328438009), 'Action': (1.0, 1.0)}}, {'group': 9, 'translation': 'pos between 3 and 0', 'critical_value': 0.0, 'entropy': 0.029852010309696198, 'num_instances': 39, 'important_features': ['pos'], 'boundaries': {'lvl': (1.0, 1.0), 'pos': (3.0, 0.0), 'State Value': (1.0, 0.607164328438009), 'Action': (1.0, 1.0)}}, {'group': 10, 'translation': 'pos between 3 and 0', 'critical_value': 0.0, 'entropy': 0.19449543952941895, 'num_instances': 13, 'important_features': ['pos'], 'boundaries': {'lvl': (2.0, 1.0), 'pos': (3.0, 0.0), 'State Value': (1.0, 0.607164328438009), 'Action': (1.0, 1.0)}}, {'group': 11, 'translation': 'lvl between 3 and 2', 'critical_value': 0.0, 'entropy': 0.19449543952941895, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 2.0), 'pos': (3.0, 0.0), 'State Value': (0.7869463994822233, 0.7869463994822233), 'Action': (1.0, 1.0)}}, {'group': 12, 'translation': 'lvl between 3 and 2', 'critical_value': 0.0, 'entropy': 0.08145412423432707, 'num_instances': 86, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 2.0), 'pos': (3.0, 0.0), 'State Value': (1.0, 0.7869463994822233), 'Action': (1.0, 1.0)}}], 'edges': [{'from_group': 1, 'to_group': 7, 'probability': 1.0000000000000002, 'action': 3}, {'from_group': 2, 'to_group': 7, 'probability': 0.9999999999999998, 'action': 3}, {'from_group': 3, 'to_group': 7, 'probability': 1.0, 'action': 3}, {'from_group': 4, 'to_group': 7, 'probability': 0.9999999999999996, 'action': 3}, {'from_group': 5, 'to_group': 7, 'probability': 1.0, 'action': 3}, {'from_group': 6, 'to_group': 7, 'probability': 1.0, 'action': 3}, {'from_group': 7, 'to_group': 7, 'probability': 0.5275590551181095, 'action': 3}, {'from_group': 7, 'to_group': 9, 'probability': 0.3937007874015743, 'action': 1}, {'from_group': 7, 'to_group': 12, 'probability': 0.07874015748031496, 'action': 1}, {'from_group': 8, 'to_group': 12, 'probability': 1.0, 'action': 1}, {'from_group': 9, 'to_group': 12, 'probability': 1.0000000000000004, 'action': 1}, {'from_group': 10, 'to_group': 12, 'probability': 0.9999999999999998, 'action': 1}, {'from_group': 11, 'to_group': 12, 'probability': 1.0, 'action': 1}, {'from_group': 12, 'to_group': 12, 'probability': 0.4186046511627909, 'action': 1}, {'from_group': 12, 'to_group': 13, 'probability': 0.5813953488372098, 'action': 1}], 'feature_selection': {'method': 'shap', 'important_features': [['pos'], ['pos'], ['lvl'], ['pos'], ['pos'], ['pos'], ['lvl'], ['pos'], ['pos'], ['pos'], ['lvl'], ['lvl']]}}, 'policy_2': {'tree': <CAPS.CLTree.CLTree object at 0x7f4918363280>, 'height': 6, 'fidelity': None, 'state_features': ['lvl', 'pos', 'State Value', 'Action'], 'groups': [{'group': 1, 'translation': 'pos equal to 0', 'critical_value': 0.0, 'entropy': 0.02962404675781727, 'num_instances': 36, 'important_features': ['pos'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (0.0, 0.0), 'State Value': (0.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 2, 'translation': 'pos equal to 0', 'critical_value': 0.0, 'entropy': 0.02962404675781727, 'num_instances': 13, 'important_features': ['pos'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (0.0, 0.0), 'State Value': (0.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 3, 'translation': 'lvl equal to 0', 'critical_value': 1.0, 'entropy': 0.0007674766820855439, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (2.0, 0.0), 'State Value': (0.2632635564629849, 0.2632635564629849), 'Action': (3.0, 1.0)}}, {'group': 4, 'translation': 'pos between 1 and 0', 'critical_value': 0.0, 'entropy': 0.008199945798721808, 'num_instances': 29, 'important_features': ['pos'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (1.0, 0.0), 'State Value': (0.1409754587607753, 0.0), 'Action': (3.0, 1.0)}}, {'group': 5, 'translation': 'pos equal to 1', 'critical_value': 0.0, 'entropy': 0.007434799335896969, 'num_instances': 2, 'important_features': ['pos'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (1.0, 1.0), 'State Value': (1.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 6, 'translation': 'pos equal to 1', 'critical_value': 0.0, 'entropy': 0.007434799335896969, 'num_instances': 2, 'important_features': ['pos'], 'boundaries': {'lvl': (1.0, 0.0), 'pos': (1.0, 1.0), 'State Value': (1.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 7, 'translation': 'lvl between 1 and 0', 'critical_value': 1.0, 'entropy': 0.0040490383114555745, 'num_instances': 127, 'important_features': ['lvl'], 'boundaries': {'lvl': (1.0, 0.0), 'pos': (3.0, 1.0), 'State Value': (1.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 8, 'translation': 'pos between 3 and 0', 'critical_value': 0.0, 'entropy': 0.029852010309696198, 'num_instances': 1, 'important_features': ['pos'], 'boundaries': {'lvl': (1.0, 1.0), 'pos': (3.0, 0.0), 'State Value': (0.607164328438009, 0.607164328438009), 'Action': (1.0, 1.0)}}, {'group': 9, 'translation': 'pos between 3 and 0', 'critical_value': 0.0, 'entropy': 0.029852010309696198, 'num_instances': 39, 'important_features': ['pos'], 'boundaries': {'lvl': (1.0, 1.0), 'pos': (3.0, 0.0), 'State Value': (1.0, 0.607164328438009), 'Action': (1.0, 1.0)}}, {'group': 10, 'translation': 'pos between 3 and 0', 'critical_value': 0.0, 'entropy': 0.19449543952941895, 'num_instances': 13, 'important_features': ['pos'], 'boundaries': {'lvl': (2.0, 1.0), 'pos': (3.0, 0.0), 'State Value': (1.0, 0.607164328438009), 'Action': (1.0, 1.0)}}, {'group': 11, 'translation': 'lvl between 3 and 2', 'critical_value': 0.0, 'entropy': 0.19449543952941895, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 2.0), 'pos': (3.0, 0.0), 'State Value': (0.7869463994822233, 0.7869463994822233), 'Action': (1.0, 1.0)}}, {'group': 12, 'translation': 'lvl between 3 and 2', 'critical_value': 0.0, 'entropy': 0.08145412423432707, 'num_instances': 86, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 2.0), 'pos': (3.0, 0.0), 'State Value': (1.0, 0.7869463994822233), 'Action': (1.0, 1.0)}}], 'edges': [{'from_group': 1, 'to_group': 7, 'probability': 1.0000000000000002, 'action': 3}, {'from_group': 2, 'to_group': 7, 'probability': 0.9999999999999998, 'action': 3}, {'from_group': 3, 'to_group': 7, 'probability': 1.0, 'action': 3}, {'from_group': 4, 'to_group': 7, 'probability': 0.9999999999999996, 'action': 3}, {'from_group': 5, 'to_group': 7, 'probability': 1.0, 'action': 3}, {'from_group': 6, 'to_group': 7, 'probability': 1.0, 'action': 3}, {'from_group': 7, 'to_group': 7, 'probability': 0.5275590551181095, 'action': 3}, {'from_group': 7, 'to_group': 9, 'probability': 0.3937007874015743, 'action': 1}, {'from_group': 7, 'to_group': 12, 'probability': 0.07874015748031496, 'action': 1}, {'from_group': 8, 'to_group': 12, 'probability': 1.0, 'action': 1}, {'from_group': 9, 'to_group': 12, 'probability': 1.0000000000000004, 'action': 1}, {'from_group': 10, 'to_group': 12, 'probability': 0.9999999999999998, 'action': 1}, {'from_group': 11, 'to_group': 12, 'probability': 1.0, 'action': 1}, {'from_group': 12, 'to_group': 12, 'probability': 0.4186046511627909, 'action': 1}, {'from_group': 12, 'to_group': 13, 'probability': 0.5813953488372098, 'action': 1}], 'feature_selection': {'method': 'shap', 'important_features': [['pos'], ['pos'], ['lvl'], ['pos'], ['pos'], ['pos'], ['lvl'], ['pos'], ['pos'], ['pos'], ['lvl'], ['lvl']]}}}/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/grakel/graph.py:314: UserWarning: changing format from "adjacency" to "all"
+  warnings.warn('changing format from "adjacency" to "all"')
+
+All policies have been tested and graphs collected. 3 graphs in total.
+Weisfeiler-Lehman Kernel Matrix:
+        0      1      2
+  0  1.00   1.00   1.00
+  1  1.00   1.00   1.00
+  2  1.00   1.00   1.00
+Subgraph Matching Kernel Matrix:
+        0      1      2
+  0  1.00   1.00   1.00
+  1  1.00   1.00   1.00
+  2  1.00   1.00   1.00
+Avg. simillarity Matrix:
+        0      1      2
+  0  1.00   1.00   1.00
+  1  1.00   1.00   1.00
+  2  1.00   1.00   1.00
+Best graphs selected based on combined average similarity: policy_0 and policy_1
+policy 1 selected for explanation: 
+ {'tree': <CAPS.CLTree.CLTree object at 0x7f4977caff40>, 'height': 6, 'fidelity': None, 'state_features': ['lvl', 'pos', 'State Value', 'Action'], 'groups': [{'group': 1, 'translation': 'pos equal to 0', 'critical_value': 0.0, 'entropy': 0.02962404675781727, 'num_instances': 36, 'important_features': ['pos'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (0.0, 0.0), 'State Value': (0.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 2, 'translation': 'pos equal to 0', 'critical_value': 0.0, 'entropy': 0.02962404675781727, 'num_instances': 13, 'important_features': ['pos'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (0.0, 0.0), 'State Value': (0.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 3, 'translation': 'lvl equal to 0', 'critical_value': 1.0, 'entropy': 0.0007674766820855439, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (2.0, 0.0), 'State Value': (0.2632635564629849, 0.2632635564629849), 'Action': (3.0, 1.0)}}, {'group': 4, 'translation': 'pos between 1 and 0', 'critical_value': 0.0, 'entropy': 0.008199945798721808, 'num_instances': 29, 'important_features': ['pos'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (1.0, 0.0), 'State Value': (0.1409754587607753, 0.0), 'Action': (3.0, 1.0)}}, {'group': 5, 'translation': 'pos equal to 1', 'critical_value': 0.0, 'entropy': 0.007434799335896969, 'num_instances': 2, 'important_features': ['pos'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (1.0, 1.0), 'State Value': (1.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 6, 'translation': 'pos equal to 1', 'critical_value': 0.0, 'entropy': 0.007434799335896969, 'num_instances': 2, 'important_features': ['pos'], 'boundaries': {'lvl': (1.0, 0.0), 'pos': (1.0, 1.0), 'State Value': (1.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 7, 'translation': 'lvl between 1 and 0', 'critical_value': 1.0, 'entropy': 0.0040490383114555745, 'num_instances': 127, 'important_features': ['lvl'], 'boundaries': {'lvl': (1.0, 0.0), 'pos': (3.0, 1.0), 'State Value': (1.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 8, 'translation': 'pos between 3 and 0', 'critical_value': 0.0, 'entropy': 0.029852010309696198, 'num_instances': 1, 'important_features': ['pos'], 'boundaries': {'lvl': (1.0, 1.0), 'pos': (3.0, 0.0), 'State Value': (0.607164328438009, 0.607164328438009), 'Action': (1.0, 1.0)}}, {'group': 9, 'translation': 'pos between 3 and 0', 'critical_value': 0.0, 'entropy': 0.029852010309696198, 'num_instances': 39, 'important_features': ['pos'], 'boundaries': {'lvl': (1.0, 1.0), 'pos': (3.0, 0.0), 'State Value': (1.0, 0.607164328438009), 'Action': (1.0, 1.0)}}, {'group': 10, 'translation': 'pos between 3 and 0', 'critical_value': 0.0, 'entropy': 0.19449543952941895, 'num_instances': 13, 'important_features': ['pos'], 'boundaries': {'lvl': (2.0, 1.0), 'pos': (3.0, 0.0), 'State Value': (1.0, 0.607164328438009), 'Action': (1.0, 1.0)}}, {'group': 11, 'translation': 'lvl between 3 and 2', 'critical_value': 0.0, 'entropy': 0.19449543952941895, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 2.0), 'pos': (3.0, 0.0), 'State Value': (0.7869463994822233, 0.7869463994822233), 'Action': (1.0, 1.0)}}, {'group': 12, 'translation': 'lvl between 3 and 2', 'critical_value': 0.0, 'entropy': 0.08145412423432707, 'num_instances': 86, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 2.0), 'pos': (3.0, 0.0), 'State Value': (1.0, 0.7869463994822233), 'Action': (1.0, 1.0)}}], 'edges': [{'from_group': 1, 'to_group': 7, 'probability': 1.0000000000000002, 'action': 3}, {'from_group': 2, 'to_group': 7, 'probability': 0.9999999999999998, 'action': 3}, {'from_group': 3, 'to_group': 7, 'probability': 1.0, 'action': 3}, {'from_group': 4, 'to_group': 7, 'probability': 0.9999999999999996, 'action': 3}, {'from_group': 5, 'to_group': 7, 'probability': 1.0, 'action': 3}, {'from_group': 6, 'to_group': 7, 'probability': 1.0, 'action': 3}, {'from_group': 7, 'to_group': 7, 'probability': 0.5275590551181095, 'action': 3}, {'from_group': 7, 'to_group': 9, 'probability': 0.3937007874015743, 'action': 1}, {'from_group': 7, 'to_group': 12, 'probability': 0.07874015748031496, 'action': 1}, {'from_group': 8, 'to_group': 12, 'probability': 1.0, 'action': 1}, {'from_group': 9, 'to_group': 12, 'probability': 1.0000000000000004, 'action': 1}, {'from_group': 10, 'to_group': 12, 'probability': 0.9999999999999998, 'action': 1}, {'from_group': 11, 'to_group': 12, 'probability': 1.0, 'action': 1}, {'from_group': 12, 'to_group': 12, 'probability': 0.4186046511627909, 'action': 1}, {'from_group': 12, 'to_group': 13, 'probability': 0.5813953488372098, 'action': 1}], 'feature_selection': {'method': 'shap', 'important_features': [['pos'], ['pos'], ['lvl'], ['pos'], ['pos'], ['pos'], ['lvl'], ['pos'], ['pos'], ['pos'], ['lvl'], ['lvl']]}}
+policy 2 selected for explanation: 
+{'tree': <CAPS.CLTree.CLTree object at 0x7f497790a160>, 'height': 6, 'fidelity': None, 'state_features': ['lvl', 'pos', 'State Value', 'Action'], 'groups': [{'group': 1, 'translation': 'pos equal to 0', 'critical_value': 0.0, 'entropy': 0.02962404675781727, 'num_instances': 36, 'important_features': ['pos'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (0.0, 0.0), 'State Value': (0.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 2, 'translation': 'pos equal to 0', 'critical_value': 0.0, 'entropy': 0.02962404675781727, 'num_instances': 13, 'important_features': ['pos'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (0.0, 0.0), 'State Value': (0.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 3, 'translation': 'lvl equal to 0', 'critical_value': 1.0, 'entropy': 0.0007674766820855439, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (2.0, 0.0), 'State Value': (0.2632635564629849, 0.2632635564629849), 'Action': (3.0, 1.0)}}, {'group': 4, 'translation': 'pos between 1 and 0', 'critical_value': 0.0, 'entropy': 0.008199945798721808, 'num_instances': 29, 'important_features': ['pos'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (1.0, 0.0), 'State Value': (0.1409754587607753, 0.0), 'Action': (3.0, 1.0)}}, {'group': 5, 'translation': 'pos equal to 1', 'critical_value': 0.0, 'entropy': 0.007434799335896969, 'num_instances': 2, 'important_features': ['pos'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (1.0, 1.0), 'State Value': (1.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 6, 'translation': 'pos equal to 1', 'critical_value': 0.0, 'entropy': 0.007434799335896969, 'num_instances': 2, 'important_features': ['pos'], 'boundaries': {'lvl': (1.0, 0.0), 'pos': (1.0, 1.0), 'State Value': (1.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 7, 'translation': 'lvl between 1 and 0', 'critical_value': 1.0, 'entropy': 0.0040490383114555745, 'num_instances': 127, 'important_features': ['lvl'], 'boundaries': {'lvl': (1.0, 0.0), 'pos': (3.0, 1.0), 'State Value': (1.0, 0.0), 'Action': (3.0, 1.0)}}, {'group': 8, 'translation': 'pos between 3 and 0', 'critical_value': 0.0, 'entropy': 0.029852010309696198, 'num_instances': 1, 'important_features': ['pos'], 'boundaries': {'lvl': (1.0, 1.0), 'pos': (3.0, 0.0), 'State Value': (0.607164328438009, 0.607164328438009), 'Action': (1.0, 1.0)}}, {'group': 9, 'translation': 'pos between 3 and 0', 'critical_value': 0.0, 'entropy': 0.029852010309696198, 'num_instances': 39, 'important_features': ['pos'], 'boundaries': {'lvl': (1.0, 1.0), 'pos': (3.0, 0.0), 'State Value': (1.0, 0.607164328438009), 'Action': (1.0, 1.0)}}, {'group': 10, 'translation': 'pos between 3 and 0', 'critical_value': 0.0, 'entropy': 0.19449543952941895, 'num_instances': 13, 'important_features': ['pos'], 'boundaries': {'lvl': (2.0, 1.0), 'pos': (3.0, 0.0), 'State Value': (1.0, 0.607164328438009), 'Action': (1.0, 1.0)}}, {'group': 11, 'translation': 'lvl between 3 and 2', 'critical_value': 0.0, 'entropy': 0.19449543952941895, 'num_instances': 1, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 2.0), 'pos': (3.0, 0.0), 'State Value': (0.7869463994822233, 0.7869463994822233), 'Action': (1.0, 1.0)}}, {'group': 12, 'translation': 'lvl between 3 and 2', 'critical_value': 0.0, 'entropy': 0.08145412423432707, 'num_instances': 86, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 2.0), 'pos': (3.0, 0.0), 'State Value': (1.0, 0.7869463994822233), 'Action': (1.0, 1.0)}}], 'edges': [{'from_group': 1, 'to_group': 7, 'probability': 1.0000000000000002, 'action': 3}, {'from_group': 2, 'to_group': 7, 'probability': 0.9999999999999998, 'action': 3}, {'from_group': 3, 'to_group': 7, 'probability': 1.0, 'action': 3}, {'from_group': 4, 'to_group': 7, 'probability': 0.9999999999999996, 'action': 3}, {'from_group': 5, 'to_group': 7, 'probability': 1.0, 'action': 3}, {'from_group': 6, 'to_group': 7, 'probability': 1.0, 'action': 3}, {'from_group': 7, 'to_group': 7, 'probability': 0.5275590551181095, 'action': 3}, {'from_group': 7, 'to_group': 9, 'probability': 0.3937007874015743, 'action': 1}, {'from_group': 7, 'to_group': 12, 'probability': 0.07874015748031496, 'action': 1}, {'from_group': 8, 'to_group': 12, 'probability': 1.0, 'action': 1}, {'from_group': 9, 'to_group': 12, 'probability': 1.0000000000000004, 'action': 1}, {'from_group': 10, 'to_group': 12, 'probability': 0.9999999999999998, 'action': 1}, {'from_group': 11, 'to_group': 12, 'probability': 1.0, 'action': 1}, {'from_group': 12, 'to_group': 12, 'probability': 0.4186046511627909, 'action': 1}, {'from_group': 12, 'to_group': 13, 'probability': 0.5813953488372098, 'action': 1}], 'feature_selection': {'method': 'shap', 'important_features': [['pos'], ['pos'], ['lvl'], ['pos'], ['pos'], ['pos'], ['lvl'], ['pos'], ['pos'], ['pos'], ['lvl'], ['lvl']]}}
+
+ Generating contrastive explanations for the selected graph pair...
+
+
+--- Contrastive explanation for test state 0: {'x': 0, 'y': 0} ---
+state analysis test for policy_0: 1
+state analysis test for policy_1: 1
+Next probable action for policy_0: 3
+Next probable action for policy_1: 3
+
+
+--- Contrastive explanation for test state 1: {'x': 1, 'y': 1} ---
+state analysis test for policy_0: 1
+state analysis test for policy_1: 1
+Next probable action for policy_0: 3
+Next probable action for policy_1: 3
+
+
+--- Contrastive explanation for test state 2: {'x': 2, 'y': 2} ---
+state analysis test for policy_0: 1
+state analysis test for policy_1: 1
+Next probable action for policy_0: 3
+Next probable action for policy_1: 3
+
+
+--- Contrastive explanation for test state 3: {'x': 3, 'y': 3} ---
+state analysis test for policy_0: 1
+state analysis test for policy_1: 1
+Next probable action for policy_0: 3
+Next probable action for policy_1: 3
+
+
+--- Contrastive explanation for test state 4: {'x': 4, 'y': 4} ---
+state analysis test for policy_0: 1
+state analysis test for policy_1: 1
+Next probable action for policy_0: 3
+Next probable action for policy_1: 3
+
+
+--- Contrastive explanation for test state 5: {'x': 5, 'y': 5} ---
+state analysis test for policy_0: 1
+state analysis test for policy_1: 1
+Next probable action for policy_0: 3
+Next probable action for policy_1: 3
+
+
+--- Contrastive explanation for test state 6: {'x': 6, 'y': 7} ---
+state analysis test for policy_0: 1
+state analysis test for policy_1: 1
+Next probable action for policy_0: 3
+Next probable action for policy_1: 3
+
+
+--- Contrastive explanation for test state 7: {'x': 10, 'y': 10} ---
+state analysis test for policy_0: 1
+state analysis test for policy_1: 1
+Next probable action for policy_0: 3
+Next probable action for policy_1: 3
+Common transitions:
+(6, 7, 3)
+(7, 9, 1)
+(12, 13, 1)
+(9, 12, 1)
+(2, 7, 3)
+(10, 12, 1)
+(3, 7, 3)
+(7, 12, 1)
+(11, 12, 1)
+(8, 12, 1)
+(7, 7, 3)
+(4, 7, 3)
+(1, 7, 3)
+(5, 7, 3)
+(12, 12, 1)
+Unique to policy 1:
+Unique to policy 2:
+MCS mapping: {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 9, 10: 10, 11: 11, 12: 12, 13: 13}
+Common nodes: [(1, {'label': 'pos equal to 0', 'node_type': 'group'}), (2, {'label': 'pos equal to 0', 'node_type': 'group'}), (3, {'label': 'lvl equal to 0', 'node_type': 'group'}), (4, {'label': 'pos between 1 and 0', 'node_type': 'group'}), (5, {'label': 'pos equal to 1', 'node_type': 'group'}), (6, {'label': 'pos equal to 1', 'node_type': 'group'}), (7, {'label': 'lvl between 1 and 0', 'node_type': 'group'}), (8, {'label': 'pos between 3 and 0', 'node_type': 'group'}), (9, {'label': 'pos between 3 and 0', 'node_type': 'group'}), (10, {'label': 'pos between 3 and 0', 'node_type': 'group'}), (11, {'label': 'lvl between 3 and 2', 'node_type': 'group'}), (12, {'label': 'lvl between 3 and 2', 'node_type': 'group'}), (13, {})]
+Common edges: [(1, 7, {'action': 3, 'probability': 1.0000000000000002}), (2, 7, {'action': 3, 'probability': 0.9999999999999998}), (3, 7, {'action': 3, 'probability': 1.0}), (4, 7, {'action': 3, 'probability': 0.9999999999999996}), (5, 7, {'action': 3, 'probability': 1.0}), (6, 7, {'action': 3, 'probability': 1.0}), (7, 7, {'action': 3, 'probability': 0.5275590551181095}), (7, 9, {'action': 1, 'probability': 0.3937007874015743}), (7, 12, {'action': 1, 'probability': 0.07874015748031496}), (8, 12, {'action': 1, 'probability': 1.0}), (9, 12, {'action': 1, 'probability': 1.0000000000000004}), (10, 12, {'action': 1, 'probability': 0.9999999999999998}), (11, 12, {'action': 1, 'probability': 1.0}), (12, 12, {'action': 1, 'probability': 0.4186046511627909}), (12, 13, {'action': 1, 'probability': 0.5813953488372098})]
+
+
+--- Shared subgraph percentage for all nodes and edges between all graphs ---
+Best graphs selected based on combined kernel similarity: policy_0 and policy_1
+Weisfeiler-Lehman Kernel Matrix:
+        0      1      2
+  0  1.00   1.00   1.00
+  1  1.00   1.00   1.00
+  2  1.00   1.00   1.00
+Subgraph Matching Kernel Matrix:
+        0      1      2
+  0  1.00   1.00   1.00
+  1  1.00   1.00   1.00
+  2  1.00   1.00   1.00
+Avg. simillarity Matrix:
+        0      1      2
+  0  1.00   1.00   1.00
+  1  1.00   1.00   1.00
+  2  1.00   1.00   1.00
+Shared subgraph percentage for all nodes and edges between all graphs:
+nodes:
+           0         1         2
+  0  100.00%   100.00%   100.00%
+  1  100.00%   100.00%   100.00%
+  2  100.00%   100.00%   100.00%
+edges:
+           0         1         2
+  0  100.00%   100.00%   100.00%
+  1  100.00%   100.00%   100.00%
+  2  100.00%   100.00%   100.00%
+Shared percentage from g1 to g2 in nodes and edges between all graphs:
+nodes:
+           0         1         2
+  0  100.00%   100.00%   100.00%
+  1  100.00%   100.00%   100.00%
+  2  100.00%   100.00%   100.00%
+edges:
+           0         1         2
+  0  100.00%   100.00%   100.00%
+  1  100.00%   100.00%   100.00%
+  2  100.00%   100.00%   100.00%
+
+
+--- Summary of execution times ---
+Graph generation phase: 71.42 seconds
+Graph comparison phase: 0.01 seconds
+Action explanation generation phase: 0.00 seconds
+Edge explanation generation phase: 0.00 seconds
+Subgraph explanation generation phase: 0.00 seconds
+Subgraph percentage explanation generation phase: 0.03 seconds
+Total explanation generation phase: 0.03 seconds
+
+
+--- End of execution ---
+{'group': 1, 'translation': 'pos equal to 0', 'critical_value': 0.0, 'entropy': 0.02962404675781727, 'num_instances': 36, 'important_features': ['pos'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (0.0, 0.0), 'State Value': (0.0, 0.0), 'Action': (3.0, 1.0)}}

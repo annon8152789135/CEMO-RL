@@ -1,0 +1,17 @@
+****************************Choosen GPU : 0****************************
+/mnt/c/Juan/Phd/APGS/.venvs/dpmorl/lib/python3.8/site-packages/gymnasium/envs/registration.py:519: DeprecationWarning: [33mWARN: The environment mo-reacher-v0 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+Traceback (most recent call last):
+  File "main_policy.py", line 394, in <module>
+    test_env = base_env_name()
+  File "main_policy.py", line 261, in <lambda>
+    return lambda: mo_gymnasium.make(gym_id) 
+  File "/mnt/c/Juan/Phd/APGS/.venvs/dpmorl/lib/python3.8/site-packages/mo_gymnasium/utils.py", line 22, in make
+    return gym.make(env_name, disable_env_checker=disable_env_checker, **kwargs)
+  File "/mnt/c/Juan/Phd/APGS/.venvs/dpmorl/lib/python3.8/site-packages/gymnasium/envs/registration.py", line 689, in make
+    env_spec = _find_spec(id)
+  File "/mnt/c/Juan/Phd/APGS/.venvs/dpmorl/lib/python3.8/site-packages/gymnasium/envs/registration.py", line 533, in _find_spec
+    _check_version_exists(ns, name, version)
+  File "/mnt/c/Juan/Phd/APGS/.venvs/dpmorl/lib/python3.8/site-packages/gymnasium/envs/registration.py", line 433, in _check_version_exists
+    raise error.DeprecatedEnv(
+gymnasium.error.DeprecatedEnv: Environment version v0 for `mo-reacher` is deprecated. Please use `mo-reacher-v5` instead.

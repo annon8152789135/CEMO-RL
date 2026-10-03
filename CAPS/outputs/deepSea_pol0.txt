@@ -1,0 +1,182 @@
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/stable_baselines3/common/save_util.py:437: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  th_object = th.load(file_content, map_location=device)
+running MO_deepSea
+Starting Test
+reward_dim_indices = [0, 1], reward_shape = 2
+initializing linear utility function
+reward_shape in Utility_Function_Linear 2
+num_total_policies = 3
+initializing linear utility function
+reward_shape in Utility_Function_Linear 2
+Deep Sea horizon: (not exposed by env)
+Num episodes:  3
+Episode 1: steps=7, Reward=11.449988550009474
+Episode 2: steps=7, Reward=11.899988100003402
+Episode 3: steps=7, Reward=11.899988100003402
+3
+Running AutoPred
+
+
+ Tree built, starting pruning... 
+
+Tree info:  Nr of clusters:  0 
+ 
+
+
+Starting graph generation...
+Height:  1
+
+
+ Tree info:  Nr of clusters:  1 
+
+--------------------------------------------- 
+
+
+Height:  2
+
+
+ Tree info:  Nr of clusters:  2 
+
+--------------------------------------------- 
+
+
+Height:  3
+
+
+ Tree info:  Nr of clusters:  3 
+
+--------------------------------------------- 
+
+
+Height:  4
+
+
+ Tree info:  Nr of clusters:  5 
+
+--------------------------------------------- 
+
+
+Height:  5
+
+
+ Tree info:  Nr of clusters:  6 
+
+--------------------------------------------- 
+
+
+Height:  6
+
+
+ Tree info:  Nr of clusters:  8 
+
+--------------------------------------------- 
+
+
+Height:  7
+
+
+ Tree info:  Nr of clusters:  9 
+
+--------------------------------------------- 
+
+
+Height:  8
+
+
+ Tree info:  Nr of clusters:  11 
+
+--------------------------------------------- 
+
+
+Height:  9
+
+
+ Tree info:  Nr of clusters:  12 
+
+--------------------------------------------- 
+
+
+Height:  10
+
+
+ Tree info:  Nr of clusters:  12 
+
+--------------------------------------------- 
+
+
+***********************************************
+Clusters at height 4
+Group 1 to Group 4 with p=1.0 and action 1
+Group 2 to Group 1 with p=0.3333333333333333 and action 3
+Group 2 to Group 2 with p=0.6666666666666667 and action 3
+Group 3 to Group 5 with p=1.0 and action 1
+Group 4 to Group 5 with p=1.0 and action 1
+Group 5 to Group 5 with p=0.4 and action 1
+Group 5 to Group 6 with p=0.6000000000000001 and action 1
+----------------------------------------
+Group 1: lvl equal to 0 and pos between 3 and 0 and State Value equal to 0.45 and Action between 3 and 1
+Critical value: 1.0. Entropy: 0.00
+Group 2: lvl equal to 0 and pos between 3 and 0 and State Value between 1 and 0 and Action between 3 and 1
+Critical value: 0.0. Entropy: 0.01
+Group 3: lvl between 1 and 0 and pos between 3 and 0 and State Value between 1 and 0 and Action between 3 and 1
+Critical value: 0.0. Entropy: 0.03
+Group 4: lvl between 2 and 1 and pos between 3 and 0 and State Value between 1 and 0 and Action equal to 1
+Critical value: 0.0. Entropy: 0.08
+Group 5: lvl between 3 and 2 and pos between 3 and 0 and State Value between 1 and 0 and Action equal to 1
+Critical value: 0.0. Entropy: 0.08
+----------------------------------------
+***********************************************
+Clusters at height 5
+Group 1 to Group 4 with p=1.0 and action 1
+Group 2 to Group 1 with p=0.3333333333333333 and action 3
+Group 2 to Group 2 with p=0.6666666666666667 and action 3
+Group 3 to Group 6 with p=1.0 and action 1
+Group 4 to Group 6 with p=1.0 and action 1
+Group 5 to Group 6 with p=1.0 and action 1
+Group 6 to Group 6 with p=0.25 and action 1
+Group 6 to Group 7 with p=0.75 and action 1
+----------------------------------------
+Group 1: lvl equal to 0 and pos between 3 and 0 and State Value equal to 0.45 and Action equal to 1
+Critical value: 1.0. Entropy: 0.00
+Group 2: lvl equal to 0 and pos between 2 and 0 and State Value between 1 and 0 and Action between 3 and 1
+Critical value: 0.0. Entropy: 0.01
+Group 3: lvl between 1 and 0 and pos between 3 and 0 and State Value equal to 0.61 and Action between 3 and 1
+Critical value: 0.0. Entropy: 0.03
+Group 4: lvl between 2 and 1 and pos between 3 and 0 and State Value between 0.79 and 0.61 and Action equal to 1
+Critical value: 0.0. Entropy: 0.08
+Group 5: lvl between 3 and 2 and pos between 3 and 0 and State Value equal to 0.79 and Action equal to 1
+Critical value: 0.0. Entropy: 0.19
+Group 6: lvl between 3 and 2 and pos between 3 and 0 and State Value between 1 and 0.79 and Action equal to 1
+Critical value: 0.0. Entropy: 0.05
+----------------------------------------
+***********************************************
+Clusters at height 6
+Group 1 to Group 4 with p=1.0 and action 1
+Group 2 to Group 1 with p=0.3333333333333333 and action 3
+Group 2 to Group 2 with p=0.6666666666666667 and action 3
+Group 3 to Group 7 with p=1.0 and action 1
+Group 4 to Group 7 with p=1.0 and action 1
+Group 5 to Group 8 with p=1.0 and action 1
+Group 6 to Group 8 with p=1.0 and action 1
+Group 7 to Group 8 with p=1.0 and action 1
+Group 8 to Group 9 with p=1.0 and action 1
+----------------------------------------
+Group 1: lvl equal to 0 and pos between 3 and 0 and State Value equal to 0.45 and Action equal to 1
+Critical value: 1.0. Entropy: 0.00
+Group 2: lvl equal to 0 and pos between 2 and 0 and State Value between 0.26 and 0 and Action between 3 and 1
+Critical value: 0.0. Entropy: 0.01
+Group 3: lvl between 1 and 0 and pos between 3 and 0 and State Value equal to 0.61 and Action equal to 1
+Critical value: 0.0. Entropy: 0.03
+Group 4: lvl equal to 1 and pos between 3 and 0 and State Value between 0.79 and 0.61 and Action equal to 1
+Critical value: 0.0. Entropy: 0.03
+Group 5: lvl between 2 and 1 and pos between 3 and 0 and State Value between 0.79 and 0.61 and Action equal to 1
+Critical value: 0.0. Entropy: 0.19
+Group 6: lvl equal to 2 and pos between 3 and 0 and State Value equal to 0.79 and Action equal to 1
+Critical value: 0.0. Entropy: 0.19
+Group 7: lvl equal to 2 and pos between 3 and 0 and State Value between 1 and 0.79 and Action equal to 1
+Critical value: 0.0. Entropy: 0.19
+Group 8: lvl between 3 and 2 and pos between 3 and 0 and State Value between 1 and 0.79 and Action equal to 1
+Critical value: 1.0. Entropy: 0.00
+----------------------------------------

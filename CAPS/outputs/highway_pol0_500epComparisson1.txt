@@ -1,0 +1,1422 @@
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/gymnasium/spaces/box.py:235: UserWarning: [33mWARN: Box low's precision lowered by casting to float32, current low.dtype=float64[0m
+  gym.logger.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
+  gym.logger.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/stable_baselines3/common/save_util.py:437: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  th_object = th.load(file_content, map_location=device)
+Using 144 background data samples could cause slower run times. Consider using shap.sample(data, K) or shap.kmeans(data, K) to summarize the background as K samples.
+running MO_highway
+Starting Test
+reward_dim_indices = [0, 1, 2], reward_shape = 3
+reward_shape in get_utility_function:  3
+DPMORL/utility-model-selected/dim-3
+initializing linear utility function
+reward_shape in Utility_Function_Linear 3
+num_total_policies = 6
+initializing linear utility function
+reward_shape in Utility_Function_Linear 3
+Environment created: mo-highway-fast-v0
+Num episodes:  50
+num_actions: 5
+50
+Running AutoPred
+True
+Explanations with SHAP feature selection
+Starting graph generation...
+Height:  1
+Height:  2
+Height:  3
+Height:  4
+Height:  5
+Height:  6
+Height:  7
+Height:  8
+Height:  9
+Height:  10
+
+
+Selected graph index: 6, number of clusters: 16
+
+
+
+Selected graph index: 7, number of clusters: 20
+
+
+
+Selected graph index: 8, number of clusters: 22
+
+***********************************************
+Clusters at height 7
+Group 1 to Group 2 with p=1.0 and action 2
+Group 2 to Group 1 with p=0.001049317943336831 and action 2
+Group 2 to Group 2 with p=0.8803777544596096 and action 2
+Group 2 to Group 8 with p=0.048268625393494254 and action 2
+Group 2 to Group 9 with p=0.001049317943336831 and action 3
+Group 2 to Group 10 with p=0.011542497376705145 and action 3
+Group 2 to Group 12 with p=0.002098635886673662 and action 2
+Group 2 to Group 13 with p=0.009443861490031482 and action 2
+Group 2 to Group 14 with p=0.001049317943336831 and action 2
+Group 2 to Group 15 with p=0.0031479538300104933 and action 2
+Group 2 to Group 16 with p=0.002098635886673662 and action 2
+Group 2 to Group 17 with p=0.03987408184679959 and action 2
+Group 3 to Group 13 with p=1.0 and action 2
+Group 4 to Group 13 with p=0.5 and action 2
+Group 4 to Group 16 with p=0.5 and action 2
+Group 5 to Group 13 with p=1.0 and action 2
+Group 6 to Group 2 with p=1.0 and action 2
+Group 7 to Group 7 with p=0.25 and action 4
+Group 7 to Group 8 with p=0.625 and action 4
+Group 7 to Group 17 with p=0.125 and action 4
+Group 8 to Group 2 with p=0.15914489311163893 and action 3
+Group 8 to Group 4 with p=0.0023752969121140144 and action 4
+Group 8 to Group 5 with p=0.007125890736342043 and action 4
+Group 8 to Group 6 with p=0.0023752969121140144 and action 4
+Group 8 to Group 7 with p=0.011876484560570073 and action 4
+Group 8 to Group 8 with p=0.7814726840855127 and action 3
+Group 8 to Group 10 with p=0.009501187648456057 and action 3
+Group 8 to Group 17 with p=0.026128266033254164 and action 3
+Group 9 to Group 2 with p=0.5 and action 4
+Group 9 to Group 8 with p=0.5 and action 4
+Group 10 to Group 2 with p=0.3684210526315789 and action 4
+Group 10 to Group 8 with p=0.5263157894736842 and action 4
+Group 10 to Group 9 with p=0.05263157894736842 and action 4
+Group 10 to Group 10 with p=0.05263157894736842 and action 3
+Group 11 to Group 8 with p=1.0 and action 4
+Group 12 to Group 8 with p=0.6666666666666666 and action 4
+Group 12 to Group 10 with p=0.3333333333333333 and action 3
+Group 13 to Group 2 with p=0.3684210526315789 and action 3
+Group 13 to Group 8 with p=0.3157894736842105 and action 4
+Group 13 to Group 10 with p=0.10526315789473684 and action 3
+Group 13 to Group 11 with p=0.05263157894736842 and action 3
+Group 13 to Group 12 with p=0.05263157894736842 and action 4
+Group 13 to Group 13 with p=0.10526315789473684 and action 2
+Group 14 to Group 13 with p=1.0 and action 2
+Group 15 to Group 2 with p=0.3333333333333333 and action 2
+Group 15 to Group 13 with p=0.6666666666666666 and action 2
+Group 16 to Group 2 with p=0.6666666666666666 and action 4
+Group 16 to Group 3 with p=0.3333333333333333 and action 4
+----------------------------------------
+
+ Initializing SHAP explainer on 144 sample states...
+ shape: (144, 25)
+
+ Computing SHAP values for clusters...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 19.31it/s]
+indices: [ 8  2 24 11  1  3  4  5  6  7  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.53338803 0.46661196 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/190 [00:00<?, ?it/s]  4%|▎         | 7/190 [00:00<00:02, 68.75it/s]  9%|▉         | 17/190 [00:00<00:02, 84.60it/s] 14%|█▎        | 26/190 [00:00<00:01, 86.77it/s] 18%|█▊        | 35/190 [00:00<00:01, 87.48it/s] 24%|██▍       | 46/190 [00:00<00:01, 93.05it/s] 30%|███       | 57/190 [00:00<00:01, 96.34it/s] 35%|███▌      | 67/190 [00:00<00:01, 96.78it/s] 41%|████      | 77/190 [00:00<00:01, 94.15it/s] 46%|████▌     | 87/190 [00:00<00:01, 94.15it/s] 52%|█████▏    | 98/190 [00:01<00:00, 96.34it/s] 57%|█████▋    | 109/190 [00:01<00:00, 98.72it/s] 63%|██████▎   | 120/190 [00:01<00:00, 98.45it/s] 68%|██████▊   | 130/190 [00:01<00:00, 95.32it/s] 74%|███████▎  | 140/190 [00:01<00:00, 91.93it/s] 79%|███████▉  | 150/190 [00:01<00:00, 92.62it/s] 84%|████████▍ | 160/190 [00:01<00:00, 94.50it/s] 89%|████████▉ | 170/190 [00:01<00:00, 91.80it/s] 95%|█████████▍| 180/190 [00:01<00:00, 93.36it/s]100%|██████████| 190/190 [00:02<00:00, 93.70it/s]
+indices: [ 3 12 17  7  6 13 18 23  1 21  8 16 11 22  2  4  9 14 19 24  5 10 15 20
+  0]
+normalized importances: [0.1584502  0.13666967 0.10644892 0.08847116 0.08241431 0.07490054
+ 0.06082565 0.05420758 0.04804358 0.04774356 0.04198517 0.03173138
+ 0.02332487 0.02155806 0.0165271  0.00187479 0.00178571 0.00139486
+ 0.00111881 0.00052407 0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=9.712e-01, with an active set of 1 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=4.856e-01, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 1/1 [00:00<00:00, 26.61it/s]
+indices: [ 1 11 24  2  3  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.95541802 0.04458198 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 267.84it/s]
+indices: [ 2  1 24 11  3  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.71149586 0.28850414 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=1.598e+00, with an active set of 1 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=7.990e-01, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 1/1 [00:00<00:00, 142.21it/s]
+indices: [ 2  3 24 11  1  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.68537424 0.31462575 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=7.993e-02, with an active set of 1 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=3.996e-02, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 1/1 [00:00<00:00, 223.84it/s]
+indices: [ 1  9 24 11  2  3  4  5  6  7  8 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.96278815 0.0372118  0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 342.53it/s]
+indices: [ 3  2 24 11  1  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.62824721 0.37175279 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/84 [00:00<?, ?it/s] 19%|█▉        | 16/84 [00:00<00:00, 158.88it/s] 38%|███▊      | 32/84 [00:00<00:00, 149.85it/s] 58%|█████▊    | 49/84 [00:00<00:00, 157.23it/s] 79%|███████▊  | 66/84 [00:00<00:00, 156.71it/s]100%|██████████| 84/84 [00:00<00:00, 162.95it/s]100%|██████████| 84/84 [00:00<00:00, 159.52it/s]
+indices: [ 7  3 12 17  2 18 13  6  1 23 16 11 21 22  8  9 19 14  4 24  5 10 15 20
+  0]
+normalized importances: [0.18016971 0.13742764 0.12332388 0.09507034 0.08721542 0.06150039
+ 0.05626737 0.05101334 0.0390707  0.03826042 0.03075539 0.02377694
+ 0.02372728 0.02143088 0.02083946 0.00280993 0.00259361 0.0019995
+ 0.00168747 0.00106034 0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 347.87it/s]
+indices: [ 2  7 24 11  1  3  4  5  6  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.55909675 0.44090324 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/3 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=3.445e+00, with an active set of 3 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=3.445e+00, with an active set of 3 regressors, and the smallest cholesky pivot element being 4.712e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=3.445e+00, with an active set of 3 regressors, and the smallest cholesky pivot element being 5.960e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=2.372e+00, with an active set of 1 regressors, and the smallest cholesky pivot element being 3.650e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=1.198e+00, with an active set of 2 regressors, and the smallest cholesky pivot element being 3.650e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=1.198e+00, with an active set of 2 regressors, and the smallest cholesky pivot element being 4.215e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=1.186e+00, with an active set of 3 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=1.186e+00, with an active set of 3 regressors, and the smallest cholesky pivot element being 3.650e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=1.240e-02, with an active set of 3 regressors, and the smallest cholesky pivot element being 4.215e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=1.240e-02, with an active set of 3 regressors, and the smallest cholesky pivot element being 3.650e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 3/3 [00:00<00:00, 230.11it/s]
+indices: [ 6  9  1  3 23 11 24 21 10  2  4  5  7  8 12 13 14 15 16 17 18 19 20 22
+  0]
+normalized importances: [0.25293294 0.2281885  0.20470355 0.15151419 0.10011516 0.02595542
+ 0.02079527 0.01579497 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=7.156e+00, with an active set of 1 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=3.578e+00, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=3.578e+00, with an active set of 2 regressors, and the smallest cholesky pivot element being 4.215e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 1/1 [00:00<00:00, 261.78it/s]
+indices: [ 4  3 24 11  1  2  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.72753425 0.27246575 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=3.992e+00, with an active set of 1 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=1.996e+00, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 1/1 [00:00<00:00, 241.61it/s]
+indices: [ 1 21 24 11  2  3  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 22
+  0]
+normalized importances: [0.96796144 0.03203856 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/3 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=5.370e+00, with an active set of 1 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=3.225e+00, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=2.145e+00, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=1.769e+00, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=8.846e-01, with an active set of 3 regressors, and the smallest cholesky pivot element being 4.215e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=8.846e-01, with an active set of 3 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=1.955e-01, with an active set of 3 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=4.797e-01, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=2.399e-01, with an active set of 3 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=2.399e-01, with an active set of 3 regressors, and the smallest cholesky pivot element being 5.960e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 3/3 [00:00<00:00, 324.96it/s]
+indices: [ 2  3  7  1  4  8 13 12 11  5  6  9 10 24 23 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.3345323  0.16465301 0.1468442  0.10429246 0.09246144 0.08609446
+ 0.05207563 0.0190465  0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 505.58it/s]
+indices: [ 1 13 24 11  2  3  4  5  6  7  8  9 10 12 23 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.99162176 0.00837824 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=8.396e-01, with an active set of 1 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=4.198e-01, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 1/1 [00:00<00:00, 265.36it/s]
+indices: [ 1  3 24 11  2  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.89991958 0.10008042 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=4.998e+00, with an active set of 1 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=2.499e+00, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 1/1 [00:00<00:00, 309.98it/s]
+Using 144 background data samples could cause slower run times. Consider using shap.sample(data, K) or shap.kmeans(data, K) to summarize the background as K samples.
+indices: [ 2  3 24 11  1  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.65561369 0.34438631 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Group 1: yEgo between 0.66667 and 0 and vxC1 between 0.0291 and -0.21482
+Critical value: 0.0. Entropy: 1.00
+Group 2: vxEgo between 0.37392 and 0.24968 and xC1 between 0.27791 and -0.04986 and yC1 between 0 and -0.66667 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.03276 and -0.22484 and yC3 between 0.66667 and -0.66667 and vxC3 between 0.037 and -0.22102 and vxC4 between 0.03299 and -0.20304
+Critical value: 0.0. Entropy: 1.17
+Group 3: xEgo equal to 0.99057
+Critical value: 0.0. Entropy: 0.83
+Group 4: xEgo between 0.87024 and 0.75417 and yEgo between 0.66667 and 0
+Critical value: 1.0. Entropy: 0.65
+Group 5: yEgo between 0.66667 and 0 and vxEgo between 0.37392 and 0.24968
+Critical value: 1.0. Entropy: 0.52
+Group 6: xEgo between 1 and 0.74476
+Critical value: 0.0. Entropy: 1.32
+Group 7: yEgo equal to 0 and vxEgo between 0.32059 and 0.25
+Critical value: 1.0. Entropy: 0.78
+Group 8: yEgo between 0.66667 and 0 and vxEgo between 0.32059 and 0.25 and xC1 between 0.27791 and -0.04986 and yC1 between 0.66667 and -0.66667 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.03276 and -0.22484 and yC3 between 0.66667 and -0.66667 and vxC3 between 0.037 and -0.22102
+Critical value: 0.0. Entropy: 0.96
+Group 9: yEgo between 0.66667 and 0 and yC1 between 0.66667 and -0.66667
+Critical value: 0.0. Entropy: 1.31
+Group 10: xEgo between 1 and 0.74476 and vxEgo between 0.37392 and 0.36569 and xC1 between 0.27791 and -0.04986 and vyC1 between 0.08338 and -0.09582 and vxC4 between 0.03299 and -0.20304
+Critical value: 0.0. Entropy: 1.27
+Group 11: vxEgo between 0.37392 and 0.36569 and vyEgo equal to 0.00035
+Critical value: 0.0. Entropy: 1.27
+Group 12: xEgo between 1 and 0.74476
+Critical value: 0.0. Entropy: 0.93
+Group 13: xEgo between 1 and 0.74476 and yEgo between 0.66667 and 0 and vxEgo between 0.31221 and 0.24968 and vyEgo between 0.01524 and 0.0135 and yC1 between 0.66667 and -0.66667 and vxC1 between 0.0291 and -0.21482 and vxC2 between 0.03276 and -0.22484
+Critical value: 0.0. Entropy: 1.04
+Group 14: xEgo equal to 0.88792
+Critical value: 0.0. Entropy: 1.29
+Group 15: xEgo between 0.90378 and 0.87502 and vxEgo equal to 0.31221
+Critical value: 0.0. Entropy: 1.04
+Group 16: yEgo between 0.66667 and 0 and vxEgo equal to 0.31221
+Critical value: 0.0. Entropy: 0.99
+----------------------------------------
+***********************************************
+Clusters at height 8
+Group 1 to Group 2 with p=1.0 and action 2
+Group 2 to Group 1 with p=0.0010515247108307045 and action 2
+Group 2 to Group 2 with p=0.882229232386956 and action 2
+Group 2 to Group 11 with p=0.04837013669821242 and action 2
+Group 2 to Group 12 with p=0.0010515247108307045 and action 3
+Group 2 to Group 13 with p=0.009463722397476343 and action 3
+Group 2 to Group 15 with p=0.002103049421661409 and action 2
+Group 2 to Group 16 with p=0.009463722397476343 and action 2
+Group 2 to Group 17 with p=0.0010515247108307045 and action 2
+Group 2 to Group 18 with p=0.0031545741324921135 and action 2
+Group 2 to Group 19 with p=0.0010515247108307045 and action 2
+Group 2 to Group 20 with p=0.0010515247108307045 and action 2
+Group 2 to Group 21 with p=0.03995793901156678 and action 2
+Group 3 to Group 13 with p=1.0 and action 3
+Group 4 to Group 16 with p=1.0 and action 2
+Group 5 to Group 16 with p=0.5 and action 2
+Group 5 to Group 19 with p=0.5 and action 2
+Group 6 to Group 16 with p=1.0 and action 2
+Group 7 to Group 16 with p=1.0 and action 2
+Group 8 to Group 2 with p=1.0 and action 2
+Group 9 to Group 9 with p=0.25 and action 4
+Group 9 to Group 10 with p=0.125 and action 4
+Group 9 to Group 11 with p=0.5 and action 4
+Group 9 to Group 21 with p=0.125 and action 4
+Group 10 to Group 6 with p=0.2 and action 4
+Group 10 to Group 9 with p=0.2 and action 4
+Group 10 to Group 10 with p=0.2 and action 4
+Group 10 to Group 11 with p=0.4 and action 4
+Group 11 to Group 2 with p=0.15625 and action 3
+Group 11 to Group 3 with p=0.004807692307692308 and action 3
+Group 11 to Group 5 with p=0.002403846153846154 and action 4
+Group 11 to Group 6 with p=0.002403846153846154 and action 4
+Group 11 to Group 7 with p=0.002403846153846154 and action 4
+Group 11 to Group 8 with p=0.002403846153846154 and action 4
+Group 11 to Group 9 with p=0.009615384615384616 and action 4
+Group 11 to Group 10 with p=0.004807692307692308 and action 4
+Group 11 to Group 11 with p=0.7788461538461516 and action 3
+Group 11 to Group 13 with p=0.009615384615384616 and action 3
+Group 11 to Group 21 with p=0.02644230769230769 and action 3
+Group 12 to Group 2 with p=0.5 and action 4
+Group 12 to Group 11 with p=0.5 and action 4
+Group 13 to Group 2 with p=0.3684210526315789 and action 4
+Group 13 to Group 11 with p=0.5263157894736842 and action 4
+Group 13 to Group 12 with p=0.05263157894736842 and action 4
+Group 13 to Group 13 with p=0.05263157894736842 and action 3
+Group 14 to Group 11 with p=1.0 and action 4
+Group 15 to Group 11 with p=0.6666666666666666 and action 4
+Group 15 to Group 13 with p=0.3333333333333333 and action 3
+Group 16 to Group 2 with p=0.3684210526315789 and action 3
+Group 16 to Group 11 with p=0.3157894736842105 and action 4
+Group 16 to Group 13 with p=0.10526315789473684 and action 3
+Group 16 to Group 14 with p=0.05263157894736842 and action 3
+Group 16 to Group 15 with p=0.05263157894736842 and action 4
+Group 16 to Group 16 with p=0.10526315789473684 and action 2
+Group 17 to Group 16 with p=1.0 and action 2
+Group 18 to Group 2 with p=0.3333333333333333 and action 2
+Group 18 to Group 16 with p=0.6666666666666666 and action 2
+Group 19 to Group 2 with p=0.5 and action 4
+Group 19 to Group 4 with p=0.5 and action 4
+Group 20 to Group 2 with p=1.0 and action 4
+----------------------------------------
+
+ Initializing SHAP explainer on 144 sample states...
+ shape: (144, 25)
+
+ Computing SHAP values for clusters...
+  0%|          | 0/1 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=2.711e+00, with an active set of 1 regressors, and the smallest cholesky pivot element being 4.215e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=1.355e+00, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=1.355e+00, with an active set of 2 regressors, and the smallest cholesky pivot element being 4.215e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 1/1 [00:00<00:00, 116.04it/s]
+indices: [ 2  4 24 11  1  3  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.80221399 0.19778601 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/190 [00:00<?, ?it/s]  5%|▌         | 10/190 [00:00<00:01, 93.30it/s] 11%|█         | 20/190 [00:00<00:01, 93.68it/s] 16%|█▌        | 30/190 [00:00<00:01, 95.78it/s] 21%|██        | 40/190 [00:00<00:01, 87.56it/s] 26%|██▋       | 50/190 [00:00<00:01, 91.28it/s] 32%|███▏      | 61/190 [00:00<00:01, 94.73it/s] 38%|███▊      | 73/190 [00:00<00:01, 100.53it/s] 44%|████▍     | 84/190 [00:00<00:01, 94.71it/s]  50%|█████     | 95/190 [00:01<00:00, 96.42it/s] 56%|█████▌    | 106/190 [00:01<00:00, 99.60it/s] 62%|██████▏   | 117/190 [00:01<00:00, 99.83it/s] 67%|██████▋   | 128/190 [00:01<00:00, 101.79it/s] 73%|███████▎  | 139/190 [00:01<00:00, 101.25it/s] 79%|███████▉  | 150/190 [00:01<00:00, 101.14it/s] 85%|████████▍ | 161/190 [00:01<00:00, 96.89it/s]  91%|█████████ | 172/190 [00:01<00:00, 100.41it/s] 96%|█████████▋| 183/190 [00:01<00:00, 103.08it/s]100%|██████████| 190/190 [00:01<00:00, 98.73it/s] 
+indices: [ 3 12 17  7 13  6 18  8  1 23 21 16 11 22  2  4  9 19 24 14  5 10 15 20
+  0]
+normalized importances: [0.16458215 0.129748   0.11121856 0.0840892  0.07531817 0.07530685
+ 0.07015979 0.05283069 0.0484805  0.04813613 0.04499452 0.02737146
+ 0.02558573 0.01992355 0.01642106 0.00241054 0.00141581 0.0009285
+ 0.00057103 0.00050774 0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=9.101e-03, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 1/1 [00:00<00:00, 272.38it/s]
+indices: [ 1 14 24 11  2  3  4  5  6  7  8  9 10 12 23 13 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [9.99759209e-01 2.40789127e-04 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 316.81it/s]
+indices: [ 2  4 24 11  1  3  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.61599448 0.38400552 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 347.82it/s]
+indices: [ 1  2 24 11  3  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.65369425 0.34630575 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 233.71it/s]
+indices: [ 4  2 24 11  1  3  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.58289702 0.41710298 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 276.50it/s]
+indices: [ 2 18 24 11  1  3  4  5  6  7  8  9 10 12 23 13 14 15 16 17 19 20 21 22
+  0]
+normalized importances: [0.9038641 0.0961359 0.        0.        0.        0.        0.
+ 0.        0.        0.        0.        0.        0.        0.
+ 0.        0.        0.        0.        0.        0.        0.
+ 0.        0.        0.        0.       ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 223.17it/s]
+indices: [ 1  2 24 11  3  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.66674531 0.33325468 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 307.86it/s]
+indices: [ 2  1 24 11  3  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.75011886 0.24988114 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 261.62it/s]
+indices: [ 1  2 24 11  3  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.63764571 0.36235429 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/83 [00:00<?, ?it/s] 20%|██        | 17/83 [00:00<00:00, 161.54it/s] 41%|████      | 34/83 [00:00<00:00, 163.25it/s] 61%|██████▏   | 51/83 [00:00<00:00, 165.61it/s] 82%|████████▏ | 68/83 [00:00<00:00, 166.70it/s]100%|██████████| 83/83 [00:00<00:00, 167.25it/s]
+indices: [ 7  3 12 17  1 18 13  2  6 23 16  8 11 22 21  9  4 14 19 24  5 10 15 20
+  0]
+normalized importances: [0.16717999 0.15344831 0.11701639 0.09301906 0.06817868 0.06744072
+ 0.05517269 0.05429962 0.05138191 0.03711798 0.02771787 0.02453651
+ 0.02384033 0.02281267 0.0214941  0.00547186 0.00328823 0.00258122
+ 0.00248244 0.00151944 0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 344.73it/s]
+indices: [ 1  2 24 11  3  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.88547482 0.11452517 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/3 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=1.402e-01, with an active set of 1 regressors, and the smallest cholesky pivot element being 2.980e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=7.010e-02, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.980e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=7.010e-02, with an active set of 2 regressors, and the smallest cholesky pivot element being 4.215e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=2.931e-02, with an active set of 3 regressors, and the smallest cholesky pivot element being 2.980e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=2.931e-02, with an active set of 3 regressors, and the smallest cholesky pivot element being 4.215e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=1.280e-02, with an active set of 2 regressors, and the smallest cholesky pivot element being 5.162e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=6.401e-03, with an active set of 3 regressors, and the smallest cholesky pivot element being 5.162e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=6.401e-03, with an active set of 3 regressors, and the smallest cholesky pivot element being 4.215e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 3/3 [00:00<00:00, 258.72it/s]
+indices: [ 1  4  2  7 12 24 14 18  8 22 21  3 20  5  6 19  9 17 10 11 23 13 15 16
+  0]
+normalized importances: [3.05497574e-01 2.51359897e-01 1.53097102e-01 1.44601507e-01
+ 1.44361544e-01 1.00642229e-03 7.59523849e-05 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 301.01it/s]
+indices: [ 2 22 24 11  1  3  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21
+  0]
+normalized importances: [0.93898409 0.0610159  0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=3.044e+01, with an active set of 1 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=1.522e+01, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=1.522e+01, with an active set of 2 regressors, and the smallest cholesky pivot element being 4.215e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 1/1 [00:00<00:00, 237.73it/s]
+indices: [ 4  1 24 11  2  3  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.5801758 0.4198242 0.        0.        0.        0.        0.
+ 0.        0.        0.        0.        0.        0.        0.
+ 0.        0.        0.        0.        0.        0.        0.
+ 0.        0.        0.        0.       ]
+  0%|          | 0/3 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=1.634e+00, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 4 iterations, i.e. alpha=8.171e-01, with an active set of 3 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 4 iterations, i.e. alpha=8.171e-01, with an active set of 3 regressors, and the smallest cholesky pivot element being 2.107e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=5.205e-01, with an active set of 2 regressors, and the smallest cholesky pivot element being 5.162e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=2.603e-01, with an active set of 3 regressors, and the smallest cholesky pivot element being 3.650e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=2.603e-01, with an active set of 3 regressors, and the smallest cholesky pivot element being 5.162e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=1.851e+00, with an active set of 1 regressors, and the smallest cholesky pivot element being 5.960e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=9.255e-01, with an active set of 2 regressors, and the smallest cholesky pivot element being 5.162e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=9.255e-01, with an active set of 2 regressors, and the smallest cholesky pivot element being 5.960e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=1.529e-01, with an active set of 3 regressors, and the smallest cholesky pivot element being 5.162e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=1.529e-01, with an active set of 3 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=1.529e-01, with an active set of 3 regressors, and the smallest cholesky pivot element being 5.960e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 3/3 [00:00<00:00, 176.94it/s]
+indices: [ 3  7  1 12  2 24  8 18 22 21 20  4  5  6 19  9 17 10 11 23 13 14 15 16
+  0]
+normalized importances: [0.23415607 0.21722074 0.18138185 0.14492251 0.1314654  0.08859605
+ 0.00225739 0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 337.00it/s]
+indices: [ 2  1 24 11  3  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.83725582 0.16274418 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=1.757e+00, with an active set of 1 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=8.784e-01, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 1/1 [00:00<00:00, 211.11it/s]
+indices: [ 1 19 24 11  2  3  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 20 21 22
+  0]
+normalized importances: [0.97120666 0.02879334 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 405.76it/s]
+indices: [ 1  2 24 11  3  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.57965085 0.42034915 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 385.12it/s]
+Using 144 background data samples could cause slower run times. Consider using shap.sample(data, K) or shap.kmeans(data, K) to summarize the background as K samples.
+indices: [ 1  2 24 11  3  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.90948632 0.09051367 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Group 1: yEgo between 0.66667 and 0 and vyEgo between 0.0135 and -0
+Critical value: 0.0. Entropy: 1.00
+Group 2: vxEgo between 0.32057 and 0.25 and xC1 between 0.27791 and -0.04986 and yC1 between 0 and -0.66667 and vxC1 between 0.0291 and -0.21482 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.03276 and -0.22484 and yC3 between 0.66667 and -0.66667 and vxC3 between 0.037 and -0.22102
+Critical value: 0.0. Entropy: 1.17
+Group 3: xEgo between 1 and 0.74476
+Critical value: 0.0. Entropy: 0.96
+Group 4: yEgo equal to 0.33193 and vyEgo between 0.0135 and -0
+Critical value: 0.0. Entropy: 0.83
+Group 5: xEgo between 0.85905 and 0.75417 and yEgo between 0.66667 and 0
+Critical value: 1.0. Entropy: 0.65
+Group 6: yEgo between 0.66667 and 0 and vyEgo equal to 0
+Critical value: 1.0. Entropy: 0.58
+Group 7: yEgo between 0.66667 and 0 and vxC3 between 0.037 and -0.22102
+Critical value: 1.0. Entropy: 0.40
+Group 8: xEgo between 1 and 0.74476 and yEgo between 0.66667 and 0
+Critical value: 0.0. Entropy: 1.32
+Group 9: xEgo between 1 and 0.74476 and yEgo equal to 0
+Critical value: 0.0. Entropy: 0.78
+Group 10: xEgo between 1 and 0.74476 and yEgo equal to 0
+Critical value: 0.0. Entropy: 0.73
+Group 11: xEgo between 1 and 0.74476 and yEgo between 0.66667 and 0 and vxEgo between 0.32059 and 0.25 and xC1 between 0.27791 and -0.04986 and yC1 between 0.66667 and -0.66667 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.03276 and -0.22484 and yC3 between 0.66667 and -0.66667 and vxC3 between 0.037 and -0.22102
+Critical value: 0.0. Entropy: 0.96
+Group 12: xEgo between 1 and 0.74476 and yEgo between 0.66667 and 0
+Critical value: 0.0. Entropy: 1.31
+Group 13: xEgo between 1 and 0.74476 and yEgo between 0.66667 and 0 and vyEgo between 0.00035 and -0 and yC1 between -0.33332 and -0.66667 and yC2 between 0.66667 and -0.66667
+Critical value: 0.0. Entropy: 1.27
+Group 14: yEgo equal to 0.66611 and yC4 between 0.66667 and -0.66667
+Critical value: 0.0. Entropy: 1.27
+Group 15: xEgo between 1 and 0.74476 and vyEgo between 0.0135 and 0.00095
+Critical value: 0.0. Entropy: 0.93
+Group 16: xEgo between 1 and 0.74476 and yEgo between 0.66667 and 0 and vxEgo between 0.31221 and 0.24968 and yC1 between 0.66667 and -0.66667 and yC2 between 0.03341 and -0.63739 and vyC4 between 0.06171 and -0.08379
+Critical value: 0.0. Entropy: 1.04
+Group 17: xEgo equal to 0.88792 and yEgo equal to 0.305
+Critical value: 0.0. Entropy: 1.29
+Group 18: xEgo between 0.90378 and 0.87502
+Critical value: 0.0. Entropy: 1.04
+Group 19: xEgo between 0.90378 and 0.87502 and yEgo between 0.66667 and 0
+Critical value: 0.0. Entropy: 0.96
+Group 20: xEgo between 0.90378 and 0.87502 and yEgo between 0.66667 and 0
+Critical value: 0.0. Entropy: 1.05
+----------------------------------------
+***********************************************
+Clusters at height 9
+Group 1 to Group 2 with p=1.0 and action 2
+Group 2 to Group 1 with p=0.0010615711252653928 and action 2
+Group 2 to Group 2 with p=0.8800424628450105 and action 2
+Group 2 to Group 3 with p=0.0010615711252653928 and action 2
+Group 2 to Group 13 with p=0.048832271762208064 and action 2
+Group 2 to Group 14 with p=0.0010615711252653928 and action 3
+Group 2 to Group 15 with p=0.009554140127388535 and action 3
+Group 2 to Group 17 with p=0.0021231422505307855 and action 2
+Group 2 to Group 18 with p=0.009554140127388535 and action 2
+Group 2 to Group 19 with p=0.0010615711252653928 and action 2
+Group 2 to Group 20 with p=0.0031847133757961785 and action 2
+Group 2 to Group 21 with p=0.0010615711252653928 and action 2
+Group 2 to Group 22 with p=0.0010615711252653928 and action 2
+Group 2 to Group 23 with p=0.040339702760084924 and action 2
+Group 3 to Group 2 with p=0.1111111111111111 and action 2
+Group 3 to Group 3 with p=0.8888888888888891 and action 2
+Group 4 to Group 15 with p=1.0 and action 3
+Group 5 to Group 18 with p=1.0 and action 2
+Group 6 to Group 18 with p=0.5 and action 2
+Group 6 to Group 21 with p=0.5 and action 2
+Group 7 to Group 18 with p=1.0 and action 2
+Group 8 to Group 18 with p=1.0 and action 2
+Group 9 to Group 2 with p=1.0 and action 2
+Group 10 to Group 10 with p=0.25 and action 4
+Group 10 to Group 11 with p=0.125 and action 4
+Group 10 to Group 12 with p=0.25 and action 4
+Group 10 to Group 13 with p=0.25 and action 4
+Group 10 to Group 23 with p=0.125 and action 4
+Group 11 to Group 7 with p=0.2 and action 4
+Group 11 to Group 10 with p=0.2 and action 4
+Group 11 to Group 11 with p=0.2 and action 4
+Group 11 to Group 12 with p=0.4 and action 4
+Group 12 to Group 10 with p=0.16666666666666666 and action 4
+Group 12 to Group 11 with p=0.16666666666666666 and action 4
+Group 12 to Group 12 with p=0.3333333333333333 and action 4
+Group 12 to Group 13 with p=0.3333333333333333 and action 4
+Group 13 to Group 2 with p=0.15853658536585374 and action 3
+Group 13 to Group 4 with p=0.004878048780487805 and action 3
+Group 13 to Group 6 with p=0.0024390243902439024 and action 4
+Group 13 to Group 7 with p=0.0024390243902439024 and action 4
+Group 13 to Group 8 with p=0.0024390243902439024 and action 4
+Group 13 to Group 9 with p=0.0024390243902439024 and action 4
+Group 13 to Group 10 with p=0.007317073170731707 and action 4
+Group 13 to Group 11 with p=0.0024390243902439024 and action 4
+Group 13 to Group 13 with p=0.7804878048780494 and action 3
+Group 13 to Group 15 with p=0.00975609756097561 and action 3
+Group 13 to Group 23 with p=0.026829268292682923 and action 3
+Group 14 to Group 2 with p=0.5 and action 4
+Group 14 to Group 13 with p=0.5 and action 4
+Group 15 to Group 2 with p=0.3684210526315789 and action 4
+Group 15 to Group 13 with p=0.5263157894736842 and action 4
+Group 15 to Group 14 with p=0.05263157894736842 and action 4
+Group 15 to Group 15 with p=0.05263157894736842 and action 3
+Group 16 to Group 13 with p=1.0 and action 4
+Group 17 to Group 13 with p=0.6666666666666666 and action 4
+Group 17 to Group 15 with p=0.3333333333333333 and action 3
+Group 18 to Group 2 with p=0.3684210526315789 and action 3
+Group 18 to Group 13 with p=0.3157894736842105 and action 4
+Group 18 to Group 15 with p=0.10526315789473684 and action 3
+Group 18 to Group 16 with p=0.05263157894736842 and action 3
+Group 18 to Group 17 with p=0.05263157894736842 and action 4
+Group 18 to Group 18 with p=0.10526315789473684 and action 2
+Group 19 to Group 18 with p=1.0 and action 2
+Group 20 to Group 2 with p=0.3333333333333333 and action 2
+Group 20 to Group 18 with p=0.6666666666666666 and action 2
+Group 21 to Group 2 with p=0.5 and action 4
+Group 21 to Group 5 with p=0.5 and action 4
+Group 22 to Group 2 with p=1.0 and action 4
+----------------------------------------
+
+ Initializing SHAP explainer on 144 sample states...
+ shape: (144, 25)
+
+ Computing SHAP values for clusters...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 184.38it/s]
+indices: [ 2  1 24 11  3  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.63665623 0.36334376 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/188 [00:00<?, ?it/s]  5%|▍         | 9/188 [00:00<00:02, 87.08it/s] 10%|█         | 19/188 [00:00<00:01, 92.48it/s] 15%|█▌        | 29/188 [00:00<00:02, 79.27it/s] 21%|██        | 39/188 [00:00<00:01, 85.31it/s] 27%|██▋       | 50/188 [00:00<00:01, 92.81it/s] 32%|███▏      | 61/188 [00:00<00:01, 96.76it/s] 38%|███▊      | 71/188 [00:00<00:01, 79.33it/s] 43%|████▎     | 80/188 [00:00<00:01, 81.04it/s] 48%|████▊     | 90/188 [00:01<00:01, 85.79it/s] 54%|█████▍    | 102/188 [00:01<00:00, 94.31it/s] 61%|██████    | 115/188 [00:01<00:00, 104.00it/s] 69%|██████▊   | 129/188 [00:01<00:00, 112.44it/s] 76%|███████▌  | 142/188 [00:01<00:00, 116.03it/s] 83%|████████▎ | 156/188 [00:01<00:00, 121.41it/s] 90%|████████▉ | 169/188 [00:01<00:00, 122.92it/s] 97%|█████████▋| 182/188 [00:01<00:00, 120.61it/s]100%|██████████| 188/188 [00:01<00:00, 102.40it/s]
+indices: [ 3 12 17  6  7 13 18 23 21  8  1 16 22 11  2  4  9 14 24 19  5 10 15 20
+  0]
+normalized importances: [0.16643637 0.14757788 0.11403555 0.07916442 0.07767472 0.07384216
+ 0.06459603 0.05426873 0.04844683 0.04689844 0.04337506 0.02591321
+ 0.02536892 0.02069894 0.00793071 0.00160038 0.00071358 0.00053221
+ 0.00048225 0.0004436  0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 214.06it/s]
+indices: [ 1 14 24 11  2  3  4  5  6  7  8  9 10 12 23 13 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [9.99529355e-01 4.70642275e-04 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 251.32it/s]
+indices: [ 2  1 24 11  3  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.89611885 0.10388115 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=1.855e+01, with an active set of 1 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=9.274e+00, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 1/1 [00:00<00:00, 154.66it/s]
+indices: [ 3  1 24 11  2  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.62272207 0.37727793 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 239.95it/s]
+indices: [ 2 17 24 11  1  3  4  5  6  7  8  9 10 12 23 13 14 15 16 18 19 20 21 22
+  0]
+normalized importances: [0.6112455 0.3887545 0.        0.        0.        0.        0.
+ 0.        0.        0.        0.        0.        0.        0.
+ 0.        0.        0.        0.        0.        0.        0.
+ 0.        0.        0.        0.       ]
+  0%|          | 0/1 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=2.296e+01, with an active set of 1 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=1.148e+01, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 1/1 [00:00<00:00, 215.13it/s]
+indices: [ 1  3 24 11  2  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.63017474 0.36982526 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=1.179e+01, with an active set of 1 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=5.893e+00, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=5.893e+00, with an active set of 2 regressors, and the smallest cholesky pivot element being 4.215e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 1/1 [00:00<00:00, 198.56it/s]
+indices: [ 4  1 24 11  2  3  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.54769942 0.45230058 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 302.68it/s]
+indices: [ 2  3 24 11  1  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.53206324 0.46793675 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 318.52it/s]
+indices: [ 2  1 24 11  3  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.87095115 0.12904885 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=4.093e+01, with an active set of 1 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=2.047e+01, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 1/1 [00:00<00:00, 221.94it/s]
+indices: [ 3  2 24 11  1  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.66288226 0.33711774 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=2.265e+01, with an active set of 1 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=1.132e+01, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 1/1 [00:00<00:00, 156.21it/s]
+indices: [ 7  3 24 11  1  2  4  5  6  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.52249889 0.4775011  0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/82 [00:00<?, ?it/s] 22%|██▏       | 18/82 [00:00<00:00, 178.94it/s] 44%|████▍     | 36/82 [00:00<00:00, 162.56it/s] 65%|██████▍   | 53/82 [00:00<00:00, 152.52it/s] 84%|████████▍ | 69/82 [00:00<00:00, 147.13it/s]100%|██████████| 82/82 [00:00<00:00, 150.30it/s]
+indices: [ 7  3 12 17 18  6 13  2 23  1 16 22 11 21  8 14  9  4 19 24  5 10 15 20
+  0]
+normalized importances: [0.21040629 0.13807729 0.1068298  0.09069309 0.06454832 0.06385345
+ 0.0571896  0.05631616 0.03987947 0.03659836 0.03051848 0.02468574
+ 0.02411544 0.02224865 0.02051472 0.00361365 0.00314537 0.00304602
+ 0.00238679 0.00133332 0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 235.52it/s]
+indices: [ 2  1 24 11  3  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.71025495 0.28974505 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/3 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=1.067e-02, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.107e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=5.335e-03, with an active set of 3 regressors, and the smallest cholesky pivot element being 2.107e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=5.335e-03, with an active set of 3 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=1.778e+00, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=8.890e-01, with an active set of 3 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=2.318e+00, with an active set of 3 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 3/3 [00:00<00:00, 163.64it/s]
+indices: [ 1  2 18  3  4  6  7 24 11  5  8  9 10 12 23 13 14 15 16 17 19 20 21 22
+  0]
+normalized importances: [2.10918963e-01 1.97950588e-01 1.81061287e-01 1.70546163e-01
+ 8.79514132e-02 7.72833316e-02 7.42431708e-02 4.50812804e-05
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00
+ 0.00000000e+00]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 308.43it/s]
+indices: [ 1  2 24 11  3  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.62440543 0.37559457 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 375.83it/s]
+indices: [ 1  2 24 11  3  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.64400131 0.35599869 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/3 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=2.705e+00, with an active set of 1 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=1.352e+00, with an active set of 3 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=6.284e-01, with an active set of 1 regressors, and the smallest cholesky pivot element being 2.581e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=3.142e-01, with an active set of 3 regressors, and the smallest cholesky pivot element being 2.581e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=7.988e-01, with an active set of 1 regressors, and the smallest cholesky pivot element being 4.215e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=5.053e-01, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=2.557e-01, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=1.279e-01, with an active set of 3 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=8.383e-02, with an active set of 3 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 3/3 [00:00<00:00, 152.92it/s]
+indices: [ 6  1  4  3 22 19 14 24 10  2  5  7  8  9 12 11 23 13 15 16 17 18 20 21
+  0]
+normalized importances: [0.36461611 0.26732202 0.22529806 0.08937756 0.02815379 0.01268889
+ 0.01254356 0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 312.77it/s]
+indices: [ 1  2 24 11  3  4  5  6  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.96177546 0.03822454 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=3.799e+00, with an active set of 1 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=1.900e+00, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 1/1 [00:00<00:00, 252.78it/s]
+indices: [ 8  3 24 11  1  2  4  5  6  7  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.83098082 0.16901918 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 1 iterations, i.e. alpha=7.713e+00, with an active set of 1 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:639: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 2 iterations, i.e. alpha=3.857e+00, with an active set of 2 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+100%|██████████| 1/1 [00:00<00:00, 251.04it/s]
+indices: [ 3  6 24 11  1  2  4  5  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.65242761 0.34757239 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 339.29it/s]
+indices: [ 2  6 24 11  1  3  4  5  7  8  9 10 12 23 13 14 15 16 17 18 19 20 21 22
+  0]
+normalized importances: [0.89212026 0.10787974 0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+Group 1: xEgo between 1 and 0.74476 and yEgo between 0.66667 and 0
+Critical value: 0.0. Entropy: 1.00
+Group 2: vxEgo between 0.32057 and 0.25 and xC1 between 0.27791 and -0.04986 and yC1 between 0 and -0.66667 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.03276 and -0.22484 and yC3 between 0.66667 and -0.66667 and vxC3 between 0.037 and -0.22102 and vxC4 between 0.03299 and -0.20304
+Critical value: 0.0. Entropy: 1.17
+Group 3: xEgo between 1 and 0.74476
+Critical value: 0.0. Entropy: 1.02
+Group 4: xEgo between 0.89853 and 0.88173 and yEgo between 0.66667 and 0
+Critical value: 0.0. Entropy: 0.96
+Group 5: xEgo equal to 0.99057 and vxEgo equal to 0.25823
+Critical value: 0.0. Entropy: 0.83
+Group 6: yEgo between 0.33333 and 0 and yC3 between 0.66667 and -0.66667
+Critical value: 1.0. Entropy: 0.65
+Group 7: xEgo between 0.87024 and 0.75417 and vxEgo equal to 0.25823
+Critical value: 1.0. Entropy: 0.58
+Group 8: xEgo equal to 0.8657 and vyEgo equal to 0
+Critical value: 1.0. Entropy: 0.40
+Group 9: yEgo between 0.66667 and 0 and vxEgo equal to 0.25731
+Critical value: 0.0. Entropy: 1.32
+Group 10: xEgo between 1 and 0.74476 and yEgo equal to 0
+Critical value: 0.0. Entropy: 0.78
+Group 11: yEgo equal to 0 and vxEgo between 0.32059 and 0.25
+Critical value: 1.0. Entropy: 0.73
+Group 12: vxEgo between 0.32059 and 0.25 and yC1 between 0.66667 and -0.66667
+Critical value: 0.0. Entropy: 0.74
+Group 13: yEgo between 0.66667 and 0 and vxEgo between 0.32059 and 0.25 and xC1 between 0.27791 and -0.04986 and yC1 between 0.66667 and -0.66667 and yC2 between 0.66667 and -0.66667 and vxC2 between 0.03276 and -0.22484 and yC3 between 0.66667 and -0.66667 and vxC3 between 0.037 and -0.22102
+Critical value: 0.0. Entropy: 0.97
+Group 14: xEgo between 1 and 0.74476 and yEgo between 0.66667 and 0
+Critical value: 0.0. Entropy: 1.31
+Group 15: xEgo between 1 and 0.74476 and yEgo between 0.66667 and 0 and vxEgo between 0.37392 and 0.36569 and vyEgo between 0.00035 and -0 and xC1 between 0.27791 and -0.04986 and yC1 between -0.33332 and -0.66667 and vxC3 between 0.037 and -0.22102
+Critical value: 0.0. Entropy: 1.27
+Group 16: xEgo between 1 and 0.74476 and yEgo equal to 0.66611
+Critical value: 0.0. Entropy: 1.27
+Group 17: xEgo between 1 and 0.74476 and yEgo between 0.66667 and 0
+Critical value: 0.0. Entropy: 0.93
+Group 18: xEgo between 1 and 0.74476 and vxEgo between 0.31221 and 0.24968 and vyEgo between 0.01524 and 0.0135 and xC1 between 0.14977 and 0.02678
+Critical value: 0.0. Entropy: 1.04
+Group 19: xEgo equal to 0.88792
+Critical value: 0.0. Entropy: 1.29
+Group 20: vxEgo equal to 0.31221 and vxC1 between 0.0291 and -0.21482
+Critical value: 0.0. Entropy: 1.04
+Group 21: vxEgo equal to 0.31221 and xC1 between 0.14977 and 0.02678
+Critical value: 0.0. Entropy: 0.96
+Group 22: yEgo between 0.66667 and 0 and xC1 between 0.14977 and 0.02678
+Critical value: 0.0. Entropy: 1.05
+----------------------------------------
+Time taken for AutoPred: 391.32176184654236 seconds
+Explanations with tree path feature selection
+Starting graph generation...
+Height:  1
+Height:  2
+Height:  3
+Height:  4
+Height:  5
+Height:  6
+Height:  7
+Height:  8
+Height:  9
+Height:  10
+
+
+Selected graph index: 6, number of clusters: 16
+
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3739161491394043, 0.2496778815984726), 'vyEgo': (0.013495422899723053, -6.829770082816822e-11), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (3.019806626980426e-14, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (-0.06485940515995026, -0.06485940515995026), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0003205550310667604, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3739161491394043, 0.2496778815984726), 'vyEgo': (0.013495422899723053, -6.829770082816822e-11), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (3.019806626980426e-14, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.0116762425750494, -0.06485940515995026), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0003205550310667604, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.9905742406845093, 0.9905742406845093), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3739161491394043, 0.2496778815984726), 'vyEgo': (0.013495422899723053, -6.829770082816822e-11), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (0.3295905292034149, 3.019806626980426e-14), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0003205550310667604, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.8702380061149597, 0.7541667222976685), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3739161491394043, 0.2496778815984726), 'vyEgo': (0.0, 0.0), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (0.6666666865348816, 0.3295905292034149), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0003205550310667604, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.8702380061149597, 0.7541667222976685), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3739161491394043, 0.2496778815984726), 'vyEgo': (0.0, 0.0), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (0.6666666865348816, 0.3295905292034149), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0003205550310667604, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.25730565190315247, 0.25730565190315247), 'vyEgo': (1.897135781803172e-10, 1.897135781803172e-10), '1stClosestCarExists': (1.0, 1.0), 'xC1': (-0.024569055065512657, -0.024569055065512657), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0015783169073984027, 0.0003205550310667604), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.0, 0.0), 'vxEgo': (0.32058772444725037, 0.25), 'vyEgo': (0.0009545610519126058, -7.381428801522816e-12), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.08129486441612244, -0.0822955071926117), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 3.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.32058772444725037, 0.25), 'vyEgo': (0.0009545610519126058, -7.381428801522816e-12), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.08129486441612244, -0.0822955071926117), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 3.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3656860291957855, 0.32058772444725037), 'vyEgo': (0.0, 0.0), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.08129486441612244, -0.0822955071926117), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 3.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3739161491394043, 0.3656860291957855), 'vyEgo': (0.0003492675314191729, -7.381428801522816e-12), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (-0.3333169221878052, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.08129486441612244, -0.0822955071926117), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 3.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3739161491394043, 0.3656860291957855), 'vyEgo': (0.0003492675314191729, 0.0003492675314191729), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (-0.3333169221878052, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.08129486441612244, -0.0822955071926117), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 3.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3739161491394043, 0.2496778815984726), 'vyEgo': (0.013495422899723053, 0.0009545610519126058), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.15713486075401306, 0.0799458771944046), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.016982978209853172, -0.11035528033971786), 'vyC1': (0.011371560394763947, -0.013495422899723053), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.08129486441612244, -0.0822955071926117), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 3.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.31220847368240356, 0.2496778815984726), 'vyEgo': (0.015242739580571651, 0.013495422899723053), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.14977359771728516, 0.026776373386383057), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (-0.013246026821434498, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.3800164461135864, 0.28240999579429626), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (-0.013495422899723053, -0.03853129222989082), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.8879162073135376, 0.8879162073135376), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.31220847368240356, 0.31220847368240356), 'vyEgo': (0.015242739580571651, 0.013495422899723053), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.14977359771728516, 0.026776373386383057), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.3800164461135864, 0.28240999579429626), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (-0.013495422899723053, -0.03853129222989082), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.9037839770317078, 0.8750151991844177), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.31220847368240356, 0.31220847368240356), 'vyEgo': (0.015242739580571651, 0.013495422899723053), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.14977359771728516, 0.026776373386383057), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.3800164461135864, 0.28240999579429626), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (-0.013495422899723053, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.9037839770317078, 0.8750151991844177), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.31220847368240356, 0.31220847368240356), 'vyEgo': (0.015242739580571651, 0.013495422899723053), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.14977359771728516, 0.026776373386383057), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.3800164461135864, 0.28240999579429626), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (-0.013495422899723053, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 2.0)}
+
+
+Selected graph index: 7, number of clusters: 20
+
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.25000032782554626, 0.25000032782554626), 'vyEgo': (0.013495422899723053, -6.829770082816822e-11), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (3.019806626980426e-14, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (-0.06485940515995026, -0.06485940515995026), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0003205550310667604, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3205711245536804, 0.25), 'vyEgo': (0.013495422899723053, -6.829770082816822e-11), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (3.019806626980426e-14, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.0116762425750494, -0.06485940515995026), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0003205550310667604, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.36676955223083496, 0.3205711245536804), 'vyEgo': (0.013495422899723053, -6.829770082816822e-11), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (3.019806626980426e-14, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.0116762425750494, -0.06485940515995026), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0003205550310667604, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.9905742406845093, 0.9905742406845093), 'yEgo': (0.3319251835346222, 0.3319251835346222), 'vxEgo': (0.3739161491394043, 0.2496778815984726), 'vyEgo': (0.013495422899723053, -6.829770082816822e-11), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (0.3295905292034149, 3.019806626980426e-14), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0003205550310667604, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.8590496182441711, 0.7541667222976685), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3739161491394043, 0.2496778815984726), 'vyEgo': (0.0, 0.0), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (0.6666666865348816, 0.3295905292034149), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0003205550310667604, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.8702380061149597, 0.7541667222976685), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.25823044776916504, 0.25823044776916504), 'vyEgo': (0.0, 0.0), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (0.6666666865348816, 0.3295905292034149), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0003205550310667604, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.8702380061149597, 0.7541667222976685), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.25823044776916504, 0.25823044776916504), 'vyEgo': (0.0, 0.0), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (0.6666666865348816, 0.3295905292034149), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0003205550310667604, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.25730565190315247, 0.25730565190315247), 'vyEgo': (1.897135781803172e-10, 1.897135781803172e-10), '1stClosestCarExists': (1.0, 1.0), 'xC1': (-0.024569055065512657, -0.024569055065512657), 'yC1': (-0.3333446979522705, -0.3333446979522705), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0015783169073984027, 0.0003205550310667604), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.0, 0.0), 'vxEgo': (0.32058772444725037, 0.25), 'vyEgo': (0.0, 0.0), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.08129486441612244, -0.0822955071926117), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 3.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.0, 0.0), 'vxEgo': (0.32058772444725037, 0.25), 'vyEgo': (0.0009545610519126058, -7.381428801522816e-12), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.08129486441612244, -0.0822955071926117), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 3.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.32058772444725037, 0.25), 'vyEgo': (0.0009545610519126058, -7.381428801522816e-12), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.08129486441612244, -0.0822955071926117), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 3.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3656860291957855, 0.32058772444725037), 'vyEgo': (0.0, 0.0), '1stClosestCarExists': (1.0, 1.0), 'xC1': (-0.012845446355640888, -0.045840777456760406), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.08129486441612244, -0.0822955071926117), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 3.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3739161491394043, 0.3656860291957855), 'vyEgo': (0.0003492675314191729, -7.381428801522816e-12), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (-0.3333169221878052, -0.6666666865348816), 'vxC1': (-0.10468970239162445, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.08129486441612244, -0.0822955071926117), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 3.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6661087274551392, 0.6661087274551392), 'vxEgo': (0.3739161491394043, 0.3656860291957855), 'vyEgo': (0.0003492675314191729, 0.0003492675314191729), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (-0.3333169221878052, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.08129486441612244, -0.0822955071926117), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 3.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3739161491394043, 0.2496778815984726), 'vyEgo': (0.013495422899723053, 0.0009545610519126058), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.15713486075401306, 0.0799458771944046), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.016982978209853172, -0.11035528033971786), 'vyC1': (0.011371560394763947, -0.013495422899723053), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (-0.001153722987510264, -0.10843368619680405), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.08129486441612244, -0.0822955071926117), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 3.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.31220847368240356, 0.2496778815984726), 'vyEgo': (0.015242739580571651, 0.013495422899723053), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.14977359771728516, 0.026776373386383057), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (-0.013246026821434498, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.03341341391205788, -0.6373866200447083), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.3800164461135864, 0.28240999579429626), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (-0.013495422899723053, -0.03853129222989082), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.8879162073135376, 0.8879162073135376), 'yEgo': (0.3049970865249634, 0.3049970865249634), 'vxEgo': (0.31220847368240356, 0.31220847368240356), 'vyEgo': (0.015242739580571651, 0.013495422899723053), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.14977359771728516, 0.026776373386383057), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.3800164461135864, 0.28240999579429626), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (-0.013495422899723053, -0.03853129222989082), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.9037839770317078, 0.8750151991844177), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.31220847368240356, 0.31220847368240356), 'vyEgo': (0.013495422899723053, 0.013495422899723053), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.14977359771728516, 0.026776373386383057), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.3800164461135864, 0.28240999579429626), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (-0.013495422899723053, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.9037839770317078, 0.8750151991844177), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.31220847368240356, 0.31220847368240356), 'vyEgo': (0.013495422899723053, 0.013495422899723053), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.14977359771728516, 0.026776373386383057), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.3800164461135864, 0.28240999579429626), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (-0.013495422899723053, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.9037839770317078, 0.8750151991844177), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.31220847368240356, 0.31220847368240356), 'vyEgo': (0.013495422899723053, 0.013495422899723053), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.14977359771728516, 0.026776373386383057), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.3800164461135864, 0.28240999579429626), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (-0.013495422899723053, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 2.0)}
+
+
+Selected graph index: 8, number of clusters: 22
+
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.25000032782554626, 0.25000032782554626), 'vyEgo': (0.0, 0.0), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (3.019806626980426e-14, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (-0.06485940515995026, -0.06485940515995026), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0003205550310667604, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3205711245536804, 0.25), 'vyEgo': (0.013495422899723053, -6.829770082816822e-11), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (3.019806626980426e-14, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.0116762425750494, -0.06485940515995026), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5101838707923889, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0003205550310667604, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3205711245536804, 0.25), 'vyEgo': (0.013495422899723053, -6.829770082816822e-11), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (3.019806626980426e-14, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.0116762425750494, -0.06485940515995026), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.5101838707923889), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0003205550310667604, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.8985251188278198, 0.881731390953064), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.36676955223083496, 0.3205711245536804), 'vyEgo': (0.013495422899723053, -6.829770082816822e-11), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (3.019806626980426e-14, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.0116762425750494, -0.06485940515995026), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0003205550310667604, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.9905742406845093, 0.9905742406845093), 'yEgo': (0.3319251835346222, 0.3319251835346222), 'vxEgo': (0.25822973251342773, 0.25822973251342773), 'vyEgo': (0.013495422899723053, -6.829770082816822e-11), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (0.3295905292034149, 3.019806626980426e-14), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0003205550310667604, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.8590496182441711, 0.7541667222976685), 'yEgo': (0.3333333432674408, 0.0), 'vxEgo': (0.3739161491394043, 0.2496778815984726), 'vyEgo': (0.0, 0.0), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (0.6666666865348816, 0.3295905292034149), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0003205550310667604, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.8702380061149597, 0.7541667222976685), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.25823044776916504, 0.25823044776916504), 'vyEgo': (0.0, 0.0), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.1222788542509079, 0.10170804709196091), 'yC1': (0.6666666865348816, 0.3295905292034149), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0003205550310667604, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.8656972050666809, 0.8656972050666809), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.25823044776916504, 0.25823044776916504), 'vyEgo': (0.0, 0.0), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (0.6666666865348816, 0.3295905292034149), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0003205550310667604, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.25730565190315247, 0.25730565190315247), 'vyEgo': (1.897135781803172e-10, 1.897135781803172e-10), '1stClosestCarExists': (1.0, 1.0), 'xC1': (-0.024569055065512657, -0.024569055065512657), 'yC1': (-0.3333446979522705, -0.3333446979522705), 'vxC1': (-0.024393582716584206, -0.024393582716584206), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.0015783169073984027, 0.0003205550310667604), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (3.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.0, 0.0), 'vxEgo': (0.32058772444725037, 0.25), 'vyEgo': (0.0, 0.0), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (1.6723542728414031e-07, 0.0), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.08129486441612244, -0.0822955071926117), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 3.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.0, 0.0), 'vxEgo': (0.32058772444725037, 0.25), 'vyEgo': (0.0, 0.0), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.08129486441612244, -0.0822955071926117), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 3.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.0, 0.0), 'vxEgo': (0.32058772444725037, 0.25), 'vyEgo': (0.0009545610519126058, -7.381428801522816e-12), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.08129486441612244, -0.0822955071926117), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 3.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.32058772444725037, 0.25), 'vyEgo': (0.0009545610519126058, -7.381428801522816e-12), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.08129486441612244, -0.0822955071926117), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 3.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3656860291957855, 0.32058772444725037), 'vyEgo': (0.0, 0.0), '1stClosestCarExists': (1.0, 1.0), 'xC1': (-0.012845446355640888, -0.045840777456760406), 'yC1': (-0.33653366565704346, -0.6664053797721863), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.08129486441612244, -0.0822955071926117), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 3.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3739161491394043, 0.3656860291957855), 'vyEgo': (0.0003492675314191729, -7.381428801522816e-12), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (-0.3333169221878052, -0.6666666865348816), 'vxC1': (-0.10468970239162445, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (-0.09913336485624313, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.08129486441612244, -0.0822955071926117), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 3.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6661087274551392, 0.6661087274551392), 'vxEgo': (0.36676937341690063, 0.36676937341690063), 'vyEgo': (0.0003492675314191729, 0.0003492675314191729), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.2779068052768707, -0.049864862114191055), 'yC1': (-0.3333169221878052, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.08129486441612244, -0.0822955071926117), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 3.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.3739161491394043, 0.2496778815984726), 'vyEgo': (0.013495422899723053, 0.0009545610519126058), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.15713486075401306, 0.0799458771944046), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.016982978209853172, -0.11035528033971786), 'vyC1': (0.011371560394763947, -0.013495422899723053), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (-0.001153722987510264, -0.10843368619680405), 'vyC2': (-0.0009545610519126058, -0.013495422899723053), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.5391529202461243, 0.15546268224716187), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (0.08129486441612244, -0.0822955071926117), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 3.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (1.0, 0.7447561025619507), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.31220847368240356, 0.2496778815984726), 'vyEgo': (0.015242739580571651, 0.013495422899723053), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.14977359771728516, 0.026776373386383057), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (-0.013246026821434498, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.03341341391205788, -0.6373866200447083), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (-0.010590962134301662, -0.019291646778583527), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.3800164461135864, 0.28240999579429626), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (-0.013495422899723053, -0.03853129222989082), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.8879162073135376, 0.8879162073135376), 'yEgo': (0.3049970865249634, 0.3049970865249634), 'vxEgo': (0.31220847368240356, 0.31220847368240356), 'vyEgo': (0.013495422899723053, 0.013495422899723053), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.14977359771728516, 0.026776373386383057), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.3800164461135864, 0.28240999579429626), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (-0.013495422899723053, -0.03853129222989082), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.9037839770317078, 0.8750151991844177), 'yEgo': (0.6383303999900818, 0.3049970865249634), 'vxEgo': (0.31220847368240356, 0.31220847368240356), 'vyEgo': (0.013495422899723053, 0.013495422899723053), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.14977359771728516, 0.026776373386383057), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.3800164461135864, 0.28240999579429626), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (-0.013495422899723053, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.8831319212913513, 0.8775680065155029), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.31220847368240356, 0.31220847368240356), 'vyEgo': (0.013495422899723053, 0.013495422899723053), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.14977359771728516, 0.026776373386383057), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.3800164461135864, 0.28240999579429626), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (-0.013495422899723053, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 2.0)}
+Getting cluster features for cluster with boundaries: {'egoExists': (1.0, 1.0), 'xEgo': (0.8750151991844177, 0.8750151991844177), 'yEgo': (0.6666666865348816, 0.0), 'vxEgo': (0.31220847368240356, 0.31220847368240356), 'vyEgo': (0.013495422899723053, 0.013495422899723053), '1stClosestCarExists': (1.0, 1.0), 'xC1': (0.14977359771728516, 0.026776373386383057), 'yC1': (0.6666666865348816, -0.6666666865348816), 'vxC1': (0.029098080471158028, -0.2148219496011734), 'vyC1': (0.08337584882974625, -0.09582316130399704), '2ndClosestCarExists': (1.0, 1.0), 'xC2': (0.3310844898223877, -0.04334597662091255), 'yC2': (0.6666666865348816, -0.6666666865348816), 'vxC2': (0.03276244178414345, -0.22483642399311066), 'vyC2': (0.08179866522550583, -0.09153677523136139), '3rdClosestCarExists': (1.0, 1.0), 'xC3': (0.3800164461135864, 0.28240999579429626), 'yC3': (0.6666666865348816, -0.6666666865348816), 'vxC3': (0.0370049886405468, -0.22102443873882294), 'vyC3': (-0.013495422899723053, -0.013495422899723053), '4thClosestCarExists': (1.0, 1.0), 'xC4': (0.663908064365387, 0.24922946095466614), 'yC4': (0.6666666865348816, -0.6666666865348816), 'vxC4': (0.032994650304317474, -0.20303848385810852), 'vyC4': (0.0617109052836895, -0.08379223942756653), 'State Value': (1.0, 0.0), 'Action': (4.0, 2.0)}
+***********************************************
+Clusters at height 7
+Group 1 to Group 2 with p=1.0 and action 2
+Group 2 to Group 1 with p=0.001049317943336831 and action 2
+Group 2 to Group 2 with p=0.8803777544596096 and action 2
+Group 2 to Group 8 with p=0.048268625393494254 and action 2
+Group 2 to Group 9 with p=0.001049317943336831 and action 3
+Group 2 to Group 10 with p=0.011542497376705145 and action 3
+Group 2 to Group 12 with p=0.002098635886673662 and action 2
+Group 2 to Group 13 with p=0.009443861490031482 and action 2
+Group 2 to Group 14 with p=0.001049317943336831 and action 2
+Group 2 to Group 15 with p=0.0031479538300104933 and action 2
+Group 2 to Group 16 with p=0.002098635886673662 and action 2
+Group 2 to Group 17 with p=0.03987408184679959 and action 2
+Group 3 to Group 13 with p=1.0 and action 2
+Group 4 to Group 13 with p=0.5 and action 2
+Group 4 to Group 16 with p=0.5 and action 2
+Group 5 to Group 13 with p=1.0 and action 2
+Group 6 to Group 2 with p=1.0 and action 2
+Group 7 to Group 7 with p=0.25 and action 4
+Group 7 to Group 8 with p=0.625 and action 4
+Group 7 to Group 17 with p=0.125 and action 4
+Group 8 to Group 2 with p=0.15914489311163893 and action 3
+Group 8 to Group 4 with p=0.0023752969121140144 and action 4
+Group 8 to Group 5 with p=0.007125890736342043 and action 4
+Group 8 to Group 6 with p=0.0023752969121140144 and action 4
+Group 8 to Group 7 with p=0.011876484560570073 and action 4
+Group 8 to Group 8 with p=0.7814726840855127 and action 3
+Group 8 to Group 10 with p=0.009501187648456057 and action 3
+Group 8 to Group 17 with p=0.026128266033254164 and action 3
+Group 9 to Group 2 with p=0.5 and action 4
+Group 9 to Group 8 with p=0.5 and action 4
+Group 10 to Group 2 with p=0.3684210526315789 and action 4
+Group 10 to Group 8 with p=0.5263157894736842 and action 4
+Group 10 to Group 9 with p=0.05263157894736842 and action 4
+Group 10 to Group 10 with p=0.05263157894736842 and action 3
+Group 11 to Group 8 with p=1.0 and action 4
+Group 12 to Group 8 with p=0.6666666666666666 and action 4
+Group 12 to Group 10 with p=0.3333333333333333 and action 3
+Group 13 to Group 2 with p=0.3684210526315789 and action 3
+Group 13 to Group 8 with p=0.3157894736842105 and action 4
+Group 13 to Group 10 with p=0.10526315789473684 and action 3
+Group 13 to Group 11 with p=0.05263157894736842 and action 3
+Group 13 to Group 12 with p=0.05263157894736842 and action 4
+Group 13 to Group 13 with p=0.10526315789473684 and action 2
+Group 14 to Group 13 with p=1.0 and action 2
+Group 15 to Group 2 with p=0.3333333333333333 and action 2
+Group 15 to Group 13 with p=0.6666666666666666 and action 2
+Group 16 to Group 2 with p=0.6666666666666666 and action 4
+Group 16 to Group 3 with p=0.3333333333333333 and action 4
+----------------------------------------
+
+Using tree path feature selection for predicate generation...
+total states in dataset: 1441
+Group 1: vxEgo between 0.37392 and 0.24968 and vyEgo between 0.0135 and -0 and yC1 between 0 and -0.66667 and vyC2 equal to -0.06486 and vyC3 between 0.00032 and -0.0135 and Action between 3 and 2
+Critical value: 0.0. Entropy: 1.00
+Group 2: vxEgo between 0.37392 and 0.24968 and vyEgo between 0.0135 and -0 and yC1 between 0 and -0.66667 and vyC2 between 0.01168 and -0.06486 and vyC3 between 0.00032 and -0.0135 and Action between 3 and 2
+Critical value: 0.0. Entropy: 1.17
+Group 3: xEgo equal to 0.99057 and yEgo between 0.66667 and 0 and vyEgo between 0.0135 and -0 and yC1 between 0.32959 and 0 and vyC3 between 0.00032 and -0.0135 and Action between 3 and 2
+Critical value: 0.0. Entropy: 0.83
+Group 4: xEgo between 0.87024 and 0.75417 and vyEgo equal to 0 and yC1 between 0.66667 and 0.32959 and vyC3 between 0.00032 and -0.0135 and Action between 3 and 2
+Critical value: 1.0. Entropy: 0.65
+Group 5: xEgo between 0.87024 and 0.75417 and vxEgo between 0.37392 and 0.24968 and vyEgo equal to 0 and yC1 between 0.66667 and 0.32959 and vyC3 between 0.00032 and -0.0135 and Action between 3 and 2
+Critical value: 1.0. Entropy: 0.52
+Group 6: vxEgo equal to 0.25731 and vyEgo equal to 0 and xC1 equal to -0.02457 and yC1 between 0.66667 and -0.66667 and vyC3 between 0.00158 and 0.00032 and Action between 3 and 2
+Critical value: 0.0. Entropy: 1.32
+Group 7: yEgo equal to 0 and vxEgo between 0.32059 and 0.25 and vyEgo between 0.00095 and -0 and Action between 4 and 3
+Critical value: 1.0. Entropy: 0.78
+Group 8: yEgo between 0.66667 and 0 and vxEgo between 0.32059 and 0.25 and vyEgo between 0.00095 and -0 and Action between 4 and 3
+Critical value: 0.0. Entropy: 0.96
+Group 9: vxEgo between 0.36569 and 0.32059 and vyEgo equal to 0 and xC1 between 0.27791 and -0.04986 and Action between 4 and 3
+Critical value: 0.0. Entropy: 1.31
+Group 10: vxEgo between 0.37392 and 0.36569 and vyEgo between 0.00035 and -0 and yC1 between -0.33332 and -0.66667 and vxC1 between 0.0291 and -0.21482 and Action between 4 and 3
+Critical value: 0.0. Entropy: 1.27
+Group 11: yEgo between 0.66667 and 0 and vxEgo between 0.37392 and 0.36569 and vyEgo equal to 0.00035 and yC1 between -0.33332 and -0.66667 and Action between 4 and 3
+Critical value: 0.0. Entropy: 1.27
+Group 12: vyEgo between 0.0135 and 0.00095 and xC1 between 0.15713 and 0.07995 and vxC1 between 0.01698 and -0.11036 and vyC1 between 0.01137 and -0.0135 and vxC2 between 0.03276 and -0.22484 and Action between 4 and 3
+Critical value: 0.0. Entropy: 0.93
+Group 13: vxEgo between 0.31221 and 0.24968 and vyEgo between 0.01524 and 0.0135 and xC1 between 0.14977 and 0.02678 and vyC1 between -0.01325 and -0.09582 and yC2 between 0.66667 and -0.66667 and xC3 between 0.38002 and 0.28241 and vyC3 between -0.0135 and -0.03853
+Critical value: 0.0. Entropy: 1.04
+Group 14: xEgo equal to 0.88792 and yEgo between 0.66667 and 0 and vxEgo equal to 0.31221 and vyEgo between 0.01524 and 0.0135 and xC1 between 0.14977 and 0.02678 and xC3 between 0.38002 and 0.28241 and vyC3 between -0.0135 and -0.03853
+Critical value: 0.0. Entropy: 1.29
+Group 15: xEgo between 0.90378 and 0.87502 and vxEgo equal to 0.31221 and vyEgo between 0.01524 and 0.0135 and xC1 between 0.14977 and 0.02678 and xC3 between 0.38002 and 0.28241 and vyC3 equal to -0.0135
+Critical value: 0.0. Entropy: 1.04
+Group 16: xEgo between 0.90378 and 0.87502 and vxEgo equal to 0.31221 and vyEgo between 0.01524 and 0.0135 and xC1 between 0.14977 and 0.02678 and xC3 between 0.38002 and 0.28241 and vyC3 equal to -0.0135
+Critical value: 0.0. Entropy: 0.99
+----------------------------------------
+***********************************************
+Clusters at height 8
+Group 1 to Group 2 with p=1.0 and action 2
+Group 2 to Group 1 with p=0.0010515247108307045 and action 2
+Group 2 to Group 2 with p=0.882229232386956 and action 2
+Group 2 to Group 11 with p=0.04837013669821242 and action 2
+Group 2 to Group 12 with p=0.0010515247108307045 and action 3
+Group 2 to Group 13 with p=0.009463722397476343 and action 3
+Group 2 to Group 15 with p=0.002103049421661409 and action 2
+Group 2 to Group 16 with p=0.009463722397476343 and action 2
+Group 2 to Group 17 with p=0.0010515247108307045 and action 2
+Group 2 to Group 18 with p=0.0031545741324921135 and action 2
+Group 2 to Group 19 with p=0.0010515247108307045 and action 2
+Group 2 to Group 20 with p=0.0010515247108307045 and action 2
+Group 2 to Group 21 with p=0.03995793901156678 and action 2
+Group 3 to Group 13 with p=1.0 and action 3
+Group 4 to Group 16 with p=1.0 and action 2
+Group 5 to Group 16 with p=0.5 and action 2
+Group 5 to Group 19 with p=0.5 and action 2
+Group 6 to Group 16 with p=1.0 and action 2
+Group 7 to Group 16 with p=1.0 and action 2
+Group 8 to Group 2 with p=1.0 and action 2
+Group 9 to Group 9 with p=0.25 and action 4
+Group 9 to Group 10 with p=0.125 and action 4
+Group 9 to Group 11 with p=0.5 and action 4
+Group 9 to Group 21 with p=0.125 and action 4
+Group 10 to Group 6 with p=0.2 and action 4
+Group 10 to Group 9 with p=0.2 and action 4
+Group 10 to Group 10 with p=0.2 and action 4
+Group 10 to Group 11 with p=0.4 and action 4
+Group 11 to Group 2 with p=0.15625 and action 3
+Group 11 to Group 3 with p=0.004807692307692308 and action 3
+Group 11 to Group 5 with p=0.002403846153846154 and action 4
+Group 11 to Group 6 with p=0.002403846153846154 and action 4
+Group 11 to Group 7 with p=0.002403846153846154 and action 4
+Group 11 to Group 8 with p=0.002403846153846154 and action 4
+Group 11 to Group 9 with p=0.009615384615384616 and action 4
+Group 11 to Group 10 with p=0.004807692307692308 and action 4
+Group 11 to Group 11 with p=0.7788461538461516 and action 3
+Group 11 to Group 13 with p=0.009615384615384616 and action 3
+Group 11 to Group 21 with p=0.02644230769230769 and action 3
+Group 12 to Group 2 with p=0.5 and action 4
+Group 12 to Group 11 with p=0.5 and action 4
+Group 13 to Group 2 with p=0.3684210526315789 and action 4
+Group 13 to Group 11 with p=0.5263157894736842 and action 4
+Group 13 to Group 12 with p=0.05263157894736842 and action 4
+Group 13 to Group 13 with p=0.05263157894736842 and action 3
+Group 14 to Group 11 with p=1.0 and action 4
+Group 15 to Group 11 with p=0.6666666666666666 and action 4
+Group 15 to Group 13 with p=0.3333333333333333 and action 3
+Group 16 to Group 2 with p=0.3684210526315789 and action 3
+Group 16 to Group 11 with p=0.3157894736842105 and action 4
+Group 16 to Group 13 with p=0.10526315789473684 and action 3
+Group 16 to Group 14 with p=0.05263157894736842 and action 3
+Group 16 to Group 15 with p=0.05263157894736842 and action 4
+Group 16 to Group 16 with p=0.10526315789473684 and action 2
+Group 17 to Group 16 with p=1.0 and action 2
+Group 18 to Group 2 with p=0.3333333333333333 and action 2
+Group 18 to Group 16 with p=0.6666666666666666 and action 2
+Group 19 to Group 2 with p=0.5 and action 4
+Group 19 to Group 4 with p=0.5 and action 4
+Group 20 to Group 2 with p=1.0 and action 4
+----------------------------------------
+
+Using tree path feature selection for predicate generation...
+total states in dataset: 1441
+Group 1: vxEgo equal to 0.25 and vyEgo between 0.0135 and -0 and yC1 between 0 and -0.66667 and vyC2 equal to -0.06486 and vyC3 between 0.00032 and -0.0135 and Action between 3 and 2
+Critical value: 0.0. Entropy: 1.00
+Group 2: vxEgo between 0.32057 and 0.25 and vyEgo between 0.0135 and -0 and yC1 between 0 and -0.66667 and vyC2 between 0.01168 and -0.06486 and xC3 between 0.53915 and 0.15546 and vyC3 between 0.00032 and -0.0135 and Action between 3 and 2
+Critical value: 0.0. Entropy: 1.17
+Group 3: xEgo between 1 and 0.74476 and vxEgo between 0.36677 and 0.32057 and vyEgo between 0.0135 and -0 and yC1 between 0 and -0.66667 and vyC2 between 0.01168 and -0.06486 and vyC3 between 0.00032 and -0.0135 and Action between 3 and 2
+Critical value: 0.0. Entropy: 0.96
+Group 4: xEgo equal to 0.99057 and yEgo equal to 0.33193 and vxEgo between 0.37392 and 0.24968 and vyEgo between 0.0135 and -0 and yC1 between 0.32959 and 0 and vyC3 between 0.00032 and -0.0135 and Action between 3 and 2
+Critical value: 0.0. Entropy: 0.83
+Group 5: xEgo between 0.85905 and 0.75417 and yEgo between 0.66667 and 0 and vyEgo equal to 0 and yC1 between 0.66667 and 0.32959 and vyC3 between 0.00032 and -0.0135 and Action between 3 and 2
+Critical value: 1.0. Entropy: 0.65
+Group 6: xEgo between 0.87024 and 0.75417 and vxEgo equal to 0.25823 and vyEgo equal to 0 and xC1 between 0.27791 and -0.04986 and yC1 between 0.66667 and 0.32959 and vyC3 between 0.00032 and -0.0135 and Action between 3 and 2
+Critical value: 1.0. Entropy: 0.58
+Group 7: xEgo between 0.87024 and 0.75417 and vxEgo equal to 0.25823 and vyEgo equal to 0 and yC1 between 0.66667 and 0.32959 and vyC3 between 0.00032 and -0.0135 and Action between 3 and 2
+Critical value: 1.0. Entropy: 0.40
+Group 8: vxEgo equal to 0.25731 and vyEgo equal to 0 and xC1 equal to -0.02457 and yC1 equal to -0.33334 and vxC1 between 0.0291 and -0.21482 and vyC3 between 0.00158 and 0.00032 and Action between 3 and 2
+Critical value: 0.0. Entropy: 1.32
+Group 9: yEgo equal to 0 and vxEgo between 0.32059 and 0.25 and vyEgo equal to 0 and vyC1 between 0.08338 and -0.09582 and Action between 4 and 3
+Critical value: 0.0. Entropy: 0.78
+Group 10: yEgo equal to 0 and vxEgo between 0.32059 and 0.25 and vyEgo between 0.00095 and -0 and Action between 4 and 3
+Critical value: 0.0. Entropy: 0.73
+Group 11: yEgo between 0.66667 and 0 and vxEgo between 0.32059 and 0.25 and vyEgo between 0.00095 and -0 and Action between 4 and 3
+Critical value: 0.0. Entropy: 0.96
+Group 12: vxEgo between 0.36569 and 0.32059 and vyEgo equal to 0 and xC1 between -0.01285 and -0.04584 and yC1 between 0.66667 and -0.66667 and Action between 4 and 3
+Critical value: 0.0. Entropy: 1.31
+Group 13: vxEgo between 0.37392 and 0.36569 and vyEgo between 0.00035 and -0 and yC1 between -0.33332 and -0.66667 and vxC1 between -0.10469 and -0.21482 and vxC2 between 0.03276 and -0.22484 and Action between 4 and 3
+Critical value: 0.0. Entropy: 1.27
+Group 14: yEgo equal to 0.66611 and vxEgo between 0.37392 and 0.36569 and vyEgo equal to 0.00035 and yC1 between -0.33332 and -0.66667 and Action between 4 and 3
+Critical value: 0.0. Entropy: 1.27
+Group 15: vyEgo between 0.0135 and 0.00095 and xC1 between 0.15713 and 0.07995 and vxC1 between 0.01698 and -0.11036 and vyC1 between 0.01137 and -0.0135 and vxC2 between -0.00115 and -0.10843 and vyC2 between 0.0818 and -0.09154 and Action between 4 and 3
+Critical value: 0.0. Entropy: 0.93
+Group 16: vxEgo between 0.31221 and 0.24968 and vyEgo between 0.01524 and 0.0135 and xC1 between 0.14977 and 0.02678 and vyC1 between -0.01325 and -0.09582 and yC2 between 0.03341 and -0.63739 and vyC2 between 0.0818 and -0.09154 and xC3 between 0.38002 and 0.28241 and vyC3 between -0.0135 and -0.03853
+Critical value: 0.0. Entropy: 1.04
+Group 17: xEgo equal to 0.88792 and yEgo equal to 0.305 and vxEgo equal to 0.31221 and vyEgo between 0.01524 and 0.0135 and xC1 between 0.14977 and 0.02678 and xC3 between 0.38002 and 0.28241 and vyC3 between -0.0135 and -0.03853
+Critical value: 0.0. Entropy: 1.29
+Group 18: xEgo between 0.90378 and 0.87502 and yEgo between 0.66667 and 0 and vxEgo equal to 0.31221 and vyEgo equal to 0.0135 and xC1 between 0.14977 and 0.02678 and xC3 between 0.38002 and 0.28241 and vyC3 equal to -0.0135
+Critical value: 0.0. Entropy: 1.04
+Group 19: xEgo between 0.90378 and 0.87502 and vxEgo equal to 0.31221 and vyEgo equal to 0.0135 and xC1 between 0.14977 and 0.02678 and xC3 between 0.38002 and 0.28241 and vyC3 equal to -0.0135
+Critical value: 0.0. Entropy: 0.96
+Group 20: xEgo between 0.90378 and 0.87502 and vxEgo equal to 0.31221 and vyEgo equal to 0.0135 and xC1 between 0.14977 and 0.02678 and xC3 between 0.38002 and 0.28241 and vyC3 equal to -0.0135
+Critical value: 0.0. Entropy: 1.05
+----------------------------------------
+***********************************************
+Clusters at height 9
+Group 1 to Group 2 with p=1.0 and action 2
+Group 2 to Group 1 with p=0.0010615711252653928 and action 2
+Group 2 to Group 2 with p=0.8800424628450105 and action 2
+Group 2 to Group 3 with p=0.0010615711252653928 and action 2
+Group 2 to Group 13 with p=0.048832271762208064 and action 2
+Group 2 to Group 14 with p=0.0010615711252653928 and action 3
+Group 2 to Group 15 with p=0.009554140127388535 and action 3
+Group 2 to Group 17 with p=0.0021231422505307855 and action 2
+Group 2 to Group 18 with p=0.009554140127388535 and action 2
+Group 2 to Group 19 with p=0.0010615711252653928 and action 2
+Group 2 to Group 20 with p=0.0031847133757961785 and action 2
+Group 2 to Group 21 with p=0.0010615711252653928 and action 2
+Group 2 to Group 22 with p=0.0010615711252653928 and action 2
+Group 2 to Group 23 with p=0.040339702760084924 and action 2
+Group 3 to Group 2 with p=0.1111111111111111 and action 2
+Group 3 to Group 3 with p=0.8888888888888891 and action 2
+Group 4 to Group 15 with p=1.0 and action 3
+Group 5 to Group 18 with p=1.0 and action 2
+Group 6 to Group 18 with p=0.5 and action 2
+Group 6 to Group 21 with p=0.5 and action 2
+Group 7 to Group 18 with p=1.0 and action 2
+Group 8 to Group 18 with p=1.0 and action 2
+Group 9 to Group 2 with p=1.0 and action 2
+Group 10 to Group 10 with p=0.25 and action 4
+Group 10 to Group 11 with p=0.125 and action 4
+Group 10 to Group 12 with p=0.25 and action 4
+Group 10 to Group 13 with p=0.25 and action 4
+Group 10 to Group 23 with p=0.125 and action 4
+Group 11 to Group 7 with p=0.2 and action 4
+Group 11 to Group 10 with p=0.2 and action 4
+Group 11 to Group 11 with p=0.2 and action 4
+Group 11 to Group 12 with p=0.4 and action 4
+Group 12 to Group 10 with p=0.16666666666666666 and action 4
+Group 12 to Group 11 with p=0.16666666666666666 and action 4
+Group 12 to Group 12 with p=0.3333333333333333 and action 4
+Group 12 to Group 13 with p=0.3333333333333333 and action 4
+Group 13 to Group 2 with p=0.15853658536585374 and action 3
+Group 13 to Group 4 with p=0.004878048780487805 and action 3
+Group 13 to Group 6 with p=0.0024390243902439024 and action 4
+Group 13 to Group 7 with p=0.0024390243902439024 and action 4
+Group 13 to Group 8 with p=0.0024390243902439024 and action 4
+Group 13 to Group 9 with p=0.0024390243902439024 and action 4
+Group 13 to Group 10 with p=0.007317073170731707 and action 4
+Group 13 to Group 11 with p=0.0024390243902439024 and action 4
+Group 13 to Group 13 with p=0.7804878048780494 and action 3
+Group 13 to Group 15 with p=0.00975609756097561 and action 3
+Group 13 to Group 23 with p=0.026829268292682923 and action 3
+Group 14 to Group 2 with p=0.5 and action 4
+Group 14 to Group 13 with p=0.5 and action 4
+Group 15 to Group 2 with p=0.3684210526315789 and action 4
+Group 15 to Group 13 with p=0.5263157894736842 and action 4
+Group 15 to Group 14 with p=0.05263157894736842 and action 4
+Group 15 to Group 15 with p=0.05263157894736842 and action 3
+Group 16 to Group 13 with p=1.0 and action 4
+Group 17 to Group 13 with p=0.6666666666666666 and action 4
+Group 17 to Group 15 with p=0.3333333333333333 and action 3
+Group 18 to Group 2 with p=0.3684210526315789 and action 3
+Group 18 to Group 13 with p=0.3157894736842105 and action 4
+Group 18 to Group 15 with p=0.10526315789473684 and action 3
+Group 18 to Group 16 with p=0.05263157894736842 and action 3
+Group 18 to Group 17 with p=0.05263157894736842 and action 4
+Group 18 to Group 18 with p=0.10526315789473684 and action 2
+Group 19 to Group 18 with p=1.0 and action 2
+Group 20 to Group 2 with p=0.3333333333333333 and action 2
+Group 20 to Group 18 with p=0.6666666666666666 and action 2
+Group 21 to Group 2 with p=0.5 and action 4
+Group 21 to Group 5 with p=0.5 and action 4
+Group 22 to Group 2 with p=1.0 and action 4
+----------------------------------------
+
+Using tree path feature selection for predicate generation...
+total states in dataset: 1441
+Group 1: vxEgo equal to 0.25 and vyEgo equal to 0 and xC1 between 0.27791 and -0.04986 and yC1 between 0 and -0.66667 and vyC2 equal to -0.06486 and vyC3 between 0.00032 and -0.0135 and Action between 3 and 2
+Critical value: 0.0. Entropy: 1.00
+Group 2: vxEgo between 0.32057 and 0.25 and vyEgo between 0.0135 and -0 and yC1 between 0 and -0.66667 and vyC2 between 0.01168 and -0.06486 and xC3 between 0.51018 and 0.15546 and vyC3 between 0.00032 and -0.0135 and xC4 between 0.66391 and 0.24923 and Action between 3 and 2
+Critical value: 0.0. Entropy: 1.17
+Group 3: vxEgo between 0.32057 and 0.25 and vyEgo between 0.0135 and -0 and yC1 between 0 and -0.66667 and vyC2 between 0.01168 and -0.06486 and xC3 between 0.53915 and 0.51018 and vyC3 between 0.00032 and -0.0135 and Action between 3 and 2
+Critical value: 0.0. Entropy: 1.02
+Group 4: xEgo between 0.89853 and 0.88173 and vxEgo between 0.36677 and 0.32057 and vyEgo between 0.0135 and -0 and yC1 between 0 and -0.66667 and vyC2 between 0.01168 and -0.06486 and vyC3 between 0.00032 and -0.0135 and Action between 3 and 2
+Critical value: 0.0. Entropy: 0.96
+Group 5: xEgo equal to 0.99057 and yEgo equal to 0.33193 and vxEgo equal to 0.25823 and vyEgo between 0.0135 and -0 and yC1 between 0.32959 and 0 and vyC3 between 0.00032 and -0.0135 and Action between 3 and 2
+Critical value: 0.0. Entropy: 0.83
+Group 6: xEgo between 0.85905 and 0.75417 and yEgo between 0.33333 and 0 and vxEgo between 0.37392 and 0.24968 and vyEgo equal to 0 and yC1 between 0.66667 and 0.32959 and vyC3 between 0.00032 and -0.0135 and Action between 3 and 2
+Critical value: 1.0. Entropy: 0.65
+Group 7: xEgo between 0.87024 and 0.75417 and vxEgo equal to 0.25823 and vyEgo equal to 0 and xC1 between 0.12228 and 0.10171 and yC1 between 0.66667 and 0.32959 and vxC1 between 0.0291 and -0.21482 and vyC3 between 0.00032 and -0.0135 and Action between 3 and 2
+Critical value: 1.0. Entropy: 0.58
+Group 8: xEgo equal to 0.8657 and yEgo between 0.66667 and 0 and vxEgo equal to 0.25823 and vyEgo equal to 0 and yC1 between 0.66667 and 0.32959 and vyC3 between 0.00032 and -0.0135 and Action between 3 and 2
+Critical value: 1.0. Entropy: 0.40
+Group 9: vxEgo equal to 0.25731 and vyEgo equal to 0 and xC1 equal to -0.02457 and yC1 equal to -0.33334 and vxC1 equal to -0.02439 and vyC1 between 0.08338 and -0.09582 and vyC3 between 0.00158 and 0.00032 and Action between 3 and 2
+Critical value: 0.0. Entropy: 1.32
+Group 10: yEgo equal to 0 and vxEgo between 0.32059 and 0.25 and vyEgo equal to 0 and vyC1 equal to 0 and xC2 between 0.33108 and -0.04335 and Action between 4 and 3
+Critical value: 0.0. Entropy: 0.78
+Group 11: yEgo equal to 0 and vxEgo between 0.32059 and 0.25 and vyEgo equal to 0 and xC1 between 0.27791 and -0.04986 and Action between 4 and 3
+Critical value: 1.0. Entropy: 0.73
+Group 12: yEgo equal to 0 and vxEgo between 0.32059 and 0.25 and vyEgo between 0.00095 and -0 and Action between 4 and 3
+Critical value: 0.0. Entropy: 0.74
+Group 13: yEgo between 0.66667 and 0 and vxEgo between 0.32059 and 0.25 and vyEgo between 0.00095 and -0 and Action between 4 and 3
+Critical value: 0.0. Entropy: 0.97
+Group 14: vxEgo between 0.36569 and 0.32059 and vyEgo equal to 0 and xC1 between -0.01285 and -0.04584 and yC1 between -0.33653 and -0.66641 and vxC1 between 0.0291 and -0.21482 and Action between 4 and 3
+Critical value: 0.0. Entropy: 1.31
+Group 15: vxEgo between 0.37392 and 0.36569 and vyEgo between 0.00035 and -0 and yC1 between -0.33332 and -0.66667 and vxC1 between -0.10469 and -0.21482 and vxC2 between -0.09913 and -0.22484 and yC4 between 0.66667 and -0.66667 and Action between 4 and 3
+Critical value: 0.0. Entropy: 1.27
+Group 16: yEgo equal to 0.66611 and vxEgo equal to 0.36677 and vyEgo equal to 0.00035 and xC1 between 0.27791 and -0.04986 and yC1 between -0.33332 and -0.66667 and Action between 4 and 3
+Critical value: 0.0. Entropy: 1.27
+Group 17: vyEgo between 0.0135 and 0.00095 and xC1 between 0.15713 and 0.07995 and vxC1 between 0.01698 and -0.11036 and vyC1 between 0.01137 and -0.0135 and vxC2 between -0.00115 and -0.10843 and vyC2 between -0.00095 and -0.0135 and xC3 between 0.53915 and 0.15546 and Action between 4 and 3
+Critical value: 0.0. Entropy: 0.93
+Group 18: vxEgo between 0.31221 and 0.24968 and vyEgo between 0.01524 and 0.0135 and xC1 between 0.14977 and 0.02678 and vyC1 between -0.01325 and -0.09582 and yC2 between 0.03341 and -0.63739 and vyC2 between -0.01059 and -0.01929 and xC3 between 0.38002 and 0.28241 and vyC3 between -0.0135 and -0.03853 and xC4 between 0.66391 and 0.24923
+Critical value: 0.0. Entropy: 1.04
+Group 19: xEgo equal to 0.88792 and yEgo equal to 0.305 and vxEgo equal to 0.31221 and vyEgo equal to 0.0135 and xC1 between 0.14977 and 0.02678 and xC3 between 0.38002 and 0.28241 and vyC3 between -0.0135 and -0.03853
+Critical value: 0.0. Entropy: 1.29
+Group 20: xEgo between 0.90378 and 0.87502 and yEgo between 0.63833 and 0.305 and vxEgo equal to 0.31221 and vyEgo equal to 0.0135 and xC1 between 0.14977 and 0.02678 and xC3 between 0.38002 and 0.28241 and vyC3 equal to -0.0135
+Critical value: 0.0. Entropy: 1.04
+Group 21: xEgo between 0.88313 and 0.87757 and yEgo between 0.66667 and 0 and vxEgo equal to 0.31221 and vyEgo equal to 0.0135 and xC1 between 0.14977 and 0.02678 and xC3 between 0.38002 and 0.28241 and vyC3 equal to -0.0135
+Critical value: 0.0. Entropy: 0.96
+Group 22: xEgo equal to 0.87502 and yEgo between 0.66667 and 0 and vxEgo equal to 0.31221 and vyEgo equal to 0.0135 and xC1 between 0.14977 and 0.02678 and xC3 between 0.38002 and 0.28241 and vyC3 equal to -0.0135
+Critical value: 0.0. Entropy: 1.05
+----------------------------------------
+Time taken for AutoPred: 945.6268825531006 seconds

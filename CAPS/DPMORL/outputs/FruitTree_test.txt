@@ -1,0 +1,70 @@
+****************************Choosen GPU : 0****************************
+/mnt/c/Juan/Phd/APGS/.venvs/dpmorl/lib/python3.8/site-packages/pygame/sysfont.py:221: UserWarning: 'fc-list' is missing, system fonts cannot be loaded on your platform
+  warnings.warn(
+env: FruitTree, env reward dim: (6,)
+reward_dim_indices = [0, 1], reward_shape = 2
+main_policy.py:447: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(path))
+num_total_policies = 20
+Evaluating policy 1 with 100 episodes...
+/mnt/c/Juan/Phd/APGS/.venvs/dpmorl/lib/python3.8/site-packages/stable_baselines3/common/save_util.py:437: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  th_object = th.load(file_content, map_location=device)
+progress: 10/100
+progress: 20/100
+progress: 30/100
+progress: 40/100
+progress: 50/100
+progress: 60/100
+progress: 70/100
+progress: 80/100
+progress: 90/100
+progress: 100/100
+Evaluating policy 2 with 100 episodes...
+/mnt/c/Juan/Phd/APGS/.venvs/dpmorl/lib/python3.8/site-packages/stable_baselines3/common/save_util.py:437: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  th_object = th.load(file_content, map_location=device)
+progress: 10/100
+progress: 20/100
+progress: 30/100
+progress: 40/100
+progress: 50/100
+progress: 60/100
+progress: 70/100
+progress: 80/100
+progress: 90/100
+progress: 100/100
+Evaluating policy 3 with 100 episodes...
+program-2 does not exist
+Evaluating policy 4 with 100 episodes...
+pretrain-0 does not exist
+Evaluating policy 5 with 100 episodes...
+pretrain-1 does not exist
+Evaluating policy 6 with 100 episodes...
+pretrain-2 does not exist
+Evaluating policy 7 with 100 episodes...
+pretrain-3 does not exist
+Evaluating policy 8 with 100 episodes...
+pretrain-4 does not exist
+Evaluating policy 9 with 100 episodes...
+pretrain-5 does not exist
+Evaluating policy 10 with 100 episodes...
+pretrain-6 does not exist
+Evaluating policy 11 with 100 episodes...
+pretrain-7 does not exist
+Evaluating policy 12 with 100 episodes...
+pretrain-8 does not exist
+Evaluating policy 13 with 100 episodes...
+pretrain-9 does not exist
+Evaluating policy 14 with 100 episodes...
+pretrain-10 does not exist
+Evaluating policy 15 with 100 episodes...
+pretrain-11 does not exist
+Evaluating policy 16 with 100 episodes...
+pretrain-12 does not exist
+Evaluating policy 17 with 100 episodes...
+pretrain-13 does not exist
+Evaluating policy 18 with 100 episodes...
+pretrain-14 does not exist
+Evaluating policy 19 with 100 episodes...
+pretrain-15 does not exist
+Evaluating policy 20 with 100 episodes...
+pretrain-16 does not exist
