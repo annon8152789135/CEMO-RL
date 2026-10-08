@@ -1,3 +1,4 @@
+import re
 import sys
 import gym
 import numpy as np
@@ -66,7 +67,7 @@ def get_reward_dim(env):
 
 def get_utility_function(reward_shape, idx=0,linear_utility=True, lamda=0.1, keep_scale= True, max_num_policies=6):
     
-    #print("reward_shape in get_utility_function: ", reward_shape)
+    print("reward_shape in get_utility_function: ", reward_shape)
 
     if linear_utility:
         utility_class_programmed = Utility_Function_Linear
@@ -100,11 +101,14 @@ def get_utility_function(reward_shape, idx=0,linear_utility=True, lamda=0.1, kee
     num_total_policies = min(num_utility_programmed + num_utility_pretrained, max_num_policies)
     #print(f'{num_total_policies = }')
 
+    print(f'Loading utility function for policy {idx} (out of {num_total_policies}), {idx < num_utility_programmed}')
     if idx < num_utility_programmed:
         utility_function = utility_class_programmed(reward_shape=reward_shape, norm=norm, lamda=lamda, function_choice=idx, keep_scale=keep_scale)
     else:
         utility_function = pretrained_utility_functions[idx - num_utility_programmed] 
 
+    print(f'Utility function weights policy {pol_idx}: {utility_function.weights_list[utility_function.function_choice]}')
+    
     return utility_function
 
 def compute_entropy_sb3(model, obs, action):
@@ -137,16 +141,24 @@ def compute_entropy_sb3(model, obs, action):
 
 pol_idx = 3
 
-def test(model_path, num_episodes=10, mode='ppo', augment_state=False, deterministic=True):
+def test(model_path, num_episodes=10, mode='ppo', augment_state=False, deterministic=True, reward_shape=6, reward_dim_indices=None):
 
     #print(f'Starting Test') 
 
-    policy_name = f'program-{pol_idx}' 
+    match = re.search(r'policy-program-(\d+)', os.path.basename(model_path))
+
+    if match is None:
+        raise ValueError(f"Could not extract policy index from model path: {model_path}")
+
+    pol_idx = int(match.group(1))
+
+    print(f'Model path: {model_path}, Reward shape: {reward_shape}, Reward dim indices: {reward_dim_indices}')
     
-    
-    reward_shape = 6
-    reward_dim_indices = list(range(int(reward_shape)))
-    #print(f'{reward_dim_indices = }, {reward_shape = }')
+    if reward_dim_indices is None:
+        reward_dim_indices = list(range(int(reward_shape)))
+
+    print(f'Model path: {model_path}, Reward shape: {reward_shape}, Reward dim indices: {reward_dim_indices}')
+        
     utility_function = get_utility_function(reward_shape, idx=pol_idx)
     #utility_function = get_utility_function(2, idx=pol_idx)
 

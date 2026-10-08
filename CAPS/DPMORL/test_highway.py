@@ -1,3 +1,4 @@
+import re
 import sys
 import gym
 import numpy as np
@@ -124,6 +125,8 @@ def get_utility_function(reward_shape, idx=0,linear_utility=True, lamda=0.1, kee
     else:
         utility_function = pretrained_utility_functions[idx - num_utility_programmed] 
 
+    print(f'Utility function weights policy {pol_idx}: {utility_function.weights_list[utility_function.function_choice]}')
+
     return utility_function
 
 def compute_entropy_sb3(model, obs, action):
@@ -154,14 +157,21 @@ def compute_entropy_sb3(model, obs, action):
 
     return float(entropy.item())
 
-def test(model_path, num_episodes=10, mode='ppo', augment_state=False, deterministic=True):
+def test(model_path, num_episodes=10, mode='ppo', augment_state=False, deterministic=True, reward_shape=3, reward_dim_indices=None):
 
     #print(f'Starting Test') 
 
-    policy_name = f'program-{pol_idx}' 
-    
-    reward_shape = REWARD_SHAPE
-    reward_dim_indices = list(range(int(reward_shape)))
+    match = re.search(r'policy-program-(\d+)', os.path.basename(model_path))
+
+    if match is None:
+        raise ValueError(f"Could not extract policy index from model path: {model_path}")
+
+    pol_idx = int(match.group(1))
+
+    print(f'Model path: {model_path}, Reward shape: {reward_shape}, Reward dim indices: {reward_dim_indices}')
+
+    if reward_dim_indices is None:
+        reward_dim_indices = list(range(int(reward_shape)))
     #print(f'{reward_dim_indices = }, {reward_shape = }')
     utility_function = get_utility_function(reward_shape, idx=pol_idx)
 

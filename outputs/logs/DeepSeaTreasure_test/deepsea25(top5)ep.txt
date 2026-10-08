@@ -13,7 +13,7 @@ Re-running the policies to collect new graphs as --use_existing flag is set to F
 Running policy 0: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-0
 Running CAPS_main with model path: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-0 and environment: MO_deepSea
 running MO_deepSea
-/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/morl-apg/CAPS/DPMORL/test_deepSea.py:92: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/morl-apg/CAPS/DPMORL/test_deepSea.py:93: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
   model.load_state_dict(torch.load(path))
 loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-0.pt
 loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-1.pt
@@ -27,6 +27,7 @@ reward_shape in Utility_Function_Linear 2
 num_total_policies = 3
 initializing linear utility function
 reward_shape in Utility_Function_Linear 2
+Utility function weights policy 0: [0.9, 0.1]
 /mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
   gym.logger.warn(
 Deep Sea horizon: (not exposed by env)
@@ -38,35 +39,35 @@ obs x : 0, obs y: 0
 Dataset collected for model CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-0. Starting explanation generation...
 Running AutoPred
 Explanations with SHAP feature selection
-apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f909ffa3790>
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f492bf196d0>
 generating graph for model: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-0
 Starting graph generation...
 
  Computing SHAP values for clusters...
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 18.60it/s]
-  0%|          | 0/70 [00:00<?, ?it/s]  9%|▊         | 6/70 [00:00<00:01, 52.23it/s] 17%|█▋        | 12/70 [00:00<00:01, 50.66it/s] 26%|██▌       | 18/70 [00:00<00:01, 48.41it/s] 33%|███▎      | 23/70 [00:00<00:00, 48.79it/s] 40%|████      | 28/70 [00:00<00:00, 47.63it/s] 47%|████▋     | 33/70 [00:00<00:00, 48.11it/s] 54%|█████▍    | 38/70 [00:00<00:00, 48.35it/s] 61%|██████▏   | 43/70 [00:00<00:00, 48.72it/s] 70%|███████   | 49/70 [00:00<00:00, 49.81it/s] 79%|███████▊  | 55/70 [00:01<00:00, 50.65it/s] 87%|████████▋ | 61/70 [00:01<00:00, 50.87it/s] 96%|█████████▌| 67/70 [00:01<00:00, 50.74it/s]100%|██████████| 70/70 [00:01<00:00, 49.73it/s]
-  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 51.34it/s]
-  0%|          | 0/70 [00:00<?, ?it/s]  9%|▊         | 6/70 [00:00<00:01, 51.20it/s] 17%|█▋        | 12/70 [00:00<00:01, 50.51it/s] 26%|██▌       | 18/70 [00:00<00:01, 48.96it/s] 34%|███▍      | 24/70 [00:00<00:00, 49.96it/s] 43%|████▎     | 30/70 [00:00<00:00, 50.53it/s] 51%|█████▏    | 36/70 [00:00<00:00, 50.00it/s] 60%|██████    | 42/70 [00:00<00:00, 48.78it/s] 67%|██████▋   | 47/70 [00:00<00:00, 48.30it/s] 76%|███████▌  | 53/70 [00:01<00:00, 49.22it/s] 83%|████████▎ | 58/70 [00:01<00:00, 49.28it/s] 91%|█████████▏| 64/70 [00:01<00:00, 50.45it/s]100%|██████████| 70/70 [00:01<00:00, 50.40it/s]100%|██████████| 70/70 [00:01<00:00, 49.80it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 92.70it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 106.65it/s]
-  0%|          | 0/34 [00:00<?, ?it/s] 18%|█▊        | 6/34 [00:00<00:00, 53.34it/s] 35%|███▌      | 12/34 [00:00<00:00, 50.43it/s] 53%|█████▎    | 18/34 [00:00<00:00, 50.73it/s] 71%|███████   | 24/34 [00:00<00:00, 51.14it/s] 88%|████████▊ | 30/34 [00:00<00:00, 51.85it/s]100%|██████████| 34/34 [00:00<00:00, 51.67it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 89.72it/s]
-  0%|          | 0/12 [00:00<?, ?it/s] 50%|█████     | 6/12 [00:00<00:00, 52.68it/s]100%|██████████| 12/12 [00:00<00:00, 51.42it/s]100%|██████████| 12/12 [00:00<00:00, 51.51it/s]
-  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 52.23it/s]
-  0%|          | 0/28 [00:00<?, ?it/s] 21%|██▏       | 6/28 [00:00<00:00, 51.71it/s] 43%|████▎     | 12/28 [00:00<00:00, 50.65it/s] 64%|██████▍   | 18/28 [00:00<00:00, 51.12it/s] 86%|████████▌ | 24/28 [00:00<00:00, 52.24it/s]100%|██████████| 28/28 [00:00<00:00, 52.11it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 95.64it/s]
-  0%|          | 0/22 [00:00<?, ?it/s] 27%|██▋       | 6/22 [00:00<00:00, 50.40it/s] 55%|█████▍    | 12/22 [00:00<00:00, 48.14it/s] 82%|████████▏ | 18/22 [00:00<00:00, 49.83it/s]100%|██████████| 22/22 [00:00<00:00, 49.64it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 75.62it/s]
-  0%|          | 0/16 [00:00<?, ?it/s] 38%|███▊      | 6/16 [00:00<00:00, 51.18it/s] 75%|███████▌  | 12/16 [00:00<00:00, 50.97it/s]100%|██████████| 16/16 [00:00<00:00, 51.19it/s]
-  0%|          | 0/48 [00:00<?, ?it/s] 12%|█▎        | 6/48 [00:00<00:00, 51.32it/s] 25%|██▌       | 12/48 [00:00<00:00, 53.53it/s] 38%|███▊      | 18/48 [00:00<00:00, 53.73it/s] 50%|█████     | 24/48 [00:00<00:00, 53.27it/s] 62%|██████▎   | 30/48 [00:00<00:00, 52.74it/s] 75%|███████▌  | 36/48 [00:00<00:00, 51.90it/s] 88%|████████▊ | 42/48 [00:00<00:00, 50.74it/s]100%|██████████| 48/48 [00:00<00:00, 50.92it/s]100%|██████████| 48/48 [00:00<00:00, 51.78it/s]
-Time taken for AutoPred: 19.14513850212097 seconds
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 31.83it/s]
+  0%|          | 0/70 [00:00<?, ?it/s]  7%|▋         | 5/70 [00:00<00:01, 47.00it/s] 14%|█▍        | 10/70 [00:00<00:01, 47.04it/s] 21%|██▏       | 15/70 [00:00<00:01, 48.03it/s] 29%|██▊       | 20/70 [00:00<00:01, 46.86it/s] 37%|███▋      | 26/70 [00:00<00:00, 48.87it/s] 44%|████▍     | 31/70 [00:00<00:00, 47.70it/s] 51%|█████▏    | 36/70 [00:00<00:00, 48.19it/s] 60%|██████    | 42/70 [00:00<00:00, 49.70it/s] 67%|██████▋   | 47/70 [00:00<00:00, 49.79it/s] 76%|███████▌  | 53/70 [00:01<00:00, 51.59it/s] 84%|████████▍ | 59/70 [00:01<00:00, 52.43it/s] 93%|█████████▎| 65/70 [00:01<00:00, 52.93it/s]100%|██████████| 70/70 [00:01<00:00, 50.58it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 51.05it/s]
+  0%|          | 0/70 [00:00<?, ?it/s]  9%|▊         | 6/70 [00:00<00:01, 56.55it/s] 17%|█▋        | 12/70 [00:00<00:01, 55.37it/s] 26%|██▌       | 18/70 [00:00<00:00, 55.23it/s] 34%|███▍      | 24/70 [00:00<00:00, 55.41it/s] 43%|████▎     | 30/70 [00:00<00:00, 55.43it/s] 51%|█████▏    | 36/70 [00:00<00:00, 55.23it/s] 60%|██████    | 42/70 [00:00<00:00, 55.04it/s] 69%|██████▊   | 48/70 [00:00<00:00, 54.24it/s] 77%|███████▋  | 54/70 [00:00<00:00, 54.15it/s] 86%|████████▌ | 60/70 [00:01<00:00, 54.55it/s] 94%|█████████▍| 66/70 [00:01<00:00, 54.95it/s]100%|██████████| 70/70 [00:01<00:00, 55.00it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 81.20it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 93.31it/s]
+  0%|          | 0/34 [00:00<?, ?it/s] 18%|█▊        | 6/34 [00:00<00:00, 50.78it/s] 35%|███▌      | 12/34 [00:00<00:00, 53.43it/s] 53%|█████▎    | 18/34 [00:00<00:00, 53.39it/s] 71%|███████   | 24/34 [00:00<00:00, 54.19it/s] 88%|████████▊ | 30/34 [00:00<00:00, 53.74it/s]100%|██████████| 34/34 [00:00<00:00, 53.08it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 92.81it/s]
+  0%|          | 0/12 [00:00<?, ?it/s] 50%|█████     | 6/12 [00:00<00:00, 51.22it/s]100%|██████████| 12/12 [00:00<00:00, 54.51it/s]100%|██████████| 12/12 [00:00<00:00, 53.88it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 52.77it/s]
+  0%|          | 0/28 [00:00<?, ?it/s] 21%|██▏       | 6/28 [00:00<00:00, 50.36it/s] 43%|████▎     | 12/28 [00:00<00:00, 53.15it/s] 64%|██████▍   | 18/28 [00:00<00:00, 52.52it/s] 86%|████████▌ | 24/28 [00:00<00:00, 53.17it/s]100%|██████████| 28/28 [00:00<00:00, 52.90it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 91.89it/s]
+  0%|          | 0/22 [00:00<?, ?it/s] 27%|██▋       | 6/22 [00:00<00:00, 55.19it/s] 55%|█████▍    | 12/22 [00:00<00:00, 53.98it/s] 82%|████████▏ | 18/22 [00:00<00:00, 53.10it/s]100%|██████████| 22/22 [00:00<00:00, 54.11it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 100.00it/s]
+  0%|          | 0/16 [00:00<?, ?it/s] 38%|███▊      | 6/16 [00:00<00:00, 57.41it/s] 75%|███████▌  | 12/16 [00:00<00:00, 54.43it/s]100%|██████████| 16/16 [00:00<00:00, 54.53it/s]
+  0%|          | 0/48 [00:00<?, ?it/s] 12%|█▎        | 6/48 [00:00<00:00, 51.28it/s] 25%|██▌       | 12/48 [00:00<00:00, 52.85it/s] 38%|███▊      | 18/48 [00:00<00:00, 53.01it/s] 50%|█████     | 24/48 [00:00<00:00, 54.02it/s] 62%|██████▎   | 30/48 [00:00<00:00, 54.62it/s] 75%|███████▌  | 36/48 [00:00<00:00, 52.69it/s] 88%|████████▊ | 42/48 [00:00<00:00, 54.06it/s]100%|██████████| 48/48 [00:00<00:00, 52.71it/s]100%|██████████| 48/48 [00:00<00:00, 53.13it/s]
+Time taken for AutoPred: 18.636345863342285 seconds
 Policy 0 explanation graph generated. 16 nodes and 24 edges.
 sample label for policy 0: {'group': 1, 'translation': 'x equal to 0', 'critical_value': 0.0, 'entropy': 0.5037539601325989, 'num_instances': 1, 'important_features': ['x'], 'boundaries': {'x': (0.0, 0.0), 'y': (0.0, 0.0), 'State Value': (0.5223337035096347, 0.5223337035096347), 'Action': (3.0, 1.0)}}  
 
 Running policy 1: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-1
 Running CAPS_main with model path: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-1 and environment: MO_deepSea
 running MO_deepSea
-/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/morl-apg/CAPS/DPMORL/test_deepSea.py:92: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/morl-apg/CAPS/DPMORL/test_deepSea.py:93: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
   model.load_state_dict(torch.load(path))
 loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-0.pt
 loaded utility:  CAPS/DPMORL/utility-model-selected/dim-2/utility-1.pt
@@ -80,6 +81,7 @@ reward_shape in Utility_Function_Linear 2
 num_total_policies = 3
 initializing linear utility function
 reward_shape in Utility_Function_Linear 2
+Utility function weights policy 0: [0.8, 0.2]
 /mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/gymnasium/spaces/box.py:305: UserWarning: [33mWARN: Box high's precision lowered by casting to float32, current high.dtype=float64[0m
   gym.logger.warn(
 Deep Sea horizon: (not exposed by env)
@@ -91,27 +93,27 @@ obs x : 0, obs y: 0
 Dataset collected for model CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-1. Starting explanation generation...
 Running AutoPred
 Explanations with SHAP feature selection
-apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f906993f610>
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f48bc11c1c0>
 generating graph for model: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-1
 Starting graph generation...
 
  Computing SHAP values for clusters...
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 197.78it/s]
-  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 108.88it/s]
-  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 107.95it/s]
-  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 120.69it/s]
-  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 112.05it/s]
-  0%|          | 0/24 [00:00<?, ?it/s] 42%|████▏     | 10/24 [00:00<00:00, 98.50it/s] 88%|████████▊ | 21/24 [00:00<00:00, 104.51it/s]100%|██████████| 24/24 [00:00<00:00, 102.86it/s]
-  0%|          | 0/16 [00:00<?, ?it/s] 81%|████████▏ | 13/16 [00:00<00:00, 123.55it/s]100%|██████████| 16/16 [00:00<00:00, 124.14it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 187.14it/s]
-  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 126.76it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 222.69it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 211.88it/s]
-  0%|          | 0/12 [00:00<?, ?it/s]100%|██████████| 12/12 [00:00<00:00, 124.49it/s]
-  0%|          | 0/25 [00:00<?, ?it/s] 52%|█████▏    | 13/25 [00:00<00:00, 121.58it/s]100%|██████████| 25/25 [00:00<00:00, 123.16it/s]
-  0%|          | 0/25 [00:00<?, ?it/s] 60%|██████    | 15/25 [00:00<00:00, 140.27it/s]100%|██████████| 25/25 [00:00<00:00, 134.67it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 244.99it/s]
-Time taken for AutoPred: 2.4952282905578613 seconds
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 215.63it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 128.01it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 133.42it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 83.60it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 112.54it/s]
+  0%|          | 0/24 [00:00<?, ?it/s] 50%|█████     | 12/24 [00:00<00:00, 111.67it/s]100%|██████████| 24/24 [00:00<00:00, 109.82it/s]100%|██████████| 24/24 [00:00<00:00, 109.88it/s]
+  0%|          | 0/16 [00:00<?, ?it/s] 75%|███████▌  | 12/16 [00:00<00:00, 109.91it/s]100%|██████████| 16/16 [00:00<00:00, 111.40it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 142.19it/s]
+  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 104.89it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 226.27it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 202.82it/s]
+  0%|          | 0/12 [00:00<?, ?it/s]100%|██████████| 12/12 [00:00<00:00, 118.79it/s]100%|██████████| 12/12 [00:00<00:00, 118.32it/s]
+  0%|          | 0/25 [00:00<?, ?it/s] 56%|█████▌    | 14/25 [00:00<00:00, 138.04it/s]100%|██████████| 25/25 [00:00<00:00, 141.05it/s]
+  0%|          | 0/25 [00:00<?, ?it/s] 52%|█████▏    | 13/25 [00:00<00:00, 125.99it/s]100%|██████████| 25/25 [00:00<00:00, 124.96it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 169.93it/s]
+Time taken for AutoPred: 2.4930484294891357 seconds
 Policy 1 explanation graph generated. 15 nodes and 16 edges.
 sample label for policy 1: {'group': 1, 'translation': 'x equal to 0', 'critical_value': 1.0, 'entropy': 5.753542609454598e-06, 'num_instances': 1, 'important_features': ['x'], 'boundaries': {'x': (0.0, 0.0), 'y': (1.0, 0.0), 'State Value': (0.23408340806908343, 0.0), 'Action': (1.0, 1.0)}}  
 
@@ -130,6 +132,7 @@ reward_shape in Utility_Function_Linear 2
 num_total_policies = 3
 initializing linear utility function
 reward_shape in Utility_Function_Linear 2
+Utility function weights policy 0: [0.7, 0.3]
 Deep Sea horizon: (not exposed by env)
 CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-2.zip is being loaded for testing.
 Observation space shape: (1, 2), Action space: 4. initial state [[0 0]]
@@ -137,31 +140,31 @@ obs x : 0, obs y: 0
 Dataset collected for model CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-2. Starting explanation generation...
 Running AutoPred
 Explanations with SHAP feature selection
-apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f90a241e4f0>
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f48bc140250>
 generating graph for model: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-2
 Starting graph generation...
 
  Computing SHAP values for clusters...
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 138.87it/s]
-  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 73.71it/s]
-  0%|          | 0/29 [00:00<?, ?it/s] 24%|██▍       | 7/29 [00:00<00:00, 65.03it/s] 48%|████▊     | 14/29 [00:00<00:00, 62.95it/s] 76%|███████▌  | 22/29 [00:00<00:00, 67.65it/s]100%|██████████| 29/29 [00:00<00:00, 67.95it/s]
-  0%|          | 0/17 [00:00<?, ?it/s] 53%|█████▎    | 9/17 [00:00<00:00, 80.90it/s]100%|██████████| 17/17 [00:00<00:00, 73.62it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 69.31it/s]
-  0%|          | 0/15 [00:00<?, ?it/s] 53%|█████▎    | 8/15 [00:00<00:00, 73.26it/s]100%|██████████| 15/15 [00:00<00:00, 75.48it/s]
-  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 83.20it/s]
-  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 78.67it/s]
-  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 78.98it/s]
-  0%|          | 0/14 [00:00<?, ?it/s] 57%|█████▋    | 8/14 [00:00<00:00, 76.92it/s]100%|██████████| 14/14 [00:00<00:00, 78.32it/s]
-  0%|          | 0/17 [00:00<?, ?it/s] 53%|█████▎    | 9/17 [00:00<00:00, 81.14it/s]100%|██████████| 17/17 [00:00<00:00, 80.51it/s]
-  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 78.98it/s]
-  0%|          | 0/10 [00:00<?, ?it/s] 90%|█████████ | 9/10 [00:00<00:00, 85.49it/s]100%|██████████| 10/10 [00:00<00:00, 83.79it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 137.28it/s]
-  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 89.12it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 159.07it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 145.50it/s]
-  0%|          | 0/23 [00:00<?, ?it/s] 39%|███▉      | 9/23 [00:00<00:00, 85.68it/s] 78%|███████▊  | 18/23 [00:00<00:00, 83.51it/s]100%|██████████| 23/23 [00:00<00:00, 83.32it/s]
-  0%|          | 0/40 [00:00<?, ?it/s] 20%|██        | 8/40 [00:00<00:00, 77.53it/s] 42%|████▎     | 17/40 [00:00<00:00, 82.74it/s] 65%|██████▌   | 26/40 [00:00<00:00, 80.06it/s] 88%|████████▊ | 35/40 [00:00<00:00, 80.84it/s]100%|██████████| 40/40 [00:00<00:00, 80.36it/s]
-Time taken for AutoPred: 6.630378484725952 seconds
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 148.34it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 74.71it/s]
+  0%|          | 0/29 [00:00<?, ?it/s] 31%|███       | 9/29 [00:00<00:00, 85.18it/s] 62%|██████▏   | 18/29 [00:00<00:00, 82.29it/s] 93%|█████████▎| 27/29 [00:00<00:00, 84.15it/s]100%|██████████| 29/29 [00:00<00:00, 84.00it/s]
+  0%|          | 0/17 [00:00<?, ?it/s] 53%|█████▎    | 9/17 [00:00<00:00, 86.03it/s]100%|██████████| 17/17 [00:00<00:00, 84.01it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 134.61it/s]
+  0%|          | 0/15 [00:00<?, ?it/s] 60%|██████    | 9/15 [00:00<00:00, 89.52it/s]100%|██████████| 15/15 [00:00<00:00, 86.47it/s]
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 88.54it/s]
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 89.94it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 95.44it/s]
+  0%|          | 0/14 [00:00<?, ?it/s] 71%|███████▏  | 10/14 [00:00<00:00, 91.17it/s]100%|██████████| 14/14 [00:00<00:00, 90.45it/s]
+  0%|          | 0/17 [00:00<?, ?it/s] 59%|█████▉    | 10/17 [00:00<00:00, 91.26it/s]100%|██████████| 17/17 [00:00<00:00, 89.82it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 82.88it/s]
+  0%|          | 0/10 [00:00<?, ?it/s] 90%|█████████ | 9/10 [00:00<00:00, 80.54it/s]100%|██████████| 10/10 [00:00<00:00, 81.07it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 144.22it/s]
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 84.96it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 164.05it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 141.19it/s]
+  0%|          | 0/23 [00:00<?, ?it/s] 39%|███▉      | 9/23 [00:00<00:00, 88.55it/s] 78%|███████▊  | 18/23 [00:00<00:00, 87.31it/s]100%|██████████| 23/23 [00:00<00:00, 88.31it/s]
+  0%|          | 0/40 [00:00<?, ?it/s] 22%|██▎       | 9/40 [00:00<00:00, 88.80it/s] 45%|████▌     | 18/40 [00:00<00:00, 89.18it/s] 68%|██████▊   | 27/40 [00:00<00:00, 87.07it/s] 90%|█████████ | 36/40 [00:00<00:00, 85.87it/s]100%|██████████| 40/40 [00:00<00:00, 87.15it/s]
+Time taken for AutoPred: 6.228689670562744 seconds
 Policy 2 explanation graph generated. 19 nodes and 24 edges.
 sample label for policy 2: {'group': 1, 'translation': 'x equal to 0', 'critical_value': 1.0, 'entropy': 0.000864837144035846, 'num_instances': 1, 'important_features': ['x'], 'boundaries': {'x': (0.0, 0.0), 'y': (1.0, 0.0), 'State Value': (0.12299260882156662, 0.0), 'Action': (1.0, 1.0)}}  
 
@@ -180,6 +183,7 @@ reward_shape in Utility_Function_Linear 2
 num_total_policies = 3
 initializing linear utility function
 reward_shape in Utility_Function_Linear 2
+Utility function weights policy 0: [0.5, 0.5]
 Deep Sea horizon: (not exposed by env)
 CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-3.zip is being loaded for testing.
 Observation space shape: (1, 2), Action space: 4. initial state [[0 0]]
@@ -187,22 +191,22 @@ obs x : 0, obs y: 0
 Dataset collected for model CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-3. Starting explanation generation...
 Running AutoPred
 Explanations with SHAP feature selection
-apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f909ffdf2e0>
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f492bf07be0>
 generating graph for model: CAPS/DPMORL/experiments/DeepSeaTreasure_test/DPMORL.DeepSeaTreasure.LossNormLamda_0.1/policy-program-3
 Starting graph generation...
 
  Computing SHAP values for clusters...
-  0%|          | 0/40 [00:00<?, ?it/s] 22%|██▎       | 9/40 [00:00<00:00, 85.17it/s] 45%|████▌     | 18/40 [00:00<00:00, 85.87it/s] 68%|██████▊   | 27/40 [00:00<00:00, 85.16it/s] 90%|█████████ | 36/40 [00:00<00:00, 84.46it/s]100%|██████████| 40/40 [00:00<00:00, 84.15it/s]
-  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 84.35it/s]
-  0%|          | 0/13 [00:00<?, ?it/s] 69%|██████▉   | 9/13 [00:00<00:00, 85.51it/s]100%|██████████| 13/13 [00:00<00:00, 84.60it/s]
-  0%|          | 0/20 [00:00<?, ?it/s] 45%|████▌     | 9/20 [00:00<00:00, 89.62it/s] 90%|█████████ | 18/20 [00:00<00:00, 88.67it/s]100%|██████████| 20/20 [00:00<00:00, 89.24it/s]
-  0%|          | 0/15 [00:00<?, ?it/s] 60%|██████    | 9/15 [00:00<00:00, 88.07it/s]100%|██████████| 15/15 [00:00<00:00, 86.87it/s]
-  0%|          | 0/40 [00:00<?, ?it/s] 22%|██▎       | 9/40 [00:00<00:00, 85.21it/s] 45%|████▌     | 18/40 [00:00<00:00, 84.60it/s] 68%|██████▊   | 27/40 [00:00<00:00, 82.58it/s] 90%|█████████ | 36/40 [00:00<00:00, 82.94it/s]100%|██████████| 40/40 [00:00<00:00, 83.58it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 144.56it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 143.08it/s]
-  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 84.75it/s]
-  0%|          | 0/31 [00:00<?, ?it/s] 29%|██▉       | 9/31 [00:00<00:00, 83.20it/s] 58%|█████▊    | 18/31 [00:00<00:00, 85.21it/s] 87%|████████▋ | 27/31 [00:00<00:00, 84.96it/s]100%|██████████| 31/31 [00:00<00:00, 85.08it/s]
-Time taken for AutoPred: 6.071472883224487 seconds
+  0%|          | 0/40 [00:00<?, ?it/s] 15%|█▌        | 6/40 [00:00<00:00, 59.04it/s] 30%|███       | 12/40 [00:00<00:00, 56.26it/s] 45%|████▌     | 18/40 [00:00<00:00, 56.11it/s] 65%|██████▌   | 26/40 [00:00<00:00, 62.51it/s] 85%|████████▌ | 34/40 [00:00<00:00, 68.32it/s]100%|██████████| 40/40 [00:00<00:00, 66.13it/s]
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 65.65it/s]
+  0%|          | 0/13 [00:00<?, ?it/s] 69%|██████▉   | 9/13 [00:00<00:00, 87.97it/s]100%|██████████| 13/13 [00:00<00:00, 81.99it/s]
+  0%|          | 0/20 [00:00<?, ?it/s] 45%|████▌     | 9/20 [00:00<00:00, 85.00it/s] 90%|█████████ | 18/20 [00:00<00:00, 87.03it/s]100%|██████████| 20/20 [00:00<00:00, 86.75it/s]
+  0%|          | 0/15 [00:00<?, ?it/s] 60%|██████    | 9/15 [00:00<00:00, 84.45it/s]100%|██████████| 15/15 [00:00<00:00, 85.95it/s]
+  0%|          | 0/40 [00:00<?, ?it/s] 22%|██▎       | 9/40 [00:00<00:00, 87.86it/s] 45%|████▌     | 18/40 [00:00<00:00, 87.11it/s] 70%|███████   | 28/40 [00:00<00:00, 88.77it/s] 92%|█████████▎| 37/40 [00:00<00:00, 85.84it/s]100%|██████████| 40/40 [00:00<00:00, 86.77it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 164.05it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 145.34it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 80.66it/s]
+  0%|          | 0/31 [00:00<?, ?it/s] 29%|██▉       | 9/31 [00:00<00:00, 87.96it/s] 58%|█████▊    | 18/31 [00:00<00:00, 86.86it/s] 87%|████████▋ | 27/31 [00:00<00:00, 87.32it/s]100%|██████████| 31/31 [00:00<00:00, 87.56it/s]
+Time taken for AutoPred: 6.050589084625244 seconds
 Policy 3 explanation graph generated. 10 nodes and 15 edges.
 sample label for policy 3: {'group': 1, 'translation': 'y between 2 and 0', 'critical_value': 1.0, 'entropy': 0.12319296146267368, 'num_instances': 54, 'important_features': ['y'], 'boundaries': {'x': (1.0, 0.0), 'y': (2.0, 0.0), 'State Value': (0.27302153799240875, 0.0), 'Action': (3.0, 1.0)}}  
 All policies have been tested and graphs collected. 4 graphs in total.
@@ -241,54 +245,6 @@ PAIR 1/5
 policy_1 vs policy_2
 ==================================================
 Selection similarity (combined average similarity): 0.3945
-
---- Test state 0: {'x': 0, 'y': 0} ---
-State analysis for policy_1: 1
-State analysis for policy_2: 1
-Next probable action for policy_1: 1
-Next probable action for policy_2: 1
-
---- Test state 1: {'x': 1, 'y': 1} ---
-State analysis for policy_1: 9
-State analysis for policy_2: 6
-Next probable action for policy_1: 3
-Next probable action for policy_2: 3
-
---- Test state 2: {'x': 2, 'y': 2} ---
-State analysis for policy_1: 14
-State analysis for policy_2: 11
-Next probable action for policy_1: 1
-Next probable action for policy_2: 1
-
---- Test state 3: {'x': 3, 'y': 3} ---
-State analysis for policy_1: None
-State analysis for policy_2: 18
-Next probable action for policy_1: None
-Next probable action for policy_2: 1
-
---- Test state 4: {'x': 4, 'y': 4} ---
-State analysis for policy_1: None
-State analysis for policy_2: None
-Next probable action for policy_1: None
-Next probable action for policy_2: None
-
---- Test state 5: {'x': 5, 'y': 5} ---
-State analysis for policy_1: None
-State analysis for policy_2: None
-Next probable action for policy_1: None
-Next probable action for policy_2: None
-
---- Test state 6: {'x': 6, 'y': 7} ---
-State analysis for policy_1: None
-State analysis for policy_2: None
-Next probable action for policy_1: None
-Next probable action for policy_2: None
-
---- Test state 7: {'x': 10, 'y': 10} ---
-State analysis for policy_1: None
-State analysis for policy_2: None
-Next probable action for policy_1: None
-Next probable action for policy_2: None
 
 --- Transition comparison: policy_1 vs policy_2 ---
 Common transitions: {(7, 15, 1)}
@@ -378,54 +334,6 @@ policy_2 vs policy_3
 ==================================================
 Selection similarity (combined average similarity): 0.1532
 
---- Test state 0: {'x': 0, 'y': 0} ---
-State analysis for policy_2: 1
-State analysis for policy_3: 1
-Next probable action for policy_2: 1
-Next probable action for policy_3: 3
-
---- Test state 1: {'x': 1, 'y': 1} ---
-State analysis for policy_2: 6
-State analysis for policy_3: 1
-Next probable action for policy_2: 3
-Next probable action for policy_3: 3
-
---- Test state 2: {'x': 2, 'y': 2} ---
-State analysis for policy_2: 11
-State analysis for policy_3: 5
-Next probable action for policy_2: 1
-Next probable action for policy_3: 3
-
---- Test state 3: {'x': 3, 'y': 3} ---
-State analysis for policy_2: 18
-State analysis for policy_3: 9
-Next probable action for policy_2: 1
-Next probable action for policy_3: 1
-
---- Test state 4: {'x': 4, 'y': 4} ---
-State analysis for policy_2: None
-State analysis for policy_3: None
-Next probable action for policy_2: None
-Next probable action for policy_3: None
-
---- Test state 5: {'x': 5, 'y': 5} ---
-State analysis for policy_2: None
-State analysis for policy_3: None
-Next probable action for policy_2: None
-Next probable action for policy_3: None
-
---- Test state 6: {'x': 6, 'y': 7} ---
-State analysis for policy_2: None
-State analysis for policy_3: None
-Next probable action for policy_2: None
-Next probable action for policy_3: None
-
---- Test state 7: {'x': 10, 'y': 10} ---
-State analysis for policy_2: None
-State analysis for policy_3: None
-Next probable action for policy_2: None
-Next probable action for policy_3: None
-
 --- Transition comparison: policy_2 vs policy_3 ---
 Common transitions: {(3, 10, 1)}
 Only in policy_2: {(10, 11, 3), (3, 5, 3), (17, 19, 1), (13, 18, 3), (15, 18, 3), (6, 11, 3), (4, 10, 1), (16, 19, 1), (2, 5, 3), (19, 19, 3), (5, 10, 1), (18, 19, 1), (14, 18, 3), (12, 19, 1), (11, 15, 1), (9, 11, 3), (11, 18, 3), (9, 15, 1), (1, 10, 1), (10, 15, 1), (19, 20, 1), (7, 15, 1), (8, 11, 3)}
@@ -482,54 +390,6 @@ policy_0 vs policy_2
 ==================================================
 Selection similarity (combined average similarity): 0.0747
 
---- Test state 0: {'x': 0, 'y': 0} ---
-State analysis for policy_0: 1
-State analysis for policy_2: 1
-Next probable action for policy_0: 3
-Next probable action for policy_2: 1
-
---- Test state 1: {'x': 1, 'y': 1} ---
-State analysis for policy_0: None
-State analysis for policy_2: 6
-Next probable action for policy_0: None
-Next probable action for policy_2: 3
-
---- Test state 2: {'x': 2, 'y': 2} ---
-State analysis for policy_0: None
-State analysis for policy_2: 11
-Next probable action for policy_0: None
-Next probable action for policy_2: 1
-
---- Test state 3: {'x': 3, 'y': 3} ---
-State analysis for policy_0: None
-State analysis for policy_2: 18
-Next probable action for policy_0: None
-Next probable action for policy_2: 1
-
---- Test state 4: {'x': 4, 'y': 4} ---
-State analysis for policy_0: None
-State analysis for policy_2: None
-Next probable action for policy_0: None
-Next probable action for policy_2: None
-
---- Test state 5: {'x': 5, 'y': 5} ---
-State analysis for policy_0: None
-State analysis for policy_2: None
-Next probable action for policy_0: None
-Next probable action for policy_2: None
-
---- Test state 6: {'x': 6, 'y': 7} ---
-State analysis for policy_0: 11
-State analysis for policy_2: None
-Next probable action for policy_0: 1
-Next probable action for policy_2: None
-
---- Test state 7: {'x': 10, 'y': 10} ---
-State analysis for policy_0: None
-State analysis for policy_2: None
-Next probable action for policy_0: None
-Next probable action for policy_2: None
-
 --- Transition comparison: policy_0 vs policy_2 ---
 Common transitions: {(10, 15, 1), (11, 15, 1)}
 Only in policy_0: {(13, 15, 1), (14, 16, 1), (15, 13, 1), (15, 15, 1), (13, 17, 1), (16, 15, 1), (6, 16, 1), (4, 4, 3), (3, 4, 3), (7, 16, 1), (9, 16, 3), (11, 13, 1), (8, 16, 3), (2, 2, 3), (16, 16, 1), (4, 16, 1), (1, 2, 3), (5, 16, 1), (11, 17, 1), (2, 4, 3), (12, 16, 1), (13, 13, 1)}
@@ -578,54 +438,6 @@ policy_0 vs policy_1
 ==================================================
 Selection similarity (combined average similarity): 0.0609
 
---- Test state 0: {'x': 0, 'y': 0} ---
-State analysis for policy_0: 1
-State analysis for policy_1: 1
-Next probable action for policy_0: 3
-Next probable action for policy_1: 1
-
---- Test state 1: {'x': 1, 'y': 1} ---
-State analysis for policy_0: None
-State analysis for policy_1: 9
-Next probable action for policy_0: None
-Next probable action for policy_1: 3
-
---- Test state 2: {'x': 2, 'y': 2} ---
-State analysis for policy_0: None
-State analysis for policy_1: 14
-Next probable action for policy_0: None
-Next probable action for policy_1: 1
-
---- Test state 3: {'x': 3, 'y': 3} ---
-State analysis for policy_0: None
-State analysis for policy_1: None
-Next probable action for policy_0: None
-Next probable action for policy_1: None
-
---- Test state 4: {'x': 4, 'y': 4} ---
-State analysis for policy_0: None
-State analysis for policy_1: None
-Next probable action for policy_0: None
-Next probable action for policy_1: None
-
---- Test state 5: {'x': 5, 'y': 5} ---
-State analysis for policy_0: None
-State analysis for policy_1: None
-Next probable action for policy_0: None
-Next probable action for policy_1: None
-
---- Test state 6: {'x': 6, 'y': 7} ---
-State analysis for policy_0: 11
-State analysis for policy_1: None
-Next probable action for policy_0: 1
-Next probable action for policy_1: None
-
---- Test state 7: {'x': 10, 'y': 10} ---
-State analysis for policy_0: None
-State analysis for policy_1: None
-Next probable action for policy_0: None
-Next probable action for policy_1: None
-
 --- Transition comparison: policy_0 vs policy_1 ---
 Common transitions: {(14, 16, 1)}
 Only in policy_0: {(13, 15, 1), (15, 13, 1), (15, 15, 1), (13, 17, 1), (16, 15, 1), (6, 16, 1), (4, 4, 3), (3, 4, 3), (7, 16, 1), (9, 16, 3), (11, 13, 1), (8, 16, 3), (11, 15, 1), (2, 2, 3), (10, 15, 1), (16, 16, 1), (4, 16, 1), (1, 2, 3), (5, 16, 1), (11, 17, 1), (2, 4, 3), (12, 16, 1), (13, 13, 1)}
@@ -673,54 +485,6 @@ PAIR 5/5
 policy_1 vs policy_3
 ==================================================
 Selection similarity (combined average similarity): 0.0553
-
---- Test state 0: {'x': 0, 'y': 0} ---
-State analysis for policy_1: 1
-State analysis for policy_3: 1
-Next probable action for policy_1: 1
-Next probable action for policy_3: 3
-
---- Test state 1: {'x': 1, 'y': 1} ---
-State analysis for policy_1: 9
-State analysis for policy_3: 1
-Next probable action for policy_1: 3
-Next probable action for policy_3: 3
-
---- Test state 2: {'x': 2, 'y': 2} ---
-State analysis for policy_1: 14
-State analysis for policy_3: 5
-Next probable action for policy_1: 1
-Next probable action for policy_3: 3
-
---- Test state 3: {'x': 3, 'y': 3} ---
-State analysis for policy_1: None
-State analysis for policy_3: 9
-Next probable action for policy_1: None
-Next probable action for policy_3: 1
-
---- Test state 4: {'x': 4, 'y': 4} ---
-State analysis for policy_1: None
-State analysis for policy_3: None
-Next probable action for policy_1: None
-Next probable action for policy_3: None
-
---- Test state 5: {'x': 5, 'y': 5} ---
-State analysis for policy_1: None
-State analysis for policy_3: None
-Next probable action for policy_1: None
-Next probable action for policy_3: None
-
---- Test state 6: {'x': 6, 'y': 7} ---
-State analysis for policy_1: None
-State analysis for policy_3: None
-Next probable action for policy_1: None
-Next probable action for policy_3: None
-
---- Test state 7: {'x': 10, 'y': 10} ---
-State analysis for policy_1: None
-State analysis for policy_3: None
-Next probable action for policy_1: None
-Next probable action for policy_3: None
 
 --- Transition comparison: policy_1 vs policy_3 ---
 Common transitions: set()
@@ -827,28 +591,28 @@ Percentage of G1 edges contained in G2:
     -- Times for each phase --
 
     Graph generation phase:
-        51.09 seconds
+        48.36 seconds
 
     Graph comparison phase:
-        0.05 seconds
+        0.03 seconds
 
     Action explanation generation phase:
-        0.07 seconds
+        0.00 seconds
 
     Edge explanation generation phase:
         0.00 seconds
 
     Subgraph explanation generation phase:
-        16.97 seconds
+        15.70 seconds
 
     Transition difference phase:
-        0.05 seconds
+        0.04 seconds
 
     Subgraph percentage phase:
-        108.56 seconds
+        105.74 seconds
 
     Total explanation generation phase:
-        125.67 seconds
+        121.48 seconds
 
     --- End of execution ---
     

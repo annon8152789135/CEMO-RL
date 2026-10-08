@@ -15,179 +15,213 @@ Re-running the policies to collect new graphs as --use_existing flag is set to F
 Running policy 0: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-0
 Running CAPS_main with model path: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-0 and environment: MO_fruitTree
 running MO_fruitTree
+Model path: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-0, Reward shape: 3, Reward dim indices: [0, 1, 2]
+Model path: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-0, Reward shape: 3, Reward dim indices: [0, 1, 2]
+reward_shape in get_utility_function:  3
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/morl-apg/CAPS/DPMORL/test_fruitTree.py:88: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(path))
 initializing linear utility function
-reward_shape in Utility_Function_Linear 6
+reward_shape in Utility_Function_Linear 3
+Loading utility function for policy 0 (out of 6), True
 initializing linear utility function
-reward_shape in Utility_Function_Linear 6
+reward_shape in Utility_Function_Linear 3
+Utility function weights policy 3: [0.33333333 0.33333333 0.33333333]
 CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-0.zip is being loaded for testing.
 /mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/stable_baselines3/common/save_util.py:437: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
   th_object = th.load(file_content, map_location=device)
 Dataset collected for model CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-0. Starting explanation generation...
 Running AutoPred
 Explanations with SHAP feature selection
-apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7fb5a7740a90>
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f9a9ca92520>
 generating graph for model: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-0
 Starting graph generation...
 
  Computing SHAP values for clusters...
-  0%|          | 0/12 [00:00<?, ?it/s]100%|██████████| 12/12 [00:00<00:00, 132.82it/s]
-  0%|          | 0/9 [00:00<?, ?it/s]100%|██████████| 9/9 [00:00<00:00, 208.37it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 106.55it/s]
-  0%|          | 0/8 [00:00<?, ?it/s]100%|██████████| 8/8 [00:00<00:00, 183.70it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 252.90it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 161.02it/s]
-  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 222.76it/s]
-Time taken for AutoPred: 0.6366276741027832 seconds
+  0%|          | 0/12 [00:00<?, ?it/s]100%|██████████| 12/12 [00:00<00:00, 140.52it/s]
+  0%|          | 0/9 [00:00<?, ?it/s]100%|██████████| 9/9 [00:00<00:00, 225.31it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 171.10it/s]
+  0%|          | 0/8 [00:00<?, ?it/s]100%|██████████| 8/8 [00:00<00:00, 228.38it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 324.44it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 366.47it/s]
+  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 255.43it/s]
+Time taken for AutoPred: 0.5865268707275391 seconds
 Policy 0 explanation graph generated. 7 nodes and 8 edges.
 sample label for policy 0: {'group': 1, 'translation': 'pos between 3 and 0', 'critical_value': 0.0, 'entropy': 0.00021701077957744425, 'num_instances': 30, 'important_features': ['pos'], 'boundaries': {'lvl': (3.0, 0.0), 'pos': (3.0, 0.0), 'State Value': (0.6173083224364625, 0.0), 'Action': (1.0, 1.0)}}  
 
 Running policy 1: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-1
 Running CAPS_main with model path: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-1 and environment: MO_fruitTree
 running MO_fruitTree
+Model path: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-1, Reward shape: 3, Reward dim indices: [0, 1, 2]
+Model path: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-1, Reward shape: 3, Reward dim indices: [0, 1, 2]
+reward_shape in get_utility_function:  3
+/mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/morl-apg/CAPS/DPMORL/test_fruitTree.py:88: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(path))
 initializing linear utility function
-reward_shape in Utility_Function_Linear 6
+reward_shape in Utility_Function_Linear 3
+Loading utility function for policy 1 (out of 6), True
 initializing linear utility function
-reward_shape in Utility_Function_Linear 6
+reward_shape in Utility_Function_Linear 3
+Utility function weights policy 3: [0.9  0.05 0.05]
 CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-1.zip is being loaded for testing.
 /mnt/c/Users/juanc/OneDrive/Escritorio/MORL-APG/MORL-APG/.venvs/caps_3.9/lib/python3.9/site-packages/stable_baselines3/common/save_util.py:437: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
   th_object = th.load(file_content, map_location=device)
 Dataset collected for model CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-1. Starting explanation generation...
 Running AutoPred
 Explanations with SHAP feature selection
-apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7fb5a9b15550>
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f9a9cb04a90>
 generating graph for model: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-1
 Starting graph generation...
 
  Computing SHAP values for clusters...
-  0%|          | 0/11 [00:00<?, ?it/s]100%|██████████| 11/11 [00:00<00:00, 204.53it/s]
-  0%|          | 0/9 [00:00<?, ?it/s]100%|██████████| 9/9 [00:00<00:00, 168.18it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 159.64it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 254.11it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 211.43it/s]
-  0%|          | 0/12 [00:00<?, ?it/s]100%|██████████| 12/12 [00:00<00:00, 153.76it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 189.31it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 129.39it/s]
-  0%|          | 0/9 [00:00<?, ?it/s]100%|██████████| 9/9 [00:00<00:00, 131.22it/s]
-  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 205.61it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 218.83it/s]
-  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 209.53it/s]
-Time taken for AutoPred: 0.7624382972717285 seconds
+  0%|          | 0/11 [00:00<?, ?it/s]100%|██████████| 11/11 [00:00<00:00, 198.16it/s]
+  0%|          | 0/9 [00:00<?, ?it/s]100%|██████████| 9/9 [00:00<00:00, 263.38it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 260.06it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 229.75it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 370.13it/s]
+  0%|          | 0/12 [00:00<?, ?it/s]100%|██████████| 12/12 [00:00<00:00, 257.64it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 168.97it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 381.82it/s]
+  0%|          | 0/9 [00:00<?, ?it/s]100%|██████████| 9/9 [00:00<00:00, 268.75it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 238.83it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 386.71it/s]
+  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 275.29it/s]
+Time taken for AutoPred: 0.6175806522369385 seconds
 Policy 1 explanation graph generated. 12 nodes and 14 edges.
 sample label for policy 1: {'group': 1, 'translation': 'pos between 2 and 0', 'critical_value': 1.0, 'entropy': 0.05211608736267821, 'num_instances': 11, 'important_features': ['pos'], 'boundaries': {'lvl': (1.0, 0.0), 'pos': (2.0, 0.0), 'State Value': (0.16878001246319083, 0.0), 'Action': (1.0, 0.0)}}  
 
 Running policy 2: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-2
 Running CAPS_main with model path: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-2 and environment: MO_fruitTree
 running MO_fruitTree
+Model path: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-2, Reward shape: 3, Reward dim indices: [0, 1, 2]
+Model path: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-2, Reward shape: 3, Reward dim indices: [0, 1, 2]
+reward_shape in get_utility_function:  3
 initializing linear utility function
-reward_shape in Utility_Function_Linear 6
+reward_shape in Utility_Function_Linear 3
+Loading utility function for policy 2 (out of 6), True
 initializing linear utility function
-reward_shape in Utility_Function_Linear 6
+reward_shape in Utility_Function_Linear 3
+Utility function weights policy 3: [0.7  0.15 0.15]
 CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-2.zip is being loaded for testing.
 Dataset collected for model CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-2. Starting explanation generation...
 Running AutoPred
 Explanations with SHAP feature selection
-apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7fb5a7332b80>
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f9a9cb75880>
 generating graph for model: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-2
 Starting graph generation...
 
  Computing SHAP values for clusters...
-  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 2375.43it/s]
-  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 1945.50it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1593.58it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 2003.97it/s]
-  0%|          | 0/8 [00:00<?, ?it/s]100%|██████████| 8/8 [00:00<00:00, 2125.99it/s]
-  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 815.92it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 979.52it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1807.11it/s]
-  0%|          | 0/8 [00:00<?, ?it/s]100%|██████████| 8/8 [00:00<00:00, 1873.50it/s]
-  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 2030.94it/s]
-Time taken for AutoPred: 0.4291105270385742 seconds
+  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 1109.31it/s]
+  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 2289.72it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1298.14it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1509.29it/s]
+  0%|          | 0/8 [00:00<?, ?it/s]100%|██████████| 8/8 [00:00<00:00, 2182.54it/s]
+  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 2462.60it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 2022.33it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1751.28it/s]
+  0%|          | 0/8 [00:00<?, ?it/s]100%|██████████| 8/8 [00:00<00:00, 1866.10it/s]
+  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 2090.98it/s]
+Time taken for AutoPred: 0.41162872314453125 seconds
 Policy 2 explanation graph generated. 10 nodes and 10 edges.
 sample label for policy 2: {'group': 1, 'translation': 'lvl equal to 0', 'critical_value': 1.0, 'entropy': 2.925580649048784e-15, 'num_instances': 10, 'important_features': ['lvl'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (0.0, 0.0), 'State Value': (0.0, 0.0), 'Action': (0.0, 0.0)}}  
 
 Running policy 3: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-3
 Running CAPS_main with model path: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-3 and environment: MO_fruitTree
 running MO_fruitTree
+Model path: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-3, Reward shape: 3, Reward dim indices: [0, 1, 2]
+Model path: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-3, Reward shape: 3, Reward dim indices: [0, 1, 2]
+reward_shape in get_utility_function:  3
 initializing linear utility function
-reward_shape in Utility_Function_Linear 6
+reward_shape in Utility_Function_Linear 3
+Loading utility function for policy 3 (out of 6), True
 initializing linear utility function
-reward_shape in Utility_Function_Linear 6
+reward_shape in Utility_Function_Linear 3
+Utility function weights policy 3: [0.5  0.25 0.25]
 CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-3.zip is being loaded for testing.
 Dataset collected for model CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-3. Starting explanation generation...
 Running AutoPred
 Explanations with SHAP feature selection
-apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7fb5a7305fd0>
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f9a7b8c6910>
 generating graph for model: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-3
 Starting graph generation...
 
  Computing SHAP values for clusters...
-  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 1162.02it/s]
-  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 1912.85it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 808.15it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 667.88it/s]
-  0%|          | 0/8 [00:00<?, ?it/s]100%|██████████| 8/8 [00:00<00:00, 1756.41it/s]
-  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 2070.95it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 973.61it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 991.33it/s]
-  0%|          | 0/8 [00:00<?, ?it/s]100%|██████████| 8/8 [00:00<00:00, 1718.54it/s]
-  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 1993.11it/s]
-Time taken for AutoPred: 0.422027587890625 seconds
+  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 2225.21it/s]
+  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 1707.64it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1942.71it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1996.34it/s]
+  0%|          | 0/8 [00:00<?, ?it/s]100%|██████████| 8/8 [00:00<00:00, 2242.04it/s]
+  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 2270.01it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1897.88it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 2233.39it/s]
+  0%|          | 0/8 [00:00<?, ?it/s]100%|██████████| 8/8 [00:00<00:00, 2437.31it/s]
+  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 2412.88it/s]
+Time taken for AutoPred: 0.3920774459838867 seconds
 Policy 3 explanation graph generated. 10 nodes and 10 edges.
 sample label for policy 3: {'group': 1, 'translation': 'lvl equal to 0', 'critical_value': 1.0, 'entropy': 1.191077740451442e-14, 'num_instances': 10, 'important_features': ['lvl'], 'boundaries': {'lvl': (0.0, 0.0), 'pos': (0.0, 0.0), 'State Value': (0.0, 0.0), 'Action': (0.0, 0.0)}}  
 
 Running policy 4: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-4
 Running CAPS_main with model path: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-4 and environment: MO_fruitTree
 running MO_fruitTree
+Model path: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-4, Reward shape: 3, Reward dim indices: [0, 1, 2]
+Model path: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-4, Reward shape: 3, Reward dim indices: [0, 1, 2]
+reward_shape in get_utility_function:  3
 initializing linear utility function
-reward_shape in Utility_Function_Linear 6
+reward_shape in Utility_Function_Linear 3
+Loading utility function for policy 4 (out of 6), True
 initializing linear utility function
-reward_shape in Utility_Function_Linear 6
+reward_shape in Utility_Function_Linear 3
+Utility function weights policy 3: [0.3  0.35 0.35]
 CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-4.zip is being loaded for testing.
 Dataset collected for model CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-4. Starting explanation generation...
 Running AutoPred
 Explanations with SHAP feature selection
-apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7fb5a9810e80>
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f9a9cb75e20>
 generating graph for model: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-4
 Starting graph generation...
 
  Computing SHAP values for clusters...
-  0%|          | 0/9 [00:00<?, ?it/s]100%|██████████| 9/9 [00:00<00:00, 1982.29it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 2034.10it/s]
-  0%|          | 0/8 [00:00<?, ?it/s]100%|██████████| 8/8 [00:00<00:00, 2188.81it/s]
-  0%|          | 0/5 [00:00<?, ?it/s]100%|██████████| 5/5 [00:00<00:00, 1900.11it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1898.73it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1591.16it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1956.30it/s]
-  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 2283.65it/s]
-  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 2398.31it/s]
-  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 2330.60it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 994.85it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 607.43it/s]
-  0%|          | 0/9 [00:00<?, ?it/s]100%|██████████| 9/9 [00:00<00:00, 1808.24it/s]
-  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 2267.68it/s]
-Time taken for AutoPred: 0.4119541645050049 seconds
+  0%|          | 0/9 [00:00<?, ?it/s]100%|██████████| 9/9 [00:00<00:00, 1875.25it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 989.22it/s]
+  0%|          | 0/8 [00:00<?, ?it/s]100%|██████████| 8/8 [00:00<00:00, 1652.85it/s]
+  0%|          | 0/5 [00:00<?, ?it/s]100%|██████████| 5/5 [00:00<00:00, 1303.63it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1322.29it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1381.98it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1435.42it/s]
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 2010.69it/s]
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 1607.54it/s]
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 1511.64it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 2035.08it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1309.49it/s]
+  0%|          | 0/9 [00:00<?, ?it/s]100%|██████████| 9/9 [00:00<00:00, 1870.14it/s]
+  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 2115.34it/s]
+Time taken for AutoPred: 0.401822566986084 seconds
 Policy 4 explanation graph generated. 14 nodes and 14 edges.
 sample label for policy 4: {'group': 1, 'translation': 'lvl between 3 and 0', 'critical_value': 0.0, 'entropy': 0.2170225977897644, 'num_instances': 9, 'important_features': ['lvl'], 'boundaries': {'lvl': (3.0, 0.0), 'pos': (0.0, 0.0), 'State Value': (0.0, 0.0), 'Action': (0.0, 0.0)}}  
 
 Running policy 5: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-5
 Running CAPS_main with model path: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-5 and environment: MO_fruitTree
 running MO_fruitTree
+Model path: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-5, Reward shape: 3, Reward dim indices: [0, 1, 2]
+Model path: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-5, Reward shape: 3, Reward dim indices: [0, 1, 2]
+reward_shape in get_utility_function:  3
 initializing linear utility function
-reward_shape in Utility_Function_Linear 6
+reward_shape in Utility_Function_Linear 3
+Loading utility function for policy 5 (out of 6), True
 initializing linear utility function
-reward_shape in Utility_Function_Linear 6
+reward_shape in Utility_Function_Linear 3
+Utility function weights policy 3: [0.1  0.45 0.45]
 CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-5.zip is being loaded for testing.
 Dataset collected for model CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-5. Starting explanation generation...
 Running AutoPred
 Explanations with SHAP feature selection
-apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7fb5a9810e80>
+apg_baseline inside explain_auto_pred: <CAPS.abstract.APG object at 0x7f9a9cb0a280>
 generating graph for model: CAPS/DPMORL/experiments/FruitTree_test_3rewards/DPMORL.fruitTree.LossNormLamda_0.1/policy-program-5
 Starting graph generation...
 
  Computing SHAP values for clusters...
-  0%|          | 0/12 [00:00<?, ?it/s]100%|██████████| 12/12 [00:00<00:00, 186.49it/s]
-  0%|          | 0/12 [00:00<?, ?it/s]100%|██████████| 12/12 [00:00<00:00, 190.83it/s]
-Time taken for AutoPred: 0.5185697078704834 seconds
+  0%|          | 0/12 [00:00<?, ?it/s]100%|██████████| 12/12 [00:00<00:00, 161.82it/s]
+  0%|          | 0/12 [00:00<?, ?it/s]100%|██████████| 12/12 [00:00<00:00, 226.97it/s]
+Time taken for AutoPred: 0.49404311180114746 seconds
 Policy 5 explanation graph generated. 2 nodes and 4 edges.
 sample label for policy 5: {'group': 1, 'translation': 'pos between 15 and 0', 'critical_value': 0.0, 'entropy': 0.5012740336713337, 'num_instances': 42, 'important_features': ['pos'], 'boundaries': {'lvl': (5.0, 0.0), 'pos': (15.0, 0.0), 'State Value': (1.0, 0.0), 'Action': (1.0, 1.0)}}  
 All policies have been tested and graphs collected. 6 graphs in total.
@@ -232,54 +266,6 @@ PAIR 1/5
 policy_2 vs policy_4
 ==================================================
 Selection similarity (combined average similarity): 0.4595
-
---- Test state 0: {'lvl': 0, 'pos': 0} ---
-State analysis for policy_2: 1
-State analysis for policy_4: 1
-Next probable action for policy_2: 0
-Next probable action for policy_4: 0
-
---- Test state 1: {'lvl': 1, 'pos': 0} ---
-State analysis for policy_2: 2
-State analysis for policy_4: 1
-Next probable action for policy_2: 0
-Next probable action for policy_4: 0
-
---- Test state 2: {'lvl': 1, 'pos': 1} ---
-State analysis for policy_2: None
-State analysis for policy_4: None
-Next probable action for policy_2: None
-Next probable action for policy_4: None
-
---- Test state 3: {'lvl': 2, 'pos': 1} ---
-State analysis for policy_2: None
-State analysis for policy_4: None
-Next probable action for policy_2: None
-Next probable action for policy_4: None
-
---- Test state 4: {'lvl': 2, 'pos': 2} ---
-State analysis for policy_2: None
-State analysis for policy_4: None
-Next probable action for policy_2: None
-Next probable action for policy_4: None
-
---- Test state 5: {'lvl': 3, 'pos': 1} ---
-State analysis for policy_2: None
-State analysis for policy_4: None
-Next probable action for policy_2: None
-Next probable action for policy_4: None
-
---- Test state 6: {'lvl': 3, 'pos': 2} ---
-State analysis for policy_2: None
-State analysis for policy_4: None
-Next probable action for policy_2: None
-Next probable action for policy_4: None
-
---- Test state 7: {'lvl': 3, 'pos': 3} ---
-State analysis for policy_2: None
-State analysis for policy_4: None
-Next probable action for policy_2: None
-Next probable action for policy_4: None
 
 --- Transition comparison: policy_2 vs policy_4 ---
 Common transitions: {(8, 10, 0), (7, 10, 0), (10, 11, 0)}
@@ -337,54 +323,6 @@ policy_3 vs policy_4
 ==================================================
 Selection similarity (combined average similarity): 0.4595
 
---- Test state 0: {'lvl': 0, 'pos': 0} ---
-State analysis for policy_3: 1
-State analysis for policy_4: 1
-Next probable action for policy_3: 0
-Next probable action for policy_4: 0
-
---- Test state 1: {'lvl': 1, 'pos': 0} ---
-State analysis for policy_3: 2
-State analysis for policy_4: 1
-Next probable action for policy_3: 0
-Next probable action for policy_4: 0
-
---- Test state 2: {'lvl': 1, 'pos': 1} ---
-State analysis for policy_3: None
-State analysis for policy_4: None
-Next probable action for policy_3: None
-Next probable action for policy_4: None
-
---- Test state 3: {'lvl': 2, 'pos': 1} ---
-State analysis for policy_3: None
-State analysis for policy_4: None
-Next probable action for policy_3: None
-Next probable action for policy_4: None
-
---- Test state 4: {'lvl': 2, 'pos': 2} ---
-State analysis for policy_3: None
-State analysis for policy_4: None
-Next probable action for policy_3: None
-Next probable action for policy_4: None
-
---- Test state 5: {'lvl': 3, 'pos': 1} ---
-State analysis for policy_3: None
-State analysis for policy_4: None
-Next probable action for policy_3: None
-Next probable action for policy_4: None
-
---- Test state 6: {'lvl': 3, 'pos': 2} ---
-State analysis for policy_3: None
-State analysis for policy_4: None
-Next probable action for policy_3: None
-Next probable action for policy_4: None
-
---- Test state 7: {'lvl': 3, 'pos': 3} ---
-State analysis for policy_3: None
-State analysis for policy_4: None
-Next probable action for policy_3: None
-Next probable action for policy_4: None
-
 --- Transition comparison: policy_3 vs policy_4 ---
 Common transitions: {(8, 10, 0), (7, 10, 0), (10, 11, 0)}
 Only in policy_3: {(6, 9, 0), (9, 10, 0), (1, 2, 0), (3, 6, 0), (5, 6, 0), (2, 5, 0), (4, 6, 0)}
@@ -441,54 +379,6 @@ policy_0 vs policy_5
 ==================================================
 Selection similarity (combined average similarity): 0.3232
 
---- Test state 0: {'lvl': 0, 'pos': 0} ---
-State analysis for policy_0: 1
-State analysis for policy_5: 1
-Next probable action for policy_0: 1
-Next probable action for policy_5: 1
-
---- Test state 1: {'lvl': 1, 'pos': 0} ---
-State analysis for policy_0: 1
-State analysis for policy_5: 1
-Next probable action for policy_0: 1
-Next probable action for policy_5: 1
-
---- Test state 2: {'lvl': 1, 'pos': 1} ---
-State analysis for policy_0: 1
-State analysis for policy_5: 1
-Next probable action for policy_0: 1
-Next probable action for policy_5: 1
-
---- Test state 3: {'lvl': 2, 'pos': 1} ---
-State analysis for policy_0: 1
-State analysis for policy_5: 1
-Next probable action for policy_0: 1
-Next probable action for policy_5: 1
-
---- Test state 4: {'lvl': 2, 'pos': 2} ---
-State analysis for policy_0: 1
-State analysis for policy_5: 1
-Next probable action for policy_0: 1
-Next probable action for policy_5: 1
-
---- Test state 5: {'lvl': 3, 'pos': 1} ---
-State analysis for policy_0: 1
-State analysis for policy_5: 1
-Next probable action for policy_0: 1
-Next probable action for policy_5: 1
-
---- Test state 6: {'lvl': 3, 'pos': 2} ---
-State analysis for policy_0: 1
-State analysis for policy_5: 1
-Next probable action for policy_0: 1
-Next probable action for policy_5: 1
-
---- Test state 7: {'lvl': 3, 'pos': 3} ---
-State analysis for policy_0: 1
-State analysis for policy_5: 1
-Next probable action for policy_0: 1
-Next probable action for policy_5: 1
-
 --- Transition comparison: policy_0 vs policy_5 ---
 Common transitions: {(1, 1, 1)}
 Only in policy_0: {(2, 6, 1), (1, 3, 1), (4, 7, 1), (7, 8, 1), (5, 7, 1), (6, 7, 1), (3, 6, 1)}
@@ -529,54 +419,6 @@ policy_0 vs policy_2
 ==================================================
 Selection similarity (combined average similarity): 0.1978
 
---- Test state 0: {'lvl': 0, 'pos': 0} ---
-State analysis for policy_0: 1
-State analysis for policy_2: 1
-Next probable action for policy_0: 1
-Next probable action for policy_2: 0
-
---- Test state 1: {'lvl': 1, 'pos': 0} ---
-State analysis for policy_0: 1
-State analysis for policy_2: 2
-Next probable action for policy_0: 1
-Next probable action for policy_2: 0
-
---- Test state 2: {'lvl': 1, 'pos': 1} ---
-State analysis for policy_0: 1
-State analysis for policy_2: None
-Next probable action for policy_0: 1
-Next probable action for policy_2: None
-
---- Test state 3: {'lvl': 2, 'pos': 1} ---
-State analysis for policy_0: 1
-State analysis for policy_2: None
-Next probable action for policy_0: 1
-Next probable action for policy_2: None
-
---- Test state 4: {'lvl': 2, 'pos': 2} ---
-State analysis for policy_0: 1
-State analysis for policy_2: None
-Next probable action for policy_0: 1
-Next probable action for policy_2: None
-
---- Test state 5: {'lvl': 3, 'pos': 1} ---
-State analysis for policy_0: 1
-State analysis for policy_2: None
-Next probable action for policy_0: 1
-Next probable action for policy_2: None
-
---- Test state 6: {'lvl': 3, 'pos': 2} ---
-State analysis for policy_0: 1
-State analysis for policy_2: None
-Next probable action for policy_0: 1
-Next probable action for policy_2: None
-
---- Test state 7: {'lvl': 3, 'pos': 3} ---
-State analysis for policy_0: 1
-State analysis for policy_2: None
-Next probable action for policy_0: 1
-Next probable action for policy_2: None
-
 --- Transition comparison: policy_0 vs policy_2 ---
 Common transitions: set()
 Only in policy_0: {(2, 6, 1), (1, 3, 1), (4, 7, 1), (7, 8, 1), (5, 7, 1), (6, 7, 1), (3, 6, 1), (1, 1, 1)}
@@ -616,54 +458,6 @@ PAIR 5/5
 policy_0 vs policy_3
 ==================================================
 Selection similarity (combined average similarity): 0.1978
-
---- Test state 0: {'lvl': 0, 'pos': 0} ---
-State analysis for policy_0: 1
-State analysis for policy_3: 1
-Next probable action for policy_0: 1
-Next probable action for policy_3: 0
-
---- Test state 1: {'lvl': 1, 'pos': 0} ---
-State analysis for policy_0: 1
-State analysis for policy_3: 2
-Next probable action for policy_0: 1
-Next probable action for policy_3: 0
-
---- Test state 2: {'lvl': 1, 'pos': 1} ---
-State analysis for policy_0: 1
-State analysis for policy_3: None
-Next probable action for policy_0: 1
-Next probable action for policy_3: None
-
---- Test state 3: {'lvl': 2, 'pos': 1} ---
-State analysis for policy_0: 1
-State analysis for policy_3: None
-Next probable action for policy_0: 1
-Next probable action for policy_3: None
-
---- Test state 4: {'lvl': 2, 'pos': 2} ---
-State analysis for policy_0: 1
-State analysis for policy_3: None
-Next probable action for policy_0: 1
-Next probable action for policy_3: None
-
---- Test state 5: {'lvl': 3, 'pos': 1} ---
-State analysis for policy_0: 1
-State analysis for policy_3: None
-Next probable action for policy_0: 1
-Next probable action for policy_3: None
-
---- Test state 6: {'lvl': 3, 'pos': 2} ---
-State analysis for policy_0: 1
-State analysis for policy_3: None
-Next probable action for policy_0: 1
-Next probable action for policy_3: None
-
---- Test state 7: {'lvl': 3, 'pos': 3} ---
-State analysis for policy_0: 1
-State analysis for policy_3: None
-Next probable action for policy_0: 1
-Next probable action for policy_3: None
 
 --- Transition comparison: policy_0 vs policy_3 ---
 Common transitions: set()
@@ -784,13 +578,13 @@ Percentage of G1 edges contained in G2:
     -- Times for each phase --
 
     Graph generation phase:
-        21.75 seconds
+        18.07 seconds
 
     Graph comparison phase:
-        0.06 seconds
+        0.05 seconds
 
     Action explanation generation phase:
-        0.07 seconds
+        0.00 seconds
 
     Edge explanation generation phase:
         0.00 seconds
@@ -799,13 +593,13 @@ Percentage of G1 edges contained in G2:
         0.19 seconds
 
     Transition difference phase:
-        0.04 seconds
+        0.03 seconds
 
     Subgraph percentage phase:
-        3.01 seconds
+        2.66 seconds
 
     Total explanation generation phase:
-        3.32 seconds
+        2.89 seconds
 
     --- End of execution ---
     

@@ -142,12 +142,12 @@ def get_maximum_common_subgraph(g1, g2):
         edge_match=edge_matcher
     )
 
-    mappings = list(ismags.largest_common_subgraph())
+    mappings = ismags.largest_common_subgraph() 
 
-    if not mappings:
+    try:
+        mapping = next(mappings)
+    except StopIteration:
         return None, None
-
-    mapping = mappings[0]
 
     # Keep only nodes that really exist in g1
     common_nodes_g1 = [

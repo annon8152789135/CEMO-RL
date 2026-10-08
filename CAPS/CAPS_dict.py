@@ -321,7 +321,7 @@ def explain_auto_pred(args, dataset, model_path, translator, num_actions, attr_n
 
             # Every cluster gets all available features
             important_features = [
-                list(ft_names)
+                list(translator.feature_names)
                 for _ in cluster_state_indices
             ]
 

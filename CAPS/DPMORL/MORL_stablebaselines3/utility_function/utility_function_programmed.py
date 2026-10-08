@@ -168,6 +168,15 @@ class Utility_Function_Linear(nn.Module):
                     w[i] = a
                     weights_list.append(w)
 
+        self.weights_list = weights_list
+        os.makedirs("outputs", exist_ok=True)
+        np.savetxt(
+            f"outputs/weights_list_{self.reward_shape}.csv",
+            np.array(weights_list),
+            delimiter=",",
+            fmt="%.4f"
+        )
+
         # register utilities (capture w by default-arg so it doesn't mutate)
         for w in weights_list:
             w = np.array(w, dtype=float)

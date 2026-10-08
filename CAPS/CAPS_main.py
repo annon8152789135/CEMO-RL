@@ -116,7 +116,7 @@ def CAPS_main(caps_args):
             "lvl", "pos", 
         ]
         print(f'running MO_fruitTree')
-        data, model, num_feats, num_actions, depth = test_fruitTree(model_path, args.num_episodes, mode=args.alg)
+        data, model, num_feats, num_actions, depth = test_fruitTree(model_path, args.num_episodes, mode=args.alg, reward_shape=len(args.reward_dims), reward_dim_indices=args.reward_dims)
         #print(len(data))
         if args.calc_fidelity:
             fidelity_fn = calculate_fidelity_fruitTree
@@ -162,6 +162,7 @@ def CAPS_main(caps_args):
             "4thClosestCarExists", "xC4", "yC4", "vxC4", "vyC4"
         ]
         print(f'running MO_highway')
+        print(f'model_path: {model_path} \n reward_dims: {args.reward_dims}', flush=True)
         data, model, num_feats, num_actions, _ = test_highway(model_path, args.num_episodes, mode=args.alg)
         print(f'num_actions: {num_actions}')
         #print(len(data))
